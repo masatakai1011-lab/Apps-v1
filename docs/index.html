@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>株・FX監視</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#04070c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="株・FX監視">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -755,8 +761,9 @@ fetch("data.json", { cache: "no-store" })
       timeZone: "Asia/Tokyo", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit",
     });
     document.getElementById("updated").textContent = `最終更新 ${when} JST`;
-    // 半日以上更新が止まっていたら、目印を黄色にする
-    if (Date.now() - new Date(data.updated) > 12 * 3600 * 1000) {
+    shownUpdated = data.updated;
+    // 自動更新は夜22時の次が翌日16時なので、それより長く止まっていたら目印を黄色にする
+    if (Date.now() - new Date(data.updated) > 20 * 3600 * 1000) {
       document.getElementById("status").classList.add("stale");
       document.querySelector(".status .live").textContent = "STANDBY";
     }
@@ -780,6 +787,16 @@ fetch("data.json", { cache: "no-store" })
     document.querySelector(".status .live").textContent = "NO SIGNAL";
     document.getElementById("updated").textContent = "まだデータがありません。自動更新が1回動くと表示されます。";
   });
+
+// 開きっぱなし（壁紙など）でも最新になるよう、10分ごとに新しいデータが来ていないか確かめる。
+// ライブ配信や動画を見ている間は邪魔しないよう、読み込み直しを待つ
+let shownUpdated = null;
+setInterval(() => {
+  fetch("data.json", { cache: "no-store" })
+    .then(r => r.json())
+    .then(d => { if (d.updated !== shownUpdated && !liveOn && !dialog.open) location.reload(); })
+    .catch(() => {});
+}, 10 * 60 * 1000);
 </script>
 </body>
 </html>
