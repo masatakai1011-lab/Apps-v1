@@ -1,5 +1,6 @@
 """watchlist.txt の銘柄について、値段とニュースを集めて docs/data.json に書き出す。"""
 
+import html
 import json
 import re
 import sys
@@ -237,14 +238,12 @@ def fetch_videos(extra_keywords):
 def fetch_live(handle):
     """チャンネルが今ライブ配信中なら、その動画を返す。"""
     page = get(f"https://www.youtube.com/{handle}/live").decode("utf-8", "replace")
-    m = re.search(r"ytInitialPlayerResponse\s*=\s*", page)
-    if not m:
-        print(f"ライブ {handle}: 再生情報が見つかりません（{len(page)} 文字のページ）", file=sys.stderr)
+    # 配信中なら「/live」が動画のページに置き換わる
+    m = re.search(r'<link rel="canonical" href="https://www\.youtube\.com/watch\?v=([\w-]{11})"', page)
+    if not m or '"isUpcoming":true' in page:
         return None
-    details = json.JSONDecoder().raw_decode(page, m.end())[0].get("videoDetails", {})
-    if not (details.get("isLive") or details.get("isLiveContent") and details.get("isLiveNow")):
-        return None
-    return {"id": details["videoId"], "title": details.get("title", "")}
+    t = re.search(r'<meta (?:name="title"|property="og:title") content="([^"]*)"', page)
+    return {"id": m.group(1), "title": html.unescape(t.group(1)) if t else ""}
 
 
 def fetch_lives():
