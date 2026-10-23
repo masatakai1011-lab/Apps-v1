@@ -8,6 +8,7 @@ on:
     paths:
       - watchlist.txt
       - scripts/update.py
+      - .github/workflows/update.yml
   workflow_dispatch:
 
 permissions:
@@ -31,5 +32,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data.json
-          git diff --cached --quiet || git commit -m "ボードのデータを更新"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "ボードのデータを更新"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
