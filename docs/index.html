@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>まいにち1枚ボード</title>
+<style>
+  :root {
+    --bg: #f5f5f2;
+    --card: #ffffff;
+    --text: #1d1d1b;
+    --muted: #6b6b66;
+    --line: #e2e2dc;
+    --up: #157a3c;
+    --down: #c0392b;
+    --flat: #6b6b66;
+    --link: #1f5fa8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514;
+      --card: #20201e;
+      --text: #ecece8;
+      --muted: #9a9a94;
+      --line: #34342f;
+      --up: #4cc27a;
+      --down: #ef6b5c;
+      --flat: #9a9a94;
+      --link: #7fb2ec;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; margin-bottom: 16px; }
+  h1 { font-size: 1.35rem; margin: 0; }
+  .updated { color: var(--muted); font-size: .9rem; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); }
+  @media (max-width: 400px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; min-width: 0; }
+  .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .name { font-weight: 700; font-size: 1.1rem; margin: 0; }
+  .code { color: var(--muted); font-size: .8rem; }
+  .price { text-align: right; white-space: nowrap; }
+  .price .now { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .price .chg { font-size: .9rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .chart { margin: 10px 0 4px; }
+  .chart svg { width: 100%; height: 56px; display: block; }
+  .range { display: flex; justify-content: space-between; color: var(--muted); font-size: .75rem; }
+  h2 { font-size: .85rem; color: var(--muted); font-weight: 600; margin: 14px 0 6px; border-top: 1px solid var(--line); padding-top: 12px; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { padding: 7px 0; border-bottom: 1px dashed var(--line); }
+  li:last-child { border-bottom: none; }
+  li a { color: var(--link); text-decoration: none; font-size: .95rem; }
+  li a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: .78rem; }
+  .note { color: var(--muted); font-size: .9rem; }
+  .error { color: var(--down); font-size: .85rem; margin: 6px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>まいにち1枚ボード</h1>
+    <span class="updated" id="updated">読み込み中…</span>
+  </header>
+  <div class="grid" id="grid"></div>
+</main>
+<script>
+const fmtNumber = (v, digits) =>
+  v.toLocaleString("ja-JP", { minimumFractionDigits: digits, maximumFractionDigits: digits });
+
+function digitsFor(item) {
+  if (item.kind === "fx") return item.price < 10 ? 4 : 3;
+  return item.price >= 1000 ? 0 : 1;
+}
+
+function timeAgo(iso) {
+  if (!iso) return "";
+  const min = Math.round((Date.now() - new Date(iso)) / 60000);
+  if (min < 60) return `${Math.max(min, 1)}分前`;
+  if (min < 60 * 24) return `${Math.round(min / 60)}時間前`;
+  return `${Math.round(min / 60 / 24)}日前`;
+}
+
+function el(tag, attrs = {}, text) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+
+function chart(history, trend) {
+  const closes = history.map(h => h.close);
+  const min = Math.min(...closes), max = Math.max(...closes);
+  const span = max - min || 1;
+  const w = 300, h = 56, pad = 4;
+  const pts = closes.map((c, i) => {
+    const x = (i / (closes.length - 1)) * w;
+    const y = pad + (1 - (c - min) / span) * (h - pad * 2);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+  const svgNS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(svgNS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+  svg.setAttribute("preserveAspectRatio", "none");
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", "この1か月の値動き");
+  const line = document.createElementNS(svgNS, "polyline");
+  line.setAttribute("points", pts);
+  line.setAttribute("fill", "none");
+  line.setAttribute("stroke", `var(--${trend})`);
+  line.setAttribute("stroke-width", "2");
+  line.setAttribute("vector-effect", "non-scaling-stroke");
+  svg.append(line);
+  return svg;
+}
+
+function card(item) {
+  const c = el("section", { class: "card" });
+  const top = el("div", { class: "top" });
+  const title = el("div");
+  title.append(el("p", { class: "name" }, item.name), el("span", { class: "code" }, item.code));
+  top.append(title);
+
+  if (item.price != null) {
+    const digits = digitsFor(item);
+    const trend = item.change > 0 ? "up" : item.change < 0 ? "down" : "flat";
+    const price = el("div", { class: "price" });
+    price.append(el("div", { class: "now" }, fmtNumber(item.price, digits) + (item.kind === "fx" ? "" : " 円")));
+    if (item.change != null) {
+      const mark = trend === "up" ? "▲" : trend === "down" ? "▼" : "―";
+      const sign = item.change > 0 ? "+" : "";
+      price.append(el("div", { class: `chg ${trend}` },
+        `${mark} ${sign}${fmtNumber(item.change, digits)}（${sign}${item.changePercent.toFixed(2)}%）`));
+      price.append(el("div", { class: "code" }, "前の日と比べて"));
+    }
+    top.append(price);
+    c.append(top);
+
+    if (item.history && item.history.length > 1) {
+      const box = el("div", { class: "chart" });
+      box.append(chart(item.history, trend));
+      const range = el("div", { class: "range" });
+      range.append(el("span", {}, item.history[0].date), el("span", {}, "この1か月"), el("span", {}, item.history.at(-1).date));
+      box.append(range);
+      c.append(box);
+    }
+  } else {
+    c.append(top);
+  }
+
+  for (const msg of item.errors || []) c.append(el("p", { class: "error" }, msg));
+
+  c.append(el("h2", {}, "関係するニュース"));
+  if (item.news && item.news.length) {
+    const ul = el("ul");
+    for (const n of item.news) {
+      const li = el("li");
+      li.append(el("a", { href: n.link, target: "_blank", rel: "noopener" }, n.title));
+      li.append(el("div", { class: "meta" }, [n.source, timeAgo(n.published)].filter(Boolean).join("・")));
+      ul.append(li);
+    }
+    c.append(ul);
+  } else {
+    c.append(el("p", { class: "note" }, "この1週間のニュースは見つかりませんでした"));
+  }
+  return c;
+}
+
+fetch("data.json", { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    const d = new Date(data.updated);
+    document.getElementById("updated").textContent =
+      `最終更新：${d.getMonth() + 1}月${d.getDate()}日 ${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}`;
+    const grid = document.getElementById("grid");
+    data.items.forEach(item => grid.append(card(item)));
+  })
+  .catch(() => {
+    document.getElementById("updated").textContent =
+      "まだデータがありません。自動更新が1回動くと表示されます。";
+  });
+</script>
+</body>
+</html>
