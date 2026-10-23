@@ -6,7 +6,7 @@
 <title>まいにち1枚ボード</title>
 <style>
   :root {
-    --bg: #f5f5f2;
+    --bg: #f4f4f1;
     --card: #ffffff;
     --text: #1d1d1b;
     --muted: #6b6b66;
@@ -15,6 +15,7 @@
     --down: #c0392b;
     --flat: #6b6b66;
     --link: #1f5fa8;
+    --accent: #1d1d1b;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -27,6 +28,7 @@
       --down: #ef6b5c;
       --flat: #9a9a94;
       --link: #7fb2ec;
+      --accent: #ecece8;
     }
   }
   * { box-sizing: border-box; }
@@ -37,32 +39,68 @@
     font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
     line-height: 1.6;
   }
-  main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 48px; }
-  header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; margin-bottom: 16px; }
-  h1 { font-size: 1.35rem; margin: 0; }
-  .updated { color: var(--muted); font-size: .9rem; }
-  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); }
-  @media (max-width: 400px) { .grid { grid-template-columns: 1fr; } }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; min-width: 0; }
-  .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-  .name { font-weight: 700; font-size: 1.1rem; margin: 0; }
-  .code { color: var(--muted); font-size: .8rem; }
-  .price { text-align: right; white-space: nowrap; }
-  .price .now { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
-  .price .chg { font-size: .9rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  main { max-width: 1320px; margin: 0 auto; padding: 24px 28px 56px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+  h1 { font-size: 1.5rem; margin: 0; }
+  .updated { color: var(--muted); }
+
+  section.block { margin-top: 28px; }
+  .block-title { display: flex; align-items: baseline; gap: 10px; margin: 0 0 12px; font-size: 1.15rem; }
+  .block-title::before { content: ""; width: 4px; height: 1.1em; background: var(--accent); border-radius: 2px; align-self: center; }
+  .block-title small { color: var(--muted); font-weight: 400; font-size: .85rem; }
+  h3 { font-size: .95rem; color: var(--muted); margin: 22px 0 10px; }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+
+  /* 値段 */
+  .prices { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+  .price-card { padding: 14px 16px 10px; }
+  .price-card .name { font-weight: 700; margin: 0; }
+  .price-card .code { color: var(--muted); font-size: .8rem; }
+  .price-card .now { font-size: 1.75rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.3; margin-top: 6px; }
+  .price-card .now small { font-size: .9rem; font-weight: 600; margin-left: 2px; }
+  .chg { font-weight: 600; font-variant-numeric: tabular-nums; font-size: .95rem; }
   .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
-  .chart { margin: 10px 0 4px; }
-  .chart svg { width: 100%; height: 56px; display: block; }
-  .range { display: flex; justify-content: space-between; color: var(--muted); font-size: .75rem; }
-  h2 { font-size: .85rem; color: var(--muted); font-weight: 600; margin: 14px 0 6px; border-top: 1px solid var(--line); padding-top: 12px; }
+  .chart svg { width: 100%; height: 48px; display: block; margin-top: 8px; }
+  .range { display: flex; justify-content: space-between; color: var(--muted); font-size: .72rem; }
+  .error { color: var(--down); font-size: .85rem; margin: 6px 0 0; }
+
+  /* 映像 */
+  .videos { display: grid; gap: 14px; grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 1100px) { .videos { grid-template-columns: repeat(3, 1fr); } }
+  .video { all: unset; cursor: pointer; display: block; border-radius: 12px; overflow: hidden; background: var(--card); border: 1px solid var(--line); }
+  .video:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+  .thumb { position: relative; aspect-ratio: 16 / 9; background: #000; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb::after {
+    content: "▶"; position: absolute; inset: 0; margin: auto; width: 48px; height: 48px; border-radius: 50%;
+    background: rgba(0, 0, 0, .65); color: #fff; display: grid; place-items: center; font-size: 18px; padding-left: 3px;
+  }
+  .video .vt { padding: 8px 12px 2px; font-size: .9rem; font-weight: 600; line-height: 1.45;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .video .meta { padding: 0 12px 10px; }
+
+  /* 記事 */
+  .articles { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .article-card { padding: 14px 16px 6px; }
+  .article-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+  .article-head .name { font-weight: 700; }
   ul { list-style: none; margin: 0; padding: 0; }
-  li { padding: 7px 0; border-bottom: 1px dashed var(--line); }
+  li { padding: 8px 0; border-bottom: 1px dashed var(--line); }
   li:last-child { border-bottom: none; }
   li a { color: var(--link); text-decoration: none; font-size: .95rem; }
   li a:hover { text-decoration: underline; }
   .meta { color: var(--muted); font-size: .78rem; }
   .note { color: var(--muted); font-size: .9rem; }
-  .error { color: var(--down); font-size: .85rem; margin: 6px 0 0; }
+
+  /* 再生画面 */
+  dialog { border: none; padding: 0; background: transparent; width: min(1100px, 92vw); }
+  dialog::backdrop { background: rgba(0, 0, 0, .8); }
+  .player { aspect-ratio: 16 / 9; background: #000; border-radius: 10px; overflow: hidden; }
+  .player iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .player-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; color: #fff; padding: 10px 2px; }
+  .player-bar a { color: #9cc7ff; }
+  .player-bar button { font: inherit; background: #fff; color: #111; border: none; border-radius: 8px; padding: 6px 16px; cursor: pointer; }
 </style>
 </head>
 <body>
@@ -71,8 +109,36 @@
     <h1>まいにち1枚ボード</h1>
     <span class="updated" id="updated">読み込み中…</span>
   </header>
-  <div class="grid" id="grid"></div>
+
+  <section class="block" id="fx-block">
+    <h2 class="block-title">為替（FX）<small>前の日と比べて</small></h2>
+    <div class="prices" id="fx"></div>
+  </section>
+
+  <section class="block" id="stock-block">
+    <h2 class="block-title">株価<small>前の日と比べて</small></h2>
+    <div class="prices" id="stocks"></div>
+  </section>
+
+  <section class="block">
+    <h2 class="block-title">ニュースまとめ</h2>
+    <div id="video-area">
+      <h3>ニュース映像 <span class="meta">（押すとこの画面で再生します）</span></h3>
+      <div class="videos" id="videos"></div>
+    </div>
+    <h3>記事</h3>
+    <div class="articles" id="articles"></div>
+  </section>
 </main>
+
+<dialog id="player">
+  <div class="player" id="player-frame"></div>
+  <div class="player-bar">
+    <a id="player-link" target="_blank" rel="noopener">YouTube で開く</a>
+    <button type="button" id="player-close">閉じる</button>
+  </div>
+</dialog>
+
 <script>
 const fmtNumber = (v, digits) =>
   v.toLocaleString("ja-JP", { minimumFractionDigits: digits, maximumFractionDigits: digits });
@@ -80,6 +146,18 @@ const fmtNumber = (v, digits) =>
 function digitsFor(item) {
   if (item.kind === "fx") return item.price < 10 ? 4 : 3;
   return item.price >= 1000 ? 0 : 1;
+}
+
+function trendOf(item) {
+  return item.change > 0 ? "up" : item.change < 0 ? "down" : "flat";
+}
+
+function changeText(item) {
+  const digits = digitsFor(item);
+  const trend = trendOf(item);
+  const mark = trend === "up" ? "▲" : trend === "down" ? "▼" : "―";
+  const sign = item.change > 0 ? "+" : "";
+  return `${mark} ${sign}${fmtNumber(item.change, digits)}（${sign}${item.changePercent.toFixed(2)}%）`;
 }
 
 function timeAgo(iso) {
@@ -101,7 +179,7 @@ function chart(history, trend) {
   const closes = history.map(h => h.close);
   const min = Math.min(...closes), max = Math.max(...closes);
   const span = max - min || 1;
-  const w = 300, h = 56, pad = 4;
+  const w = 300, h = 48, pad = 4;
   const pts = closes.map((c, i) => {
     const x = (i / (closes.length - 1)) * w;
     const y = pad + (1 - (c - min) / span) * (h - pad * 2);
@@ -123,43 +201,33 @@ function chart(history, trend) {
   return svg;
 }
 
-function card(item) {
-  const c = el("section", { class: "card" });
-  const top = el("div", { class: "top" });
-  const title = el("div");
-  title.append(el("p", { class: "name" }, item.name), el("span", { class: "code" }, item.code));
-  top.append(title);
-
+function priceCard(item) {
+  const c = el("div", { class: "card price-card" });
+  c.append(el("p", { class: "name" }, item.name), el("span", { class: "code" }, item.code));
   if (item.price != null) {
-    const digits = digitsFor(item);
-    const trend = item.change > 0 ? "up" : item.change < 0 ? "down" : "flat";
-    const price = el("div", { class: "price" });
-    price.append(el("div", { class: "now" }, fmtNumber(item.price, digits) + (item.kind === "fx" ? "" : " 円")));
-    if (item.change != null) {
-      const mark = trend === "up" ? "▲" : trend === "down" ? "▼" : "―";
-      const sign = item.change > 0 ? "+" : "";
-      price.append(el("div", { class: `chg ${trend}` },
-        `${mark} ${sign}${fmtNumber(item.change, digits)}（${sign}${item.changePercent.toFixed(2)}%）`));
-      price.append(el("div", { class: "code" }, "前の日と比べて"));
-    }
-    top.append(price);
-    c.append(top);
-
+    const now = el("div", { class: "now" }, fmtNumber(item.price, digitsFor(item)));
+    if (item.kind !== "fx") now.append(el("small", {}, "円"));
+    c.append(now);
+    if (item.change != null) c.append(el("div", { class: `chg ${trendOf(item)}` }, changeText(item)));
     if (item.history && item.history.length > 1) {
       const box = el("div", { class: "chart" });
-      box.append(chart(item.history, trend));
+      box.append(chart(item.history, trendOf(item)));
       const range = el("div", { class: "range" });
       range.append(el("span", {}, item.history[0].date), el("span", {}, "この1か月"), el("span", {}, item.history.at(-1).date));
       box.append(range);
       c.append(box);
     }
-  } else {
-    c.append(top);
   }
-
   for (const msg of item.errors || []) c.append(el("p", { class: "error" }, msg));
+  return c;
+}
 
-  c.append(el("h2", {}, "関係するニュース"));
+function articleCard(item) {
+  const c = el("div", { class: "card article-card" });
+  const head = el("div", { class: "article-head" });
+  head.append(el("span", { class: "name" }, item.name));
+  if (item.change != null) head.append(el("span", { class: `chg ${trendOf(item)}` }, changeText(item)));
+  c.append(head);
   if (item.news && item.news.length) {
     const ul = el("ul");
     for (const n of item.news) {
@@ -175,6 +243,41 @@ function card(item) {
   return c;
 }
 
+const dialog = document.getElementById("player");
+const frame = document.getElementById("player-frame");
+
+function play(video) {
+  frame.replaceChildren(el("iframe", {
+    src: `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0`,
+    title: video.title,
+    allow: "autoplay; encrypted-media; picture-in-picture; fullscreen",
+    allowfullscreen: "",
+  }));
+  document.getElementById("player-link").href = `https://www.youtube.com/watch?v=${video.id}`;
+  dialog.showModal();
+}
+
+document.getElementById("player-close").addEventListener("click", () => dialog.close());
+// 閉じたら再生も止める
+dialog.addEventListener("close", () => frame.replaceChildren());
+dialog.addEventListener("click", e => { if (e.target === dialog) dialog.close(); });
+
+function videoTile(video) {
+  const b = el("button", { class: "video", type: "button" });
+  const thumb = el("div", { class: "thumb" });
+  thumb.append(el("img", { src: `https://i.ytimg.com/vi/${video.id}/mqdefault.jpg`, alt: "", loading: "lazy" }));
+  b.append(thumb, el("div", { class: "vt" }, video.title),
+    el("div", { class: "meta" }, [video.channel, timeAgo(video.published)].filter(Boolean).join("・")));
+  b.addEventListener("click", () => play(video));
+  return b;
+}
+
+function fill(id, items, make) {
+  const box = document.getElementById(id);
+  items.forEach(i => box.append(make(i)));
+  return items.length;
+}
+
 fetch("data.json", { cache: "no-store" })
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
@@ -182,8 +285,12 @@ fetch("data.json", { cache: "no-store" })
       timeZone: "Asia/Tokyo", month: "long", day: "numeric", hour: "numeric", minute: "2-digit",
     });
     document.getElementById("updated").textContent = `最終更新：${when}`;
-    const grid = document.getElementById("grid");
-    data.items.forEach(item => grid.append(card(item)));
+    const fx = data.items.filter(i => i.kind === "fx");
+    const stocks = data.items.filter(i => i.kind !== "fx");
+    if (!fill("fx", fx, priceCard)) document.getElementById("fx-block").hidden = true;
+    if (!fill("stocks", stocks, priceCard)) document.getElementById("stock-block").hidden = true;
+    if (!fill("videos", data.videos || [], videoTile)) document.getElementById("video-area").hidden = true;
+    fill("articles", [...fx, ...stocks], articleCard);
   })
   .catch(() => {
     document.getElementById("updated").textContent =
