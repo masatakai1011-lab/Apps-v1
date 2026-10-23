@@ -762,8 +762,8 @@ fetch("data.json", { cache: "no-store" })
     });
     document.getElementById("updated").textContent = `最終更新 ${when} JST`;
     shownUpdated = data.updated;
-    // 自動更新は夜22時の次が翌日16時なので、それより長く止まっていたら目印を黄色にする
-    if (Date.now() - new Date(data.updated) > 20 * 3600 * 1000) {
+    // 自動更新の間が一番空くのは土日の夜→朝（12時間）。それより長く止まっていたら目印を黄色にする
+    if (Date.now() - new Date(data.updated) > 14 * 3600 * 1000) {
       document.getElementById("status").classList.add("stale");
       document.querySelector(".status .live").textContent = "STANDBY";
     }
