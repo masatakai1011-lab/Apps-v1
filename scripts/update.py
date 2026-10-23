@@ -241,6 +241,11 @@ def fetch_live(handle):
     # 配信中なら「/live」が動画のページに置き換わる
     m = re.search(r'<link rel="canonical" href="https://www\.youtube\.com/watch\?v=([\w-]{11})"', page)
     if not m or '"isUpcoming":true' in page:
+        c = re.search(r'<link rel="canonical" href="([^"]*)"', page)
+        st = re.search(r'"playabilityStatus":\{"status":"(\w+)"(?:,"reason":"([^"]*)")?', page)
+        print(f"ライブ {handle}: 判定材料 canonical={c.group(1) if c else None} "
+              f"status={st.groups() if st else None} isLive={page.count(chr(34) + 'isLive' + chr(34) + ':true')} "
+              f"videoIds={re.findall(r'\"videoId\":\"([\w-]{11})\"', page)[:3]}", file=sys.stderr)
         return None
     t = re.search(r'<meta (?:name="title"|property="og:title") content="([^"]*)"', page)
     return {"id": m.group(1), "title": html.unescape(t.group(1)) if t else ""}
