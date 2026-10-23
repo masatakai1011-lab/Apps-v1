@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T00:27+09:00",
+ "updated": "2026-10-24T00:28+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 156.797,
-   "change": -1.3350037841796905,
-   "changePercent": -0.8442337744620743,
+   "price": 156.79,
+   "change": -1.3420037841796955,
+   "changePercent": -0.8486604558627342,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/24",
-     "close": 156.7969970703125
+     "close": 156.7899932861328
     }
    ],
    "news": [
@@ -134,9 +134,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1203,
-   "change": -0.0031692335128783444,
-   "changePercent": -0.2820934849251495,
+   "price": 1.1201,
+   "change": -0.0033692335128783224,
+   "changePercent": -0.2998954855526714,
    "currency": "USD",
    "history": [
     {
@@ -229,7 +229,7 @@
     },
     {
      "date": "10/24",
-     "close": 1.1203227043151855
+     "close": 1.1200717687606812
     }
    ],
    "news": [
@@ -531,57 +531,57 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52432.0,
-   "change": -435.98046875,
-   "changePercent": -0.8246588291900158
+   "price": 52408.42,
+   "change": -459.56046875000175,
+   "changePercent": -0.869260495058338
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7658.48,
-   "change": -4.950175781250437,
-   "changePercent": -0.06459477893978188
+   "price": 7656.75,
+   "change": -6.68017578125,
+   "changePercent": -0.08716952628290879
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26082.14,
-   "change": 73.28062499999942,
-   "changePercent": 0.28175255186483705
+   "price": 26073.877,
+   "change": 65.01762500000041,
+   "changePercent": 0.24998260808967296
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 102.09,
-   "change": 2.6199987792968784,
-   "changePercent": 2.633958728404606
+   "price": 102.19,
+   "change": 2.7199987792968727,
+   "changePercent": 2.7344915511378796
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4008.6,
-   "change": -51.79990234375009,
-   "changePercent": -1.2757340062452982
+   "price": 4010.0,
+   "change": -50.39990234375,
+   "changePercent": -1.241254643776789
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.995,
-   "change": 0.041999931335449325,
-   "changePercent": 0.8479695286330478
+   "price": 4.992,
+   "change": 0.03899993133544921,
+   "changePercent": 0.7874001775647975
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 81540.99,
-   "change": 229.09937500000524,
-   "changePercent": 0.28175384096845335
+   "price": 81417.62,
+   "change": 105.72937499999534,
+   "changePercent": 0.1300294141328058
   }
  ],
  "fear": {
-  "price": 19.23,
-  "change": 0.1999993133544926,
-  "changePercent": 1.0509685030901974,
+  "price": 19.29,
+  "change": 0.25999931335449133,
+  "changePercent": 1.366260136485168,
   "history": [
    {
     "date": "09/23",
@@ -673,7 +673,7 @@
    },
    {
     "date": "10/23",
-    "close": 19.229999542236328
+    "close": 19.290000915527344
    }
   ]
  },
@@ -681,38 +681,38 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 97,
+   "count": 25,
    "news": [
-    {
-     "title": "ＭＳＣインダストリアルが上昇 アナリストが「買い」に引き上げ＝米国株個別(株探ニュース)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbVZVR0FLbFU5TkJhd2tpbVRxUENSdWprOW1Ud0VYa2Y3SUdZemhkdHJHZXNBUTlUMU5QRVNkbUFBTnc1c1FEYks1LU8zOC11TmVZRjh6djZxUDhkNTVhQ05PdENaSTlUZ1l0RE44Z2Ryc0c4VWM3NTNPTjU3QUkwS1NXOVdIRm8?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-24T00:16:05+09:00"
-    },
-    {
-     "title": "ノルウェージャンが下落 アナリストが「売り」に引き下げ＝米国株個別(株探ニュース)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdDFEQjVTZjRtd0J2OW8weFJoN3p0eVF0Y2x5cldpdFd2aXV5cS01SUVCUlFOcldJYnBteEgwUHFvYkFwbVIzNDJuNW83RGNyQ19YSEl1Uk5ubGYzaEp3MERCdFIzclFvS3lqSy0xWlRQMnpUNGU2QzZva2RzbjVoZC1OX2FvWEE?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T23:56:33+09:00"
-    },
-    {
-     "title": "米国で燃料電池がAIデータセンターの「近道」に、送電網接続には数年待ちの現実",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBubmI3T21PSjdGZGkzSFhiaW53VFFNRzVybUh5QkRvbzhsS3k2cXZ1cmhZLVV3aUo4eUFuMWkzS1d1UGpkeVkzTjBUdjBTTmlRLU1xUVJjMHRfUEdwQTNuVXlGTFd4ajk0NWUyQ3dQc1B2ZnRp?oc=5",
-     "source": "BigGo ファイナンス",
-     "published": "2026-10-23T23:55:00+09:00"
-    },
     {
      "title": "米メラニア大統領夫人、ロシアとウクライナの局地的一時停戦取り付ける ホワイトハウス発表（日テレNEWS NNN）",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MRG5qWWE5ZnhsRENTYmlIem9SOXVHQ1FVN1pwbEIzTDY4U3ZoSnZkTmIzUEZ6ZUN3QzZyRVpTOU5UMGRBTUN0Y096OE9xVi11Q0JXRTFiNW93Q21fYXZWcDRXZ1BhWmo0Z3VUdTFRaVM5eGhPclFkSi1GVzRKX0k?oc=5",
      "source": "Yahoo!ニュース",
      "published": "2026-10-23T23:53:00+09:00"
+    },
+    {
+     "title": "トランプ大統領の妻、メラニア夫人が仲介 ロシアとウクライナが一時停戦で合意 29日から南部の都市で ホワイトハウスが発表",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1RRDNIaVhaOVZ2R2NCTDRESzJTNThyVzNDTW1fRDhKbG4yV2tWS1pTWlhRNHY3czdpUElwRVZFZ0EyeHBYT01xWVAxUy0ybDBWQ1U5SV90TTl3YnZmZHFpem5BVmJzMEdKZHdpQ1FqQjRnZDBkTXI3YlBoZHd2U3c?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-23T23:20:35+09:00"
+    },
+    {
+     "title": "福神漬けの〝アメリカの棺桶〟みたいなやつ苦手 ⇒ 実際に見てみると…確かに！独特すぎる例えに「私もそれ避けてた！」「逆に私はそれが好き」（西日本新聞me）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBXWXE5QWhMNkpSSjNWU19feEJWMV9CZW1vNkRJWTJVd3A5X2xpUnk2MUdPZnFoYXBHRzV4X1cwOXN1RUkxV2U0dExwY1RVR1pGY2hQbEd5VXpHbDlxQlN5YWNZdlJndFpvdl82U1h1T2pfbjBaMGN0UFMxNFZ4QVE?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-23T23:00:16+09:00"
+    },
+    {
+     "title": "ウクライナ南部で局地停戦＝米ホワイトハウス",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9CTHo3SEdUZW5hZDdTYVBmX3BnOVV5d1BTaUFvZ293bVhab2x1QmxIeHp1QzNmNkZNNnJDYkxyc0ZFS3JSdnZFMHA2MUNqeFhjSUU3ZmNvTjQ2ME9aWXc?oc=5",
+     "source": "時事通信ニュース",
+     "published": "2026-10-23T22:57:00+09:00"
     }
    ]
   },
   {
    "key": "latam",
    "label": "中南米",
-   "count": 85,
+   "count": 11,
    "news": [
     {
      "title": "ベネズエラで大統領選実施を求める抗議デモ…帰国できない状況続く野党指導者マチャド氏が呼びかけ（読売新聞オンライン）",
@@ -721,41 +721,41 @@
      "published": "2026-10-24T00:19:35+09:00"
     },
     {
-     "title": "メキシコ ペソ / 日本 円【MXNJPY=X】：為替レート・相場",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tcWhVZmgtRnBwRlBrZUlsZ2hiSkFvMjB6RlNHUU9aajV5Z25YNzVKaGNpVmJaTzRHR290NFN0RGlFNWU5NGw4SVhsaE9nR01VempQcw?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T22:24:04+09:00"
-    },
-    {
-     "title": "ゴラーLNG、アルゼンチン回復と船隊拡張計画でS&PがB+に格上げ 執筆",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAtN25jelB4UGJqTmtlQ3VfVFVsSlR2T042UnJSVTRmZzRTZU5YYjJreGxaN0ltNzZXWFJDcW9xRTgzMVBkYlRQV2pXaHRHOF8yOTNsSWhfWHZZb0M5bm45aU9od0UtVFZKdUFYdE8xY24?oc=5",
-     "source": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
-     "published": "2026-10-23T22:19:00+09:00"
-    },
-    {
      "title": "ベトナムのゲーマーチームがブラジルに圧勝し、FCモバイル世界選手権の準々決勝に進出した。",
      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSHE4eUE0WEtxbUxuaDd1NVdlMTlqOFlNZmgzYUFXWFVsMFc3YU12Sm02VDhoQzBzRnZDSWxqaEViRXhKQmIxdV9iZXhvLXFjM3ByYnVMb3hNZktHTS1mZUJRQWxNTF95dm9RSS1TOC1mQ3hLUGJZMUhaZzNYZ3dIbzl6T2gwMFhicjNoTnVqNHY1UTRMOURSemYzS2FsdFlTSkNsaHhn?oc=5",
      "source": "Vietnam.vn",
      "published": "2026-10-23T22:11:09+09:00"
+    },
+    {
+     "title": "チリ vs メキシコ : グループF 第2節 【FIFA U17 Women's World Cup】",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE92ZWprQ3ZVV0JwcWJyRW1QSGdBTlVNR1B4cHBuVGt5ZXpBSXNYaTVXcFNUUk1URVlqdU5CNzE5ZHlHMTNuMjk0X3ByMnRteS02Q0hMQ1hXYW40SWp4Z0FNVUdBa2FvdWxBNHdwdWRrQzZ6dw?oc=5",
+     "source": "ABEMA",
+     "published": "2026-10-23T21:30:38+09:00"
+    },
+    {
+     "title": "「今後何年もF1を開催できる」メキシコGP、2029年以降の契約延長に自信 年末から来年初めに進展か",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOa05XUjRrNVFhdVpkcmRBN1g5V1Jwc1ZoNGw0YWJYNXpSbGpZZkt3S25JSDNkZFlRNGxMckE5OC1NVnFPSEthY25adVhNSjc1M1BreDFpUks0VE01NUsyUzltbkRGeC05MFZGVjQ4R0IwcDA0SFVZakpfZjFtcURDSExR?oc=5",
+     "source": "TopNews",
+     "published": "2026-10-23T21:30:00+09:00"
     }
    ]
   },
   {
    "key": "europe",
    "label": "ヨーロッパ",
-   "count": 98,
+   "count": 37,
    "news": [
-    {
-     "title": "Assicurazioni Generaliがドイツ事業を再編、人員9%削減へ 執筆",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Jd0FOZEFWT284eXlSQXZHRXFFVFFjeTNaOTNQVmZRbHRCZjdIU2RSVVJ2a1hab1pvZXF3c19XTnVzXzVnc1NNa0VBQVF2cDlVX0NTaXdTVFRNU1BOV1dLUW1rUWxwZ1g3bEhmcElKM3I?oc=5",
-     "source": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
-     "published": "2026-10-24T00:22:00+09:00"
-    },
     {
      "title": "男子SPを前に三浦佳生と山本草太が公式練習 フィギュアGPフランス杯 [写真特集1/8]",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaGo1NmVpdTNLMHNwT1hkWnpyV0JCNlZEamQxTjJVNHZXMEhHMjlhWjh6enlDblpEUVVtRTZtZEpkM2tqSGUzSFNTTC1GOHk1Rm9hb2lDdld1Vm5vNHNsZ2lUWWFwNE56c1hIanlnQ2huZW9CT3p0akw5UUVtTUJfalB0MWplTTg?oc=5",
      "source": "毎日新聞",
      "published": "2026-10-23T23:09:13+09:00"
+    },
+    {
+     "title": "英仏共同で初の核演習",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1weUJRN0tpWDk3eUlCdm5TdHpSUGpBVzMyRFZ3XzM2LVFtN1JOZ1I4MXUyQ1dpcDRYbFZVaGNqVkFqWGYyTkZSWnhQbzg4MThJaVpiYVVSZ3dpTGc?oc=5",
+     "source": "下野新聞社",
+     "published": "2026-10-23T22:50:24+09:00"
     },
     {
      "title": "ドイツのメルツ首相が来週訪日 高市首相と首脳会談へ",
@@ -774,69 +774,69 @@
   {
    "key": "russia",
    "label": "ロシア・ウクライナ",
-   "count": 97,
+   "count": 39,
    "news": [
     {
-     "title": "【トランプ米大統領】 英との会談は、イラン、ウクライナ関連を含む(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYUZmRXY5amQ3TXBWYzFFSDZUUklQVWZaaVRRWGVyUHJTZGc5dlRSQ3RydXNCMDR1VUxMakpOdERSX1VKQTl0NjFvMllNZk5hUDZmR19xb240cWxuV1lsc3BXWTZabHN6SVpNYWJLYzZkc3k1UkdHLWh3NExzV0Q1RTcwX0Z0UzA?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-24T00:19:47+09:00"
-    },
-    {
-     "title": "ロ中銀、政策金利14％に据え置き インフレ見通し引き上げ",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQU1RrOTdfc252M0E4WEZpZk1lTjEzOUxFLVh6aFBEajN5Q1JVRHpsV3AzS3FQRDhYUnJZcG5aY0F4TXdOLUpDRmNfYkE5VW5qRFhKWDB0eHFSSmlrS1c1WWFyTk1DNHVWRndZOTFqclJLcWJrcU5TQWptcUczS1lPZlRLQW5mdw?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-24T00:19:05+09:00"
-    },
-    {
-     "title": "【トランプ米大統領】 英との会談は、イラン、ウクライナ関連を含む｜FX・為替ニュース",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE52bm9Qblhac3pLV2xpakJ5WTR4SkkzaXNLdEtObWkwX205aFZPMjB6eU5USjZaNXA4cGJucXNUckI1MW5PRHFTOFRwSngzUGJaTEE?oc=5",
-     "source": "ザイFX！",
-     "published": "2026-10-24T00:19:00+09:00"
+     "title": "ロシアの態度と意図を冷静に読み解く",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVFN0UG52Z1lWbkdVY1VGeENnQ2FLNEp0bWVNYWxCd3NFc0FXRlc0N1FFbXhCUzVhd1J2RzloQkZ1T2t2Q0VBOGlObkV4M3BzYjE4TjFoNE1lNWptNGdVcVJOM2kzLS1CRHl1TkZlVnJuVW93Yy0wdnlTdnBIVnlmTXFYREE?oc=5",
+     "source": "theLetter",
+     "published": "2026-10-24T00:10:35+09:00"
     },
     {
      "title": "ウクライナ南部で限定的停戦 米、トランプ氏妻が仲介と発表",
      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE13V0NYYktMUWlvc0dWOFQ5RVBOQ0VTX2dEUFBXX2RZaVN4bGkyRDdmRWVwVDA1VnRKcWlqTjBwTkZrRzdya2R3X3dTUllFbHROVENramNOYVQ5RDlkMzJNa0RWZ1FUV21PYWljVzdJbDVxMGZzX0dTMQ?oc=5",
      "source": "朝日新聞",
      "published": "2026-10-24T00:00:00+09:00"
+    },
+    {
+     "title": "ロシアとウクライナ、一部地域限定で軍事行動の一時停止に合意…トランプ大統領のメラニア夫人が主導か",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15RV9MRlNxY1hPemo4TXA2TzV3cTRtZ0JtZ1R6OEQ1WXhWazBvZ2tzUkpQbnpFU19EZkt0ZHFsY1k2dGRleWdEVmRsT0RyQ3dYd21XR2JEbnZGbEw1RVVoODN3?oc=5",
+     "source": "読売新聞",
+     "published": "2026-10-23T23:59:00+09:00"
+    },
+    {
+     "title": "米メラニア大統領夫人、ロシアとウクライナの局地的一時停戦取り付ける ホワイトハウス発表（日テレNEWS NNN）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MRG5qWWE5ZnhsRENTYmlIem9SOXVHQ1FVN1pwbEIzTDY4U3ZoSnZkTmIzUEZ6ZUN3QzZyRVpTOU5UMGRBTUN0Y096OE9xVi11Q0JXRTFiNW93Q21fYXZWcDRXZ1BhWmo0Z3VUdTFRaVM5eGhPclFkSi1GVzRKX0k?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-23T23:53:00+09:00"
     }
    ]
   },
   {
    "key": "mideast",
    "label": "中東",
-   "count": 93,
+   "count": 25,
    "news": [
     {
-     "title": "【トランプ米大統領】 英との会談は、イラン、ウクライナ関連を含む(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYUZmRXY5amQ3TXBWYzFFSDZUUklQVWZaaVRRWGVyUHJTZGc5dlRSQ3RydXNCMDR1VUxMakpOdERSX1VKQTl0NjFvMllNZk5hUDZmR19xb240cWxuV1lsc3BXWTZabHN6SVpNYWJLYzZkc3k1UkdHLWh3NExzV0Q1RTcwX0Z0UzA?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-24T00:19:47+09:00"
+     "title": "ヨルダン川西岸で銃撃 イスラエル兵2人死亡 ネタニヤフ首相が西岸全域の封鎖準備を指示",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9RQ0VTRHVjYXpFbldLVmg2b2taXy1RSGZ0cGJDTTlGbDI1dGxXMkxKU19fVXhISGlyay1TdE9QWERWLVVfcXA3XzNNS2RaLTQ5RVJWR1k3VWFDRGR5MlFiMGlwenZaY1VvUWhLdlRnTVIwRF9BdjBGZ3d4SFRGbWc?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-23T23:55:29+09:00"
     },
     {
-     "title": "【トランプ米大統領】 英との会談は、イラン、ウクライナ関連を含む｜FX・為替ニュース",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE52bm9Qblhac3pLV2xpakJ5WTR4SkkzaXNLdEtObWkwX205aFZPMjB6eU5USjZaNXA4cGJucXNUckI1MW5PRHFTOFRwSngzUGJaTEE?oc=5",
-     "source": "ザイFX！",
-     "published": "2026-10-24T00:19:00+09:00"
+     "title": "中東ラリー選手権サウジアラビアが開催中止。最終戦はキプロスラリーに",
+     "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE92NmFrZS1DbndBRkdiRW90SDhXX3BUb0g0UjhpQVoxM0h2X2dtd1BOUU85aUN4T3FWQm9nY0pZLS1jNTBBUmFN?oc=5",
+     "source": "ラリープラス",
+     "published": "2026-10-23T23:03:45+09:00"
     },
     {
-     "title": "【速報】NY原油先物102ドル台、中東情勢悪化で供給不安(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZDRLbGVGTzF5V3drTVhEalhBU21lMGRiN1ZBYnhqOU9WNjJ1S0k2ZUVfQ3dYUkttUW0yNGJmRDQwZGNkSFdlT0gwcXJKQlFzMmwwelI4SDNIaWxKNDk1S1EyYThzTGR5LXFlX1N4UWdqOVoxaFRubHZGYnk5MllpdDU5dGdmeUk?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-24T00:16:24+09:00"
+     "title": "イスラエル軍はヨルダン川西岸全域を封鎖した。",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HZmRzU29DRDBocC04QUxCWHN6LXVjU0c5TGJ3bnJRUlRlRjBhNEpwVGRwRXJNLWtKM2pzbVk2dkpVUy1NbklNaG9BQWE3MkVBQ01PNmRKZHppWGZxaWpDWHRxZGhsbVUyZnctdEdlb09xY1VfM3dIQ2dmVV9fdw?oc=5",
+     "source": "Vietnam.vn",
+     "published": "2026-10-23T23:02:28+09:00"
     },
     {
-     "title": "NY株反落、下げ幅一時800ドル超 イラン攻撃再開の可能性意識され原油上昇を嫌気",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ldWs5NHpTVDlGTjBIQ01NWC1ZM2F5cjBKQ3dMc3l6RWN2aG9mRWloeUxhbkRMY3lCcUxjQ0ZUWm41VlB1QWdIc1pLVjgzWm83aklLSTRwX3laTWZqTFZXUVpnVzJyWVZiTTVaRFRYUjBNNGRBemc?oc=5",
-     "source": "産経ニュース",
-     "published": "2026-10-23T23:57:31+09:00"
+     "title": "イスラエル首相 、ヨルダン川西岸地区の住宅破壊表明 兵士2人の殺害受け（ロイター）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NSEtCOHlLYVM5NFpJcTB4eFZIbklmUS01QllSQ3NDUGxpdXU5VC10aHFrcXc1RVMzam9iZ0UzbUpFOUQ2THpLN1p0V2lqXzV6Skxod1dNRVdnZHlYWkM5LUxCVlVpTTVyUHZFOFJFbDdjYkFGY3BlR0FIckp4Q2M?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-23T23:01:12+09:00"
     }
    ]
   },
   {
    "key": "africa",
    "label": "アフリカ",
-   "count": 48,
+   "count": 11,
    "news": [
     {
      "title": "メコンデルタ地域では、ますます複雑化しているアフリカ豚熱の蔓延を防ぐため、対策を強化している。",
@@ -851,10 +851,10 @@
      "published": "2026-10-23T22:00:16+09:00"
     },
     {
-     "title": "画像15 / 129＞神戸どうぶつ王国のハシビロコウはめっちゃ動く！「人に慣れてほしくない」と語る飼育員の真意とは？【会えなくなるかもしれない生き物図鑑】",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2WG9QRFVfcDlvenJCX1VvakgtUXVoTDgxWjZlQnIwTFFSSUdxNldqSDl1cTJmSDQ4YlVmSFZiN3VGMzBEX0hzdjNGQW9QcWVPdEpWbEVPNkpERFZ6V1NLR2pHc2x0dnVYOHpUaTdsM2NyVkFaVTBMN0dYZHVmcWM?oc=5",
-     "source": "ウォーカープラス",
-     "published": "2026-10-23T21:37:14+09:00"
+     "title": "致死率“ほぼ100％”のリスク “禁じられたソーセージ”女逮捕（テレビ朝日系（ANN））",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12MUk3SmxCRlFfU19WOHVWbXJEWmxKWk9fS2FLVlNZV1RfVHQ2MDl4amU1aXdYUmVKdk9oNWJTb1ZlUTJSRlh0MzVmZVI0WDRhbG8wRDJKVHpURndrVEhDSFVJN1JqaFRLY0hxZUstdnFCUWVXUEI3NVFqdmNGSFU?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-23T21:59:48+09:00"
     },
     {
      "title": "ナイジェリア vs 北朝鮮 : グループB 第3節 【FIFA U17 Women's World Cup】",
@@ -867,19 +867,13 @@
   {
    "key": "china",
    "label": "中国・朝鮮半島・台湾",
-   "count": 97,
+   "count": 41,
    "news": [
     {
-     "title": "中国の山里にAIデータセンターの代償 雇用創出は限定的",
-     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN3Q4bXl0WUYzcWREWDNIZFVYVVRUNG56eFlRMHl0b0tfZjVkS1BGNHBqZ25RT0k2cXVmRzZuNTlkeDRzbEVaVzdkTWtFMVVxMGtEejRtNFlyUjFYSVJ1Y1JRWFNqMWdKY2dGZHFRU19KOUpjVkVDTENwWlVzNkp0UW0xX0IzZVplTFliSGRsWGpVMGx4amY3UQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-10-24T00:00:00+09:00"
-    },
-    {
-     "title": "ボルボ・カー約2500人削減へ 中国販売台数減少など業績不振で",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1kV3MydkV0cEloX3NDZ0pvVERrUFBGVTJieTFHMkp3S24yTWlGeFFVY0RrUkxLTkRlY01BT3hvU2NJdDgxVlVKcWd2d3ZRWkJrSzcwZEJuYmVneE9VREFR?oc=5",
-     "source": "NHKニュース",
-     "published": "2026-10-23T23:25:07+09:00"
+     "title": "外交部、中国による「越境弾圧」を強く非難",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBvQ293ZVhYclQzVDBMUW5tMkplOW9aM3hDajFSRGtIYWVYQndYSkZPZ19sNXZPUWMwWUFJS0RPaTBDZFVzaUIxbXJuRVR1cS0zTW5OQjNIRjIxcnJDTlE?oc=5",
+     "source": "www.roc-taiwan.org",
+     "published": "2026-10-23T23:31:44+09:00"
     },
     {
      "title": "【北朝鮮拉致被害者奪還署名活動のお知らせ】",
@@ -892,19 +886,25 @@
      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBPNWVpLXZmQnluWkVxVGZaQ0ZDamxneVYya1dMeUtMcThUZ29Td3pOOVBVM1l1UkdGLWItNW05eFhaZjhVUXlOcktFZTJzZG1fbERTeDZfdHZqYmdCQjk1Mks0c09LYlhxdGZBTGJROU1NSERMSUN6WWNB?oc=5",
      "source": "テレ朝NEWS",
      "published": "2026-10-23T23:10:00+09:00"
+    },
+    {
+     "title": "【KNOCK OUT】中国チュームーシーフーが戦慄KO！左ヒジ炸裂、平川蓮斗が仰向けにバッタリ（イーファイト）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE04b3BSMW5Ub1FVdTJxVW02SnA0d3NmYUhzdWczbUowazlqNk94cFlSM1BqNExrVEJFSHFlNXMybW5tTmhUN0EtNGlXTVRlS1RkcHBLVjVfbFNXVzRZakY4NHlXNGhEeEhNTHRwbFU4cDlRcWRJMU1GYXh1MGN4R0U?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-23T22:44:59+09:00"
     }
    ]
   },
   {
    "key": "asia",
    "label": "インド・東南アジア",
-   "count": 95,
+   "count": 38,
    "news": [
     {
-     "title": "ジャカルタとバリ島がベトナムとつながり、ベトナムジェットは観光旅行のサポートを強化",
-     "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1QaDl1UmJsbTdza3RVTElXNnYydmUxN1pHSmtqZ2xlamFiUHZIbmpwVHozUzZRU2k2Zm80VE1KTmw1Z9IBQkFVX3lxTE1QaDl1UmJsbTdza3RVTElXNnYydmUxN1pHSmtqZ2xlamFiUHZIbmpwVHozUzZRU2k2Zm80VE1KTmw1Zw?oc=5",
-     "source": "VOI.ID",
-     "published": "2026-10-23T23:44:16+09:00"
+     "title": "BIGBANGのリーダーであるG-DRAGONは、ベトナムへ向かう飛行機の中で、スカーフと暖かいコートを身にまとっていた。",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUzRsRzE0VHB2U0FHdHhieVFKNXhjNHhJdkU1blo1Y2JTVjUwdjNNX0xQOEo4Qzc4dnNsamhfY1ZpUXJpV29UOTZmblFsZWF3SzEzbUxILTZkMG9ibnZaWFpNSGdqZzFPYWJ6SWtqbG5DVElTeXQ1bGlqQ1YzeTdQelh3aFZibDExY1BBaGlDS1ZQR2NmMEo1MHgtY1ludlU?oc=5",
+     "source": "Vietnam.vn",
+     "published": "2026-10-23T23:57:19+09:00"
     },
     {
      "title": "インドネシア、石油タンカーからケタミン1.16トンを押収。",
@@ -913,20 +913,29 @@
      "published": "2026-10-23T23:02:27+09:00"
     },
     {
+     "title": "ベトナム仏教協会の創立45周年を祝う盛大な音楽祭を企画する。",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPU01Jc3lScm1oQzV0cF9sU1Z6UU1qXzNaOVZER09KR2R5RW0tcmxCUEg5M2EzS3dRY0VPaFhaOHBFRjA4ajJxQWFYbmdBRDIwVGVkNUtqZzQxU3JzR3kwWVdnWklfVHROUF9nREdTSElpOXZYVnFZVEFtR2R4NEpSdXlzZzdYRl92QkhUV1dsUGRQWlJmeW1vMTR0NHA?oc=5",
+     "source": "Vietnam.vn",
+     "published": "2026-10-23T22:58:25+09:00"
+    },
+    {
      "title": "自民・萩生田光一幹事長代行、ＡＳＥＡＮ事務総長と会談…エネルギー分野での関係強化を図る方針を確認",
      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9tbnRPbjAtZGFya2lndU9DNHVBNWFsSERHUXY3bEgyZ21nb1pSUkJ5QVBDMmRXUHVjQkljdlZVb19kWGFJdk1uS3ZDWWNPQTlGbkJWSmtJdkpIUUUtODdIRzZmY3Q2UQ?oc=5",
      "source": "読売新聞",
      "published": "2026-10-23T22:32:00+09:00"
-    },
-    {
-     "title": "英ヘンリー王子の妻メガン妃の父親 フィリピンで児童ポルノの動画や写真所持か フィリピン司法省が捜査と報道 結婚して以来メガン妃とは疎遠",
-     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9lYWo2MTVKU0xQSkRmWWJ2M1hCemRUanRONld6WHRNdWFGTG1TU3NVVUhnVE5ELTVSM0NsazZxNlZhNTNEZS1namY0UzR6TjRuUWc3WGlNSQ?oc=5",
-     "source": "TBS NEWS DIG",
-     "published": "2026-10-23T22:28:23+09:00"
     }
    ]
   }
  ],
  "calendar": [],
- "earnings": []
+ "earnings": [
+  {
+   "name": "キオクシア",
+   "date": "2026-10-30"
+  },
+  {
+   "name": "サイバートラスト",
+   "date": "2026-10-29"
+  }
+ ]
 }
