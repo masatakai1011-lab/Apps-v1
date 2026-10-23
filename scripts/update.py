@@ -151,26 +151,37 @@ def videos_from_feed(channel_id):
 
 def videos_from_page(page, handle):
     """チャンネルの動画ページに埋め込まれた一覧から読み取る（投稿日時はおおよそ）。"""
-    start = page.find("ytInitialData = ")
-    if start < 0:
+    m = re.search(r'ytInitialData"?\]?\s*=\s*', page)
+    if not m:
         raise ValueError("ページに動画の一覧がありません")
-    data, _ = json.JSONDecoder().raw_decode(page, start + len("ytInitialData = "))
+    data, _ = json.JSONDecoder().raw_decode(page, m.end())
     m = re.search(r'<meta property="og:title" content="([^"]+)"', page)
     channel = m.group(1) if m else handle
     videos = []
 
+    def add(video_id, title, ago):
+        videos.append({
+            "id": video_id,
+            "title": title,
+            "channel": channel,
+            "published": (datetime.now(JST) - parse_ago(ago)).isoformat(timespec="minutes"),
+        })
+
     def walk(node):
         if isinstance(node, dict):
+            # 以前の書き方
             r = node.get("videoRenderer")
             if r and r.get("videoId"):
                 runs = r.get("title", {}).get("runs") or [{}]
-                ago = r.get("publishedTimeText", {}).get("simpleText", "")
-                videos.append({
-                    "id": r["videoId"],
-                    "title": runs[0].get("text", ""),
-                    "channel": channel,
-                    "published": (datetime.now(JST) - parse_ago(ago)).isoformat(timespec="minutes"),
-                })
+                add(r["videoId"], runs[0].get("text", ""), r.get("publishedTimeText", {}).get("simpleText", ""))
+                return
+            # 新しい書き方
+            r = node.get("lockupViewModel")
+            if r and r.get("contentId") and "VIDEO" in r.get("contentType", "VIDEO"):
+                meta = r.get("metadata", {}).get("lockupMetadataViewModel", {})
+                texts = re.findall(r'"content":\s*"([^"]*)"', json.dumps(meta, ensure_ascii=False))
+                ago = next((t for t in texts if re.search(r"前|ago", t)), "")
+                add(r["contentId"], meta.get("title", {}).get("content", ""), ago)
                 return
             for v in node.values():
                 walk(v)
@@ -201,7 +212,9 @@ def fetch_videos(extra_keywords):
     videos = []
     for handle in VIDEO_CHANNELS:
         try:
-            videos += fetch_channel_videos(handle)
+            found = fetch_channel_videos(handle)
+            print(f"動画 {handle}: {len(found)} 本見つかりました")
+            videos += found
         except Exception as e:
             print(f"動画 {handle}: {e}", file=sys.stderr)
     related = [v for v in videos if any(k in v["title"] for k in keywords)]
