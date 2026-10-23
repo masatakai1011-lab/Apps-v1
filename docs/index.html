@@ -196,8 +196,73 @@
     border: 1px solid var(--cyan); padding: 7px 18px; cursor: pointer; }
   .player-bar button:hover { background: var(--cyan); color: var(--bg); }
 
+  /* 世界の市場の帯 */
+  .ticker { margin: 14px -28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    background: rgba(61, 232, 255, .04); overflow: hidden; white-space: nowrap; }
+  .ticker-track { display: inline-flex; animation: ticker var(--dur, 60s) linear infinite; }
+  .ticker:hover .ticker-track { animation-play-state: paused; }
+  @keyframes ticker { to { transform: translateX(-50%); } }
+  .tick { display: inline-flex; align-items: baseline; gap: 8px; padding: 8px 22px; border-right: 1px solid var(--line);
+    font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .tick .tn { font-family: var(--sans); font-size: .8rem; color: var(--muted); }
+  .tick .tp { font-weight: 600; color: #fff; }
+  .tick .chg { font-size: .8rem; }
+
+  /* 市場の状況 */
+  .condition { display: grid; gap: 16px; grid-template-columns: minmax(300px, 1fr) 2fr; }
+  @media (max-width: 1000px) { .condition { grid-template-columns: 1fr; } }
+  .gauge-card, .cal-card { padding: 16px 20px; }
+  .card-title { font-family: var(--mono); font-size: .72rem; letter-spacing: .22em; color: var(--muted); margin: 0 0 8px; }
+  .card-title b { color: var(--cyan); font-weight: 600; }
+  .gauge svg { width: 100%; max-width: 340px; display: block; margin: 0 auto; overflow: visible; }
+  .gauge-value { text-align: center; margin-top: -8px; }
+  .gauge-value .num { font-family: var(--mono); font-size: 2.6rem; font-weight: 800; line-height: 1.1; }
+  .gauge-value .mood { font-size: 1.15rem; font-weight: 700; letter-spacing: .1em; }
+  .gauge-note { color: var(--muted); font-size: .8rem; text-align: center; margin: 8px 0 0; }
+  .lv-calm { color: var(--up); } .lv-normal { color: var(--cyan); } .lv-worry { color: var(--amber); } .lv-fear { color: var(--down); }
+  .cal-day { font-family: var(--mono); font-size: .8rem; color: var(--cyan); letter-spacing: .1em; margin: 12px 0 2px;
+    border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+  .cal-day:first-of-type { margin-top: 0; }
+  .cal-row { display: grid; grid-template-columns: 56px 82px 1fr auto; gap: 10px; align-items: baseline; padding: 7px 0;
+    border-bottom: 1px dashed var(--line); }
+  .cal-row:last-child { border-bottom: none; }
+  .cal-row .t { font-family: var(--mono); color: var(--muted); font-size: .85rem; }
+  .cal-row .c { font-size: .75rem; border: 1px solid var(--line-strong); color: var(--cyan); text-align: center; padding: 0 4px; }
+  .cal-row .n { font-size: 1rem; }
+  .cal-row .v { font-family: var(--mono); font-size: .75rem; color: var(--muted); white-space: nowrap; }
+  .cal-row.past { opacity: .4; }
+  .cal-row.past .n::after { content: "（済）"; font-size: .75rem; }
+  .cal-row.earn .c { color: var(--amber); border-color: var(--amber); }
+  .cal-list { max-height: 420px; overflow-y: auto; padding-right: 6px; }
+
+  /* 世界情勢 */
+  .world { display: grid; grid-template-columns: 1fr 360px; }
+  @media (max-width: 1000px) { .world { grid-template-columns: 1fr; } }
+  .map { position: relative; padding: 10px; border-right: 1px solid var(--line); min-width: 0; }
+  @media (max-width: 1000px) { .map { border-right: 0; border-bottom: 1px solid var(--line); } }
+  .map svg { width: 100%; height: auto; display: block; }
+  .map .sweep { animation: sweep 7s linear infinite; }
+  @keyframes sweep { from { transform: translateX(-120px); } to { transform: translateX(1000px); } }
+  .spot { cursor: pointer; }
+  .spot .ring { transform-box: fill-box; transform-origin: center; animation: ping 2.4s ease-out infinite; }
+  @keyframes ping { from { transform: scale(.4); opacity: .9; } to { transform: scale(1.6); opacity: 0; } }
+  .spot text { font-family: var(--sans); font-size: 13px; fill: var(--text); paint-order: stroke; stroke: #04070c; stroke-width: 4px; }
+  .spot.sel text { fill: var(--cyan); font-weight: 700; }
+  .spot:focus-visible { outline: none; }
+  .spot:focus-visible .core { stroke: #fff; stroke-width: 2; }
+  .region-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .region-tab { all: unset; cursor: pointer; font-size: .8rem; padding: 4px 10px; border: 1px solid var(--line); }
+  .region-tab[aria-pressed="true"] { border-color: var(--cyan); color: var(--cyan); background: rgba(61, 232, 255, .1); }
+  .region-tab:focus-visible { outline: 2px solid var(--cyan); }
+  .region { padding: 16px 20px; }
+  .region h4 { margin: 0; font-size: 1.3rem; letter-spacing: .06em; }
+  .level { font-family: var(--mono); font-size: .8rem; letter-spacing: .12em; margin: 4px 0 10px; }
+  .level .bar { display: inline-block; width: 120px; height: 6px; background: var(--line); vertical-align: middle; margin-left: 8px; position: relative; }
+  .level .bar i { position: absolute; inset: 0 auto 0 0; background: currentColor; box-shadow: 0 0 8px currentColor; }
+
   @media (prefers-reduced-motion: reduce) {
-    .panel, .status .live::before, .rec::before { animation: none !important; }
+    .panel, .status .live::before, .rec::before, .ticker-track, .map .sweep, .spot .ring { animation: none !important; }
+    .ticker { overflow-x: auto; }
   }
 </style>
 </head>
@@ -215,6 +280,7 @@
       <div class="clock"><div class="city">LONDON</div><div class="time" data-tz="Europe/London">--:--:--</div></div>
     </div>
   </header>
+  <div class="ticker" id="ticker-wrap" aria-label="世界の市場"><div class="ticker-track" id="ticker"></div></div>
 
   <section class="block" id="fx-block">
     <h2 class="block-title"><span class="no">01</span>為替<span class="en">FX / CURRENCY</span></h2>
@@ -226,8 +292,22 @@
     <div class="prices" id="stocks"></div>
   </section>
 
+  <section class="block" id="condition-block">
+    <h2 class="block-title"><span class="no">03</span>市場の状況<span class="en">MARKET CONDITION</span></h2>
+    <div class="condition">
+      <div class="panel gauge-card" id="gauge-card">
+        <p class="card-title"><b>◐ FEAR INDEX</b> ／ 市場の温度計</p>
+        <div class="gauge" id="gauge"></div>
+      </div>
+      <div class="panel cal-card">
+        <p class="card-title"><b>▦ SCHEDULE</b> ／ 今週の大事な予定（日本時間）</p>
+        <div class="cal-list" id="calendar"></div>
+      </div>
+    </div>
+  </section>
+
   <section class="block">
-    <h2 class="block-title"><span class="no">03</span>ニュースまとめ<span class="en">INTELLIGENCE BRIEFING</span></h2>
+    <h2 class="block-title"><span class="no">04</span>ニュースまとめ<span class="en">INTELLIGENCE BRIEFING</span></h2>
     <div id="live-area">
       <h3><b>◉ LIVE</b> ／ 海外ニュース ライブ配信（局を選んで「受信開始」）</h3>
       <div class="panel onair">
@@ -241,6 +321,16 @@
     </div>
     <h3><b>≡ REPORTS</b> ／ 記事</h3>
     <div class="articles" id="articles"></div>
+  </section>
+  <section class="block" id="world-block">
+    <h2 class="block-title"><span class="no">05</span>世界情勢<span class="en">GLOBAL SITUATION</span></h2>
+    <div class="panel world">
+      <div class="map">
+        <div id="map"></div>
+        <div class="region-tabs" id="region-tabs"></div>
+      </div>
+      <div class="region" id="region"></div>
+    </div>
   </section>
 </main>
 
@@ -466,6 +556,185 @@ function fill(id, items, make) {
   return items.length;
 }
 
+// 世界の市場の帯（同じ並びを2回つなげて、途切れずに流れるようにする）
+function setupTicker(markets) {
+  if (!markets.length) return false;
+  const track = document.getElementById("ticker");
+  for (let copy = 0; copy < 2; copy++) {
+    for (const m of markets) {
+      const t = el("span", { class: "tick" });
+      if (copy) t.setAttribute("aria-hidden", "true");
+      const digits = m.price >= 1000 ? 0 : 2;
+      const trend = trendOf(m);
+      const mark = trend === "up" ? "▲" : trend === "down" ? "▼" : "―";
+      const sign = m.change > 0 ? "+" : "";
+      t.append(el("span", { class: "tn" }, m.name), el("span", { class: "tp" }, fmtNumber(m.price, digits) + (m.unit === "%" ? "%" : "")),
+        el("span", { class: `chg ${trend}` }, `${mark}${sign}${m.changePercent.toFixed(2)}%`));
+      track.append(t);
+    }
+  }
+  track.style.setProperty("--dur", `${markets.length * 6}s`);
+  return true;
+}
+
+// 市場の温度計（恐怖指数）
+const FEAR_MAX = 40;
+const FEAR_ZONES = [
+  [0, 15, "calm", "平穏", "var(--up)"],
+  [15, 20, "normal", "ふつう", "var(--cyan)"],
+  [20, 30, "worry", "不安", "var(--amber)"],
+  [30, FEAR_MAX, "fear", "恐怖", "var(--down)"],
+];
+function setupGauge(fear) {
+  if (!fear) return false;
+  const cx = 120, cy = 120, r = 95;
+  const pt = (v, rad) => {
+    const a = Math.PI * (1 - Math.min(v, FEAR_MAX) / FEAR_MAX);
+    return [cx + rad * Math.cos(a), cy - rad * Math.sin(a)];
+  };
+  const svg = svgEl("svg", { viewBox: "0 0 240 135", role: "img", "aria-label": `恐怖指数 ${fear.price.toFixed(1)}` });
+  for (const [from, to, , , color] of FEAR_ZONES) {
+    const [x1, y1] = pt(from, r), [x2, y2] = pt(to, r);
+    svg.append(svgEl("path", { d: `M${x1},${y1} A${r},${r} 0 0 1 ${x2},${y2}`, fill: "none", stroke: color,
+      "stroke-width": 14, opacity: .85 }));
+  }
+  for (const v of [0, 10, 20, 30, 40]) {
+    const [x, y] = pt(v, r - 22);
+    const label = svgEl("text", { x, y: y + 4, "text-anchor": "middle", fill: "var(--muted)", "font-size": 10, "font-family": "var(--mono)" });
+    label.textContent = v;
+    svg.append(label);
+  }
+  const [nx, ny] = pt(fear.price, r - 6);
+  svg.append(svgEl("line", { x1: cx, y1: cy, x2: nx, y2: ny, stroke: "#fff", "stroke-width": 3, "stroke-linecap": "round",
+    style: "filter: drop-shadow(0 0 4px var(--cyan))" }), svgEl("circle", { cx, cy, r: 7, fill: "var(--cyan)" }));
+  const zone = FEAR_ZONES.find(([from, to]) => fear.price < to) || FEAR_ZONES.at(-1);
+  const value = el("div", { class: "gauge-value" });
+  value.append(el("div", { class: `num lv-${zone[2]}` }, fear.price.toFixed(1)), el("div", { class: `mood lv-${zone[2]}` }, zone[3]));
+  if (fear.change != null) {
+    const sign = fear.change > 0 ? "+" : "";
+    value.append(el("div", { class: "chg flat" }, `前日比 ${sign}${fear.change.toFixed(2)}`));
+  }
+  document.getElementById("gauge").append(svg, value,
+    el("p", { class: "gauge-note" }, "アメリカの「恐怖指数（VIX）」。数字が大きいほど、投資家が先行きを不安に感じています。20を超えると不安、30を超えると強い恐怖の目安です。"));
+  return true;
+}
+
+// 今週の大事な予定
+const WEEKDAYS = "日月火水木金土";
+function dayLabel(d) {
+  return `${d.getMonth() + 1}/${d.getDate()}（${WEEKDAYS[d.getDay()]}）`;
+}
+function setupCalendar(events, earnings) {
+  const box = document.getElementById("calendar");
+  const now = new Date();
+  // 日本時間で日付ごとにまとめる
+  const jst = iso => new Date(new Date(iso).toLocaleString("en-US", { timeZone: "Asia/Tokyo" }));
+  const rows = [
+    ...events.map(e => ({ ...e, at: jst(e.date), past: new Date(e.date) < now })),
+    ...earnings.map(e => ({ title: `${e.name} 決算発表`, country: "持ち株", at: jst(`${e.date}T00:00+09:00`), earn: true,
+      past: new Date(`${e.date}T23:59+09:00`) < now })),
+  ].sort((a, b) => a.at - b.at);
+  if (!rows.length) {
+    box.append(el("p", { class: "note" }, "予定を取得できませんでした"));
+    return;
+  }
+  let day = "";
+  for (const r of rows) {
+    const label = dayLabel(r.at);
+    if (label !== day) { box.append(el("div", { class: "cal-day" }, label)); day = label; }
+    const row = el("div", { class: `cal-row${r.past ? " past" : ""}${r.earn ? " earn" : ""}` });
+    const time = r.earn ? "―" : `${r.at.getHours()}:${String(r.at.getMinutes()).padStart(2, "0")}`;
+    const values = [r.forecast && `予想 ${r.forecast}`, r.previous && `前回 ${r.previous}`].filter(Boolean).join("  ");
+    row.append(el("span", { class: "t" }, time), el("span", { class: "c" }, r.country), el("span", { class: "n" }, r.title),
+      el("span", { class: "v" }, values));
+    box.append(row);
+  }
+  // 次に来る予定が見えるところまで送る
+  const next = box.querySelector(".cal-row:not(.past)");
+  if (next) box.scrollTop = Math.max(0, next.offsetTop - box.offsetTop - 30);
+}
+
+// 世界情勢の地図
+function levelOf(count) {
+  if (count >= 40) return ["高", "var(--down)", 1];
+  if (count >= 15) return ["中", "var(--amber)", .6];
+  return ["低", "var(--cyan)", .3];
+}
+function showRegion(region, spots) {
+  for (const s of spots) {
+    const on = s.dataset.key === region.key;
+    s.el.classList.toggle("sel", on);
+    s.tab.setAttribute("aria-pressed", on ? "true" : "false");
+  }
+  const [level, color, ratio] = levelOf(region.count);
+  const box = document.getElementById("region");
+  const lv = el("div", { class: "level" });
+  lv.style.color = color;
+  lv.append(`騒がしさ：${level}（24時間で ${region.count} 件）`);
+  const bar = el("span", { class: "bar" }), fillBar = el("i");
+  fillBar.style.width = `${ratio * 100}%`;
+  bar.append(fillBar);
+  lv.append(bar);
+  const ul = el("ul");
+  for (const n of region.news) {
+    const li = el("li");
+    li.append(el("a", { href: n.link, target: "_blank", rel: "noopener" }, n.title));
+    li.append(el("div", { class: "meta" }, [n.source, timeAgo(n.published)].filter(Boolean).join(" · ")));
+    ul.append(li);
+  }
+  box.replaceChildren(el("h4", {}, region.label), lv,
+    region.news.length ? ul : el("p", { class: "note" }, "この24時間のニュースは見つかりませんでした"));
+}
+function setupWorld(map, regions) {
+  if (!regions.length) return false;
+  const svg = svgEl("svg", { viewBox: `0 0 ${map.width} ${map.height}`, role: "img", "aria-label": "世界地図" });
+  const grad = svgEl("linearGradient", { id: "sweep-g", x1: 0, x2: 1, y1: 0, y2: 0 });
+  grad.append(svgEl("stop", { offset: 0, "stop-color": "#3de8ff", "stop-opacity": 0 }),
+    svgEl("stop", { offset: 1, "stop-color": "#3de8ff", "stop-opacity": .18 }));
+  const clip = svgEl("clipPath", { id: "sphere-clip" });
+  clip.append(svgEl("path", { d: map.sphere }));
+  const defs = svgEl("defs", {});
+  defs.append(grad, clip);
+  const sweep = svgEl("g", { "clip-path": "url(#sphere-clip)" });
+  sweep.append(svgEl("rect", { class: "sweep", x: 0, y: 0, width: 120, height: map.height, fill: "url(#sweep-g)" }));
+  svg.append(defs,
+    svgEl("path", { d: map.sphere, fill: "#050d14", stroke: "var(--line-strong)" }),
+    svgEl("path", { d: map.graticule, fill: "none", stroke: "rgba(61, 232, 255, .07)" }),
+    svgEl("path", { d: map.land, fill: "rgba(61, 232, 255, .10)", stroke: "rgba(61, 232, 255, .45)", "stroke-width": .6 }),
+    svgEl("path", { d: map.borders, fill: "none", stroke: "rgba(61, 232, 255, .18)", "stroke-width": .5 }),
+    sweep);
+  const tabs = document.getElementById("region-tabs");
+  const spots = [];
+  for (const region of regions) {
+    const at = map.points[region.key];
+    if (!at) continue;
+    const [, color, ratio] = levelOf(region.count);
+    const g = svgEl("g", { class: "spot", tabindex: 0, role: "button", "aria-label": region.label, transform: `translate(${at[0]},${at[1]})` });
+    const size = 8 + ratio * 18;
+    g.append(svgEl("circle", { class: "ring", r: size, fill: "none", stroke: color, "stroke-width": 2 }),
+      svgEl("circle", { r: size * .45, fill: color, opacity: .25 }),
+      svgEl("circle", { class: "core", r: 4.5, fill: color, style: `filter: drop-shadow(0 0 6px ${color})` }));
+    // 近くの点と文字が重ならないよう、ヨーロッパと中南米は点の左側に書く
+    const left = region.key === "europe" || region.key === "latam";
+    const label = svgEl("text", { x: left ? -10 : 10, y: -10, "text-anchor": left ? "end" : "start" });
+    label.textContent = `${region.label} ${region.count}`;
+    g.append(label);
+    const tab = el("button", { class: "region-tab", type: "button" }, region.label);
+    const spot = { dataset: { key: region.key }, el: g, tab };
+    const pick = () => showRegion(region, spots);
+    g.addEventListener("click", pick);
+    g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+    tab.addEventListener("click", pick);
+    svg.append(g);
+    tabs.append(tab);
+    spots.push(spot);
+  }
+  document.getElementById("map").append(svg);
+  // 最初は一番騒がしい地域を表示
+  showRegion(regions.reduce((a, b) => (b.count > a.count ? b : a)), spots);
+  return true;
+}
+
 // 世界の時計
 const clocks = [...document.querySelectorAll(".time[data-tz]")].map(e => [e,
   new Intl.DateTimeFormat("ja-JP", { timeZone: e.dataset.tz, hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false })]);
@@ -492,6 +761,13 @@ fetch("data.json", { cache: "no-store" })
     if (!setupLive(data.lives || [])) document.getElementById("live-area").hidden = true;
     if (!fill("videos", data.videos || [], videoTile)) document.getElementById("video-area").hidden = true;
     fill("articles", [...fx, ...stocks], articleCard);
+    if (!setupTicker(data.markets || [])) document.getElementById("ticker-wrap").hidden = true;
+    const hasGauge = setupGauge(data.fear);
+    document.getElementById("gauge-card").hidden = !hasGauge;
+    setupCalendar(data.calendar || [], data.earnings || []);
+    return fetch("world.json").then(r => r.json()).then(map => {
+      if (!setupWorld(map, data.world || [])) document.getElementById("world-block").hidden = true;
+    });
   })
   .catch(() => {
     document.getElementById("status").classList.add("stale");

@@ -27,6 +27,83 @@ VIDEO_KEYWORDS = [
 VIDEOS_MAX = 3
 
 # 海外ニュースのライブ配信（表示名, YouTube チャンネル）。同じ表示名は最初に見つかったものを使う
+# 画面上部の帯に流す世界の市場（表示名, 記号, 単位）
+MARKETS = [
+    ("日経平均", "^N225", "円"),
+    ("NYダウ", "^DJI", "ドル"),
+    ("S&P500", "^GSPC", ""),
+    ("ナスダック", "^IXIC", ""),
+    ("原油 WTI", "CL=F", "ドル"),
+    ("金", "GC=F", "ドル"),
+    ("米10年金利", "^TNX", "%"),
+    ("ビットコイン", "BTC-USD", "ドル"),
+]
+
+# 世界情勢の地図の地域（記号, 表示名, ニュースを探す言葉）
+REGIONS = [
+    ("us", "アメリカ", "米国 OR アメリカ OR ホワイトハウス OR 米議会"),
+    ("latam", "中南米", "ブラジル OR メキシコ OR アルゼンチン OR ベネズエラ OR 中南米"),
+    ("europe", "ヨーロッパ", "欧州 OR EU OR ドイツ OR フランス OR 英国"),
+    ("russia", "ロシア・ウクライナ", "ロシア OR ウクライナ"),
+    ("mideast", "中東", "中東 OR イスラエル OR イラン OR ガザ OR サウジ"),
+    ("africa", "アフリカ", "アフリカ OR ナイジェリア OR エジプト OR スーダン OR エチオピア"),
+    ("china", "中国・朝鮮半島・台湾", "中国 OR 台湾 OR 北朝鮮 OR 韓国"),
+    ("asia", "インド・東南アジア", "インド OR 東南アジア OR ASEAN OR インドネシア OR ベトナム OR フィリピン"),
+]
+REGION_NEWS = 4
+
+# 今週の予定：海外の経済カレンダー（重要度の高いものだけ使う）
+CALENDAR_URLS = [
+    "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
+    "https://nfs.faireconomy.media/ff_calendar_nextweek.json",
+]
+COUNTRY_NAMES = {
+    "USD": "米国", "JPY": "日本", "EUR": "ユーロ圏", "GBP": "英国", "CNY": "中国",
+    "AUD": "豪州", "CAD": "カナダ", "CHF": "スイス", "NZD": "NZ",
+}
+EVENT_NAMES = {
+    "Non-Farm Employment Change": "雇用統計（非農業部門雇用者数）",
+    "Unemployment Rate": "失業率",
+    "Average Hourly Earnings m/m": "平均時給（前月比）",
+    "CPI m/m": "消費者物価指数（前月比）",
+    "CPI y/y": "消費者物価指数（前年比）",
+    "Core CPI m/m": "コア消費者物価指数（前月比）",
+    "Core CPI y/y": "コア消費者物価指数（前年比）",
+    "PPI m/m": "生産者物価指数（前月比）",
+    "Core PPI m/m": "コア生産者物価指数（前月比）",
+    "Core PCE Price Index m/m": "PCEコア物価指数（前月比）",
+    "Retail Sales m/m": "小売売上高（前月比）",
+    "Core Retail Sales m/m": "コア小売売上高（前月比）",
+    "Advance GDP q/q": "GDP速報値（前期比）",
+    "Prelim GDP q/q": "GDP速報値（前期比）",
+    "Final GDP q/q": "GDP確報値（前期比）",
+    "GDP q/q": "GDP（前期比）",
+    "ISM Manufacturing PMI": "ISM製造業景況指数",
+    "ISM Services PMI": "ISM非製造業景況指数",
+    "Flash Manufacturing PMI": "製造業PMI速報値",
+    "Flash Services PMI": "サービス業PMI速報値",
+    "Unemployment Claims": "新規失業保険申請件数",
+    "JOLTS Job Openings": "JOLTS求人件数",
+    "CB Consumer Confidence": "消費者信頼感指数",
+    "Prelim UoM Consumer Sentiment": "ミシガン大学消費者信頼感指数（速報）",
+    "Federal Funds Rate": "FOMC 政策金利発表",
+    "FOMC Statement": "FOMC 声明",
+    "FOMC Press Conference": "FOMC 議長会見",
+    "FOMC Meeting Minutes": "FOMC 議事録",
+    "BOJ Policy Rate": "日銀 政策金利発表",
+    "Monetary Policy Statement": "金融政策声明",
+    "BOJ Outlook Report": "日銀 展望レポート",
+    "BOJ Press Conference": "日銀総裁会見",
+    "Tokyo Core CPI y/y": "東京都区部コアCPI（前年比）",
+    "National Core CPI y/y": "全国コアCPI（前年比）",
+    "Main Refinancing Rate": "ECB 政策金利発表",
+    "ECB Press Conference": "ECB 総裁会見",
+    "German Flash Manufacturing PMI": "ドイツ製造業PMI速報値",
+    "German Flash Services PMI": "ドイツ サービス業PMI速報値",
+    "German ifo Business Climate": "ドイツ ifo景況感指数",
+}
+SPEAKERS = {"Fed Chair": "FRB議長", "BOJ Gov": "日銀総裁", "ECB President": "ECB総裁", "FOMC Member": "FOMC委員"}
+
 LIVE_CHANNELS = [
     ("Bloomberg", "@markets"),
     ("Bloomberg", "@BloombergTelevision"),
@@ -99,9 +176,10 @@ def fetch_price(symbol):
     }
 
 
-def fetch_news(keyword):
+def fetch_news(keyword, days=7):
+    """新しい順のニュースをすべて返す（同じ見出しは1つにまとめる）。"""
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
-        {"q": f"{keyword} when:7d", "hl": "ja", "gl": "JP", "ceid": "JP:ja"}
+        {"q": f"{keyword} when:{days}d", "hl": "ja", "gl": "JP", "ceid": "JP:ja"}
     )
     root = ET.fromstring(get(url))
     news = []
@@ -124,8 +202,7 @@ def fetch_news(keyword):
     news.sort(key=lambda n: n["published"] or "", reverse=True)
     # 同じ見出しが別の配信元から重ねて届くことがあるので、1つにまとめる
     seen = set()
-    unique = [n for n in news if not (n["title"] in seen or seen.add(n["title"]))]
-    return unique[:NEWS_PER_ITEM]
+    return [n for n in news if not (n["title"] in seen or seen.add(n["title"]))]
 
 
 def fetch_channel_videos(handle):
@@ -266,6 +343,79 @@ def fetch_lives():
     return lives
 
 
+def fetch_markets():
+    markets = []
+    for name, symbol, unit in MARKETS:
+        try:
+            p = fetch_price(symbol)
+        except Exception as e:
+            print(f"市場 {name}: {e}", file=sys.stderr)
+            continue
+        markets.append({"name": name, "unit": unit, **{k: p[k] for k in ("price", "change", "changePercent")}})
+    return markets
+
+
+def fetch_fear():
+    """恐怖指数（VIX）。"""
+    try:
+        p = fetch_price("^VIX")
+    except Exception as e:
+        print(f"恐怖指数: {e}", file=sys.stderr)
+        return None
+    return {k: p[k] for k in ("price", "change", "changePercent", "history")}
+
+
+def fetch_world():
+    regions = []
+    for key, label, query in REGIONS:
+        try:
+            news = fetch_news(query, days=1)
+        except Exception as e:
+            print(f"世界情勢 {label}: {e}", file=sys.stderr)
+            news = []
+        regions.append({"key": key, "label": label, "count": len(news), "news": news[:REGION_NEWS]})
+    return regions
+
+
+def fetch_calendar(currencies):
+    events = []
+    for url in CALENDAR_URLS:
+        try:
+            items = json.loads(get(url))
+        except Exception as e:
+            print(f"予定 {url}: {e}", file=sys.stderr)
+            continue
+        for ev in items:
+            if ev.get("impact") != "High" or ev.get("country") not in currencies:
+                continue
+            title = ev.get("title", "")
+            name = EVENT_NAMES.get(title)
+            if not name and title.endswith(" Speaks"):
+                name = title[: -len(" Speaks")] + " 発言"
+                for en, ja in SPEAKERS.items():
+                    name = name.replace(en, ja)
+            events.append({
+                "date": datetime.fromisoformat(ev["date"]).astimezone(JST).isoformat(timespec="minutes"),
+                "country": COUNTRY_NAMES.get(ev["country"], ev["country"]),
+                "title": name or title,
+                "forecast": ev.get("forecast") or "",
+                "previous": ev.get("previous") or "",
+            })
+    events.sort(key=lambda e: e["date"])
+    return events
+
+
+def fetch_earnings_date(code):
+    """日本株の決算発表予定日（株探のページから読み取る）。"""
+    page = get(f"https://kabutan.jp/stock/?code={code}").decode("utf-8", "replace")
+    m = re.search(r"決算発表予定日[^0-9]{0,80}(20\d\d)/(\d{1,2})/(\d{1,2})", page)
+    if not m:
+        print(f"決算予定 {code}: ページに予定日が見つかりません", file=sys.stderr)
+        return None
+    y, mo, d = map(int, m.groups())
+    return datetime(y, mo, d, tzinfo=JST).date().isoformat()
+
+
 def main():
     entries = []
     for item in read_watchlist(WATCHLIST):
@@ -277,12 +427,27 @@ def main():
             entry["errors"].append("値段を取得できませんでした")
             print(f"{item['name']} の値段: {e}", file=sys.stderr)
         try:
-            entry["news"] = fetch_news(item["keyword"])
+            entry["news"] = fetch_news(item["keyword"])[:NEWS_PER_ITEM]
         except Exception as e:
             entry["news"] = []
             entry["errors"].append("ニュースを取得できませんでした")
             print(f"{item['name']} のニュース: {e}", file=sys.stderr)
         entries.append(entry)
+
+    # 予定は、登録した通貨と米国・日本のものを見る
+    currencies = {"USD", "JPY"} | {
+        c for e in entries if e["kind"] == "fx" for c in (e["symbol"][:3], e["symbol"][3:6])
+    }
+    earnings = []
+    for e in entries:
+        if e["kind"] == "stock" and e["symbol"].endswith(".T"):
+            try:
+                date = fetch_earnings_date(e["symbol"][:-2])
+            except Exception as ex:
+                print(f"決算予定 {e['name']}: {ex}", file=sys.stderr)
+                continue
+            if date:
+                earnings.append({"name": e["name"], "date": date})
 
     videos = fetch_videos([w for e in entries for w in (e["name"], e["keyword"])])
 
@@ -294,6 +459,11 @@ def main():
                 "items": entries,
                 "videos": videos,
                 "lives": fetch_lives(),
+                "markets": fetch_markets(),
+                "fear": fetch_fear(),
+                "world": fetch_world(),
+                "calendar": fetch_calendar(currencies),
+                "earnings": earnings,
             },
             ensure_ascii=False,
             indent=1,
