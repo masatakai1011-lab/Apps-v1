@@ -19,6 +19,8 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 # ニュース映像を集める YouTube チャンネル
 VIDEO_CHANNELS = ["@TVTOKYOBIZ", "@tbsnewsdig", "@ANNnewsCH", "@ntv_news"]
+# 経済専門のチャンネルは、見出しの言葉で選ばずにすべて対象にする
+BUSINESS_CHANNELS = {"@TVTOKYOBIZ"}
 # 見出しにこれらの言葉が入った動画だけを載せる（登録した銘柄名も自動で加わる）
 VIDEO_KEYWORDS = [
     "株", "円安", "円高", "為替", "ドル", "日経平均", "市場", "マーケット", "相場",
@@ -337,12 +339,12 @@ def fetch_videos(extra_keywords):
     videos = []
     for handle in VIDEO_CHANNELS:
         try:
-            found = fetch_channel_videos(handle)
+            found = [{**v, "business": handle in BUSINESS_CHANNELS} for v in fetch_channel_videos(handle)]
             print(f"動画 {handle}: {len(found)} 本見つかりました")
             videos += found
         except Exception as e:
             print(f"動画 {handle}: {e}", file=sys.stderr)
-    related = [v for v in videos if any(k in v["title"] for k in keywords)]
+    related = [v for v in videos if v.pop("business") or any(k in v["title"] for k in keywords)]
     related.sort(key=lambda v: v["published"], reverse=True)
     return related[:VIDEOS_MAX]
 
