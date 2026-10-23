@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T15:09+09:00",
+ "updated": "2026-10-23T15:14+09:00",
  "items": [
   {
    "name": "トヨタ自動車",
@@ -138,9 +138,9 @@
    "symbol": "6758.T",
    "kind": "stock",
    "errors": [],
-   "price": 4112.0,
-   "change": 31.0,
-   "changePercent": 0.7596177407498161,
+   "price": 4110.0,
+   "change": 29.0,
+   "changePercent": 0.7106101445724087,
    "currency": "JPY",
    "history": [
     {
@@ -225,7 +225,7 @@
     },
     {
      "date": "10/23",
-     "close": 4112.0
+     "close": 4110.0
     }
    ],
    "news": [
@@ -268,9 +268,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 156.887,
-   "change": -1.245003784179687,
-   "changePercent": -0.787319299310772,
+   "price": 156.958,
+   "change": -1.174003784179689,
+   "changePercent": -0.7424201022469699,
    "currency": "JPY",
    "history": [
     {
@@ -363,10 +363,16 @@
     },
     {
      "date": "10/23",
-     "close": 156.88699340820312
+     "close": 156.95799255371094
     }
    ],
    "news": [
+    {
+     "title": "FX個人投資家動向｜トルコリラ円がシェア急拡大、メキシコペソは対円で売りが大幅に増加 2026年10月23日",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1jb2FBU1VObFBCc1o4QWdvYzQ0X2VWUmgzT3JoUzBJV1BYQ2VxRFZqTWN5TnNHTkdQX0xWeHpmTkhlZjloZ3ZpYmpiQXVZYnRUVU9FSEk4UnJNTXBuUkJRRjEtbw?oc=5",
+     "source": "外為どっとコム",
+     "published": "2026-10-23T15:12:00+09:00"
+    },
     {
      "title": "東京為替：ドル・円は底堅い、ややドル買い(フィスコ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdXRhUHhhMWh0NEV5RUMyXzlmNjBhOElTTnZfRmNEbFVFWTVzUW4tVlhMdmNYbnp6ckYzanRFNFdSQ2xsdThTYkI0QXZZWkplNlRRZEdQelhiZGtDOWxoQk51Ulc0Vm16VmNfUlBWOTI2TGJ0eFpiY1ZrTzRtd1Y0alJnbnhPLTA?oc=5",
@@ -390,12 +396,6 @@
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdW1WaGdKRWpyT1ZVUTVuVm9CaDMtbmhoVU9kSWRVZ2gycFlwUlRJV3J6RWoySjBVbG1lUTZDSGJqQ0wwVWU4V3otYk9xNzN1ZE9lVEV2Y1pkQ1dNVlc1OGR5cGZhNVkySVNmZU9KV2ZBT2c5LVBDbS1hNjRrT3VMdFNiTDk4cm8?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-10-23T13:30:11+09:00"
-    },
-    {
-     "title": "欧米為替：デイリー見通し 豪ドル・円／豪政策方針を注視(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQamxCSElzR0dqbHFpTnBuZWlvVVBXcU1TM1k0WGtXdEQ5U1ZpZ29vWUc2QVRxRVdndWxoS3JjTHVVUl8tLUdveXZmOFM4Ym5wTlVGd29qN0FNTkFrY3hNOERQQWhIeXJvZmM1ZndNWnpTVFhUWlNKdHMxRXFMa0VGLTdyOU9UYWM?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T13:29:48+09:00"
     }
    ]
   },
@@ -406,9 +406,9 @@
    "symbol": "EURJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 175.89,
-   "change": -1.7669976806640761,
-   "changePercent": -0.9946119228245821,
+   "price": 175.966,
+   "change": -1.6909976806640543,
+   "changePercent": -0.9518328592401402,
    "currency": "JPY",
    "history": [
     {
@@ -501,7 +501,7 @@
     },
     {
      "date": "10/23",
-     "close": 175.88999938964844
+     "close": 175.96600341796875
     }
    ],
    "news": [
@@ -537,5 +537,6 @@
     }
    ]
   }
- ]
+ ],
+ "videos": []
 }
