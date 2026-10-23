@@ -655,10 +655,13 @@ function setupCalendar(events, earnings) {
 }
 
 // 世界情勢の地図
+// 騒がしさは、一番ニュースの多い地域と比べて決める
+let worldMax = 1;
 function levelOf(count) {
-  if (count >= 40) return ["高", "var(--down)", 1];
-  if (count >= 15) return ["中", "var(--amber)", .6];
-  return ["低", "var(--cyan)", .3];
+  const ratio = count / worldMax;
+  if (ratio >= .75) return ["高", "var(--down)", ratio];
+  if (ratio >= .4) return ["中", "var(--amber)", ratio];
+  return ["低", "var(--cyan)", ratio];
 }
 function showRegion(region, spots) {
   for (const s of spots) {
@@ -670,7 +673,7 @@ function showRegion(region, spots) {
   const box = document.getElementById("region");
   const lv = el("div", { class: "level" });
   lv.style.color = color;
-  lv.append(`騒がしさ：${level}（24時間で ${region.count} 件）`);
+  lv.append(`騒がしさ：${level}（直近6時間で ${region.count} 件）`);
   const bar = el("span", { class: "bar" }), fillBar = el("i");
   fillBar.style.width = `${ratio * 100}%`;
   bar.append(fillBar);
@@ -687,6 +690,7 @@ function showRegion(region, spots) {
 }
 function setupWorld(map, regions) {
   if (!regions.length) return false;
+  worldMax = Math.max(1, ...regions.map(r => r.count));
   const svg = svgEl("svg", { viewBox: `0 0 ${map.width} ${map.height}`, role: "img", "aria-label": "世界地図" });
   const grad = svgEl("linearGradient", { id: "sweep-g", x1: 0, x2: 1, y1: 0, y2: 0 });
   grad.append(svgEl("stop", { offset: 0, "stop-color": "#3de8ff", "stop-opacity": 0 }),
@@ -710,7 +714,7 @@ function setupWorld(map, regions) {
     if (!at) continue;
     const [, color, ratio] = levelOf(region.count);
     const g = svgEl("g", { class: "spot", tabindex: 0, role: "button", "aria-label": region.label, transform: `translate(${at[0]},${at[1]})` });
-    const size = 8 + ratio * 18;
+    const size = 6 + ratio * 20;
     g.append(svgEl("circle", { class: "ring", r: size, fill: "none", stroke: color, "stroke-width": 2 }),
       svgEl("circle", { r: size * .45, fill: color, opacity: .25 }),
       svgEl("circle", { class: "core", r: 4.5, fill: color, style: `filter: drop-shadow(0 0 6px ${color})` }));

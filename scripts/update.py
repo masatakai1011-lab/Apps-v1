@@ -51,12 +51,12 @@ REGIONS = [
     ("asia", "インド・東南アジア", "インド OR 東南アジア OR ASEAN OR インドネシア OR ベトナム OR フィリピン"),
 ]
 REGION_NEWS = 4
+WORLD_HOURS = 6
+# 世界情勢から外す話題（株価や個別銘柄のニュース）
+NOT_WORLD = "-株価 -銘柄 -株式 -上場 -アナリスト -決算"
 
 # 今週の予定：海外の経済カレンダー（重要度の高いものだけ使う）
-CALENDAR_URLS = [
-    "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
-    "https://nfs.faireconomy.media/ff_calendar_nextweek.json",
-]
+CALENDAR_URLS = ["https://nfs.faireconomy.media/ff_calendar_thisweek.json"]
 COUNTRY_NAMES = {
     "USD": "米国", "JPY": "日本", "EUR": "ユーロ圏", "GBP": "英国", "CNY": "中国",
     "AUD": "豪州", "CAD": "カナダ", "CHF": "スイス", "NZD": "NZ",
@@ -366,14 +366,17 @@ def fetch_fear():
 
 
 def fetch_world():
+    since = (datetime.now(JST) - timedelta(hours=WORLD_HOURS)).isoformat()
     regions = []
     for key, label, query in REGIONS:
         try:
-            news = fetch_news(query, days=1)
+            news = fetch_news(f"{query} {NOT_WORLD}", days=1)
         except Exception as e:
             print(f"世界情勢 {label}: {e}", file=sys.stderr)
             news = []
-        regions.append({"key": key, "label": label, "count": len(news), "news": news[:REGION_NEWS]})
+        # 取れる件数に上限（100件）があるので、直近6時間に出た数で騒がしさを比べる
+        recent = sum(1 for n in news if n["published"] and n["published"] >= since)
+        regions.append({"key": key, "label": label, "count": recent, "news": news[:REGION_NEWS]})
     return regions
 
 
@@ -385,6 +388,9 @@ def fetch_calendar(currencies):
         except Exception as e:
             print(f"予定 {url}: {e}", file=sys.stderr)
             continue
+        high = [ev for ev in items if ev.get("impact") == "High"]
+        print(f"予定: 全{len(items)}件、重要{len(high)}件（{sorted({ev.get('country') for ev in high})}）、"
+              f"期間 {min((ev['date'] for ev in items), default='-')} ～ {max((ev['date'] for ev in items), default='-')}")
         for ev in items:
             if ev.get("impact") != "High" or ev.get("country") not in currencies:
                 continue
@@ -405,15 +411,29 @@ def fetch_calendar(currencies):
     return events
 
 
+EARNINGS_PAGES = [
+    "https://minkabu.jp/stock/{code}/settlement",
+    "https://finance.yahoo.co.jp/quote/{code}.T",
+    "https://kabutan.jp/stock/?code={code}",
+]
+
+
 def fetch_earnings_date(code):
-    """日本株の決算発表予定日（株探のページから読み取る）。"""
-    page = get(f"https://kabutan.jp/stock/?code={code}").decode("utf-8", "replace")
-    m = re.search(r"決算発表予定日[^0-9]{0,80}(20\d\d)/(\d{1,2})/(\d{1,2})", page)
-    if not m:
-        print(f"決算予定 {code}: ページに予定日が見つかりません", file=sys.stderr)
-        return None
-    y, mo, d = map(int, m.groups())
-    return datetime(y, mo, d, tzinfo=JST).date().isoformat()
+    """日本株の決算発表予定日（いくつかの情報サイトを順に試す）。"""
+    for url in EARNINGS_PAGES:
+        url = url.format(code=code)
+        try:
+            page = get(url).decode("utf-8", "replace")
+        except Exception as e:
+            print(f"決算予定 {code}: {url} を開けません（{e}）", file=sys.stderr)
+            continue
+        m = re.search(r"決算発表(?:予定)?日[^0-9]{0,120}(20\d\d)[/年.-](\d{1,2})[/月.-](\d{1,2})", page)
+        if m:
+            y, mo, d = map(int, m.groups())
+            print(f"決算予定 {code}: {url} から {y}/{mo}/{d}")
+            return datetime(y, mo, d, tzinfo=JST).date().isoformat()
+        print(f"決算予定 {code}: {url} に予定日が見つかりません", file=sys.stderr)
+    return None
 
 
 def main():
