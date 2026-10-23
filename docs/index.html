@@ -233,6 +233,7 @@
   .cal-row.past { opacity: .4; }
   .cal-row.past .n::after { content: "（済）"; font-size: .75rem; }
   .cal-row.earn .c { color: var(--amber); border-color: var(--amber); }
+  .cal-row.earn .n { color: var(--amber); font-weight: 700; }
   .cal-list { max-height: 420px; overflow-y: auto; padding-right: 6px; }
 
   /* 世界情勢 */
@@ -300,7 +301,7 @@
         <div class="gauge" id="gauge"></div>
       </div>
       <div class="panel cal-card">
-        <p class="card-title"><b>▦ SCHEDULE</b> ／ 今週の大事な予定（日本時間）</p>
+        <p class="card-title"><b>▦ SCHEDULE</b> ／ 今週の大事な予定（日本時間・★は特に重要）</p>
         <div class="cal-list" id="calendar"></div>
       </div>
     </div>
@@ -635,7 +636,7 @@ function setupCalendar(events, earnings) {
       past: new Date(`${e.date}T23:59+09:00`) < now })),
   ].sort((a, b) => a.at - b.at);
   if (!rows.length) {
-    box.append(el("p", { class: "note" }, "予定を取得できませんでした"));
+    box.append(el("p", { class: "note" }, "今週は大きな予定はありません"));
     return;
   }
   let day = "";
@@ -645,7 +646,8 @@ function setupCalendar(events, earnings) {
     const row = el("div", { class: `cal-row${r.past ? " past" : ""}${r.earn ? " earn" : ""}` });
     const time = r.earn ? "―" : `${r.at.getHours()}:${String(r.at.getMinutes()).padStart(2, "0")}`;
     const values = [r.forecast && `予想 ${r.forecast}`, r.previous && `前回 ${r.previous}`].filter(Boolean).join("  ");
-    row.append(el("span", { class: "t" }, time), el("span", { class: "c" }, r.country), el("span", { class: "n" }, r.title),
+    row.append(el("span", { class: "t" }, time), el("span", { class: "c" }, r.country),
+      el("span", { class: "n" }, (r.high ? "★ " : "") + r.title),
       el("span", { class: "v" }, values));
     box.append(row);
   }

@@ -53,7 +53,8 @@ REGIONS = [
 REGION_NEWS = 4
 WORLD_HOURS = 6
 # 世界情勢から外す話題（株価や個別銘柄のニュース）
-NOT_WORLD = "-株価 -銘柄 -株式 -上場 -アナリスト -決算"
+NOT_WORLD = ("-株価 -銘柄 -株式 -上場 -アナリスト -決算 -フィギュア -サッカー -野球 -五輪 -選手 -芸能 "
+             "-K-POP -アイドル -コンサート -ツアー -観光 -グルメ -ドラマ -映画")
 
 # 今週の予定：海外の経済カレンダー（重要度の高いものだけ使う）
 CALENDAR_URLS = ["https://nfs.faireconomy.media/ff_calendar_thisweek.json"]
@@ -101,6 +102,34 @@ EVENT_NAMES = {
     "German Flash Manufacturing PMI": "ドイツ製造業PMI速報値",
     "German Flash Services PMI": "ドイツ サービス業PMI速報値",
     "German ifo Business Climate": "ドイツ ifo景況感指数",
+    "German Prelim CPI m/m": "ドイツ消費者物価指数速報（前月比）",
+    "CPI Flash Estimate y/y": "ユーロ圏消費者物価指数速報（前年比）",
+    "Core CPI Flash Estimate y/y": "ユーロ圏コアCPI速報（前年比）",
+    "ADP Non-Farm Employment Change": "ADP雇用統計",
+    "Durable Goods Orders m/m": "耐久財受注（前月比）",
+    "Core Durable Goods Orders m/m": "コア耐久財受注（前月比）",
+    "Building Permits": "住宅着工許可件数",
+    "Housing Starts": "住宅着工件数",
+    "New Home Sales": "新築住宅販売件数",
+    "Existing Home Sales": "中古住宅販売件数",
+    "Pending Home Sales m/m": "中古住宅販売保留（前月比）",
+    "Trade Balance": "貿易収支",
+    "Industrial Production m/m": "鉱工業生産（前月比）",
+    "Prelim Industrial Production m/m": "鉱工業生産速報（前月比）",
+    "Crude Oil Inventories": "原油在庫",
+    "Philly Fed Manufacturing Index": "フィラデルフィア連銀製造業指数",
+    "Empire State Manufacturing Index": "NY連銀製造業景気指数",
+    "Revised UoM Consumer Sentiment": "ミシガン大学消費者信頼感指数（確報）",
+    "Final Manufacturing PMI": "製造業PMI確報値",
+    "Final Services PMI": "サービス業PMI確報値",
+    "Tankan Manufacturing Index": "日銀短観（大企業製造業）",
+    "Tankan Non-Manufacturing Index": "日銀短観（大企業非製造業）",
+    "SPPI y/y": "企業向けサービス価格指数（前年比）",
+    "Retail Sales y/y": "小売売上高（前年比）",
+    "Household Spending y/y": "家計支出（前年比）",
+    "Prelim GDP Price Index q/q": "GDP物価指数速報（前期比）",
+    "Personal Spending m/m": "個人消費支出（前月比）",
+    "Personal Income m/m": "個人所得（前月比）",
 }
 SPEAKERS = {"Fed Chair": "FRB議長", "BOJ Gov": "日銀総裁", "ECB President": "ECB総裁", "FOMC Member": "FOMC委員"}
 
@@ -392,7 +421,7 @@ def fetch_calendar(currencies):
         print(f"予定: 全{len(items)}件、重要{len(high)}件（{sorted({ev.get('country') for ev in high})}）、"
               f"期間 {min((ev['date'] for ev in items), default='-')} ～ {max((ev['date'] for ev in items), default='-')}")
         for ev in items:
-            if ev.get("impact") != "High" or ev.get("country") not in currencies:
+            if ev.get("impact") not in ("High", "Medium") or ev.get("country") not in currencies:
                 continue
             title = ev.get("title", "")
             name = EVENT_NAMES.get(title)
@@ -406,16 +435,14 @@ def fetch_calendar(currencies):
                 "title": name or title,
                 "forecast": ev.get("forecast") or "",
                 "previous": ev.get("previous") or "",
+                "high": ev.get("impact") == "High",
             })
     events.sort(key=lambda e: e["date"])
     return events
 
 
-EARNINGS_PAGES = [
-    "https://minkabu.jp/stock/{code}/settlement",
-    "https://finance.yahoo.co.jp/quote/{code}.T",
-    "https://kabutan.jp/stock/?code={code}",
-]
+# みんかぶ・株探は自動での読み取りを断るため使わない
+EARNINGS_PAGES = ["https://finance.yahoo.co.jp/quote/{code}.T"]
 
 
 def fetch_earnings_date(code):
