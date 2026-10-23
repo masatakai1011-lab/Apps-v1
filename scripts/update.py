@@ -15,7 +15,7 @@ WATCHLIST = ROOT / "watchlist.txt"
 OUTPUT = ROOT / "docs" / "data.json"
 JST = timezone(timedelta(hours=9))
 NEWS_PER_ITEM = 5
-USER_AGENT = "Mozilla/5.0 (compatible; market-board/1.0)"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 
 # ニュース映像を集める YouTube チャンネル
 VIDEO_CHANNELS = ["@TVTOKYOBIZ", "@tbsnewsdig", "@ANNnewsCH", "@ntv_news"]
@@ -55,7 +55,7 @@ def to_symbol(code):
 
 
 def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept-Language": "ja,en;q=0.8"})
     with urllib.request.urlopen(req, timeout=20) as res:
         return res.read()
 
@@ -117,14 +117,25 @@ def fetch_news(keyword):
 
 
 def fetch_channel_videos(handle):
-    """YouTube チャンネルの新しい動画（最大15本）を取得する。"""
-    page = get(f"https://www.youtube.com/{handle}").decode("utf-8", "replace")
+    """YouTube チャンネルの新しい動画を取得する。"""
+    try:
+        page = get(f"https://www.youtube.com/{handle}/videos").decode("utf-8", "replace")
+    except Exception as e:
+        raise ValueError(f"チャンネルのページを開けません（{e}）")
     m = re.search(r'"(?:channelId|externalId)":"(UC[\w-]{22})"', page)
     if not m:
         raise ValueError("チャンネルが見つかりません")
-    feed = ET.fromstring(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={m.group(1)}"))
+    try:
+        return videos_from_feed(m.group(1))
+    except Exception as e:
+        print(f"動画 {handle}: 一覧の配信が使えないため、ページから読み取ります（{e}）", file=sys.stderr)
+        return videos_from_page(page, handle)
+
+
+def videos_from_feed(channel_id):
+    feed = ET.fromstring(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"))
     ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
-    channel = feed.findtext("a:title", handle, ns)
+    channel = feed.findtext("a:title", "", ns)
     return [
         {
             "id": entry.findtext("yt:videoId", "", ns),
@@ -136,6 +147,53 @@ def fetch_channel_videos(handle):
         }
         for entry in feed.findall("a:entry", ns)
     ]
+
+
+def videos_from_page(page, handle):
+    """チャンネルの動画ページに埋め込まれた一覧から読み取る（投稿日時はおおよそ）。"""
+    start = page.find("ytInitialData = ")
+    if start < 0:
+        raise ValueError("ページに動画の一覧がありません")
+    data, _ = json.JSONDecoder().raw_decode(page, start + len("ytInitialData = "))
+    m = re.search(r'<meta property="og:title" content="([^"]+)"', page)
+    channel = m.group(1) if m else handle
+    videos = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            r = node.get("videoRenderer")
+            if r and r.get("videoId"):
+                runs = r.get("title", {}).get("runs") or [{}]
+                ago = r.get("publishedTimeText", {}).get("simpleText", "")
+                videos.append({
+                    "id": r["videoId"],
+                    "title": runs[0].get("text", ""),
+                    "channel": channel,
+                    "published": (datetime.now(JST) - parse_ago(ago)).isoformat(timespec="minutes"),
+                })
+                return
+            for v in node.values():
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    walk(data)
+    return videos
+
+
+def parse_ago(text):
+    """「3時間前」「2 days ago」のような文を、経過時間に直す。"""
+    m = re.search(r"(\d+)\s*(秒|分|時間|日|週|か月|ヶ月|年|second|minute|hour|day|week|month|year)", text)
+    if not m:
+        return timedelta(days=30)
+    n, unit = int(m.group(1)), m.group(2)
+    seconds = {
+        "秒": 1, "second": 1, "分": 60, "minute": 60, "時間": 3600, "hour": 3600,
+        "日": 86400, "day": 86400, "週": 604800, "week": 604800,
+        "か月": 2592000, "ヶ月": 2592000, "month": 2592000, "年": 31536000, "year": 31536000,
+    }[unit]
+    return timedelta(seconds=n * seconds)
 
 
 def fetch_videos(extra_keywords):
