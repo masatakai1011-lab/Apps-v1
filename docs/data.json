@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T00:28+09:00",
+ "updated": "2026-10-24T00:30+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 156.79,
-   "change": -1.3420037841796955,
-   "changePercent": -0.8486604558627342,
+   "price": 156.805,
+   "change": -1.3270037841796807,
+   "changePercent": -0.8391747100041749,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/24",
-     "close": 156.7899932861328
+     "close": 156.80499267578125
     }
    ],
    "news": [
@@ -120,10 +120,10 @@
      "published": "2026-10-23T22:06:04+09:00"
     },
     {
-     "title": "アメリカ ドル / 日本 円【USDJPY=X】：為替レート・相場",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQa1U5NTk2aS1xRjBZb0dxSzJocWtGel9GdVBUTEx4TVhJY0R1cHB1aGlFZnltb1dpQ3lYVmd2M09TUnMxXzV2cE1GR1kxbGhHWXNGUQ?oc=5",
+     "title": "欧州外国為替市場概況・20時 ドル円 上値重い(トレーダーズ・ウェブ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNzcwTFFxSC11aXFzTjlscW5icWoxZXNXbEVGc2dBRGkwb2t4Mk5SeV9qUXRWSG5XMEFrS1JqWjVDaU9HeUNUSEtScUpaT3FOcUxZY2NHek5YcG1SSVpWY29vcmMwZVd4VzhYQzBPUzJaWk1kZm9RWFJLbjRuOGJxVERmOUhRR00?oc=5",
      "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T20:33:42+09:00"
+     "published": "2026-10-23T20:06:04+09:00"
     }
    ]
   },
@@ -531,37 +531,37 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52408.42,
-   "change": -459.56046875000175,
-   "changePercent": -0.869260495058338
+   "price": 52388.21,
+   "change": -479.7704687500009,
+   "changePercent": -0.9074877922253732
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7656.75,
-   "change": -6.68017578125,
-   "changePercent": -0.08716952628290879
+   "price": 7655.17,
+   "change": -8.260175781249927,
+   "changePercent": -0.10778692559050872
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26073.877,
-   "change": 65.01762500000041,
-   "changePercent": 0.24998260808967296
+   "price": 26069.305,
+   "change": 60.44562500000029,
+   "changePercent": 0.23240398253720146
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 102.19,
-   "change": 2.7199987792968727,
-   "changePercent": 2.7344915511378796
+   "price": 102.15,
+   "change": 2.6799987792968807,
+   "changePercent": 2.694278422044576
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4010.0,
-   "change": -50.39990234375,
-   "changePercent": -1.241254643776789
+   "price": 4014.3,
+   "change": -46.09990234374982,
+   "changePercent": -1.1353537447663704
   },
   {
    "name": "米10年金利",
@@ -573,15 +573,15 @@
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 81417.62,
-   "change": 105.72937499999534,
-   "changePercent": 0.1300294141328058
+   "price": 81496.19,
+   "change": 184.29937500000233,
+   "changePercent": 0.22665734812386465
   }
  ],
  "fear": {
-  "price": 19.29,
-  "change": 0.25999931335449133,
-  "changePercent": 1.366260136485168,
+  "price": 19.22,
+  "change": 0.18999931335449105,
+  "changePercent": 0.9984198975243599,
   "history": [
    {
     "date": "09/23",
@@ -673,7 +673,7 @@
    },
    {
     "date": "10/23",
-    "close": 19.290000915527344
+    "close": 19.219999313354492
    }
   ]
  },
@@ -681,200 +681,194 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 25,
+   "count": 18,
    "news": [
     {
-     "title": "米メラニア大統領夫人、ロシアとウクライナの局地的一時停戦取り付ける ホワイトハウス発表（日テレNEWS NNN）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MRG5qWWE5ZnhsRENTYmlIem9SOXVHQ1FVN1pwbEIzTDY4U3ZoSnZkTmIzUEZ6ZUN3QzZyRVpTOU5UMGRBTUN0Y096OE9xVi11Q0JXRTFiNW93Q21fYXZWcDRXZ1BhWmo0Z3VUdTFRaVM5eGhPclFkSi1GVzRKX0k?oc=5",
-     "source": "Yahoo!ニュース",
+     "title": "米メラニア大統領夫人、ロシアとウクライナの局地的一時停戦取り付ける ホワイトハウス発表（2026年10月23日掲載）",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVzFjWnBqVTBKTGFOY3B5Wk5oRmNVNmJleThfWTlSVnJPb3VyYldUbjZGUFVnamxUMFYwa09KZkdvTFZsWF95aC0yY3ZjcGFYaFpYNDBKa3hONVo4RGUzeFNHazd3dThucjhZRS1zNWE1QVIxOWpBNGRPN3RhZ3JYSUE0TWQ?oc=5",
+     "source": "日テレNEWS NNN",
      "published": "2026-10-23T23:53:00+09:00"
     },
     {
-     "title": "トランプ大統領の妻、メラニア夫人が仲介 ロシアとウクライナが一時停戦で合意 29日から南部の都市で ホワイトハウスが発表",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1RRDNIaVhaOVZ2R2NCTDRESzJTNThyVzNDTW1fRDhKbG4yV2tWS1pTWlhRNHY3czdpUElwRVZFZ0EyeHBYT01xWVAxUy0ybDBWQ1U5SV90TTl3YnZmZHFpem5BVmJzMEdKZHdpQ1FqQjRnZDBkTXI3YlBoZHd2U3c?oc=5",
-     "source": "Yahoo!ニュース",
-     "published": "2026-10-23T23:20:35+09:00"
+     "title": "【速報】「ウクライナ南部での一時停戦で合意」米ホワイトハウス発表「メラニア大統領夫人が主導」",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9Bc0FobUdpOXVEV28xVGhyQ0VvZDVBUnRBd0JQWjZXN0Vqbmp5MzN5RmczekF1Q1NZck92b25VcXRqX2ttY1h1emZKTVI5OVFzb2VIeDJyOTVFSTBKemxOajRUejdYRTlwU2hCTklhNTd5OG0x?oc=5",
+     "source": "TBS NEWS DIG",
+     "published": "2026-10-23T23:14:22+09:00"
     },
     {
-     "title": "福神漬けの〝アメリカの棺桶〟みたいなやつ苦手 ⇒ 実際に見てみると…確かに！独特すぎる例えに「私もそれ避けてた！」「逆に私はそれが好き」（西日本新聞me）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBXWXE5QWhMNkpSSjNWU19feEJWMV9CZW1vNkRJWTJVd3A5X2xpUnk2MUdPZnFoYXBHRzV4X1cwOXN1RUkxV2U0dExwY1RVR1pGY2hQbEd5VXpHbDlxQlN5YWNZdlJndFpvdl82U1h1T2pfbjBaMGN0UFMxNFZ4QVE?oc=5",
-     "source": "Yahoo!ニュース",
-     "published": "2026-10-23T23:00:16+09:00"
+     "title": "“スバルエンジン”搭載の「2ドアスポーツカー」がスゴい！ 「インプレッサの強心臓」詰まった“ポルシェ”！ ド迫力ボディもカッコいい…米国で披露された「911 GT3 STI」とは",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8yV3ZVMnJWdXBfbC10SXh6Z3l4VUxWMlM1c0tCdTA1b0UwS09zb2NDcWVpcDloWU84Sndfa2t4cDNac0U4b2t1UjVGUTdNemV4a0xnU3BzUHNaemFCeXQzRFV3MGJ0YVBFWHlV0gFrQVVfeXFMTzJXdlUyclZ1cF9sLXRJeHpneXhVTFYyUzVzS0J1MDVvRTBLT3NvY0NxZWlwOWhZTzhKd19ra3hwM1pzRThva3VSNUZRN016ZXhrTGdTcHNQc1p6YUJ5dDNEVXcwYnRhUEVYeVU?oc=5",
+     "source": "Infoseek",
+     "published": "2026-10-23T21:10:00+09:00"
     },
     {
-     "title": "ウクライナ南部で局地停戦＝米ホワイトハウス",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9CTHo3SEdUZW5hZDdTYVBmX3BnOVV5d1BTaUFvZ293bVhab2x1QmxIeHp1QzNmNkZNNnJDYkxyc0ZFS3JSdnZFMHA2MUNqeFhjSUU3ZmNvTjQ2ME9aWXc?oc=5",
-     "source": "時事通信ニュース",
-     "published": "2026-10-23T22:57:00+09:00"
+     "title": "ロシア産ディーゼル燃料積載のタンカーがアメリカへ 首脳合意受け制裁緩和後初めて",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9HUHRlUTZ6eHVFYnBmcWkzRm92NFNpcUZPUVlEeVF0Zk5kWUJVelB0Rm43djg2Tkoya3o2XzhjbmhRWDJRcGgyZjkzTUlnTjZsV3ZhdVprY3FhalJ2VDB2bWtoT1ZUODNHWmpEeG5KZXN3WnJk?oc=5",
+     "source": "TBS NEWS DIG",
+     "published": "2026-10-23T21:09:25+09:00"
     }
    ]
   },
   {
    "key": "latam",
    "label": "中南米",
-   "count": 11,
+   "count": 2,
    "news": [
     {
-     "title": "ベネズエラで大統領選実施を求める抗議デモ…帰国できない状況続く野党指導者マチャド氏が呼びかけ（読売新聞オンライン）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5kZVE3V3B0QWJZZWgwM25HWlQzTXloeEI4YTVETU9fRWlZUk5RNkN1ak9Kb2pKY19ZNnBydkp6bnJxNER2VjZ1dnU1enBpc29qcDhIQVNKejJYemg3UUJqN1hFZ3hHNzlhLTFmLVhVR2tGY095YXJfcmpnYlZWYTg?oc=5",
-     "source": "Yahoo!ニュース",
-     "published": "2026-10-24T00:19:35+09:00"
-    },
-    {
-     "title": "ベトナムのゲーマーチームがブラジルに圧勝し、FCモバイル世界選手権の準々決勝に進出した。",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSHE4eUE0WEtxbUxuaDd1NVdlMTlqOFlNZmgzYUFXWFVsMFc3YU12Sm02VDhoQzBzRnZDSWxqaEViRXhKQmIxdV9iZXhvLXFjM3ByYnVMb3hNZktHTS1mZUJRQWxNTF95dm9RSS1TOC1mQ3hLUGJZMUhaZzNYZ3dIbzl6T2gwMFhicjNoTnVqNHY1UTRMOURSemYzS2FsdFlTSkNsaHhn?oc=5",
-     "source": "Vietnam.vn",
-     "published": "2026-10-23T22:11:09+09:00"
-    },
-    {
-     "title": "チリ vs メキシコ : グループF 第2節 【FIFA U17 Women's World Cup】",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE92ZWprQ3ZVV0JwcWJyRW1QSGdBTlVNR1B4cHBuVGt5ZXpBSXNYaTVXcFNUUk1URVlqdU5CNzE5ZHlHMTNuMjk0X3ByMnRteS02Q0hMQ1hXYW40SWp4Z0FNVUdBa2FvdWxBNHdwdWRrQzZ6dw?oc=5",
+     "title": "ベネズエラ vs ザンビア : グループD 第2節 【FIFA U17 Women's World Cup】",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8xMXpWeVBvVG1VTEMzSFU3OFk2WDJ5Y2tMU2NxQmtRSzVQS2F4dC1BUkJmN3psVHd4WjVaam1jeThNY29jWGt5RzdoSnpJZzB4R1dSY29OeHdsM3lVM3BTUGc2UnlyWXNVc19IdU54X0VxUQ?oc=5",
      "source": "ABEMA",
-     "published": "2026-10-23T21:30:38+09:00"
+     "published": "2026-10-23T19:43:53+09:00"
     },
     {
-     "title": "「今後何年もF1を開催できる」メキシコGP、2029年以降の契約延長に自信 年末から来年初めに進展か",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOa05XUjRrNVFhdVpkcmRBN1g5V1Jwc1ZoNGw0YWJYNXpSbGpZZkt3S25JSDNkZFlRNGxMckE5OC1NVnFPSEthY25adVhNSjc1M1BreDFpUks0VE01NUsyUzltbkRGeC05MFZGVjQ4R0IwcDA0SFVZakpfZjFtcURDSExR?oc=5",
-     "source": "TopNews",
-     "published": "2026-10-23T21:30:00+09:00"
+     "title": "GLP-1市場、中印ブラジルで35年220億ドルに＝JPモルガン",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jQkJDdUN3N0FCcEtsS1l2UTNYeG41ZUUyRXpJSGNDQXJEOFRaV2tWS09vNkwwQVM3U0pOa3VZal9WbndTWVlVOG5DbHFYQklxWllsdDdmWGdWTHFqQk95N0VHTnVZN3Y4ZGtxRTY3Y2hfS3hmLU1J?oc=5",
+     "source": "TradingView",
+     "published": "2026-10-23T18:55:57+09:00"
+    },
+    {
+     "title": "トランプ関税に翻弄されるブラジル大統領選挙 ルラ大統領とボルソナロ氏息子が接戦 25日に決選投票",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAyd0hhVGZTUk1LUWJ4Q0tLa1R4aTd5cVA0aEVHREpiNVZ2MVBqd3I2R3pzZHFtck1qbzRMcUFqSXE1X0o0d2toaWJFU2dEMzRfX0ItQnBIY0RPb04zX1ZwRU1pZFIyT2xTU0VQeGVTX2dTVXFf?oc=5",
+     "source": "TBS NEWS DIG",
+     "published": "2026-10-23T17:11:30+09:00"
+    },
+    {
+     "title": "トヨタ・モビリティ基金、ブラジルに障害者支援スタートアップ育成拠点を新設",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8yRHhwOF9Temo3WFNUUVcxcktUUE9kdmUyUzFsMS05NUdmVjVqWUFKV0oyaktnVEZtbmphcTBBNWdRQTFLdmVFTlpzUTRBV3g0UERqU3luUWZpUWJ4UFlnanpn?oc=5",
+     "source": "CAR CARE PLUS",
+     "published": "2026-10-23T17:00:03+09:00"
     }
    ]
   },
   {
    "key": "europe",
    "label": "ヨーロッパ",
-   "count": 37,
+   "count": 26,
    "news": [
     {
-     "title": "男子SPを前に三浦佳生と山本草太が公式練習 フィギュアGPフランス杯 [写真特集1/8]",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaGo1NmVpdTNLMHNwT1hkWnpyV0JCNlZEamQxTjJVNHZXMEhHMjlhWjh6enlDblpEUVVtRTZtZEpkM2tqSGUzSFNTTC1GOHk1Rm9hb2lDdld1Vm5vNHNsZ2lUWWFwNE56c1hIanlnQ2huZW9CT3p0akw5UUVtTUJfalB0MWplTTg?oc=5",
-     "source": "毎日新聞",
-     "published": "2026-10-23T23:09:13+09:00"
+     "title": "三笠宮家の彬子さま、１１月６〜１３日に英国を訪問…日本ラグビー協会名誉総裁として国際大会を観戦",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbFdtQ3hXVXBzTTg4WnRDRXpTTC1HX1B3bjRKeVFlZ0x6MmowLWdwWl9CeXRkcV9ZNVFPSDltRFdrWWJGc19RcTVTY1dJM0lTTUhsUnc4R3dGM3g1WHlKd083YzhzdmxzTy15VVVBZG02R1Jmdk9LZUM3RUNNSDV4cWd2RmFQMG9LeVHSAYoBQVVfeXFMTWxXbUN4V1Vwc004OFp0Q0V6U0wtR19Qd240SnlRZWdMejJqMC1ncFpfQnl0ZHFfWTVRT0g5bURXa1liRnNfUXE1U2NXSTNJU01IbFJ3OEd3RjN4NVh5SndPN2M4c3Zsc08teVVVQWRtNkdSZnZPS2VDN0VDTUg1eHFndkZhUDBvS3lR?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-23T22:17:00+09:00"
     },
     {
-     "title": "英仏共同で初の核演習",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1weUJRN0tpWDk3eUlCdm5TdHpSUGpBVzMyRFZ3XzM2LVFtN1JOZ1I4MXUyQ1dpcDRYbFZVaGNqVkFqWGYyTkZSWnhQbzg4MThJaVpiYVVSZ3dpTGc?oc=5",
-     "source": "下野新聞社",
-     "published": "2026-10-23T22:50:24+09:00"
+     "title": "Mazda Mule 11 | Motor Fan｜自動車情報のモーターファン",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE91SG1MZUdxN3JNN1dvY21kWnBrZzRLOUxILUYyTW8wakxLNkJ5eEFGVmJwLTR5M0VTblYyVXNOV09Ra1NhY1ZQeXVxTWZHV2gwazNKQmIybHUyeUxFVHZPSA?oc=5",
+     "source": "Motor Fan",
+     "published": "2026-10-23T21:41:10+09:00"
     },
     {
-     "title": "ドイツのメルツ首相が来週訪日 高市首相と首脳会談へ",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QNlJRLWFqZWtzWVVXanVWTXd0RzcyVlhCN3ozLXlQdGNjc0Rmd1pvOGM4Y0lPLVZIMGJUdTBiQkVDMTNHZi1aRjF1dzlPUWRlcm51STU1S3VyYndoNDUw?oc=5",
-     "source": "NHKニュース",
-     "published": "2026-10-23T22:36:11+09:00"
+     "title": "ドイツ首相が29日に訪韓　李大統領と首脳会談へ",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObWtScExxZnpLYWZTeEVtVWdKT0ZlQmN4ZjdPVmliQ00wZF85VGpwWEkwaUgyT2tlbFoydFlhb1hKOEN6dE9oTmtCaU01TXYyd0oxM0pPRVZYQXhlV1BJeE5wLVNtX3U4RDVfQy1KVGdWNW10TDZiemFBOXVuNmxQc0kzV1HSAYQBQVVfeXFMTm1rUnBMcWZ6S2FmU3hFbVVnSk9GZUJjeGY3T1ZpYkNNMGRfOVRqcFhJMGlIMk9rZWxaMnRZYW9YSjhDenRPaE5rQmlNNU12MndKMTNKT0VWWEF4ZVdQSXhOcC1TbV91OEQ1X0MtSlRnVjVtdEw2YnphQTl1bjZsUHNJM1dR?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-23T21:41:00+09:00"
     },
     {
-     "title": "【ドイツ旅行】ミュンヘン＆バイエルン1週間観光！緑豊かな街からアルプスの絶景まで名所を巡る",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9xR1pMc2xDWWdscWtjU01pdzRrVUs3R1gxY21NQUVEUHhmbVNXVms2VGJ1eGZxdHNtU1dKYk5PeC1wUm5OaEpkbE9USTRGcGZXeDkzak1BNmJNS1VmUU02d0N6TmcwZUFmd3c?oc=5",
-     "source": "SPUR（シュプール）",
-     "published": "2026-10-23T22:30:00+09:00"
+     "title": "アンドリュス・クビリュス欧州委員（防衛・宇宙担当）",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWENFQ1NPT0hzZzhyMGxCalBta1lBYkdTb0VFR3JjeU9JaFN3UDBicHRQNFVpaHN4WlJKLTJOM09ucXVHQkRYWXo5NllCTzRFNm5pNlFhdjVjTTA0MzFqSk0zMU1wM3gtS1BNNzZraGgyMUh1OVpTMG1jNmlPcjZlMjB3U3NBVi1mY2JUNm8wYUJmWUlueE5JWm1RdC1xUDJZRjNFV3FuNDRQNUlYR0p0QTdoVdIBuAFBVV95cUxPSE93LUdqUmJiSVFlb25GNmxDX1JsQmoxQkNIU3dkUHhiT1Rsek9OeFFCMmthckctVTliSUZ3S0VPZUdtd2pIdXAtZng4LVVhdEtGTlBwdWZDVmtJNkxSMW1jU0FOTW1HSXJhT3doRjhjTmJTeEJJNE5vaktwVTBubVVrMW5Cc3BpRDRuNXNBVlBZYmE3Vnk2OHNjVEdRc1FOUElKQnVTc09CeThNd0IxR3FFM25mV19p?oc=5",
+     "source": "ウクルインフォルム",
+     "published": "2026-10-23T21:21:00+09:00"
     }
    ]
   },
   {
    "key": "russia",
    "label": "ロシア・ウクライナ",
-   "count": 39,
+   "count": 25,
    "news": [
     {
-     "title": "ロシアの態度と意図を冷静に読み解く",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVFN0UG52Z1lWbkdVY1VGeENnQ2FLNEp0bWVNYWxCd3NFc0FXRlc0N1FFbXhCUzVhd1J2RzloQkZ1T2t2Q0VBOGlObkV4M3BzYjE4TjFoNE1lNWptNGdVcVJOM2kzLS1CRHl1TkZlVnJuVW93Yy0wdnlTdnBIVnlmTXFYREE?oc=5",
-     "source": "theLetter",
-     "published": "2026-10-24T00:10:35+09:00"
-    },
-    {
-     "title": "ウクライナ南部で限定的停戦 米、トランプ氏妻が仲介と発表",
-     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE13V0NYYktMUWlvc0dWOFQ5RVBOQ0VTX2dEUFBXX2RZaVN4bGkyRDdmRWVwVDA1VnRKcWlqTjBwTkZrRzdya2R3X3dTUllFbHROVENramNOYVQ5RDlkMzJNa0RWZ1FUV21PYWljVzdJbDVxMGZzX0dTMQ?oc=5",
-     "source": "朝日新聞",
-     "published": "2026-10-24T00:00:00+09:00"
-    },
-    {
-     "title": "ロシアとウクライナ、一部地域限定で軍事行動の一時停止に合意…トランプ大統領のメラニア夫人が主導か",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15RV9MRlNxY1hPemo4TXA2TzV3cTRtZ0JtZ1R6OEQ1WXhWazBvZ2tzUkpQbnpFU19EZkt0ZHFsY1k2dGRleWdEVmRsT0RyQ3dYd21XR2JEbnZGbEw1RVVoODN3?oc=5",
-     "source": "読売新聞",
-     "published": "2026-10-23T23:59:00+09:00"
-    },
-    {
-     "title": "米メラニア大統領夫人、ロシアとウクライナの局地的一時停戦取り付ける ホワイトハウス発表（日テレNEWS NNN）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MRG5qWWE5ZnhsRENTYmlIem9SOXVHQ1FVN1pwbEIzTDY4U3ZoSnZkTmIzUEZ6ZUN3QzZyRVpTOU5UMGRBTUN0Y096OE9xVi11Q0JXRTFiNW93Q21fYXZWcDRXZ1BhWmo0Z3VUdTFRaVM5eGhPclFkSi1GVzRKX0k?oc=5",
-     "source": "Yahoo!ニュース",
+     "title": "米メラニア大統領夫人、ロシアとウクライナの局地的一時停戦取り付ける ホワイトハウス発表（2026年10月23日掲載）",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVzFjWnBqVTBKTGFOY3B5Wk5oRmNVNmJleThfWTlSVnJPb3VyYldUbjZGUFVnamxUMFYwa09KZkdvTFZsWF95aC0yY3ZjcGFYaFpYNDBKa3hONVo4RGUzeFNHazd3dThucjhZRS1zNWE1QVIxOWpBNGRPN3RhZ3JYSUE0TWQ?oc=5",
+     "source": "日テレNEWS NNN",
      "published": "2026-10-23T23:53:00+09:00"
+    },
+    {
+     "title": "【速報】「ウクライナ南部での一時停戦で合意」米ホワイトハウス発表「メラニア大統領夫人が主導」",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9Bc0FobUdpOXVEV28xVGhyQ0VvZDVBUnRBd0JQWjZXN0Vqbmp5MzN5RmczekF1Q1NZck92b25VcXRqX2ttY1h1emZKTVI5OVFzb2VIeDJyOTVFSTBKemxOajRUejdYRTlwU2hCTklhNTd5OG0x?oc=5",
+     "source": "TBS NEWS DIG",
+     "published": "2026-10-23T23:14:22+09:00"
+    },
+    {
+     "title": "米大統領夫人、ロシア占領下オレシキ停戦を仲介　29日開始＝ホワイトハウス",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaDVrNHptU3g1TjRrVmVHQ3RsZmd1VUJRWXQ4Zmh4V295R0oyY0ItRGNWZVZpaGtCZUhRa05faFEwNmRweXhMcXlRZ19yZll2X2dxa1J6VHl3RmVhSnNKNXBqQ0Z6Mk9VOHlLa3VES1BxaUYzaF9Fay1wVWJMdFhzd0NLUdIBgwFBVV95cUxOaDVrNHptU3g1TjRrVmVHQ3RsZmd1VUJRWXQ4Zmh4V295R0oyY0ItRGNWZVZpaGtCZUhRa05faFEwNmRweXhMcXlRZ19yZll2X2dxa1J6VHl3RmVhSnNKNXBqQ0Z6Mk9VOHlLa3VES1BxaUYzaF9Fay1wVWJMdFhzd0NLUQ?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-23T22:44:00+09:00"
+    },
+    {
+     "title": "ウクライナ「スターリンク復旧せず」 トランプ氏の主張と食い違い",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRE5BOGxtMElrZ05WYjJsTnQ3bFRIYU5TNmctSmhPcDZKRi1laGdXOUFuNDZ2Y1JQems0LTF0Q2xRZlZwNkhEVE1JOVNuWDlvOHljTDV0RFlMNzd6WW90bmtHSVIxbmljQm9MSkFxYXdhMk9aLU5tYlJtTnQ4R1dzZjdOSEFIZDFDWW5DQ2FJVUVmRGwzRG1OX1NHa0xqZ1U4TmVJcHpJRXhoa3J2andmb1ctYzljQzdhVnFubzNxX2lmS2xsTmxnUw?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-23T22:22:00+09:00"
     }
    ]
   },
   {
    "key": "mideast",
    "label": "中東",
-   "count": 25,
+   "count": 12,
    "news": [
     {
-     "title": "ヨルダン川西岸で銃撃 イスラエル兵2人死亡 ネタニヤフ首相が西岸全域の封鎖準備を指示",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9RQ0VTRHVjYXpFbldLVmg2b2taXy1RSGZ0cGJDTTlGbDI1dGxXMkxKU19fVXhISGlyay1TdE9QWERWLVVfcXA3XzNNS2RaLTQ5RVJWR1k3VWFDRGR5MlFiMGlwenZaY1VvUWhLdlRnTVIwRF9BdjBGZ3d4SFRGbWc?oc=5",
-     "source": "Yahoo!ニュース",
-     "published": "2026-10-23T23:55:29+09:00"
+     "title": "ヨルダン川西岸で銃撃 イスラエル兵2人死亡 ネタニヤフ首相が西岸全域の封鎖準備を指示（FNNプライムオンライン）",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUFlCY1BLLWo4R1ZlcWtKTERBRk1YZ2pGX0NHYVRhVEJKSlRnWG52M1dRakhVRlVRaE5hNVF1d2F3SktKdmY1RUJDUWJtam1ieUJaZkd0SzhzcktrVDFjSk1VbzhDUFRZTjVSNWM4MmVwZWtpNkk4YnpIbmR5UUZZRg?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-23T23:53:00+09:00"
     },
     {
-     "title": "中東ラリー選手権サウジアラビアが開催中止。最終戦はキプロスラリーに",
-     "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE92NmFrZS1DbndBRkdiRW90SDhXX3BUb0g0UjhpQVoxM0h2X2dtd1BOUU85aUN4T3FWQm9nY0pZLS1jNTBBUmFN?oc=5",
-     "source": "ラリープラス",
-     "published": "2026-10-23T23:03:45+09:00"
+     "title": "ヨルダン川西岸の攻撃で5人負傷、イスラエル首相がイベントを中止",
+     "link": "https://news.google.com/rss/articles/CBMitANBVV95cUxNOERsVnlxVHhldVdVTHJ3Um85SWZoUzdZVTFfOXhKdV9aT1Y4YlFjcDY2MDdiWTkzdjVrWEdaSzVNV0VLNWY0bEFjdjBoTTloeldUNXpLcmNPRzRoWVRPbWI5NG9MazJ6SlNrelhSUUEtOEtPX29uLWlzQnM5cXVWbUlpYnBzcGdvd2lLbUxsVkh1M0tuaXlKMFNDWTA5dVYwMXJPMVJEYlZRY2FfN3VaN2Zrckk5d2ZLbUJISVVRWTdGN28yMm9pd2JyYVc5aks1MlFrYjlhODB2VEZBbUpxeHYtRjh0QWEtNzBNTU5rTmVWSEJocEVWZEhNdEVPZkdaeTVXNGZoTmFUMVFndVYzWlpUcnkxaTdaM3lVMUJ0a2J6RUxQUnBoMDlMTVVqVjF3SEVJelpGWGpNSXRSdXM1Y0cwY25kRVZjbXhDRXdaeFFWbW9xZEk3Y0hmeTU1ekJKQ1RPOG1xaUdocUVpWEJKalc0N05yMEFrQmdzclhFd0ZoQnlXcEZjUEFJdDJqZjdJTVAzOXV3V0xKTTBlX0t0TmNNX0NMUVI4Ml9FTFdTbWRXM3Vo?oc=5",
+     "source": "アラブニュース",
+     "published": "2026-10-23T22:33:17+09:00"
     },
     {
-     "title": "イスラエル軍はヨルダン川西岸全域を封鎖した。",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HZmRzU29DRDBocC04QUxCWHN6LXVjU0c5TGJ3bnJRUlRlRjBhNEpwVGRwRXJNLWtKM2pzbVk2dkpVUy1NbklNaG9BQWE3MkVBQ01PNmRKZHppWGZxaWpDWHRxZGhsbVUyZnctdEdlb09xY1VfM3dIQ2dmVV9fdw?oc=5",
-     "source": "Vietnam.vn",
-     "published": "2026-10-23T23:02:28+09:00"
+     "title": "中東情勢を踏まえた緊急的激変緩和措置等についての会見",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBndTF0NFJFaXktZm5GZ3EyU2duWUstOVM2bVZRVWFxSG1sNlZaUjdJX2FvV2tjZUh2VjlCSzBnMmpkZ01FLXNpWE5Mc3dlVTJ6Um4xQ2FhSGo5UWlCcWNVOW1ocmNNVWRPZ2VNWk02UQ?oc=5",
+     "source": "首相官邸",
+     "published": "2026-10-23T22:01:32+09:00"
     },
     {
-     "title": "イスラエル首相 、ヨルダン川西岸地区の住宅破壊表明 兵士2人の殺害受け（ロイター）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5NSEtCOHlLYVM5NFpJcTB4eFZIbklmUS01QllSQ3NDUGxpdXU5VC10aHFrcXc1RVMzam9iZ0UzbUpFOUQ2THpLN1p0V2lqXzV6Skxod1dNRVdnZHlYWkM5LUxCVlVpTTVyUHZFOFJFbDdjYkFGY3BlR0FIckp4Q2M?oc=5",
-     "source": "Yahoo!ニュース",
-     "published": "2026-10-23T23:01:12+09:00"
+     "title": "ガザ住民、食料供給の減少と援助縮小により新たな飢饉の脅威を懸念",
+     "link": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNRC03OWtvN3RaQXNwdDNsdlFHMVhxRkpKckF0Y0ZXeU51SVlNc21hWFBBNWZGTHVOWXFzLUVRR0tsSVJCZ0EwRERCYUtpbnNXRTR3RG5UMC1TSDdDSFRMa1JRYzBTazVsdjJ2aGRGU3pSSXV4SmhUQXFtdWpZQmZaQi14dUx4TS1fMl91c1dWNHhyN201cTdtRXRGZzduVXVKbDhOaDNpaGxaNUsxVkhpR3g5VDlwVGV6Nm1tQWFuaFV0ZzRtdW9IclBuanRWcVdzOC1WaDhNbjMtRkRqeUVma0p6cHpJZzNMX2twZmlFT0J4eWxORVZEV2JkWmEyZjFHSHJCQ3hDZ2w4OTlPWWhNUjNxU09tendvVlZhTmF5ME0tV1F6TFB6bzF2em8xSnRyUmtCTU9GZ2p6UWc3SlRPSDY2d0tzQ2RkTkJBdFk3VmJsRjlFY0FSNGM4My14b09WTE5mZW9jejZWSlY4bG8xeGJGWUpldGtwMU5yTzJDcVRnT2phNzIxanRpNnU4NHJJUWpDQUhwZlA1cTVfMGNremRKYmFlQWdtS1hKbFZ0TzZEeGFTQVJYVjVKQklIYms?oc=5",
+     "source": "アラブニュース",
+     "published": "2026-10-23T20:46:16+09:00"
     }
    ]
   },
   {
    "key": "africa",
    "label": "アフリカ",
-   "count": 11,
+   "count": 5,
    "news": [
     {
-     "title": "メコンデルタ地域では、ますます複雑化しているアフリカ豚熱の蔓延を防ぐため、対策を強化している。",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcTNWakZZRWpnbWNVV0xvV0psT21yaS12VEM1SUhCQ2xGRThLNjZrOTIxaTVLbW1nanRHNEVlSnRqa2tXRXJVWjZNeXVpMzBjczhhNTFnVWhPRHJPY2ZSaVk0VkR3MDE2aFI1eHdkTnk0TWVlTldGWXZvbEhBYzljd3dtaUctVHFvQmhkQzBHTVFNdzFkbk9Tb0l0S1MtWjVTT01B?oc=5",
-     "source": "Vietnam.vn",
-     "published": "2026-10-23T22:00:19+09:00"
+     "title": "アラブ諸国、サウジアラビアの空港と油田へのフーシ派攻撃を非難",
+     "link": "https://news.google.com/rss/articles/CBMitANBVV95cUxOX0FvWUVGWlJob3hyUmNuUVBWMExQNl9hRlhtWmhfOTF1Y1JxYUlLOVZseDhRc3RTbFlyV1VjejZlWk03RkI5ZTZSV0xHcUxDTk5BOUhoN3ZPTFZVWFE1RDFwZnc3N3V6NFdoWWI1Q2o2emhZLXRiaXRPV3UyWVVQS0VaZ1ZHQU1DOE1ubjh6UzVULUdXeUl6ZU1IOGVySmdzZ1NlQ0ZuWmlCVUF0blJ4Z1FuNTRvdS10RmhUT3F6WlIyX2duRkEwcTRMd2phazhnbHZhWnpMbk9WcVpvMUEwVzVTb084THBqV0ZQdnQ5ZWFPdE1yc1FhNEMtX3RMNnlWT1hXQzg2YWV1YTk2cmFpazV4VjNsdTc4ZGpNRUgzeVpkWHQwdkY4eTlfUkZzNG9JbFluUDhreFlkQzg2bnZuWEZPaTYzNU9heFFkSEdnbVl6M21jQ0lmejJ2Mk5hRjhSMXFPdEQtNEd3WUh0VDNoZ2ZRSWVZRjdLWE1tN1lITlVDUzJ6RU5IYnBCWTlrVmY2T0RLcnV6NlJDMVRkWDJkaWY3Q1A4cEl5OEdLS2pxTF9lZllw?oc=5",
+     "source": "アラブニュース",
+     "published": "2026-10-23T22:55:39+09:00"
     },
     {
-     "title": "アラブ首長国連邦を「玄関口」として、ベトナム製品を中東やアフリカに輸送する。",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYVNNenhkMWJKbXJxbERHS1hhZzFleUhoNlBUU3d2amNKc0RGLVU0VGk5bzlVdTJjazdOeURUSGhuNVRJMF9XSlRqSFFBRUpoLVJzMWphRUlsQ2hDSkpXNW1oVENiYlV2ZlB4UHRsdWhlSmZWMFZzNWM3Z0ZqZllOVVp0bldZVWRrTHc?oc=5",
-     "source": "Vietnam.vn",
-     "published": "2026-10-23T22:00:16+09:00"
+     "title": "韓国がケニアに退役ヘリ8機供与　米が整備・輸送支援",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNlhtX2xqZEQ0RHB1QzBacTZUaDk2N0RkVTZPQ1BCZkpJclRwYnYwRTdzMUM4dGg2d0pFa1BTWC1pYWlyV2htYW0zUGJDTjh4STNuazNfM0hiS0p1dDczS0NsX2hoZkdXclpWMHJjTG50OHpuUENuaDJYNFNZQ2FjQm9rZnTSAYQBQVVfeXFMTTZYbV9samRENERwdUMwWnE2VGg5NjdEZFU2T0NQQmZKSXJUcGJ2MEU3czFDOHRoNndKRWtQU1gtaWFpcldobWFtM1BiQ044eEkzbmszXzNIYktKdXQ3M0tDbF9oaGZHV3JaVjByY0xudDh6blBDbmgyWDRTWUNhY0Jva2Z0?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-23T20:17:00+09:00"
     },
     {
-     "title": "致死率“ほぼ100％”のリスク “禁じられたソーセージ”女逮捕（テレビ朝日系（ANN））",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12MUk3SmxCRlFfU19WOHVWbXJEWmxKWk9fS2FLVlNZV1RfVHQ2MDl4amU1aXdYUmVKdk9oNWJTb1ZlUTJSRlh0MzVmZVI0WDRhbG8wRDJKVHpURndrVEhDSFVJN1JqaFRLY0hxZUstdnFCUWVXUEI3NVFqdmNGSFU?oc=5",
-     "source": "Yahoo!ニュース",
-     "published": "2026-10-23T21:59:48+09:00"
+     "title": "エルニーニョによる干ばつで戦乱のスーダンに新たな飢饉リスクが迫る",
+     "link": "https://news.google.com/rss/articles/CBMi1wNBVV95cUxPV180Znkyczk3SWZ1QUVDMnp3dlk2VW1PTmhaVWNCcXpZYXRZY1BqdHBJRjVRdFlSdmVjRmFaRDVpdDRacVJqV0k1dkt1UExicjVXWWpwUjJZMmU0U0FhellqNXNFWGd0OG5jTEtvVU9UbHZuT2o0WlF0eEVDYVRadFlJUFY3NUJjYkdKSXRxS25ZTDRPYUtLcjFIVzNDQnU4dVhBLXotMGEwUWdMQmt2WGZTX1RjaWpHY0FhanBicVVqYWdwcDZkOU1MYTA0a184VWVEM3RBRi1wc3BNVndQSHBsSEh2WXBFd3VZQV8yMktaWDNwcFJfdGJtNG15TjduckQtN2d3V3hvck96Q2ROSUtIVFE4VTZpdDZyWExjTjU3OGRmNm1mNmNBbko4SERiZ1VzUGNvWUprNnJVcUg4R3huS3JnbV9KU29QSU5QV1pGcjhucHBMc2RGcEF6MmtkNTVhTVFrN1k0V25ocEFOTTdYYlVoVEhMaVNISV9WcEVHaHBoTk9ySW1aSDhkNWljOERBLWxiVC0wNTBpN0JjOFZRNHJBVS1HRUowYU1MTVlGV0tfRXFYWHVpVEJWSlRTMDhzY1l1R3d1ZE5NRGUtTGFJR2Vlbk0?oc=5",
+     "source": "アラブニュース",
+     "published": "2026-10-23T20:00:58+09:00"
     },
     {
-     "title": "ナイジェリア vs 北朝鮮 : グループB 第3節 【FIFA U17 Women's World Cup】",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fWnpnd0x2RkwxM2d3TzJMSVJobVZ1ZUVOek1RSm5RUXhTdHhTX3Z6blA0eEI5SVAzWE9PQ1Q2a0N6UzVLWVlzNWhGZWo1OTVQV2N4d05NamFnbElfN3M2UGhCUFVzQnlTSjVja3JENVlmdw?oc=5",
-     "source": "ABEMA",
-     "published": "2026-10-23T20:52:51+09:00"
+     "title": "第119回",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hNDViX1JQcTFDV0x2bENldTByN2hZNVk3X2ZmY2JoZnhmX3lJVjNPbUVBOHVaRUpfbU1aM1c4VmlzdDU2Z1pZX0ZVRzdyc1NhQ2hpV2lWZEQzYkwwOWNtMW9JS3N5QQ?oc=5",
+     "source": "東京外国語大学",
+     "published": "2026-10-23T18:50:10+09:00"
     }
    ]
   },
   {
    "key": "china",
    "label": "中国・朝鮮半島・台湾",
-   "count": 41,
+   "count": 28,
    "news": [
-    {
-     "title": "外交部、中国による「越境弾圧」を強く非難",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBvQ293ZVhYclQzVDBMUW5tMkplOW9aM3hDajFSRGtIYWVYQndYSkZPZ19sNXZPUWMwWUFJS0RPaTBDZFVzaUIxbXJuRVR1cS0zTW5OQjNIRjIxcnJDTlE?oc=5",
-     "source": "www.roc-taiwan.org",
-     "published": "2026-10-23T23:31:44+09:00"
-    },
     {
      "title": "【北朝鮮拉致被害者奪還署名活動のお知らせ】",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5aUHZBYjQxVUJrclpnSGxaS1IwNWRQd0NBSkNvN25jTFhlWkE0aTBRb0dGOU14VTVDQTZ2UDFpcDFLVkw3SGM1TGFRX2JxOUltOVlRZDlkRThYUHRGZzhZ?oc=5",
@@ -882,52 +876,131 @@
      "published": "2026-10-23T23:12:51+09:00"
     },
     {
-     "title": "台風30号接近の台湾で350人負傷 高波にさらわれ1人死亡 学校や店舗は休みに",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBPNWVpLXZmQnluWkVxVGZaQ0ZDamxneVYya1dMeUtMcThUZ29Td3pOOVBVM1l1UkdGLWItNW05eFhaZjhVUXlOcktFZTJzZG1fbERTeDZfdHZqYmdCQjk1Mks0c09LYlhxdGZBTGJROU1NSERMSUN6WWNB?oc=5",
-     "source": "テレ朝NEWS",
-     "published": "2026-10-23T23:10:00+09:00"
+     "title": "成田空港の国際線、発着回数初の週4000回超えへ 中国旅客便34％減＝冬ダイヤ計画",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NeGV1NEJ2X2dzOTBNb1dKQmlVSXFiSEx5T1dISFBCWE5IcnlBdVRBcVRIR2F6Q2JOdjNEdDFnWDhsTzF6cjd1M3ludDljTHhsZjdQZG13?oc=5",
+     "source": "Aviation Wire",
+     "published": "2026-10-23T22:27:00+09:00"
     },
     {
-     "title": "【KNOCK OUT】中国チュームーシーフーが戦慄KO！左ヒジ炸裂、平川蓮斗が仰向けにバッタリ（イーファイト）",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE04b3BSMW5Ub1FVdTJxVW02SnA0d3NmYUhzdWczbUowazlqNk94cFlSM1BqNExrVEJFSHFlNXMybW5tTmhUN0EtNGlXTVRlS1RkcHBLVjVfbFNXVzRZakY4NHlXNGhEeEhNTHRwbFU4cDlRcWRJMU1GYXh1MGN4R0U?oc=5",
-     "source": "Yahoo!ニュース",
-     "published": "2026-10-23T22:44:59+09:00"
+     "title": "中国東方航空、名古屋/中部〜上海/浦東〜蘭州線を運休 10月23日で",
+     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE42anFhZURVekRzajMyQUtYNGxha0hsQWVsOUxRQk5vaU9LT0dmTWNLbVQ2VmFEMTJPMXdCVktIUTRneE1kT1VYWTNnNDM2d2VTQkdYMGp2WQ?oc=5",
+     "source": "TRAICY（トライシー）",
+     "published": "2026-10-23T22:19:44+09:00"
+    },
+    {
+     "title": "中部空港、台湾便数が過去最多に 中国本土は7割減＝冬ダイヤ計画",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XVlUxd0hFR01vS0hkbEZxOG1GNmFreWJDNTZvZi1hYWotemJaRi1KVmF1SFVTaTFtcTlOSDVRNldBNXZHQnEtbG1pTE8xTkhGTEZlZUlB?oc=5",
+     "source": "Aviation Wire",
+     "published": "2026-10-23T22:19:00+09:00"
     }
    ]
   },
   {
    "key": "asia",
    "label": "インド・東南アジア",
-   "count": 38,
+   "count": 10,
    "news": [
     {
-     "title": "BIGBANGのリーダーであるG-DRAGONは、ベトナムへ向かう飛行機の中で、スカーフと暖かいコートを身にまとっていた。",
-     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUzRsRzE0VHB2U0FHdHhieVFKNXhjNHhJdkU1blo1Y2JTVjUwdjNNX0xQOEo4Qzc4dnNsamhfY1ZpUXJpV29UOTZmblFsZWF3SzEzbUxILTZkMG9ibnZaWFpNSGdqZzFPYWJ6SWtqbG5DVElTeXQ1bGlqQ1YzeTdQelh3aFZibDExY1BBaGlDS1ZQR2NmMEo1MHgtY1ludlU?oc=5",
-     "source": "Vietnam.vn",
-     "published": "2026-10-23T23:57:19+09:00"
+     "title": "英ヘンリー王子の妻メガン妃の父親 フィリピンで児童ポルノの動画や写真所持か フィリピン司法省が捜査と報道 結婚して以来メガン妃とは疎遠",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBaN05Fd0ppMDlQZVlsdS1XR2VkeUp6ZWxaVHNzZFBpNndPMFFLOUtvS1VsUVYwZnhfR1Q4aFgyNWNUdC1kN3hKOUp2Z3ZvTGl2VWxkTXl1LU9wZG9nMW8xcWFhQ2U3YXpibEVHY29Sb1hYWWh6?oc=5",
+     "source": "TBS NEWS DIG",
+     "published": "2026-10-23T22:28:23+09:00"
     },
     {
-     "title": "インドネシア、石油タンカーからケタミン1.16トンを押収。",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRGlrMW0xNEM5SEJtY0p3V3RsTjRWTkl2UmIzZkJZYU1Nd3lxWmdpRzRfelNtUHVoT1MtTUZBM2dqb0hpTnNpZlVFZUFEWUR2eUtCcGJOMjdOTzZSY3I4YV9RbW9VUnhZenVJa0NDQmV4dXdSMnBqdzZ6LU12MTQ3eHJuV1Q?oc=5",
-     "source": "Vietnam.vn",
-     "published": "2026-10-23T23:02:27+09:00"
+     "title": "宮本経済産業副大臣がカオ・キムホンASEAN事務総長と会談を行いました",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9BRGlsWE5KNjBlOFhJdnJZZ3R6T3RUNWlXb1dneEFLQ1BoNUQ5bktoTFpuVGVpRUEtaHlsMnNvQ01lcXJiTnZFbXhPV2xQR0lyenNNMG9OdzB4b3k3LXdZWlh6UQ?oc=5",
+     "source": "経済産業省",
+     "published": "2026-10-23T21:53:21+09:00"
     },
     {
-     "title": "ベトナム仏教協会の創立45周年を祝う盛大な音楽祭を企画する。",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPU01Jc3lScm1oQzV0cF9sU1Z6UU1qXzNaOVZER09KR2R5RW0tcmxCUEg5M2EzS3dRY0VPaFhaOHBFRjA4ajJxQWFYbmdBRDIwVGVkNUtqZzQxU3JzR3kwWVdnWklfVHROUF9nREdTSElpOXZYVnFZVEFtR2R4NEpSdXlzZzdYRl92QkhUV1dsUGRQWlJmeW1vMTR0NHA?oc=5",
-     "source": "Vietnam.vn",
-     "published": "2026-10-23T22:58:25+09:00"
+     "title": "シーフードレガシー、漁業労働者の人権保護で連携",
+     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB1bFdpU1hmSGRnOXZuVjZ5NVdaQXljcmttSDZKX21YSlR2TUpLUjBxaFJISXh2T1B6ejB4VHYtUGdHRUFvd2dkbFNB?oc=5",
+     "source": "LOGISTICS TODAY",
+     "published": "2026-10-23T19:59:45+09:00"
     },
     {
-     "title": "自民・萩生田光一幹事長代行、ＡＳＥＡＮ事務総長と会談…エネルギー分野での関係強化を図る方針を確認",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9tbnRPbjAtZGFya2lndU9DNHVBNWFsSERHUXY3bEgyZ21nb1pSUkJ5QVBDMmRXUHVjQkljdlZVb19kWGFJdk1uS3ZDWWNPQTlGbkJWSmtJdkpIUUUtODdIRzZmY3Q2UQ?oc=5",
-     "source": "読売新聞",
-     "published": "2026-10-23T22:32:00+09:00"
+     "title": "ドイツ首相とベトナム国家主席が相次いで訪日へ　高市首相と会談",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZjd5OVplckxQeXVsVG5BbUZZTDZhWTlOTEJGZ1A3M3B0aTRkNWlvMzFuRjJZSlFTemxrZHg4TjkwanNxck5KVDZhLUNBMjZMSDhDVHh4NVdWSWxMQ3RQYW5zM3BZckZoVXJJenY5N3NzbnFRSll1R3puU1pGbFpvQmdManFjdWJnZzB4VjBUWTBsQVFNN0HSAZsBQVVfeXFMTWRlVXUzQVZfdkRpZGpwQU1hTkNBZU5SdFBFR0pfanBDc0ZyQVJGdVpqTTFVbTBnRXJYanphUGZ2U1ZPbXJVNjNjU2ppTGtTX1pSWWdENjY0dkkwel95UC1ocXBIMTlBWVpxZWwySDFuNXJzUlJIeDAxUm9LQ21aSjE1ZE93T0pObGZFWFByY1FGZllGRWljeU5oVXM?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-23T19:58:00+09:00"
     }
    ]
   }
  ],
- "calendar": [],
+ "calendar": [
+  {
+   "date": "2026-10-22T21:30+09:00",
+   "country": "米国",
+   "title": "新規失業保険申請件数",
+   "forecast": "200K",
+   "previous": "199K",
+   "high": false
+  },
+  {
+   "date": "2026-10-23T16:15+09:00",
+   "country": "ユーロ圏",
+   "title": "French Flash Manufacturing PMI",
+   "forecast": "50.5",
+   "previous": "50.3",
+   "high": false
+  },
+  {
+   "date": "2026-10-23T16:15+09:00",
+   "country": "ユーロ圏",
+   "title": "French Flash Services PMI",
+   "forecast": "50.7",
+   "previous": "51.4",
+   "high": false
+  },
+  {
+   "date": "2026-10-23T16:30+09:00",
+   "country": "ユーロ圏",
+   "title": "ドイツ製造業PMI速報値",
+   "forecast": "53.5",
+   "previous": "53.8",
+   "high": false
+  },
+  {
+   "date": "2026-10-23T16:30+09:00",
+   "country": "ユーロ圏",
+   "title": "ドイツ サービス業PMI速報値",
+   "forecast": "52.5",
+   "previous": "52.9",
+   "high": false
+  },
+  {
+   "date": "2026-10-23T22:45+09:00",
+   "country": "米国",
+   "title": "製造業PMI速報値",
+   "forecast": "55.4",
+   "previous": "57.0",
+   "high": false
+  },
+  {
+   "date": "2026-10-23T22:45+09:00",
+   "country": "米国",
+   "title": "サービス業PMI速報値",
+   "forecast": "57.9",
+   "previous": "58.7",
+   "high": false
+  },
+  {
+   "date": "2026-10-23T23:00+09:00",
+   "country": "米国",
+   "title": "ミシガン大学消費者信頼感指数（確報）",
+   "forecast": "46.3",
+   "previous": "46.3",
+   "high": false
+  },
+  {
+   "date": "2026-10-23T23:00+09:00",
+   "country": "米国",
+   "title": "Revised UoM Inflation Expectations",
+   "forecast": "",
+   "previous": "4.7%",
+   "high": false
+  }
+ ],
  "earnings": [
   {
    "name": "キオクシア",
