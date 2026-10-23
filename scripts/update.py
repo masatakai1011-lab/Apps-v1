@@ -1,5 +1,6 @@
 """watchlist.txt の銘柄について、値段とニュースを集めて docs/data.json に書き出す。"""
 
+import html
 import json
 import re
 import sys
@@ -14,7 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WATCHLIST = ROOT / "watchlist.txt"
 OUTPUT = ROOT / "docs" / "data.json"
 JST = timezone(timedelta(hours=9))
-NEWS_PER_ITEM = 5
+NEWS_PER_ITEM = 3
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 
 # ニュース映像を集める YouTube チャンネル
@@ -24,7 +25,19 @@ VIDEO_KEYWORDS = [
     "株", "円安", "円高", "為替", "ドル", "日経平均", "市場", "マーケット", "相場",
     "金利", "日銀", "FRB", "景気", "物価", "決算", "経済",
 ]
-VIDEOS_MAX = 8
+VIDEOS_MAX = 3
+
+# 海外ニュースのライブ配信（表示名, YouTube チャンネル）。同じ表示名は最初に見つかったものを使う
+LIVE_CHANNELS = [
+    ("Bloomberg", "@markets"),
+    ("Bloomberg", "@BloombergTelevision"),
+    ("Yahoo Finance", "@YahooFinance"),
+    ("Sky News", "@SkyNews"),
+    ("DW News", "@dwnews"),
+    ("France 24", "@France24_en"),
+    ("Al Jazeera", "@aljazeeraenglish"),
+    ("CNA", "@channelnewsasia"),
+]
 
 
 def read_watchlist(path):
@@ -222,6 +235,32 @@ def fetch_videos(extra_keywords):
     return related[:VIDEOS_MAX]
 
 
+def fetch_live(handle):
+    """チャンネルが今ライブ配信中なら、その動画を返す。"""
+    page = get(f"https://www.youtube.com/{handle}/live").decode("utf-8", "replace")
+    m = re.search(r'<link rel="canonical" href="https://www\.youtube\.com/watch\?v=([\w-]{11})"', page)
+    if not m or not re.search(r'"isLive(?:Now)?":true', page):
+        return None
+    t = re.search(r'<meta name="title" content="([^"]*)"', page)
+    return {"id": m.group(1), "title": html.unescape(t.group(1)) if t else ""}
+
+
+def fetch_lives():
+    lives = []
+    for label, handle in LIVE_CHANNELS:
+        if any(l["label"] == label for l in lives):
+            continue
+        try:
+            live = fetch_live(handle)
+        except Exception as e:
+            print(f"ライブ {handle}: {e}", file=sys.stderr)
+            continue
+        print(f"ライブ {handle}: {'配信中' if live else '配信なし'}")
+        if live:
+            lives.append({"label": label, **live})
+    return lives
+
+
 def main():
     entries = []
     for item in read_watchlist(WATCHLIST):
@@ -249,6 +288,7 @@ def main():
                 "updated": datetime.now(JST).isoformat(timespec="minutes"),
                 "items": entries,
                 "videos": videos,
+                "lives": fetch_lives(),
             },
             ensure_ascii=False,
             indent=1,
