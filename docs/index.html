@@ -4,138 +4,213 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>まいにち1枚ボード</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f4f4f1;
-    --card: #ffffff;
-    --text: #1d1d1b;
-    --muted: #6b6b66;
-    --line: #e2e2dc;
-    --up: #157a3c;
-    --down: #c0392b;
-    --flat: #6b6b66;
-    --link: #1f5fa8;
-    --accent: #1d1d1b;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #151514;
-      --card: #20201e;
-      --text: #ecece8;
-      --muted: #9a9a94;
-      --line: #34342f;
-      --up: #4cc27a;
-      --down: #ef6b5c;
-      --flat: #9a9a94;
-      --link: #7fb2ec;
-      --accent: #ecece8;
-    }
+    --bg: #04070c;
+    --panel: rgba(10, 22, 34, .72);
+    --panel-solid: #08121c;
+    --line: rgba(61, 232, 255, .18);
+    --line-strong: rgba(61, 232, 255, .55);
+    --cyan: #3de8ff;
+    --text: #d6f6ff;
+    --muted: #6f93a3;
+    --up: #3dff9a;
+    --down: #ff4d5e;
+    --amber: #ffb020;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    --sans: "Noto Sans JP", "Hiragino Sans", sans-serif;
   }
   * { box-sizing: border-box; }
+  html { background: var(--bg); }
   body {
     margin: 0;
-    background: var(--bg);
+    min-height: 100vh;
     color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+    font-family: var(--sans);
     line-height: 1.6;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(61, 232, 255, .12), transparent 60%),
+      linear-gradient(rgba(61, 232, 255, .035) 1px, transparent 1px) 0 0 / 40px 40px,
+      linear-gradient(90deg, rgba(61, 232, 255, .035) 1px, transparent 1px) 0 0 / 40px 40px,
+      var(--bg);
   }
-  main { max-width: 1320px; margin: 0 auto; padding: 24px 28px 56px; }
-  header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
-  h1 { font-size: 1.5rem; margin: 0; }
-  .updated { color: var(--muted); }
+  /* モニターの横じま */
+  body::after {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50;
+    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .18) 0 1px, transparent 1px 3px);
+    mix-blend-mode: multiply;
+  }
+  main { max-width: 1360px; margin: 0 auto; padding: 22px 28px 64px; }
 
-  section.block { margin-top: 28px; }
-  .block-title { display: flex; align-items: baseline; gap: 10px; margin: 0 0 12px; font-size: 1.15rem; }
-  .block-title::before { content: ""; width: 4px; height: 1.1em; background: var(--accent); border-radius: 2px; align-self: center; }
-  .block-title small { color: var(--muted); font-weight: 400; font-size: .85rem; }
-  h3 { font-size: .95rem; color: var(--muted); margin: 22px 0 10px; }
+  /* 上部 */
+  header {
+    display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: end;
+    border-bottom: 1px solid var(--line-strong); padding-bottom: 14px;
+  }
+  .tag { font-family: var(--mono); font-size: .7rem; letter-spacing: .25em; color: var(--cyan); opacity: .8; }
+  h1 { margin: 2px 0 0; font-size: 1.7rem; font-weight: 700; letter-spacing: .08em;
+    text-shadow: 0 0 18px rgba(61, 232, 255, .45); }
+  .status { font-family: var(--mono); font-size: .75rem; color: var(--muted); margin-top: 4px; letter-spacing: .06em; }
+  .status .live { color: var(--up); }
+  .status .live::before { content: "●"; margin-right: 6px; animation: blink 1.4s steps(1) infinite; }
+  .status.stale .live { color: var(--amber); }
+  @keyframes blink { 50% { opacity: .15; } }
+  .clocks { display: flex; gap: 10px; }
+  .clock { border: 1px solid var(--line); background: var(--panel); padding: 6px 12px; min-width: 112px; }
+  .clock .city { font-family: var(--mono); font-size: .62rem; letter-spacing: .2em; color: var(--muted); }
+  .clock .time { font-family: var(--mono); font-size: 1.2rem; font-weight: 600; color: var(--cyan); font-variant-numeric: tabular-nums; }
 
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; min-width: 0; }
+  /* 区切り見出し */
+  section.block { margin-top: 30px; }
+  .block-title {
+    display: flex; align-items: center; gap: 12px; margin: 0 0 14px;
+    font-size: 1rem; font-weight: 700; letter-spacing: .12em;
+  }
+  .block-title .no { font-family: var(--mono); color: var(--bg); background: var(--cyan); padding: 0 7px; font-size: .8rem; }
+  .block-title .en { font-family: var(--mono); font-size: .7rem; color: var(--muted); letter-spacing: .25em; }
+  .block-title::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line-strong), transparent); }
+  h3 { font-family: var(--mono); font-size: .72rem; letter-spacing: .22em; color: var(--muted); margin: 24px 0 10px; font-weight: 400; }
+  h3 b { color: var(--cyan); font-weight: 600; }
+
+  /* 枠（四隅に照準） */
+  .panel {
+    position: relative; background: var(--panel); border: 1px solid var(--line);
+    backdrop-filter: blur(4px); min-width: 0;
+    animation: boot .6s ease-out both; animation-delay: calc(var(--i, 0) * 70ms);
+  }
+  .panel::before, .panel::after {
+    content: ""; position: absolute; width: 12px; height: 12px; border: 2px solid var(--cyan); pointer-events: none;
+  }
+  .panel::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+  .panel::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+  @keyframes boot {
+    0% { opacity: 0; transform: translateY(6px); filter: brightness(2.2); }
+    40% { opacity: .6; }
+    100% { opacity: 1; transform: none; filter: none; }
+  }
 
   /* 値段 */
-  .prices { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+  .prices { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
   .price-card { padding: 14px 16px 10px; }
-  .price-card .name { font-weight: 700; margin: 0; }
-  .price-card .code { color: var(--muted); font-size: .8rem; }
-  .price-card .now { font-size: 1.75rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.3; margin-top: 6px; }
-  .price-card .now small { font-size: .9rem; font-weight: 600; margin-left: 2px; }
-  .chg { font-weight: 600; font-variant-numeric: tabular-nums; font-size: .95rem; }
-  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
-  .chart svg { width: 100%; height: 48px; display: block; margin-top: 8px; }
-  .range { display: flex; justify-content: space-between; color: var(--muted); font-size: .72rem; }
-  .error { color: var(--down); font-size: .85rem; margin: 6px 0 0; }
+  .price-card .head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .price-card .name { font-weight: 700; margin: 0; letter-spacing: .04em; }
+  .code { font-family: var(--mono); color: var(--muted); font-size: .7rem; letter-spacing: .12em; }
+  .price-card .now {
+    font-family: var(--mono); font-size: 2rem; font-weight: 800; line-height: 1.2; margin-top: 8px;
+    font-variant-numeric: tabular-nums; color: #fff; text-shadow: 0 0 14px rgba(61, 232, 255, .35);
+  }
+  .price-card .now small { font-size: .85rem; font-weight: 600; margin-left: 4px; color: var(--muted); }
+  .chg { font-family: var(--mono); font-weight: 600; font-variant-numeric: tabular-nums; font-size: .88rem; }
+  .up { color: var(--up); text-shadow: 0 0 10px rgba(61, 255, 154, .4); }
+  .down { color: var(--down); text-shadow: 0 0 10px rgba(255, 77, 94, .4); }
+  .flat { color: var(--muted); }
+  .chart svg { width: 100%; height: 54px; display: block; margin-top: 10px; overflow: visible; }
+  .range { display: flex; justify-content: space-between; font-family: var(--mono); color: var(--muted); font-size: .65rem; letter-spacing: .08em; }
+  .error { font-family: var(--mono); color: var(--amber); font-size: .78rem; margin: 8px 0 0; }
+  .error::before { content: "⚠ "; }
 
   /* 映像 */
   .videos { display: grid; gap: 14px; grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 1100px) { .videos { grid-template-columns: repeat(3, 1fr); } }
-  .video { all: unset; cursor: pointer; display: block; border-radius: 12px; overflow: hidden; background: var(--card); border: 1px solid var(--line); }
-  .video:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
-  .thumb { position: relative; aspect-ratio: 16 / 9; background: #000; }
-  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .thumb::after {
-    content: "▶"; position: absolute; inset: 0; margin: auto; width: 48px; height: 48px; border-radius: 50%;
-    background: rgba(0, 0, 0, .65); color: #fff; display: grid; place-items: center; font-size: 18px; padding-left: 3px;
+  .video { all: unset; cursor: pointer; display: block; }
+  .video:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .thumb { position: relative; aspect-ratio: 16 / 9; background: #000; overflow: hidden; border-bottom: 1px solid var(--line); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.75) contrast(1.1); transition: filter .2s, transform .3s; }
+  .thumb::before {
+    content: ""; position: absolute; inset: 0; z-index: 1;
+    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .25) 0 1px, transparent 1px 3px),
+      linear-gradient(180deg, transparent 55%, rgba(4, 7, 12, .85));
   }
-  .video .vt { padding: 8px 12px 2px; font-size: .9rem; font-weight: 600; line-height: 1.45;
+  .thumb .rec { position: absolute; top: 8px; left: 8px; z-index: 2; font-family: var(--mono); font-size: .62rem; letter-spacing: .18em;
+    color: var(--down); background: rgba(0, 0, 0, .55); padding: 1px 6px; }
+  .thumb .rec::before { content: "●"; margin-right: 4px; animation: blink 1.4s steps(1) infinite; }
+  .thumb .play { position: absolute; right: 8px; bottom: 8px; z-index: 2; font-family: var(--mono); font-size: .68rem; letter-spacing: .18em;
+    color: var(--bg); background: var(--cyan); padding: 2px 8px; }
+  .video:hover .thumb img { filter: saturate(1) contrast(1.1); transform: scale(1.04); }
+  .video:hover .panel { border-color: var(--line-strong); }
+  .video .vt { padding: 8px 12px 2px; font-size: .86rem; font-weight: 500; line-height: 1.45;
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .video .meta { padding: 0 12px 10px; }
 
   /* 記事 */
   .articles { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-  .article-card { padding: 14px 16px 6px; }
-  .article-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
-  .article-head .name { font-weight: 700; }
+  .article-card { padding: 14px 16px 8px; }
+  .article-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px;
+    border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+  .article-head .name { font-weight: 700; letter-spacing: .04em; }
   ul { list-style: none; margin: 0; padding: 0; }
-  li { padding: 8px 0; border-bottom: 1px dashed var(--line); }
+  li { padding: 9px 0 9px 14px; border-bottom: 1px dashed var(--line); position: relative; }
+  li::before { content: "›"; position: absolute; left: 0; top: 8px; color: var(--cyan); }
   li:last-child { border-bottom: none; }
-  li a { color: var(--link); text-decoration: none; font-size: .95rem; }
-  li a:hover { text-decoration: underline; }
-  .meta { color: var(--muted); font-size: .78rem; }
-  .note { color: var(--muted); font-size: .9rem; }
+  li a { color: var(--text); text-decoration: none; font-size: .9rem; }
+  li a:hover { color: var(--cyan); text-shadow: 0 0 8px rgba(61, 232, 255, .5); }
+  .meta { font-family: var(--mono); color: var(--muted); font-size: .68rem; letter-spacing: .06em; }
+  .note { color: var(--muted); font-size: .85rem; }
 
   /* 再生画面 */
-  dialog { border: none; padding: 0; background: transparent; width: min(1100px, 92vw); }
-  dialog::backdrop { background: rgba(0, 0, 0, .8); }
-  .player { aspect-ratio: 16 / 9; background: #000; border-radius: 10px; overflow: hidden; }
+  dialog { border: none; padding: 0; background: transparent; width: min(1100px, 92vw); overflow: visible; color: var(--text); }
+  dialog::backdrop { background: rgba(2, 5, 9, .88); backdrop-filter: blur(3px); }
+  .player-top { display: flex; justify-content: space-between; font-family: var(--mono); font-size: .7rem; letter-spacing: .22em; color: var(--cyan); padding: 0 2px 8px; }
+  .player-top .rec { color: var(--down); }
+  .player-top .rec::before { content: "● "; animation: blink 1.4s steps(1) infinite; }
+  .player { aspect-ratio: 16 / 9; background: #000; padding: 0; animation: none; }
   .player iframe { width: 100%; height: 100%; border: 0; display: block; }
-  .player-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; color: #fff; padding: 10px 2px; }
-  .player-bar a { color: #9cc7ff; }
-  .player-bar button { font: inherit; background: #fff; color: #111; border: none; border-radius: 8px; padding: 6px 16px; cursor: pointer; }
+  .player-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 2px; }
+  .player-bar a { font-family: var(--mono); font-size: .78rem; letter-spacing: .1em; color: var(--cyan); }
+  .player-bar button { font: 600 .78rem var(--mono); letter-spacing: .18em; background: transparent; color: var(--cyan);
+    border: 1px solid var(--cyan); padding: 7px 18px; cursor: pointer; }
+  .player-bar button:hover { background: var(--cyan); color: var(--bg); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .panel, .status .live::before, .rec::before { animation: none !important; }
+  }
 </style>
 </head>
 <body>
 <main>
   <header>
-    <h1>まいにち1枚ボード</h1>
-    <span class="updated" id="updated">読み込み中…</span>
+    <div>
+      <div class="tag">MARKET INTELLIGENCE // 個人監視端末</div>
+      <h1>まいにち1枚ボード</h1>
+      <div class="status" id="status"><span class="live">LIVE</span> <span id="updated">データ受信中…</span></div>
+    </div>
+    <div class="clocks">
+      <div class="clock"><div class="city">TOKYO</div><div class="time" data-tz="Asia/Tokyo">--:--:--</div></div>
+      <div class="clock"><div class="city">NEW YORK</div><div class="time" data-tz="America/New_York">--:--:--</div></div>
+      <div class="clock"><div class="city">LONDON</div><div class="time" data-tz="Europe/London">--:--:--</div></div>
+    </div>
   </header>
 
   <section class="block" id="fx-block">
-    <h2 class="block-title">為替（FX）<small>前の日と比べて</small></h2>
+    <h2 class="block-title"><span class="no">01</span>為替<span class="en">FX / CURRENCY</span></h2>
     <div class="prices" id="fx"></div>
   </section>
 
   <section class="block" id="stock-block">
-    <h2 class="block-title">株価<small>前の日と比べて</small></h2>
+    <h2 class="block-title"><span class="no">02</span>株価<span class="en">EQUITIES</span></h2>
     <div class="prices" id="stocks"></div>
   </section>
 
   <section class="block">
-    <h2 class="block-title">ニュースまとめ</h2>
+    <h2 class="block-title"><span class="no">03</span>ニュースまとめ<span class="en">INTELLIGENCE BRIEFING</span></h2>
     <div id="video-area">
-      <h3>ニュース映像 <span class="meta">（押すとこの画面で再生します）</span></h3>
+      <h3><b>▶ VIDEO FEED</b> ／ ニュース映像（押すとこの画面で再生）</h3>
       <div class="videos" id="videos"></div>
     </div>
-    <h3>記事</h3>
+    <h3><b>≡ REPORTS</b> ／ 記事</h3>
     <div class="articles" id="articles"></div>
   </section>
 </main>
 
 <dialog id="player">
-  <div class="player" id="player-frame"></div>
+  <div class="player-top"><span class="rec">PLAYBACK</span><span id="player-title"></span></div>
+  <div class="panel player" id="player-frame"></div>
   <div class="player-bar">
-    <a id="player-link" target="_blank" rel="noopener">YouTube で開く</a>
-    <button type="button" id="player-close">閉じる</button>
+    <a id="player-link" target="_blank" rel="noopener">YouTube で開く ↗</a>
+    <button type="button" id="player-close">閉じる ✕</button>
   </div>
 </dialog>
 
@@ -175,45 +250,62 @@ function el(tag, attrs = {}, text) {
   return e;
 }
 
-function chart(history, trend) {
+let panelCount = 0;
+function panel(tag, cls) {
+  const p = el(tag, { class: `panel ${cls}` });
+  p.style.setProperty("--i", panelCount++);
+  return p;
+}
+
+const svgNS = "http://www.w3.org/2000/svg";
+function svgEl(tag, attrs) {
+  const e = document.createElementNS(svgNS, tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  return e;
+}
+
+function chart(history, trend, key) {
   const closes = history.map(h => h.close);
   const min = Math.min(...closes), max = Math.max(...closes);
   const span = max - min || 1;
-  const w = 300, h = 48, pad = 4;
-  const pts = closes.map((c, i) => {
-    const x = (i / (closes.length - 1)) * w;
-    const y = pad + (1 - (c - min) / span) * (h - pad * 2);
-    return `${x.toFixed(1)},${y.toFixed(1)}`;
-  }).join(" ");
-  const svgNS = "http://www.w3.org/2000/svg";
-  const svg = document.createElementNS(svgNS, "svg");
-  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
-  svg.setAttribute("preserveAspectRatio", "none");
-  svg.setAttribute("role", "img");
-  svg.setAttribute("aria-label", "この1か月の値動き");
-  const line = document.createElementNS(svgNS, "polyline");
-  line.setAttribute("points", pts);
-  line.setAttribute("fill", "none");
-  line.setAttribute("stroke", `var(--${trend})`);
-  line.setAttribute("stroke-width", "2");
-  line.setAttribute("vector-effect", "non-scaling-stroke");
-  svg.append(line);
+  const w = 300, h = 54, pad = 4;
+  const xy = closes.map((c, i) => [
+    (i / (closes.length - 1)) * w,
+    pad + (1 - (c - min) / span) * (h - pad * 2),
+  ]);
+  const pts = xy.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
+  const color = `var(--${trend === "flat" ? "cyan" : trend})`;
+  const id = `g-${key}`;
+  const svg = svgEl("svg", { viewBox: `0 0 ${w} ${h}`, preserveAspectRatio: "none", role: "img", "aria-label": "この1か月の値動き" });
+  const grad = svgEl("linearGradient", { id, x1: 0, y1: 0, x2: 0, y2: 1 });
+  grad.append(svgEl("stop", { offset: "0", "stop-color": color, "stop-opacity": ".28" }),
+    svgEl("stop", { offset: "1", "stop-color": color, "stop-opacity": "0" }));
+  const defs = svgEl("defs", {});
+  defs.append(grad);
+  svg.append(defs,
+    svgEl("polygon", { points: `0,${h} ${pts} ${w},${h}`, fill: `url(#${id})` }),
+    svgEl("polyline", { points: pts, fill: "none", stroke: color, "stroke-width": 1.8,
+      "vector-effect": "non-scaling-stroke", style: `filter: drop-shadow(0 0 4px ${color})` }));
+  const [lx, ly] = xy.at(-1);
+  svg.append(svgEl("circle", { cx: lx, cy: ly, r: 3, fill: color, style: `filter: drop-shadow(0 0 5px ${color})` }));
   return svg;
 }
 
-function priceCard(item) {
-  const c = el("div", { class: "card price-card" });
-  c.append(el("p", { class: "name" }, item.name), el("span", { class: "code" }, item.code));
+function priceCard(item, i) {
+  const c = panel("div", "price-card");
+  const head = el("div", { class: "head" });
+  head.append(el("p", { class: "name" }, item.name), el("span", { class: "code" }, item.code));
+  c.append(head);
   if (item.price != null) {
     const now = el("div", { class: "now" }, fmtNumber(item.price, digitsFor(item)));
     if (item.kind !== "fx") now.append(el("small", {}, "円"));
     c.append(now);
-    if (item.change != null) c.append(el("div", { class: `chg ${trendOf(item)}` }, changeText(item)));
+    if (item.change != null) c.append(el("div", { class: `chg ${trendOf(item)}` }, changeText(item) + " 前日比"));
     if (item.history && item.history.length > 1) {
       const box = el("div", { class: "chart" });
-      box.append(chart(item.history, trendOf(item)));
+      box.append(chart(item.history, trendOf(item), `${item.kind}${i}`));
       const range = el("div", { class: "range" });
-      range.append(el("span", {}, item.history[0].date), el("span", {}, "この1か月"), el("span", {}, item.history.at(-1).date));
+      range.append(el("span", {}, item.history[0].date), el("span", {}, "― 30 DAYS ―"), el("span", {}, item.history.at(-1).date));
       box.append(range);
       c.append(box);
     }
@@ -223,7 +315,7 @@ function priceCard(item) {
 }
 
 function articleCard(item) {
-  const c = el("div", { class: "card article-card" });
+  const c = panel("div", "article-card");
   const head = el("div", { class: "article-head" });
   head.append(el("span", { class: "name" }, item.name));
   if (item.change != null) head.append(el("span", { class: `chg ${trendOf(item)}` }, changeText(item)));
@@ -233,7 +325,7 @@ function articleCard(item) {
     for (const n of item.news) {
       const li = el("li");
       li.append(el("a", { href: n.link, target: "_blank", rel: "noopener" }, n.title));
-      li.append(el("div", { class: "meta" }, [n.source, timeAgo(n.published)].filter(Boolean).join("・")));
+      li.append(el("div", { class: "meta" }, [n.source, timeAgo(n.published)].filter(Boolean).join(" · ")));
       ul.append(li);
     }
     c.append(ul);
@@ -253,6 +345,7 @@ function play(video) {
     allow: "autoplay; encrypted-media; picture-in-picture; fullscreen",
     allowfullscreen: "",
   }));
+  document.getElementById("player-title").textContent = video.channel;
   document.getElementById("player-link").href = `https://www.youtube.com/watch?v=${video.id}`;
   dialog.showModal();
 }
@@ -264,27 +357,42 @@ dialog.addEventListener("click", e => { if (e.target === dialog) dialog.close();
 
 function videoTile(video) {
   const b = el("button", { class: "video", type: "button" });
+  const p = panel("div", "");
   const thumb = el("div", { class: "thumb" });
-  thumb.append(el("img", { src: `https://i.ytimg.com/vi/${video.id}/mqdefault.jpg`, alt: "", loading: "lazy" }));
-  b.append(thumb, el("div", { class: "vt" }, video.title),
-    el("div", { class: "meta" }, [video.channel, timeAgo(video.published)].filter(Boolean).join("・")));
+  thumb.append(el("img", { src: `https://i.ytimg.com/vi/${video.id}/mqdefault.jpg`, alt: "", loading: "lazy" }),
+    el("span", { class: "rec" }, "FEED"), el("span", { class: "play" }, "▶ PLAY"));
+  p.append(thumb, el("div", { class: "vt" }, video.title),
+    el("div", { class: "meta" }, [video.channel, timeAgo(video.published)].filter(Boolean).join(" · ")));
+  b.append(p);
   b.addEventListener("click", () => play(video));
   return b;
 }
 
 function fill(id, items, make) {
   const box = document.getElementById(id);
-  items.forEach(i => box.append(make(i)));
+  items.forEach((item, i) => box.append(make(item, i)));
   return items.length;
 }
+
+// 世界の時計
+const clocks = [...document.querySelectorAll(".time[data-tz]")].map(e => [e,
+  new Intl.DateTimeFormat("ja-JP", { timeZone: e.dataset.tz, hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false })]);
+function tick() { const now = new Date(); for (const [e, f] of clocks) e.textContent = f.format(now); }
+tick();
+setInterval(tick, 1000);
 
 fetch("data.json", { cache: "no-store" })
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
     const when = new Date(data.updated).toLocaleString("ja-JP", {
-      timeZone: "Asia/Tokyo", month: "long", day: "numeric", hour: "numeric", minute: "2-digit",
+      timeZone: "Asia/Tokyo", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit",
     });
-    document.getElementById("updated").textContent = `最終更新：${when}`;
+    document.getElementById("updated").textContent = `最終更新 ${when} JST`;
+    // 半日以上更新が止まっていたら、目印を黄色にする
+    if (Date.now() - new Date(data.updated) > 12 * 3600 * 1000) {
+      document.getElementById("status").classList.add("stale");
+      document.querySelector(".status .live").textContent = "STANDBY";
+    }
     const fx = data.items.filter(i => i.kind === "fx");
     const stocks = data.items.filter(i => i.kind !== "fx");
     if (!fill("fx", fx, priceCard)) document.getElementById("fx-block").hidden = true;
@@ -293,8 +401,9 @@ fetch("data.json", { cache: "no-store" })
     fill("articles", [...fx, ...stocks], articleCard);
   })
   .catch(() => {
-    document.getElementById("updated").textContent =
-      "まだデータがありません。自動更新が1回動くと表示されます。";
+    document.getElementById("status").classList.add("stale");
+    document.querySelector(".status .live").textContent = "NO SIGNAL";
+    document.getElementById("updated").textContent = "まだデータがありません。自動更新が1回動くと表示されます。";
   });
 </script>
 </body>
