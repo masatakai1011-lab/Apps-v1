@@ -235,23 +235,19 @@ def fetch_videos(extra_keywords):
 
 
 def fetch_live(handle):
-    """チャンネルが今ライブ配信中なら、その動画を返す。"""
+    """チャンネルが今ライブ配信中なら、そのチャンネルの番号を返す。
+
+    GitHub のサーバーから見るとロボット確認の画面になり、配信中の動画は特定できない。
+    そのためチャンネルの番号だけを渡し、ページ側で「今流しているライブ」を映す。
+    """
     page = get(f"https://www.youtube.com/{handle}/live").decode("utf-8", "replace")
-    if '"isUpcoming":true' in page:
+    if '"isLive":true' not in page or '"isUpcoming":true' in page:
         return None
-    # 配信中なら「/live」が動画のページに置き換わる。確認画面が出たときも動画の番号は入っている
-    m = re.search(r'<link rel="canonical" href="https://www\.youtube\.com/watch\?v=([\w-]{11})"', page)
-    if not m and '"isLive":true' in page:
-        m = re.search(r'"videoId":"([\w-]{11})"', page)
-    if not m:
-        return None
-    # 本当にそのチャンネルの動画か、動画の基本情報で確かめる
-    info = json.loads(get("https://www.youtube.com/oembed?format=json&url="
-                          + urllib.parse.quote(f"https://www.youtube.com/watch?v={m.group(1)}")))
-    if info.get("author_url", "").lower().rstrip("/").split("/")[-1] != handle.lower():
-        print(f"ライブ {handle}: 別のチャンネルの動画だったため除外（{info.get('author_name')}）", file=sys.stderr)
-        return None
-    return {"id": m.group(1), "title": info.get("title", "")}
+    # 確認画面には他のチャンネルの番号も混ざるので、番号はチャンネルのトップページから取る
+    top = get(f"https://www.youtube.com/{handle}").decode("utf-8", "replace")
+    m = re.search(r'<link rel="canonical" href="https://www\.youtube\.com/channel/(UC[\w-]{22})"', top) \
+        or re.search(r'"externalId":"(UC[\w-]{22})"', top)
+    return {"channel": m.group(1)} if m else None
 
 
 def fetch_lives():
@@ -265,7 +261,7 @@ def fetch_lives():
             print(f"ライブ {handle}: {e}", file=sys.stderr)
             continue
         print(f"ライブ {handle}: {'配信中' if live else '配信なし'}")
-        if live:
+        if live and all(l["channel"] != live["channel"] for l in lives):
             lives.append({"label": label, **live})
     return lives
 

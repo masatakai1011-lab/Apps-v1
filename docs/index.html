@@ -145,7 +145,10 @@
   @media (max-width: 1000px) { .onair { grid-template-columns: 1fr; } }
   .live-screen { position: relative; aspect-ratio: 16 / 9; background: #000; overflow: hidden; }
   .live-screen iframe { width: 100%; height: 100%; border: 0; display: block; }
-  .live-screen img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.6) brightness(.55); }
+  .live-screen { background:
+      radial-gradient(ellipse at center, rgba(61, 232, 255, .14), transparent 70%),
+      linear-gradient(rgba(61, 232, 255, .06) 1px, transparent 1px) 0 0 / 24px 24px,
+      linear-gradient(90deg, rgba(61, 232, 255, .06) 1px, transparent 1px) 0 0 / 24px 24px, #000; }
   .live-start { all: unset; cursor: pointer; position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 10px;
     background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .25) 0 1px, transparent 1px 3px); }
   .live-start .btn { font: 600 1rem var(--mono); letter-spacing: .2em; color: var(--bg); background: var(--cyan); padding: 10px 24px;
@@ -425,29 +428,30 @@ let liveOn = false;
 let stopLive = () => {};
 function showLive(live, tabs) {
   stopLive = () => { if (liveOn) { liveOn = false; showLive(live, tabs); } };
-  for (const t of tabs) t.setAttribute("aria-pressed", t.dataset.id === live.id ? "true" : "false");
+  for (const t of tabs) t.setAttribute("aria-pressed", t.dataset.channel === live.channel ? "true" : "false");
   const screen = document.getElementById("live-screen");
   if (liveOn) {
+    // そのチャンネルが今流しているライブを映す
     screen.replaceChildren(el("iframe", {
-      src: `https://www.youtube-nocookie.com/embed/${live.id}?autoplay=1&rel=0`,
-      title: live.title,
+      src: `https://www.youtube.com/embed/live_stream?channel=${live.channel}&autoplay=1`,
+      title: `${live.label} ライブ配信`,
       allow: "autoplay; encrypted-media; picture-in-picture; fullscreen",
       allowfullscreen: "",
     }));
     return;
   }
   const start = el("button", { class: "live-start", type: "button" });
-  start.append(el("span", { class: "btn" }, "▶ 受信開始"), el("span", { class: "sub" }, `${live.label} — ${live.title}`));
+  start.append(el("span", { class: "btn" }, "▶ 受信開始"), el("span", { class: "sub" }, `${live.label} ライブ配信`));
   start.addEventListener("click", () => { liveOn = true; showLive(live, tabs); });
-  screen.replaceChildren(el("img", { src: `https://i.ytimg.com/vi/${live.id}/hqdefault.jpg`, alt: "" }), start);
+  screen.replaceChildren(start);
 }
 
 function setupLive(lives) {
   if (!lives.length) return false;
   const box = document.getElementById("live-tabs");
   const tabs = lives.map(live => {
-    const t = el("button", { class: "live-tab", type: "button", "data-id": live.id, title: live.title });
-    t.append(el("span", { class: "ch" }, live.label), el("span", { class: "lt" }, live.title));
+    const t = el("button", { class: "live-tab", type: "button", "data-channel": live.channel });
+    t.append(el("span", { class: "ch" }, live.label), el("span", { class: "lt" }, "LIVE STREAM"));
     t.addEventListener("click", () => showLive(live, tabs));
     return t;
   });
