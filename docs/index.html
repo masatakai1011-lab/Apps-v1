@@ -675,7 +675,7 @@ function showRegion(region, spots) {
   const box = document.getElementById("region");
   const lv = el("div", { class: "level" });
   lv.style.color = color;
-  lv.append(`騒がしさ：${level}（直近6時間で ${region.count} 件）`);
+  lv.append(`騒がしさ：${level}（国際ニュースの見出しに ${region.count} 件）`);
   const bar = el("span", { class: "bar" }), fillBar = el("i");
   fillBar.style.width = `${ratio * 100}%`;
   bar.append(fillBar);

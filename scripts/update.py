@@ -41,17 +41,17 @@ MARKETS = [
 
 # 世界情勢の地図の地域（記号, 表示名, ニュースを探す言葉）
 REGIONS = [
-    ("us", "アメリカ", "米国 OR アメリカ OR ホワイトハウス OR 米議会"),
+    ("us", "アメリカ", "米国 OR アメリカ OR ホワイトハウス OR 米議会 OR 米大統領 OR 米政府 OR ワシントン"),
     ("latam", "中南米", "ブラジル OR メキシコ OR アルゼンチン OR ベネズエラ OR 中南米"),
-    ("europe", "ヨーロッパ", "欧州 OR EU OR ドイツ OR フランス OR 英国"),
+    ("europe", "ヨーロッパ", "欧州 OR EU OR ドイツ OR フランス OR 英国 OR イギリス OR イタリア OR NATO"),
     ("russia", "ロシア・ウクライナ", "ロシア OR ウクライナ"),
-    ("mideast", "中東", "中東 OR イスラエル OR イラン OR ガザ OR サウジ"),
+    ("mideast", "中東", "中東 OR イスラエル OR イラン OR ガザ OR サウジ OR レバノン OR シリア OR イエメン OR フーシ"),
     ("africa", "アフリカ", "アフリカ OR ナイジェリア OR エジプト OR スーダン OR エチオピア"),
-    ("china", "中国・朝鮮半島・台湾", "中国 OR 台湾 OR 北朝鮮 OR 韓国"),
+    ("china", "中国・朝鮮半島・台湾", "中国 OR 台湾 OR 北朝鮮 OR 韓国 OR 香港 OR 習近平"),
     ("asia", "インド・東南アジア", "インド OR 東南アジア OR ASEAN OR インドネシア OR ベトナム OR フィリピン"),
 ]
 REGION_NEWS = 4
-WORLD_HOURS = 6
+WORLD_TOPIC_URL = "https://news.google.com/rss/headlines/section/topic/WORLD?hl=ja&gl=JP&ceid=JP:ja"
 # 世界情勢から外す話題（株価や個別銘柄のニュース）
 NOT_WORLD = ("-株価 -銘柄 -株式 -上場 -アナリスト -決算 -フィギュア -サッカー -野球 -五輪 -選手 -芸能 "
              "-K-POP -アイドル -コンサート -ツアー -観光 -グルメ -ドラマ -映画")
@@ -130,6 +130,10 @@ EVENT_NAMES = {
     "Prelim GDP Price Index q/q": "GDP物価指数速報（前期比）",
     "Personal Spending m/m": "個人消費支出（前月比）",
     "Personal Income m/m": "個人所得（前月比）",
+    "French Flash Manufacturing PMI": "フランス製造業PMI速報値",
+    "French Flash Services PMI": "フランス サービス業PMI速報値",
+    "Revised UoM Inflation Expectations": "ミシガン大学期待インフレ率（確報）",
+    "Prelim UoM Inflation Expectations": "ミシガン大学期待インフレ率（速報）",
 }
 SPEAKERS = {"Fed Chair": "FRB議長", "BOJ Gov": "日銀総裁", "ECB President": "ECB総裁", "FOMC Member": "FOMC委員"}
 
@@ -207,9 +211,12 @@ def fetch_price(symbol):
 
 def fetch_news(keyword, days=7):
     """新しい順のニュースをすべて返す（同じ見出しは1つにまとめる）。"""
-    url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
+    return fetch_rss("https://news.google.com/rss/search?" + urllib.parse.urlencode(
         {"q": f"{keyword} when:{days}d", "hl": "ja", "gl": "JP", "ceid": "JP:ja"}
-    )
+    ))
+
+
+def fetch_rss(url):
     root = ET.fromstring(get(url))
     news = []
     for item in root.iter("item"):
@@ -395,17 +402,26 @@ def fetch_fear():
 
 
 def fetch_world():
-    since = (datetime.now(JST) - timedelta(hours=WORLD_HOURS)).isoformat()
+    """Google ニュースの「国際」欄の記事を、見出しの国名で地域に振り分ける。"""
+    try:
+        topic = fetch_rss(WORLD_TOPIC_URL)
+    except Exception as e:
+        print(f"世界情勢（国際欄）: {e}", file=sys.stderr)
+        topic = []
+    print(f"世界情勢: 国際欄 {len(topic)} 件")
     regions = []
     for key, label, query in REGIONS:
-        try:
-            news = fetch_news(f"{query} {NOT_WORLD}", days=1)
-        except Exception as e:
-            print(f"世界情勢 {label}: {e}", file=sys.stderr)
-            news = []
-        # 取れる件数に上限（100件）があるので、直近6時間に出た数で騒がしさを比べる
-        recent = sum(1 for n in news if n["published"] and n["published"] >= since)
-        regions.append({"key": key, "label": label, "count": recent, "news": news[:REGION_NEWS]})
+        words = [w for w in query.split(" OR ")]
+        matched = [n for n in topic if any(w in n["title"] for w in words)]
+        news = list(matched)
+        if len(news) < REGION_NEWS:
+            # 足りない分は言葉で探して補う
+            try:
+                seen = {n["title"] for n in news}
+                news += [n for n in fetch_news(f"{query} {NOT_WORLD}", days=1) if n["title"] not in seen]
+            except Exception as e:
+                print(f"世界情勢 {label}: {e}", file=sys.stderr)
+        regions.append({"key": key, "label": label, "count": len(matched), "news": news[:REGION_NEWS]})
     return regions
 
 
