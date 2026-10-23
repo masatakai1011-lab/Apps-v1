@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T17:31+09:00",
+ "updated": "2026-10-23T17:33+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 156.829,
-   "change": -1.3030037841796798,
-   "changePercent": -0.8239975166304943,
+   "price": 156.863,
+   "change": -1.269003784179688,
+   "changePercent": -0.8024964926844527,
    "currency": "JPY",
    "history": [
     {
@@ -103,10 +103,16 @@
     },
     {
      "date": "10/23",
-     "close": 156.82899475097656
+     "close": 156.86300659179688
     }
    ],
    "news": [
+    {
+     "title": "欧米為替見通し: ドル・円は伸び悩みか、米景況感悪化ならドルの買戻しは限定的(フィスコ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWXR1ZFFkODJtVUN4THlxb0NwdjhTLUtFYktkZFNIVk9LN2tPaDhzZ3VrMHlOS0VjMGRTNm50MlBmZm9wZTdmSHl2bmtXQmdNaFJOZ2lNV1J2Sk1GcDJKMC1qRVBqZXBpUDV0RG5fYjRIUjdGNmZPYzV4aV9fOWRFbU5xSTN5TFE?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-10-23T17:25:00+09:00"
+    },
     {
      "title": "東京為替：ドル・円は切り返し、夕方は157円台に再浮上(フィスコ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObjhnaWo1bjJwWUhPaTdUazNqRGRxNnBOUzJVTkg3OG9yZUhLdzBRNEhSaUZzTjNEUGZYMlhxUWFVVnBxanMteGRNRklCRWZlcjE5MXQ4Q0hjeXFURV8zYWY4YmZTRmdYUXkzaW43WjYtY3NqZkNMZERodjRVeGZQX0RvTHE3RzA?oc=5",
@@ -118,12 +124,6 @@
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vYm1rWXNEaDZPZndXR0czN1d6WDdscVlyM2VUc05mODNfeXBCM0V6cko4ZVJqcUk1ZnZaTC1Ob2pkazFha281QVZlQmhiYVZkREg3T1lHSTVXSHNoWFJ0NmMxOA?oc=5",
      "source": "外為どっとコム",
      "published": "2026-10-23T17:19:00+09:00"
-    },
-    {
-     "title": "ドルは上値余地探る、中銀イベントはタカ派強弱に関心＝来週の外為市場",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9fUG9HWk5HbmhIMi1LLWd5bzBJQWJRSUs3RVN3TkdRSjVMaUNTRjFreHBTazVNTkZlRV9KWWI0cmlReGlHbHNxUjFWTlVMVVZaMHBtZTRfRDRFanEtOHIyWUtxWVdEN3MtQ3llRTVHMzg4NVBsLWpBUHYtek5odw?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-23T16:25:43+09:00"
     }
    ]
   },
@@ -513,18 +513,31 @@
  "lives": [
   {
    "label": "Bloomberg",
-   "id": "3MlgPZREVCw",
-   "title": "Nscale Anthropic in AI Computing Talks"
+   "channel": "UCIALMKvObZNtJ6AmdCLP7Lg"
   },
   {
    "label": "Yahoo Finance",
-   "id": "3uePqdait0w",
-   "title": "Tesla spent $4.7 billion. Meta committed $454 billion | The 8:30"
+   "channel": "UCEAZeUIeJs0IjQiqTCdVSIg"
   },
   {
    "label": "Sky News",
-   "id": "umLWFz4izTM",
-   "title": "Watch Sky News live"
+   "channel": "UCoMdktPbSTixAyNGwb-UYkQ"
+  },
+  {
+   "label": "DW News",
+   "channel": "UCknLrEdhRCp1aegoMqRaCZg"
+  },
+  {
+   "label": "France 24",
+   "channel": "UCQfwfsi5VrQ8yKZ-UWmAEFg"
+  },
+  {
+   "label": "Al Jazeera",
+   "channel": "UCNye-wNBqNL5ZzHSJj3l8Bg"
+  },
+  {
+   "label": "CNA",
+   "channel": "UC83jt4dlz1Gjl58fzQrrKZg"
   }
  ]
 }
