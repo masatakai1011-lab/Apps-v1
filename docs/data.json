@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T01:34+09:00",
+ "updated": "2026-10-24T02:29+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 157.064,
-   "change": -1.0680037841796945,
-   "changePercent": -0.6753874981798864,
+   "price": 156.836,
+   "change": -1.2960037841796748,
+   "changePercent": -0.8195708352298344,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/24",
-     "close": 157.06399536132812
+     "close": 156.83599853515625
     }
    ],
    "news": [
@@ -114,16 +114,16 @@
      "published": "2026-10-24T00:15:58+09:00"
     },
     {
+     "title": "ニューヨーク外国為替市場概況・24時 ドル円、底堅い(トレーダーズ・ウェブ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZGZtRm9tbGZMYl9zS09TYWFvamdJb2tEYm5wZlJxSzRGRGRlak1jYXY0dzVUOW9XUFRIbVdybE1jeExmRjhKTERwVjZlRklkd0RUQ0szbktwQUdmQzNDeDRoempXQ29LUUxwUjJROFozTm1aNXNUc3JWdS1XZm5SRGY0blg3QmM?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-10-24T00:05:34+09:00"
+    },
+    {
      "title": "【速報】ドル・円156.80円、ドル買い再開、米10月ミシガン大学消費者信頼感指数確定値が予想外に上方修正(フィスコ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNd1ctU1Z6NGhpeWlQaUJlQ01rRFFQNFA4bTZueGZ4NWoySTlsdGlza3N1blBTcFZ1VVJnR3NzMWxZM1NudXpJNHJ3Z0s4UzN5ZElZbWtKNThvZVNGRzBfaTYwS1Y5NmRaTk1ZSW9NVEprdGZhX0IxNHRQNEhDUjd4dmJYMWtmdUk?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-10-23T23:02:53+09:00"
-    },
-    {
-     "title": "欧州外国為替市場概況・22時 ドル円、弱含み(トレーダーズ・ウェブ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQ29nOXJPQVFfbklTQS1wSE9rLUJSVFJPSWo5VHZnd1AtRnB6eTBWNEFUX3QyeVphMHh4eWhuajZXRTRERmFlSXR1TS1vUi1oVTVBR0ZGV3hCbjU5NjQxN0ZMcmM5VUFCX0hTSG9ma20xczIyanBmSWstRi1WQkE0c2tRMHh4bEk?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T22:06:04+09:00"
     }
    ]
   },
@@ -134,9 +134,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1196,
-   "change": -0.0038692335128784894,
-   "changePercent": -0.3444004871214959,
+   "price": 1.1197,
+   "change": -0.0037692335128785004,
+   "changePercent": -0.33549948680773495,
    "currency": "USD",
    "history": [
     {
@@ -229,7 +229,7 @@
     },
     {
      "date": "10/24",
-     "close": 1.1195701360702515
+     "close": 1.1196954250335693
     }
    ],
    "news": [
@@ -484,6 +484,12 @@
  ],
  "videos": [
   {
+   "id": "Y0a6_g_CjAQ",
+   "title": "作家・村上龍さん（74）死去　「経済的な勝ち負けだけが充実した人生の基準ではない」news23の取材に語っていた不確かな時代の“希望”【news23】｜TBS NEWS DIG",
+   "channel": "TBS NEWS DIG Powered by JNN",
+   "published": "2026-10-24T01:45:35+09:00"
+  },
+  {
    "id": "e351RdUNe0s",
    "title": "ウクライナ南部で局地停戦へ 米ホワイトハウスが発表【WBS】",
    "channel": "テレ東BIZ ダイジェスト",
@@ -494,12 +500,6 @@
    "title": "会員制ビアバー開業へ サッポロビール【WBS】",
    "channel": "テレ東BIZ ダイジェスト",
    "published": "2026-10-24T01:11:23+09:00"
-  },
-  {
-   "id": "3hgEpRpOBzI",
-   "title": "150年の歴史に幕 名物の馬車 禁止法案可決【WBS】",
-   "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-24T01:10:54+09:00"
   }
  ],
  "lives": [
@@ -543,57 +543,57 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52350.88,
-   "change": -517.1004687500026,
-   "changePercent": -0.9780976389965532
+   "price": 52236.2,
+   "change": -631.7804687500029,
+   "changePercent": -1.1950153252467157
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7646.72,
-   "change": -16.710175781249745,
-   "changePercent": -0.21805086492546039
+   "price": 7628.82,
+   "change": -34.61017578125029,
+   "changePercent": -0.45162773049892047
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26043.139,
-   "change": 34.279624999999214,
-   "changePercent": 0.13179980138978784
+   "price": 25981.828,
+   "change": -27.03137499999866,
+   "changePercent": -0.10393141279383253
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 103.15,
-   "change": 3.6799987792968807,
-   "changePercent": 3.6996066493773667
+   "price": 102.87,
+   "change": 3.3999987792968795,
+   "changePercent": 3.4181147457241843
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4016.1,
-   "change": -44.29990234375009,
-   "changePercent": -1.091023135878297
+   "price": 4007.2,
+   "change": -53.19990234375018,
+   "changePercent": -1.3102133687138071
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.988,
-   "change": 0.03499993133544965,
-   "changePercent": 0.7066410428071422
+   "price": 4.99,
+   "change": 0.03699993133544943,
+   "changePercent": 0.7470206101859699
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 81624.95,
-   "change": 313.0593749999971,
-   "changePercent": 0.38501057175485776
+   "price": 81538.71,
+   "change": 226.8193750000064,
+   "changePercent": 0.27894982302904286
   }
  ],
  "fear": {
-  "price": 19.47,
-  "change": 0.43999931335449105,
-  "changePercent": 2.312135036670098,
+  "price": 20.25,
+  "change": 1.2199993133544922,
+  "changePercent": 6.410926270804808,
   "history": [
    {
     "date": "09/23",
@@ -685,7 +685,7 @@
    },
    {
     "date": "10/23",
-    "close": 19.469999313354492
+    "close": 20.25
    }
   ]
  },
@@ -724,13 +724,13 @@
   {
    "key": "latam",
    "label": "中南米",
-   "count": 1,
+   "count": 0,
    "news": [
     {
-     "title": "ブラジル、対中国で際立つ「我が道外交」 BYDやTikTok問題で譲らず",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9WN2wteGJlXzhhX3NiSXREb2NFSmVJMzFCWE4zQVBQdlpRVUlIOUNaYVA0eFBFMXRBd2MtWkNSMldiQlk4bmtwTTNPc01RbHd2Uzk1QnhqaVdhY3lkTzREbnJPbDI3SkVsam5WWQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-10-22T05:00:00+09:00"
+     "title": "ベネズエラで大統領選実施を求める抗議デモ…帰国できない状況続く野党指導者マチャド氏が呼びかけ",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdTgwT1NQc0lscG1zUUw1TkRnMTh0Y1d5RTB4TVlBZzdaZkQ2dHJ6ZjFJY21QelJGMS1KaHRVcDRYaGNpQUQ2WUZsNXhRZC04dW5BUjluX1RHYkttdDJfUmhQZl9LSjBWLXV4RXhTMWpyRml4ZUVOLVpYUkFLWnpRUUFXckVXTEtB0gGIAUFVX3lxTE51ODBPU1BzSWxwbXNRTDVORGcxOHRjV3lFMHhNWUFnN1pmRDZ0cnpmMUljbVB6UkYxLUpodFVwNFhoY2lBRDZZRmw1eFFkLTh1bkFSOW5fVEdiS210Ml9SaFBmX0tKMFYtdXhFeFMxanJGaXhlRU4tWlhSQUtaelFRQVdyRVdMS0E?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-24T00:16:00+09:00"
     },
     {
      "title": "熱帯台風バンシは、中央メキシコ沿岸で大きなハリケーンに強化",
@@ -755,7 +755,7 @@
   {
    "key": "europe",
    "label": "ヨーロッパ",
-   "count": 5,
+   "count": 4,
    "news": [
     {
      "title": "ドイツでロシアのスパイ活動容疑、ウクライナ国籍の男逮捕",
@@ -776,10 +776,10 @@
      "published": "2026-10-22T18:37:00+09:00"
     },
     {
-     "title": "フランス暴動を起こした極左集団は何者か 目標は「体制打倒」、貧困地域の若者らも加担",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLMFc3b3hZSjdPT3NVcV9PdFIxRnpldUhKNVF6SW5jbzQzUGZPUkVza1FNZUpxUVdwTk9LUGQ0cU9yQkJQOUF3a1hlbE5sLXQwMXB3NmxzTDFmRkNST3FPZFg3NkktVEFGcExzeVhKcUpOZkRNMGc?oc=5",
-     "source": "産経ニュース",
-     "published": "2026-10-22T17:16:39+09:00"
+     "title": "アングル：ロシア、欧州企業への圧力強化、米企業は優遇",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYTJtdkRkQXl4LUU5M3ZTZE1INjhSbkhUUkNHckNENVFtYm5aNTlLQU94WWdlTEtVQXRaNE1wZUtXYndockdldnpnbmVsLU5odE1YQzZqRmZVTVl3ZlA5Q09uamVEQXVyb3RqS1pvOTd5OEVrc1RXZXBEQVI1UkI1OUxyb0J5Zw?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-22T15:07:00+09:00"
     }
    ]
   },
@@ -832,10 +832,10 @@
      "published": "2026-10-23T19:32:45+09:00"
     },
     {
-     "title": "トランプ氏、イランが中間選挙前に原油高画策と主張　「偽攻撃などでっち上げ」",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rN19GSkIydXJtajBsMHpWdm1QZjlJa1NQZm9aWnJ6SU9Ib3o2NHdWbFJpdEw3bEdQZkc3RjNKZ1A4Mng0SFRRd2x1V2Q4REFOMXpGeFkzLURnSGdDQjh1ZGFTR3F5QkZMTDNTNk9aN2pjMUR1WXB0amZFV0o5Z9IBgwFBVV95cUxOSkt0d3BnRG15NmlNSDJoSHJwdzVhTTJWSjVsMnFET0FmZjVwOERIa050ZndadHNfd2JOYmVVcEVUVk90Tnpmc3RTZHdEU19NT0xycjlkd3R6b1BJa3o0RmNpRVZGa0JrS0t2WWI5RjJOaFRNYVloeGgwckN1c1Z5akNCZw?oc=5",
-     "source": "ｄメニューニュース",
-     "published": "2026-10-23T01:30:00+09:00"
+     "title": "トランプ氏、イランが中間選挙前に原油高画策と主張 「偽攻撃などでっち上げ」",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNV2ZnZXE3Mm5nWlVqbkFmektTRnZPSlV1WWtrOEZ0RWNVblRMbURfN2Rwa3FkaVp6MFlLQnBIWjZLMDFWM1JycEdmTG5QTlhSTnZWUEUybHRRS2NTUkxHLVItUm5VRmRXbThvWjRsTi10Qm9faVJBU2JmSERDcUJ5cl92SlhTajQ?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-23T01:31:02+09:00"
     },
     {
      "title": "［深層ＮＥＷＳ］トランプ氏がネタニヤフ氏支持の思惑、「攻撃はイスラエルに任せたい」…明海大・小谷教授",
@@ -879,7 +879,7 @@
   {
    "key": "china",
    "label": "中国・朝鮮半島・台湾",
-   "count": 13,
+   "count": 12,
    "news": [
     {
      "title": "韓国の大学入試でAI搭載メガネを使った不正受験が相次ぎ、教育省が対応 (2026年10月23日掲載)",
@@ -920,21 +920,21 @@
     },
     {
      "title": "インドはインドネシアのガラスの反補助金調査を停止し、輸出は122%増加",
-     "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE40SElHcDlVMnZQNi11eXotaVE3MUZNdzRfdVFITEpUU1A5cUpudmZoZkRXTEJXM2tlV2ozd1VkNktGd9IBQkFVX3lxTE40SElHcDlVMnZQNi11eXotaVE3MUZNdzRfdVFITEpUU1A5cUpudmZoZkRXTEJXM2tlV2ozd1VkNktGdw?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5YTUJEeHJRV2ZGb1otc2ExOVh4RVNIeTBzSDlFT3dfa0NreWF0RFhucG5NWlR6N2pidmhXM28yMFVPaUVxQVHSAUJBVV95cUxONEhJR3A5VTJ2UDYtdXl6LWlRNzFGTXc0X3VRSExKVFNQOXFKbnZmaGZEV0xCVzNrZVdqM3dVZDZLRnc?oc=5",
      "source": "VOI.ID",
-     "published": "2026-10-23T23:44:06+09:00"
+     "published": "2026-10-23T23:43:36+09:00"
+    },
+    {
+     "title": "インドネシアのコーヒーは世界的に有名で、 地元の潜在力はさまざまな国でますます知られています",
+     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE56M2tsT1FlWmdmMk5mRF9rNnU3MGRpZUktU0IybF9PMXB2Z0RTa01DbmRPeU94VHlsV3NBMV9uQmMwLTk4NDFkZ0VB?oc=5",
+     "source": "VOI.ID",
+     "published": "2026-10-23T22:52:10+09:00"
     },
     {
      "title": "自民・萩生田光一幹事長代行、ＡＳＥＡＮ事務総長と会談…エネルギー分野での関係強化を図る方針を確認",
      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdUdFREk2cmFYU2pvNDVlNzM3QWpRVzREUzZLelBuOW5TMzd0NFFKVzZLT29CdzdScVFTLXM3TE9wX1VEZUZmaXh1bTh0Y2E5TXdyTTJ5dEZtay1hYTdHelFKWnR6RWRWaWdscHJZb0g0UlJGSldtWWN0YWRHWER6Wk5GMzFNaklkN3hYVNIBjAFBVV95cUxPdUdFREk2cmFYU2pvNDVlNzM3QWpRVzREUzZLelBuOW5TMzd0NFFKVzZLT29CdzdScVFTLXM3TE9wX1VEZUZmaXh1bTh0Y2E5TXdyTTJ5dEZtay1hYTdHelFKWnR6RWRWaWdscHJZb0g0UlJGSldtWWN0YWRHWER6Wk5GMzFNaklkN3hYVA?oc=5",
      "source": "ｄメニューニュース",
      "published": "2026-10-23T22:32:00+09:00"
-    },
-    {
-     "title": "英ヘンリー王子の妻メガン妃の父親 フィリピンで児童ポルノの動画や写真所持か フィリピン司法省が捜査と報道　結婚して以来メガン妃とは疎遠",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBrdktQNDNUUDdsWWdHYlJYeGRScm92ZWJZY0psdjRsMmRFUXBzRHQzN2NlSWNZcWZkUUpRamRVQUgzWWtYV1NvNjNodDBQQi1FQW0zYXIyWV83WERhUXp5QXpLTlNscjJWNVFhbEdTNV9qOEnSAXNBVV95cUxQa3ZLUDQzVFA3bFlnR2JSWHhkUnJvdmViWWNKbHY0bDJkRVFwc0R0MzdjZUljWXFmZFFKUWpkVUFIM1lrWFdTbzYzaHQwUEItRUFtM2FyMllfN1hEYVF6eUF6S05TbHIyVjVRYWxHUzVfajhJ?oc=5",
-     "source": "ｄメニューニュース",
-     "published": "2026-10-23T22:28:00+09:00"
     }
    ]
   }
