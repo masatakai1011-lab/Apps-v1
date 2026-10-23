@@ -1,6 +1,5 @@
 """watchlist.txt の銘柄について、値段とニュースを集めて docs/data.json に書き出す。"""
 
-import html
 import json
 import re
 import sys
@@ -238,17 +237,21 @@ def fetch_videos(extra_keywords):
 def fetch_live(handle):
     """チャンネルが今ライブ配信中なら、その動画を返す。"""
     page = get(f"https://www.youtube.com/{handle}/live").decode("utf-8", "replace")
-    # 配信中なら「/live」が動画のページに置き換わる
-    m = re.search(r'<link rel="canonical" href="https://www\.youtube\.com/watch\?v=([\w-]{11})"', page)
-    if not m or '"isUpcoming":true' in page:
-        c = re.search(r'<link rel="canonical" href="([^"]*)"', page)
-        st = re.search(r'"playabilityStatus":\{"status":"(\w+)"(?:,"reason":"([^"]*)")?', page)
-        print(f"ライブ {handle}: 判定材料 canonical={c.group(1) if c else None} "
-              f"status={st.groups() if st else None} isLive={page.count(chr(34) + 'isLive' + chr(34) + ':true')} "
-              f"videoIds={re.findall(r'\"videoId\":\"([\w-]{11})\"', page)[:3]}", file=sys.stderr)
+    if '"isUpcoming":true' in page:
         return None
-    t = re.search(r'<meta (?:name="title"|property="og:title") content="([^"]*)"', page)
-    return {"id": m.group(1), "title": html.unescape(t.group(1)) if t else ""}
+    # 配信中なら「/live」が動画のページに置き換わる。確認画面が出たときも動画の番号は入っている
+    m = re.search(r'<link rel="canonical" href="https://www\.youtube\.com/watch\?v=([\w-]{11})"', page)
+    if not m and '"isLive":true' in page:
+        m = re.search(r'"videoId":"([\w-]{11})"', page)
+    if not m:
+        return None
+    # 本当にそのチャンネルの動画か、動画の基本情報で確かめる
+    info = json.loads(get("https://www.youtube.com/oembed?format=json&url="
+                          + urllib.parse.quote(f"https://www.youtube.com/watch?v={m.group(1)}")))
+    if info.get("author_url", "").lower().rstrip("/").split("/")[-1] != handle.lower():
+        print(f"ライブ {handle}: 別のチャンネルの動画だったため除外（{info.get('author_name')}）", file=sys.stderr)
+        return None
+    return {"id": m.group(1), "title": info.get("title", "")}
 
 
 def fetch_lives():
