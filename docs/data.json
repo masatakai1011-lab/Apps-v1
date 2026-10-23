@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T00:31+09:00",
+ "updated": "2026-10-24T00:34+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 156.832,
-   "change": -1.3000037841796939,
-   "changePercent": -0.8221003674587932,
+   "price": 156.901,
+   "change": -1.231003784179677,
+   "changePercent": -0.7784659365094524,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/24",
-     "close": 156.83200073242188
+     "close": 156.9010009765625
     }
    ],
    "news": [
@@ -120,10 +120,10 @@
      "published": "2026-10-23T22:06:04+09:00"
     },
     {
-     "title": "アメリカ ドル / 日本 円【USDJPY=X】：為替レート・相場",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQa1U5NTk2aS1xRjBZb0dxSzJocWtGel9GdVBUTEx4TVhJY0R1cHB1aGlFZnltb1dpQ3lYVmd2M09TUnMxXzV2cE1GR1kxbGhHWXNGUQ?oc=5",
+     "title": "欧州外国為替市場概況・20時 ドル円 上値重い(トレーダーズ・ウェブ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNzcwTFFxSC11aXFzTjlscW5icWoxZXNXbEVGc2dBRGkwb2t4Mk5SeV9qUXRWSG5XMEFrS1JqWjVDaU9HeUNUSEtScUpaT3FOcUxZY2NHek5YcG1SSVpWY29vcmMwZVd4VzhYQzBPUzJaWk1kZm9RWFJLbjRuOGJxVERmOUhRR00?oc=5",
      "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T20:33:42+09:00"
+     "published": "2026-10-23T20:06:04+09:00"
     }
    ]
   },
@@ -134,9 +134,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1201,
-   "change": -0.0033692335128783224,
-   "changePercent": -0.2998954855526714,
+   "price": 1.1199,
+   "change": -0.0035692335128785224,
+   "changePercent": -0.31769748618021304,
    "currency": "USD",
    "history": [
     {
@@ -229,7 +229,7 @@
     },
     {
      "date": "10/24",
-     "close": 1.1200717687606812
+     "close": 1.1199462413787842
     }
    ],
    "news": [
@@ -484,10 +484,22 @@
  ],
  "videos": [
   {
+   "id": "yxaimHbqnGo",
+   "title": "ガイアの夜明け【ニッポン発！世界で稼ぐ～“新農業”100兆円産業を創出へ～】予告",
+   "channel": "テレ東BIZ ダイジェスト",
+   "published": "2026-10-23T22:53:23+09:00"
+  },
+  {
    "id": "xqUDVvkfcic",
    "title": "なぜ速い？NANDの読み出し#理系通信 #キオクシア #メモリ #NAND",
    "channel": "テレ東BIZ ダイジェスト",
    "published": "2026-10-23T21:00:24+09:00"
+  },
+  {
+   "id": "DLRMjHEGHyA",
+   "title": "アメリカ中間選挙は民主党が優勢！「パープル」に変わる赤い州、トランプ氏逆転へサプライズは？【池畑修平の国際ニュースCORE】",
+   "channel": "テレ東BIZ ダイジェスト",
+   "published": "2026-10-23T21:00:02+09:00"
   }
  ],
  "lives": [
@@ -531,57 +543,57 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52390.47,
-   "change": -477.51046874999884,
-   "changePercent": -0.9032129930369723
+   "price": 52396.38,
+   "change": -471.6004687500026,
+   "changePercent": -0.8920342040089149
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7655.36,
-   "change": -8.070175781250327,
-   "changePercent": -0.10530761807884043
+   "price": 7657.62,
+   "change": -5.810175781250109,
+   "changePercent": -0.07581690767682618
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26073.477,
-   "change": 64.61762499999895,
-   "changePercent": 0.24844467059601283
+   "price": 26084.742,
+   "change": 75.88262499999837,
+   "changePercent": 0.2917568352610556
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 102.15,
-   "change": 2.6799987792968807,
-   "changePercent": 2.694278422044576
+   "price": 102.08,
+   "change": 2.6099987792968733,
+   "changePercent": 2.6239054461312734
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4015.5,
-   "change": -44.89990234375,
-   "changePercent": -1.105800005507655
+   "price": 4010.0,
+   "change": -50.39990234375,
+   "changePercent": -1.241254643776789
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.992,
-   "change": 0.03899993133544921,
-   "changePercent": 0.7874001775647975
+   "price": 4.99,
+   "change": 0.03699993133544943,
+   "changePercent": 0.7470206101859699
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 81534.68,
-   "change": 222.78937499999302,
-   "changePercent": 0.2739935983378729
+   "price": 81486.16,
+   "change": 174.2693750000035,
+   "changePercent": 0.2143221288553128
   }
  ],
  "fear": {
-  "price": 19.15,
-  "change": 0.11999931335449077,
-  "changePercent": 0.6305796585635516,
+  "price": 19.16,
+  "change": 0.12999931335449233,
+  "changePercent": 0.6831282641293893,
   "history": [
    {
     "date": "09/23",
@@ -673,7 +685,7 @@
    },
    {
     "date": "10/23",
-    "close": 19.149999618530273
+    "close": 19.15999984741211
    }
   ]
  },
@@ -808,16 +820,16 @@
    "count": 6,
    "news": [
     {
-     "title": "イスラエル・ネタニヤフ氏「ヨルダン川西岸で大規模作戦準備」 銃撃で緊張高まる",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tdlNibXFqSm5WOEtQd1phWXdjR3BGbkRxZWNuM04xQ2txZnAxQ2ozS0JodzYyRUQ5WFB3TmZpZWRpWG5lazlaVzRhd2pkV0ZvcG0yU0Nvc3I4X0xoTmFjTXBQVTVmXzVaWUdQUQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-10-23T22:40:12+09:00"
-    },
-    {
      "title": "サウジ、高性能化へミサイル工場拡張か 衛星画像を米研究者分析",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmWmN4Y1hpOVVBeExpTzlHZmVfRDVPWHUtVTViWXhOQmdXVU1GNTFHUEpSUmxRM1Q4dkdDalZIemg0RHk3UENDb0tyZ2Jwc2lwY1BQdTYtazctZno2cnpmbm9teTlWZHoyNFA2Q2g5RUFBN1otN3hpX1R6X2R4RzA?oc=5",
      "source": "Reuters",
      "published": "2026-10-23T19:32:45+09:00"
+    },
+    {
+     "title": "【速報】イスラエル首相、西岸全域封鎖準備を指示か",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5MaWRuVVJ2em5sSEdnLWtWaGlmRVZtODVrVi1pemJBUjZQcWwxZk56VXZsRUhSbmY3OWdVa0xhNFFXUmhyUWxWMlA4cw?oc=5",
+     "source": "47NEWS",
+     "published": "2026-10-23T17:46:18+09:00"
     },
     {
      "title": "トランプ氏、イランが中間選挙前に原油高画策と主張　「偽攻撃などでっち上げ」",
@@ -857,10 +869,10 @@
      "published": "2026-10-23T20:00:58+09:00"
     },
     {
-     "title": "第119回",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hNDViX1JQcTFDV0x2bENldTByN2hZNVk3X2ZmY2JoZnhmX3lJVjNPbUVBOHVaRUpfbU1aM1c4VmlzdDU2Z1pZX0ZVRzdyc1NhQ2hpV2lWZEQzYkwwOWNtMW9JS3N5QQ?oc=5",
-     "source": "東京外国語大学",
-     "published": "2026-10-23T18:50:10+09:00"
+     "title": "アフリカゾウ (@OShX5VLgjS21166) on X",
+     "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFAtcW9oZ2xhVmtlVlhsWlNLUUFnd3A1VDNCZ2NlQmdyZldIa3FFcGUwQXhDLUljaDI3MXE0?oc=5",
+     "source": "Howl.Link",
+     "published": "2026-10-23T19:25:03+09:00"
     }
    ]
   },
@@ -907,22 +919,22 @@
      "published": "2026-10-23T17:09:00+09:00"
     },
     {
-     "title": "英ヘンリー王子の妻メガン妃の父親 フィリピンで児童ポルノの動画や写真所持か フィリピン司法省が捜査と報道 結婚して以来メガン妃とは疎遠",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBaN05Fd0ppMDlQZVlsdS1XR2VkeUp6ZWxaVHNzZFBpNndPMFFLOUtvS1VsUVYwZnhfR1Q4aFgyNWNUdC1kN3hKOUp2Z3ZvTGl2VWxkTXl1LU9wZG9nMW8xcWFhQ2U3YXpibEVHY29Sb1hYWWh6?oc=5",
-     "source": "TBS NEWS DIG",
-     "published": "2026-10-23T22:28:23+09:00"
+     "title": "自民・萩生田光一幹事長代行、ＡＳＥＡＮ事務総長と会談…エネルギー分野での関係強化を図る方針を確認",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdUdFREk2cmFYU2pvNDVlNzM3QWpRVzREUzZLelBuOW5TMzd0NFFKVzZLT29CdzdScVFTLXM3TE9wX1VEZUZmaXh1bTh0Y2E5TXdyTTJ5dEZtay1hYTdHelFKWnR6RWRWaWdscHJZb0g0UlJGSldtWWN0YWRHWER6Wk5GMzFNaklkN3hYVNIBjAFBVV95cUxPdUdFREk2cmFYU2pvNDVlNzM3QWpRVzREUzZLelBuOW5TMzd0NFFKVzZLT29CdzdScVFTLXM3TE9wX1VEZUZmaXh1bTh0Y2E5TXdyTTJ5dEZtay1hYTdHelFKWnR6RWRWaWdscHJZb0g0UlJGSldtWWN0YWRHWER6Wk5GMzFNaklkN3hYVA?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-23T22:32:00+09:00"
     },
     {
-     "title": "宮本経済産業副大臣がカオ・キムホンASEAN事務総長と会談を行いました",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9BRGlsWE5KNjBlOFhJdnJZZ3R6T3RUNWlXb1dneEFLQ1BoNUQ5bktoTFpuVGVpRUEtaHlsMnNvQ01lcXJiTnZFbXhPV2xQR0lyenNNMG9OdzB4b3k3LXdZWlh6UQ?oc=5",
-     "source": "経済産業省",
-     "published": "2026-10-23T21:53:21+09:00"
+     "title": "英ヘンリー王子の妻メガン妃の父親 フィリピンで児童ポルノの動画や写真所持か フィリピン司法省が捜査と報道　結婚して以来メガン妃とは疎遠",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBrdktQNDNUUDdsWWdHYlJYeGRScm92ZWJZY0psdjRsMmRFUXBzRHQzN2NlSWNZcWZkUUpRamRVQUgzWWtYV1NvNjNodDBQQi1FQW0zYXIyWV83WERhUXp5QXpLTlNscjJWNVFhbEdTNV9qOEnSAXNBVV95cUxQa3ZLUDQzVFA3bFlnR2JSWHhkUnJvdmViWWNKbHY0bDJkRVFwc0R0MzdjZUljWXFmZFFKUWpkVUFIM1lrWFdTbzYzaHQwUEItRUFtM2FyMllfN1hEYVF6eUF6S05TbHIyVjVRYWxHUzVfajhJ?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-23T22:28:00+09:00"
     },
     {
-     "title": "シーフードレガシー、漁業労働者の人権保護で連携",
-     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB1bFdpU1hmSGRnOXZuVjZ5NVdaQXljcmttSDZKX21YSlR2TUpLUjBxaFJISXh2T1B6ejB4VHYtUGdHRUFvd2dkbFNB?oc=5",
-     "source": "LOGISTICS TODAY",
-     "published": "2026-10-23T19:59:45+09:00"
+     "title": "2,500万人の住民のための口座開設を支援し、財務大臣Suahasilは1兆2,800億ルピアの予算を準備",
+     "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE93dXlDU1ZFLWJFbEpBdy0tWlhfLXpseVozQTBCd1JVb3hVQ0NPb1N0b0I3akFIbi1mUEY3UXVwb0pUUdIBQkFVX3lxTE93dXlDU1ZFLWJFbEpBdy0tWlhfLXpseVozQTBCd1JVb3hVQ0NPb1N0b0I3akFIbi1mUEY3UXVwb0pUUQ?oc=5",
+     "source": "VOI.ID",
+     "published": "2026-10-23T22:16:16+09:00"
     }
    ]
   }
