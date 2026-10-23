@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T00:34+09:00",
+ "updated": "2026-10-24T00:53+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 156.901,
-   "change": -1.231003784179677,
-   "changePercent": -0.7784659365094524,
+   "price": 156.869,
+   "change": -1.2630037841796877,
+   "changePercent": -0.7987021943410324,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/24",
-     "close": 156.9010009765625
+     "close": 156.86900329589844
     }
    ],
    "news": [
@@ -120,10 +120,10 @@
      "published": "2026-10-23T22:06:04+09:00"
     },
     {
-     "title": "欧州外国為替市場概況・20時 ドル円 上値重い(トレーダーズ・ウェブ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNzcwTFFxSC11aXFzTjlscW5icWoxZXNXbEVGc2dBRGkwb2t4Mk5SeV9qUXRWSG5XMEFrS1JqWjVDaU9HeUNUSEtScUpaT3FOcUxZY2NHek5YcG1SSVpWY29vcmMwZVd4VzhYQzBPUzJaWk1kZm9RWFJLbjRuOGJxVERmOUhRR00?oc=5",
+     "title": "アメリカ ドル / 日本 円【USDJPY=X】：為替レート・相場",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQa1U5NTk2aS1xRjBZb0dxSzJocWtGel9GdVBUTEx4TVhJY0R1cHB1aGlFZnltb1dpQ3lYVmd2M09TUnMxXzV2cE1GR1kxbGhHWXNGUQ?oc=5",
      "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T20:06:04+09:00"
+     "published": "2026-10-23T20:33:42+09:00"
     }
    ]
   },
@@ -134,9 +134,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1199,
-   "change": -0.0035692335128785224,
-   "changePercent": -0.31769748618021304,
+   "price": 1.1204,
+   "change": -0.0030692335128783554,
+   "changePercent": -0.27319248461138856,
    "currency": "USD",
    "history": [
     {
@@ -229,10 +229,16 @@
     },
     {
      "date": "10/24",
-     "close": 1.1199462413787842
+     "close": 1.1204482316970825
     }
    ],
    "news": [
+    {
+     "title": "ユーロドル、１．１２ドル付近 フランスの景気悪化が鮮明に＝ＮＹ為替",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1sTWlFYWl3LUlVeEtaQjZDR2V2VEZqM21aYzlBNkxySEVoS25DUFVnYzZoN09GRTAzWHRJenZKNUhvc3ItcC1SdA?oc=5",
+     "source": "みんかぶ FX/為替",
+     "published": "2026-10-24T00:34:29+09:00"
+    },
     {
      "title": "東京外国為替市場概況・17時 ユーロドル、小安い｜FX・為替ニュース",
      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE00ckV0eE4zQlpobkh0S3Q2SkU5ci1aR29BVEVLd09RWGVhNW9JZ0Vkc1BpMEZVWTdOUnYxa0lLSTJkeGhZU3pPR1ZYZE1DbjZMU0E?oc=5",
@@ -244,12 +250,6 @@
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVENia2JfeFRJYXliY281Y2t1NDhrYWh2VnJ2emJmTTdJbWZVbXdEVzFUZkJnNmZ3bEtnSEwzZjhseWpqV2xGWHI0VnRWeTlsT2RFXzBpdFh2Mm9HTnI2MS1oMk9uZktvQ05JOVYzZExhc0dwLXoyX1A5bHVLQklHSU1tQVQyQm8?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-10-23T16:38:33+09:00"
-    },
-    {
-     "title": "ユーロドル、1.1197ドル付近で推移 10月独製造業・サービス業PMIはまちまち｜FX・為替ニュース",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0zTzNocm1ON1RtczRNNFNIbnZoOHZJYVMyLTZKbENXMkQ1ZWRhVThFRDRHbHNpQ2MxTXI3LWs4bGU0U0FjUS03SlZlcFFFdHF1UXc?oc=5",
-     "source": "ザイFX！",
-     "published": "2026-10-23T16:38:00+09:00"
     }
    ]
   },
@@ -543,51 +543,51 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52396.38,
-   "change": -471.6004687500026,
-   "changePercent": -0.8920342040089149
+   "price": 52366.97,
+   "change": -501.01046874999884,
+   "changePercent": -0.9476633385800383
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7657.62,
-   "change": -5.810175781250109,
-   "changePercent": -0.07581690767682618
+   "price": 7651.79,
+   "change": -11.640175781250036,
+   "changePercent": -0.15189250132449175
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26084.742,
-   "change": 75.88262499999837,
-   "changePercent": 0.2917568352610556
+   "price": 26069.637,
+   "change": 60.77762499999881,
+   "changePercent": 0.233680470656929
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 102.08,
-   "change": 2.6099987792968733,
-   "changePercent": 2.6239054461312734
+   "price": 103.21,
+   "change": 3.7399987792968687,
+   "changePercent": 3.759926343017322
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4010.0,
-   "change": -50.39990234375,
-   "changePercent": -1.241254643776789
+   "price": 4009.1,
+   "change": -51.29990234375009,
+   "changePercent": -1.2634199482208315
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.99,
-   "change": 0.03699993133544943,
-   "changePercent": 0.7470206101859699
+   "price": 4.999,
+   "change": 0.045999931335448885,
+   "changePercent": 0.928728663390703
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 81486.16,
-   "change": 174.2693750000035,
-   "changePercent": 0.2143221288553128
+   "price": 81500.85,
+   "change": 188.95937500000582,
+   "changePercent": 0.23238836724564946
   }
  ],
  "fear": {
@@ -693,13 +693,13 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 8,
+   "count": 9,
    "news": [
     {
-     "title": "米ホワイトハウス、ウクライナ南部で部分停戦を発表 「メラニア夫人主導」",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1heC1na3FzVllwWUM3SkJaVDhLb18yZXl5bEgtNTZLWDlaMHQ1bkx0aU1QMWJIblhSSnVVbVR1TEpsU1RNUnpuVzMtcjA3MkluNVFZRzlxSG94bmZKMWJwLWxTa0pmNzY3UnlwdQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-10-23T23:29:55+09:00"
+     "title": "ウクライナ南部で局地停戦 前線都市へ人道支援搬入―米ホワイトハウス",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5mRG9MZi13WjBNWUpSeWduR2lqY1BMNjZOeDBQYWFPSk9rUlRvMTU3b2RWSUhhaHhDcDFDWlVVUjVpLWN2U3BHOC15UnhDY01DeXV5RUVMN2hMY0laY2ZKaW5YZw?oc=5",
+     "source": "時事ドットコム",
+     "published": "2026-10-23T23:30:00+09:00"
     },
     {
      "title": "中国スパイ摘発の手を緩めていない米国 逮捕件数はトランプ政権発足前から88％増",
@@ -733,6 +733,12 @@
      "published": "2026-10-22T05:00:00+09:00"
     },
     {
+     "title": "熱帯台風バンシは、中央メキシコ沿岸で大きなハリケーンに強化",
+     "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5oSVMzNEo5RG9IU3I4cThlUkI1V3VPOWVnMVpIcWRfVmloN1dNbXhEdXhvanlGY3VXMGl2R3BpaHQyZ9IBQkFVX3lxTE5oSVMzNEo5RG9IU3I4cThlUkI1V3VPOWVnMVpIcWRfVmloN1dNbXhEdXhvanlGY3VXMGl2R3BpaHQyZw?oc=5",
+     "source": "VOI.ID",
+     "published": "2026-10-23T23:43:47+09:00"
+    },
+    {
      "title": "ベネズエラ vs ザンビア : グループD 第2節 【FIFA U17 Women's World Cup】",
      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8xMXpWeVBvVG1VTEMzSFU3OFk2WDJ5Y2tMU2NxQmtRSzVQS2F4dC1BUkJmN3psVHd4WjVaam1jeThNY29jWGt5RzdoSnpJZzB4R1dSY29OeHdsM3lVM3BTUGc2UnlyWXNVc19IdU54X0VxUQ?oc=5",
      "source": "ABEMA",
@@ -743,12 +749,6 @@
      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jQkJDdUN3N0FCcEtsS1l2UTNYeG41ZUUyRXpJSGNDQXJEOFRaV2tWS09vNkwwQVM3U0pOa3VZal9WbndTWVlVOG5DbHFYQklxWllsdDdmWGdWTHFqQk95N0VHTnVZN3Y4ZGtxRTY3Y2hfS3hmLU1J?oc=5",
      "source": "TradingView",
      "published": "2026-10-23T18:55:57+09:00"
-    },
-    {
-     "title": "トランプ関税に翻弄されるブラジル大統領選挙 ルラ大統領とボルソナロ氏息子が接戦 25日に決選投票",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAyd0hhVGZTUk1LUWJ4Q0tLa1R4aTd5cVA0aEVHREpiNVZ2MVBqd3I2R3pzZHFtck1qbzRMcUFqSXE1X0o0d2toaWJFU2dEMzRfX0ItQnBIY0RPb04zX1ZwRU1pZFIyT2xTU0VQeGVTX2dTVXFf?oc=5",
-     "source": "TBS NEWS DIG",
-     "published": "2026-10-23T17:11:30+09:00"
     }
    ]
   },
@@ -786,13 +786,13 @@
   {
    "key": "russia",
    "label": "ロシア・ウクライナ",
-   "count": 11,
+   "count": 12,
    "news": [
     {
-     "title": "米ホワイトハウス、ウクライナ南部で部分停戦を発表 「メラニア夫人主導」",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1heC1na3FzVllwWUM3SkJaVDhLb18yZXl5bEgtNTZLWDlaMHQ1bkx0aU1QMWJIblhSSnVVbVR1TEpsU1RNUnpuVzMtcjA3MkluNVFZRzlxSG94bmZKMWJwLWxTa0pmNzY3UnlwdQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-10-23T23:29:55+09:00"
+     "title": "ウクライナ南部で局地停戦 前線都市へ人道支援搬入―米ホワイトハウス",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5mRG9MZi13WjBNWUpSeWduR2lqY1BMNjZOeDBQYWFPSk9rUlRvMTU3b2RWSUhhaHhDcDFDWlVVUjVpLWN2U3BHOC15UnhDY01DeXV5RUVMN2hMY0laY2ZKaW5YZw?oc=5",
+     "source": "時事ドットコム",
+     "published": "2026-10-23T23:30:00+09:00"
     },
     {
      "title": "ドイツでロシアのスパイ活動容疑、ウクライナ国籍の男逮捕",
@@ -820,16 +820,16 @@
    "count": 6,
    "news": [
     {
+     "title": "イスラエル・ネタニヤフ氏「ヨルダン川西岸で大規模作戦準備」 銃撃で緊張高まる",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tdlNibXFqSm5WOEtQd1phWXdjR3BGbkRxZWNuM04xQ2txZnAxQ2ozS0JodzYyRUQ5WFB3TmZpZWRpWG5lazlaVzRhd2pkV0ZvcG0yU0Nvc3I4X0xoTmFjTXBQVTVmXzVaWUdQUQ?oc=5",
+     "source": "日本経済新聞",
+     "published": "2026-10-23T22:40:12+09:00"
+    },
+    {
      "title": "サウジ、高性能化へミサイル工場拡張か 衛星画像を米研究者分析",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmWmN4Y1hpOVVBeExpTzlHZmVfRDVPWHUtVTViWXhOQmdXVU1GNTFHUEpSUmxRM1Q4dkdDalZIemg0RHk3UENDb0tyZ2Jwc2lwY1BQdTYtazctZno2cnpmbm9teTlWZHoyNFA2Q2g5RUFBN1otN3hpX1R6X2R4RzA?oc=5",
      "source": "Reuters",
      "published": "2026-10-23T19:32:45+09:00"
-    },
-    {
-     "title": "【速報】イスラエル首相、西岸全域封鎖準備を指示か",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5MaWRuVVJ2em5sSEdnLWtWaGlmRVZtODVrVi1pemJBUjZQcWwxZk56VXZsRUhSbmY3OWdVa0xhNFFXUmhyUWxWMlA4cw?oc=5",
-     "source": "47NEWS",
-     "published": "2026-10-23T17:46:18+09:00"
     },
     {
      "title": "トランプ氏、イランが中間選挙前に原油高画策と主張　「偽攻撃などでっち上げ」",
@@ -869,17 +869,17 @@
      "published": "2026-10-23T20:00:58+09:00"
     },
     {
-     "title": "アフリカゾウ (@OShX5VLgjS21166) on X",
-     "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFAtcW9oZ2xhVmtlVlhsWlNLUUFnd3A1VDNCZ2NlQmdyZldIa3FFcGUwQXhDLUljaDI3MXE0?oc=5",
-     "source": "Howl.Link",
-     "published": "2026-10-23T19:25:03+09:00"
+     "title": "第119回",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9hNDViX1JQcTFDV0x2bENldTByN2hZNVk3X2ZmY2JoZnhmX3lJVjNPbUVBOHVaRUpfbU1aM1c4VmlzdDU2Z1pZX0ZVRzdyc1NhQ2hpV2lWZEQzYkwwOWNtMW9JS3N5QQ?oc=5",
+     "source": "東京外国語大学",
+     "published": "2026-10-23T18:50:10+09:00"
     }
    ]
   },
   {
    "key": "china",
    "label": "中国・朝鮮半島・台湾",
-   "count": 13,
+   "count": 14,
    "news": [
     {
      "title": "“AIメガネ”の不正受験が横行 実際に使ってみると答えがレンズに 韓国教育省「全員調べる」 試験開始後にすり替えも",
@@ -919,6 +919,12 @@
      "published": "2026-10-23T17:09:00+09:00"
     },
     {
+     "title": "インドはインドネシアのガラスの反補助金調査を停止し、輸出は122%増加",
+     "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5YTUJEeHJRV2ZGb1otc2ExOVh4RVNIeTBzSDlFT3dfa0NreWF0RFhucG5NWlR6N2pidmhXM28yMFVPaUVxQVHSAUJBVV95cUxONEhJR3A5VTJ2UDYtdXl6LWlRNzFGTXc0X3VRSExKVFNQOXFKbnZmaGZEV0xCVzNrZVdqM3dVZDZLRnc?oc=5",
+     "source": "VOI.ID",
+     "published": "2026-10-23T23:43:36+09:00"
+    },
+    {
      "title": "自民・萩生田光一幹事長代行、ＡＳＥＡＮ事務総長と会談…エネルギー分野での関係強化を図る方針を確認",
      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdUdFREk2cmFYU2pvNDVlNzM3QWpRVzREUzZLelBuOW5TMzd0NFFKVzZLT29CdzdScVFTLXM3TE9wX1VEZUZmaXh1bTh0Y2E5TXdyTTJ5dEZtay1hYTdHelFKWnR6RWRWaWdscHJZb0g0UlJGSldtWWN0YWRHWER6Wk5GMzFNaklkN3hYVNIBjAFBVV95cUxPdUdFREk2cmFYU2pvNDVlNzM3QWpRVzREUzZLelBuOW5TMzd0NFFKVzZLT29CdzdScVFTLXM3TE9wX1VEZUZmaXh1bTh0Y2E5TXdyTTJ5dEZtay1hYTdHelFKWnR6RWRWaWdscHJZb0g0UlJGSldtWWN0YWRHWER6Wk5GMzFNaklkN3hYVA?oc=5",
      "source": "ｄメニューニュース",
@@ -929,12 +935,6 @@
      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBrdktQNDNUUDdsWWdHYlJYeGRScm92ZWJZY0psdjRsMmRFUXBzRHQzN2NlSWNZcWZkUUpRamRVQUgzWWtYV1NvNjNodDBQQi1FQW0zYXIyWV83WERhUXp5QXpLTlNscjJWNVFhbEdTNV9qOEnSAXNBVV95cUxQa3ZLUDQzVFA3bFlnR2JSWHhkUnJvdmViWWNKbHY0bDJkRVFwc0R0MzdjZUljWXFmZFFKUWpkVUFIM1lrWFdTbzYzaHQwUEItRUFtM2FyMllfN1hEYVF6eUF6S05TbHIyVjVRYWxHUzVfajhJ?oc=5",
      "source": "ｄメニューニュース",
      "published": "2026-10-23T22:28:00+09:00"
-    },
-    {
-     "title": "2,500万人の住民のための口座開設を支援し、財務大臣Suahasilは1兆2,800億ルピアの予算を準備",
-     "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE93dXlDU1ZFLWJFbEpBdy0tWlhfLXpseVozQTBCd1JVb3hVQ0NPb1N0b0I3akFIbi1mUEY3UXVwb0pUUdIBQkFVX3lxTE93dXlDU1ZFLWJFbEpBdy0tWlhfLXpseVozQTBCd1JVb3hVQ0NPb1N0b0I3akFIbi1mUEY3UXVwb0pUUQ?oc=5",
-     "source": "VOI.ID",
-     "published": "2026-10-23T22:16:16+09:00"
     }
    ]
   }
