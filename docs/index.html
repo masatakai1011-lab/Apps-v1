@@ -178,9 +178,10 @@ function card(item) {
 fetch("data.json", { cache: "no-store" })
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
-    const d = new Date(data.updated);
-    document.getElementById("updated").textContent =
-      `最終更新：${d.getMonth() + 1}月${d.getDate()}日 ${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}`;
+    const when = new Date(data.updated).toLocaleString("ja-JP", {
+      timeZone: "Asia/Tokyo", month: "long", day: "numeric", hour: "numeric", minute: "2-digit",
+    });
+    document.getElementById("updated").textContent = `最終更新：${when}`;
     const grid = document.getElementById("grid");
     data.items.forEach(item => grid.append(card(item)));
   })

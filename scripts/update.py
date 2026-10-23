@@ -101,7 +101,10 @@ def fetch_news(keyword):
             "published": published.isoformat() if published else None,
         })
     news.sort(key=lambda n: n["published"] or "", reverse=True)
-    return news[:NEWS_PER_ITEM]
+    # 同じ見出しが別の配信元から重ねて届くことがあるので、1つにまとめる
+    seen = set()
+    unique = [n for n in news if not (n["title"] in seen or seen.add(n["title"]))]
+    return unique[:NEWS_PER_ITEM]
 
 
 def main():
