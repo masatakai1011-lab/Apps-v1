@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T15:27+09:00",
+ "updated": "2026-10-23T15:28+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -7,7 +7,9 @@
    "keyword": "ドル円",
    "symbol": "USDJPY=X",
    "kind": "fx",
-   "errors": [],
+   "errors": [
+    "ニュースを取得できませんでした"
+   ],
    "price": 156.934,
    "change": -1.19800378417969,
    "changePercent": -0.7575972956206505,
@@ -106,38 +108,7 @@
      "close": 156.9340057373047
     }
    ],
-   "news": [
-    {
-     "title": "東京為替：ドル・円は変わらず、ドル買い抑制(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZWJtV09TTEtfNHp6MHNCR2haN0phU05UdHhfTWQ3aE13NHctbWk4eHVQNm0yQWFuSmktZWpDWGlEbjhKazQ2R1Yyc01jbnVkY3hJYnczUTl3djRLVHdBTm5BaS12REtTaU9nZ09COVcwRDJscWx3YzZIcDMxTU9ZMFNhYzdJUzA?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T15:22:35+09:00"
-    },
-    {
-     "title": "東京為替：ドル・円は底堅い、ややドル買い(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdXRhUHhhMWh0NEV5RUMyXzlmNjBhOElTTnZfRmNEbFVFWTVzUW4tVlhMdmNYbnp6ckYzanRFNFdSQ2xsdThTYkI0QXZZWkplNlRRZEdQelhiZGtDOWxoQk51Ulc0Vm16VmNfUlBWOTI2TGJ0eFpiY1ZrTzRtd1Y0alJnbnhPLTA?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T14:20:05+09:00"
-    },
-    {
-     "title": "東京為替：ドル・円は小動き、157付近の売りを意識",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAyLUxzVTNyRk1MOU9WY0RTbUxydFFkX0Q1OFhnUWlWNERfazB4Y0c4OThFRUVGRmJqY003TDh5cEhfM09DbUdhSUI3R2dhZnpoVG1odWlHYXA0WmtnSFZlNQ?oc=5",
-     "source": "株探",
-     "published": "2026-10-23T13:46:31+09:00"
-    },
-    {
-     "title": "欧米為替：デイリー見通し カナダドル・円／カナダ経済を注視(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcGpVMVlNZHA2ZHNlWFlTWEhNZ2xydk01N0FhWjlJQUZGNkZFby1ra2JMZ3hhZ3cwaG43QkIyaC1YM1REZXM5UE1QTmNpMTNET2c0NzhlMU9wSmVqcjlFQlZEWWIyeHFPMXFLM1N0SlVST2ZEdjdJU3RZTDhtcDFVdm1hMTZhOVU?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T13:30:40+09:00"
-    },
-    {
-     "title": "欧米為替：デイリー見通し NZドル・円／NZドル・ドルにらみ(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdW1WaGdKRWpyT1ZVUTVuVm9CaDMtbmhoVU9kSWRVZ2gycFlwUlRJV3J6RWoySjBVbG1lUTZDSGJqQ0wwVWU4V3otYk9xNzN1ZE9lVEV2Y1pkQ1dNVlc1OGR5cGZhNVkySVNmZU9KV2ZBT2c5LVBDbS1hNjRrT3VMdFNiTDk4cm8?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T13:30:11+09:00"
-    }
-   ]
+   "news": []
   },
   {
    "name": "ユーロ/米ドル",
@@ -145,7 +116,9 @@
    "keyword": "ユーロドル",
    "symbol": "EURUSD=X",
    "kind": "fx",
-   "errors": [],
+   "errors": [
+    "ニュースを取得できませんでした"
+   ],
    "price": 1.122,
    "change": -0.0014692335128783096,
    "changePercent": -0.1307764795911937,
@@ -244,38 +217,7 @@
      "close": 1.121956706047058
     }
    ],
-   "news": [
-    {
-     "title": "ユーロドル、1.11ドル後半は買いが目立つ 1.12ドルや1.1175ドルにはOPの設定も(トレーダーズ・ウェブ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPM3F3elJXUDg1dW90eVB1NGl4OUVzYldhaWN0Q3YzeGlVdEMtaUZXUi1JMjhFRy05ZmFWQ2kxRWtqOTVmcFRDRXgyeFBGeHpyWV82LUV3M2tadnByZTJ0Mm92aVFSZTFUTExKWXFNVE5IVFBkcXlqSGhyaTNXMDY1enJDSEhxTUE?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T13:00:04+09:00"
-    },
-    {
-     "title": "ユーロドル、1.11ドル後半は買いが目立つ 1.12ドルや1.1175ドルにはOPの設定も｜FX・為替ニュース",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4xRE5jYVdnWHdUdksxVFg2WEZTaHBuSl9mQjNDV3FVZ3c0Xy1rTU1WNkw2eTVpbnpoeFZla040R3VlUk9tSTJ3S3QzcVlvX2ltOGc?oc=5",
-     "source": "ザイFX！",
-     "published": "2026-10-23T13:00:00+09:00"
-    },
-    {
-     "title": "【テクニカル】日足テクニカル・ユーロドル＝伸び悩むも一目・転換線辺りでは下げ渋る",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1Gek1XWHgxbDgtZk5FOE5BTHBWd2Q1UlJDdlprQkZDdHUxaUprUnk3amFkWXc4NU9iNWl2Q0ZBVWh0a09Nd1czSjB5elNpckhsd0pDSWFEMmc1MmVWN19tWGNVWQ?oc=5",
-     "source": "外為どっとコム",
-     "published": "2026-10-23T12:29:11+09:00"
-    },
-    {
-     "title": "２２日の為替市場の四本値（ドル円・ユーロドル・ユーロ円）",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBsQzRVUVpuVEpTNV96MGJPWW40TVVGbU01ODhTY3hHUXdGZTdMUnhDY3R1czFwbmhHeHVOV2N6V1BMdVhRU3ZhUw?oc=5",
-     "source": "みんかぶ FX/為替",
-     "published": "2026-10-23T06:20:29+09:00"
-    },
-    {
-     "title": "ニューヨーク外国為替市場概況・22日 ユーロドル、小幅続落｜FX・為替ニュース",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE45WlJ6TkwzbG95QXVaRjZFTGRQdWI5eW83UzFWQXpYaDBHWTZ6aER5dFdkZVlpRnNWZllFTmc5TlQ3ZWJZN2Jva2lVOEx6Nm0tX2c?oc=5",
-     "source": "ザイFX！",
-     "published": "2026-10-23T06:03:00+09:00"
-    }
-   ]
+   "news": []
   },
   {
    "name": "キオクシア",
@@ -283,10 +225,12 @@
    "keyword": "キオクシア",
    "symbol": "285A.T",
    "kind": "stock",
-   "errors": [],
-   "price": 12670.0,
-   "change": 75.0,
-   "changePercent": 0.5954743946010321,
+   "errors": [
+    "ニュースを取得できませんでした"
+   ],
+   "price": 12625.0,
+   "change": 30.0,
+   "changePercent": 0.23818975784041285,
    "currency": "JPY",
    "history": [
     {
@@ -371,41 +315,10 @@
     },
     {
      "date": "10/23",
-     "close": 12670.0
+     "close": 12625.0
     }
    ],
-   "news": [
-    {
-     "title": "キオクシア株が一時9.6%急落、半年ぶり安値に｜米AI投資への懸念が波及か",
-     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAyLURVQXR1MmFtS3N2M3dtZkkwZDFVSEdTOEt2dnp2YUtrYmI1QURWaGhVNEdobjU5eGpTQzI4eDlyS0N5TXJqM1VkaGlfYkQ0Q0xYdkRiTHlWSzNXS0xnSTdVRGJZRkVOcGhDZ2RVN3lpQQ?oc=5",
-     "source": "CRYPTO TIMES",
-     "published": "2026-10-23T15:21:12+09:00"
-    },
-    {
-     "title": "キオクシアHD株の買い残減少期待が後退、東証が信用取引データ修正",
-     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9acFlBUHNySjNtcDJOcXNuSzg1NlZ2QUpkRmJKTndueDdiMmRsRTZTeFNRaHZKZHNkSVFaYV9DOUJaeWZLTm14bkpSbmNpY3BGTUhHeWh1eGtaQzJETkpQbHplTTRhb2lzWHFsZXlPbVRzYzQ3Yklz?oc=5",
-     "source": "Bloomberg.com",
-     "published": "2026-10-23T14:19:00+09:00"
-    },
-    {
-     "title": "日経平均は４２０円程度安、売買代金はキオクシア、アドバンテス、太陽誘電が上位(ウエルスアドバイザー)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQb2JZLWh1X2Z1VUpyVXB0SHdKaXpMcWYtUzNEYkVFcGFxZ3BEckZoNXlHdEcwLUl0cTRoU01JR25mUU1kemNLVjFPMVJCWFRPZmQ0TDBTd19qd0pIcjcxdWtPZkFsVWJQYzFRQlY1M0tkMnR6b0dmTGRLdkVrVTFJZnkzUWR1dGc?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T14:07:51+09:00"
-    },
-    {
-     "title": "キオクシアHD株価が半年ぶり安値 米ハイテク株安が波及",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBZUWQzLXR4TlNyWjRiVjZXMWZTS3RVMnFxbmQ5d0pjaGdNVFZpODAyOG9NdzJnbk9GakczNGhRbUNwWGs4Nm5FbUUyNThyeTRwSEw5US1xOHVrNWMxZlVYM05vdVp0a3RpWUFXOQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-10-23T11:46:30+09:00"
-    },
-    {
-     "title": "キオクシアHDが半年ぶり安値､米国でのAI･半導体株安が波及",
-     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5mUUZIRXl5NGxwc0h0bVNRSTVoLTZEbTJyMFgxMGY4RGM0ejNOVHRFaGVKemZpU3BkYTRQdEVzbWdvZXcwRHFBM2ZVNGxwQ0Nwdjd2dFJKMA?oc=5",
-     "source": "四季報オンライン",
-     "published": "2026-10-23T10:05:36+09:00"
-    }
-   ]
+   "news": []
   },
   {
    "name": "サイバートラスト",
@@ -413,10 +326,12 @@
    "keyword": "サイバートラスト",
    "symbol": "4498.T",
    "kind": "stock",
-   "errors": [],
-   "price": 2512.0,
-   "change": -48.0,
-   "changePercent": -1.875,
+   "errors": [
+    "ニュースを取得できませんでした"
+   ],
+   "price": 2505.0,
+   "change": -55.0,
+   "changePercent": -2.1484375,
    "currency": "JPY",
    "history": [
     {
@@ -501,41 +416,10 @@
     },
     {
      "date": "10/23",
-     "close": 2512.0
+     "close": 2505.0
     }
    ],
-   "news": [
-    {
-     "title": "サイバートラスト---反落、電子署名サービスがエメラダの金融機関向け業務支援プラットフォームに採用も(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaldlQnJYNngzbkwzRTdZNk55VTlTMk5EcEJWMS1JbENOLWdINi14a2lCY1NjTXpuYXhVTnZCQTFFVDZXaDNfTlJBV3EzeVUycUlqQW9EUFo3QVVYUlNoSmdYa2IxVU1IZWNUeXhvU1pSclBtbDFjMFotOWwyLWtnRkJubEstTUk?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-23T13:46:22+09:00"
-    },
-    {
-     "title": "サイバートラスト---反落、電子署名サービスがエメラダの金融機関向け業務支援プラットフォームに採用も",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pS0lobHUtdnRpZEIwdWpWODRCZXY3NHRjSjRyVzdXVHNINWY1WjdDZHVhdHVUczQ3SkdJQzBiRmlEWGVDTUhacmRyYy0xd3FxY2c?oc=5",
-     "source": "株探",
-     "published": "2026-10-23T13:46:22+09:00"
-    },
-    {
-     "title": "サイバートラスト---反落、電子署名サービスがエメラダの金融機関向け業務支援プラットフォームに採用も 執筆",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3cXFzMjVEdzV2YkZGaDVnSlBKZDJMXzhwb3BUb1NGazZ0VzJkbl9PUGxST0RLOW9PYzRNOGU1aXY1ODZVMUxsb2YyQWZLQ1RUd0dfck9RZkVyTUZ6WDlFaGhyWklieXJjOWFydWRaYVM?oc=5",
-     "source": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
-     "published": "2026-10-23T13:46:00+09:00"
-    },
-    {
-     "title": "サイバトラスが大幅３日続伸、エメラダの金融機関向け業務支援プラットフォームに採用",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB1aWl3bjVBcHNQNVRqZlFsZHFJREItdm1tUlpJSFZTUENQc2d3Ml9hUWhqS2tQMG5KZFhsRXNHUXRUYkxkTkpWVg?oc=5",
-     "source": "みんかぶ",
-     "published": "2026-10-23T09:53:49+09:00"
-    },
-    {
-     "title": "PHP に緊急度「Critical」の RCE 脆弱性。公式パッチが提供されない PHP 5 / 7 / 8.0 / 8.1 をどう守るか",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVDNvaXprSlYtUnRtVTZPY1ZUU29hYWhUNHgwQ05LMzBGTjg3RlFzVUVwRVkzMVhqckVrdllNb0xxRzJRSjlpRWZabmRvQVVHN0pYckFDeUJYVzdlSklFMXYwcmNoODYwZG9mVUZsdWM0cC0tNFYtdVpzWFJIWHltZXBR?oc=5",
-     "source": "サイバートラスト",
-     "published": "2026-10-22T17:50:00+09:00"
-    }
-   ]
+   "news": []
   }
  ],
  "videos": [
@@ -543,49 +427,49 @@
    "id": "l0njtsUiat4",
    "title": "【会見ノーカット】閣議後　小野田経済安保相 記者会見「重要施設等周辺の規制について」 ──政治ニュース（日テレNEWS）",
    "channel": "日テレNEWS",
-   "published": "2026-10-23T14:27+09:00"
+   "published": "2026-10-23T14:28+09:00"
   },
   {
    "id": "xOfqiUfEz0U",
    "title": "9月全国消費者物価2.1％上昇　9カ月ぶり2％超",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-23T13:27+09:00"
+   "published": "2026-10-23T13:28+09:00"
   },
   {
    "id": "CuBIzagjthI",
    "title": "「ゴルゴ13」が描く　世界経済の裏側【日経モープラFT】",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-23T10:27+09:00"
+   "published": "2026-10-23T10:28+09:00"
   },
   {
    "id": "aBOySKzXRQM",
    "title": "米アメリカン航空決算 燃料コスト↑7割で最終赤字【モーサテ】",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-23T09:27+09:00"
+   "published": "2026-10-23T09:28+09:00"
   },
   {
    "id": "CRxOkPcdoHI",
    "title": "米P&G決算 売上高 予想上回る【モーサテ】",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-23T09:27+09:00"
+   "published": "2026-10-23T09:28+09:00"
   },
   {
    "id": "_QRN-9wZ8tM",
    "title": "米モデルナ 株価↓25%超急落 情報漏えいか【モーサテ】",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-23T09:27+09:00"
+   "published": "2026-10-23T09:28+09:00"
   },
   {
    "id": "dPKesXO2bUU",
    "title": "米ブラックストーン 決算振るわず 金利高が重し【モーサテ】",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-23T09:27+09:00"
+   "published": "2026-10-23T09:28+09:00"
   },
   {
    "id": "_dAo5b7zp1Q",
    "title": "日経平均3カ月ぶり安値 AI･半導体関連に売り【WBS】",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-23T02:27+09:00"
+   "published": "2026-10-23T02:28+09:00"
   }
  ]
 }
