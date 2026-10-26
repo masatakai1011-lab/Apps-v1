@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T23:43+09:00",
+ "updated": "2026-10-27T00:02+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 157.468,
-   "change": 0.9739967041015518,
-   "changePercent": 0.622385959582056,
+   "price": 157.536,
+   "change": 1.0419967041015639,
+   "changePercent": 0.6658381037970889,
    "currency": "JPY",
    "history": [
     {
@@ -94,11 +94,17 @@
      "close": 156.49400329589844
     },
     {
-     "date": "10/26",
-     "close": 157.46800231933594
+     "date": "10/27",
+     "close": 157.53599548339844
     }
    ],
    "news": [
+    {
+     "title": "【速報】ドル・円157.47円、ドル上値試す、米・10月ダラス連銀製造業活動指数は予想上回る(フィスコ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdktOOXhCdWZtbmtxRVdfWkFURFhmM1RtR093aTVMOEIweEhLbkVFTnNEUWJzZ2g0ZjBxc1FhcVg2Z2VMMnpmTXZrVDZDVHhkaWpWQldtRkthdmhEdnJPM1phVzg4b01BMnJlQjM4TlBjbkVESkxLWWgxR28wSUVFTWlWM3FVYk0?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-10-26T23:42:01+09:00"
+    },
     {
      "title": "【テクニカル】週足テクニカル・ドル円 サポート＆レジスタンス",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8tWTFRVlRMaXc4V1ViVUotX1NoU0tXSVR3bDhjZG5vTXdLU2N0OFVHM19mY3FHV1hIaHI2RkNUTHlESnJOaldITFRjbTZybGJKUmZzZ1VsaEdzTHlwTERwcTZ6SQ?oc=5",
@@ -110,12 +116,6 @@
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaEZkVmFMVjBVdzN5Uk16XzBvQk5jbEpDcjJoTlVfckd3Nm82dUlTc09NR2wtVGNLbFVGLVdzV0M2eHF3OVlYeFpTRUJ0akVKTS02TmFWWVJrWm43NmtjNXliSEJGdnhLdEN5S2RLWmxfelZHcG9yUTlzTHZHcG15RWNyMF8wanM?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-10-26T22:06:04+09:00"
-    },
-    {
-     "title": "オーストラリア ドル / 日本 円【AUDJPY=X】：為替レート・相場",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZNnNQU0VuNWo4LTdyaS1Ybng4dm55OTBYcGtfVmhrbHRRSGNUUmV5MUt2dDBDOHR4NnlleUZOWGtubEpMY2xaYnpVTXBlRE53MlRvVQ?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-26T21:44:51+09:00"
     }
    ]
   },
@@ -126,9 +126,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1188,
-   "change": -0.0033455335617065263,
-   "changePercent": -0.29813722566695544,
+   "price": 1.1183,
+   "change": -0.003845533561706471,
+   "changePercent": -0.3426947260130057,
    "currency": "USD",
    "history": [
     {
@@ -212,8 +212,8 @@
      "close": 1.1221455335617065
     },
     {
-     "date": "10/26",
-     "close": 1.1188185214996338
+     "date": "10/27",
+     "close": 1.11831796169281
     }
    ],
    "news": [
@@ -245,8 +245,8 @@
    "kind": "stock",
    "errors": [],
    "price": 12550.0,
-   "change": -205.0,
-   "changePercent": -1.6072128577028617,
+   "change": -45.0,
+   "changePercent": -0.3572846367606193,
    "currency": "JPY",
    "history": [
     {
@@ -324,10 +324,6 @@
     {
      "date": "10/23",
      "close": 12755.0
-    },
-    {
-     "date": "10/26",
-     "close": 12550.0
     }
    ],
    "news": [
@@ -359,8 +355,8 @@
    "kind": "stock",
    "errors": [],
    "price": 2570.0,
-   "change": 100.0,
-   "changePercent": 4.048582995951417,
+   "change": 10.0,
+   "changePercent": 0.390625,
    "currency": "JPY",
    "history": [
     {
@@ -438,10 +434,6 @@
     {
      "date": "10/23",
      "close": 2470.0
-    },
-    {
-     "date": "10/26",
-     "close": 2570.0
     }
    ],
    "news": [
@@ -521,63 +513,63 @@
    "name": "日経平均",
    "unit": "円",
    "price": 62189.65,
-   "change": -503.51015624999854,
-   "changePercent": -0.8031341138253384
+   "change": -718.1898437499985,
+   "changePercent": -1.1416539584475207
   },
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52511.17,
-   "change": 296.00984374999825,
-   "changePercent": 0.5669040233989721
+   "price": 52492.77,
+   "change": 277.6098437499968,
+   "changePercent": 0.5316652154647614
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7679.73,
-   "change": 56.04982421874956,
-   "changePercent": 0.7352069201014949
+   "price": 7699.82,
+   "change": 76.13982421874971,
+   "changePercent": 0.9987279432396591
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26177.217,
-   "change": 221.87715625000055,
-   "changePercent": 0.8548420386159119
+   "price": 26297.389,
+   "change": 342.0491562499992,
+   "changePercent": 1.3178373248399753
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 100.54,
-   "change": -2.7299966430664,
-   "changePercent": -2.6435525629986483
+   "price": 101.05,
+   "change": -2.219996643066409,
+   "changePercent": -2.1497014769346956
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4026.8,
-   "change": 18.900097656250182,
-   "changePercent": 0.47157109999672736
+   "price": 4034.1,
+   "change": 26.20009765624991,
+   "changePercent": 0.6537113773956418
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.966,
-   "change": -0.021999916076659964,
-   "changePercent": -0.441056865413184
+   "price": 4.968,
+   "change": -0.019999916076660185,
+   "changePercent": -0.4009606337842771
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 79876.33,
-   "change": -147.67781249999825,
-   "changePercent": -0.18454188503781802
+   "price": 80281.25,
+   "change": 257.2421875,
+   "changePercent": 0.32145626610295563
   }
  ],
  "fear": {
-  "price": 18.25,
-  "change": -1.2000007629394531,
-  "changePercent": -6.169669490327046,
+  "price": 17.95,
+  "change": -1.5000007629394538,
+  "changePercent": -7.712085882266879,
   "history": [
    {
     "date": "09/28",
@@ -661,7 +653,7 @@
    },
    {
     "date": "10/26",
-    "close": 18.25
+    "close": 17.950000762939453
    }
   ]
  },
@@ -715,29 +707,35 @@
      "published": "2026-10-26T01:22:19+09:00"
     },
     {
-     "title": "ゼレンシキー宇大統領、ルーラ氏のブラジル大統領選挙勝利に祝意表明",
-     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRDVDOW14UXpnMEJzdnBzMWRfTW1TeDZPb0ZGVm5QWjM5QWtjMzlQNjNiYk95azIya3IxdTRVT2gzU2EtMjlIRjNzLU02aFlRRVRuU0sxUFlxVTBfYVBXaDVvSGVFaVBIMm4yY2gwU20yWGRsTUJHMW5qU2ZOZEF0X2RiR0dkX3F4MW1tMFpNQXRMRWs3ZHNRc2NtS0VrbEtCcldhaEQzLXhPc3N0V0JTYjRuTHIyOUVsN21IcnpxMEhKalJVWmRyQXhWSk42N3BJWVJvZm1PdC1PbFN5amNmZ9IB5gFBVV95cUxPbGlNUVM5SHRWZDdLdERVWnc1aExWMEdSRHJBaDk1TV91TFNiRzFKb1YwbC1PVzhUSmFoTGFJaDdkdXRuNGNtdzJFRENHUzFUNk1rUTZCTmJfREI2N0pPbDFaeE0yaUNvenhtdUFBbEZmeDdnMTlaQlZrdjNNaGR0YkZlQ2tkdXFCRktLVUZzeHFULW5zOEZMOTVTSlFIcVQyWHVmSE9lcWxoM1d4WWFqMWk4bS02Z1dTX3piQmxLME5QSkNzOWszdHY1Q2NoRzVsdlBzcGwySlA0QjJ1RTVTM29vYm5QQQ?oc=5",
-     "source": "ウクルインフォルム通信",
-     "published": "2026-10-26T21:55:00+09:00"
+     "title": "中国外交部「ブラジルと両国運命共同体構築を推進」",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMFp6aWZOMk1PdjlmMFBjaDlOZzdKYlJmT080aTJGN1dHZXZBRWhBMFBlQ1ktVURWM2Q2U3ozc3ZaUk1ZdG1WejFkSmY4NkprZU1reF9fQlE5aHNuSHNvaTJQSHVmLUVMQ2R3djJsd1NWX3BLcFB2Z0doNjNFSTY2cVhSeUVoaFVQQk5R0gGQAUFVX3lxTE1KUk9WVkFHMWJYMFI5UHNpTjFJVXc0aHpKb3NLWGpHb19UMGw1ZGw0MDAyOE91YVkxWWFSWGU5UFkwU2tsZWZEdFRPSjNIRWtnaFROa0o3VGJqZ2lUN1hHQXBDWVBqVi1SZWhfQWVtUEhwdkY2RXZBNnZ1SkNsMm1GVFJrSnN6MkNuSVZZbFBqQw?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-26T23:27:00+09:00"
     },
     {
-     "title": "ボルソナロはブラジル大統領選挙の結果を無効にする申請を行う",
-     "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBKaU8wZUlGT1k4X1lMcGJnYUlUbDZ2ZUlrRlNYZzNDOERXN1JsVDVFVU9yZGpCR0o2T3NWYS00blRNcFHSAUJBVV95cUxOcGJ5MUc1Q3lVcEN6WVJpN1VxY1lNeWxTcDgzTGdFQmc0OUVVdkZhTDJ5ekNrd1lKY3V1UEE1MjU1Wnc?oc=5",
-     "source": "VOI.ID",
-     "published": "2026-10-26T20:27:56+09:00"
+     "title": "ルラ氏の再選を受け、ブラジルの市場は大幅な売り込みに見舞われる見通し",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5OLUZEaFp2aDFVZU5pNmhvRjQ5enVUdmVFQ183bGRTY0pwVVRWYUZVN0ZTVmc4Z0RDNU1mMFlQM2V6SkEwbU9tbVN6UE5pYXVibGVzdVZyRWpyNHJkZXZxWHVRNG9fdk9SaUMtWl9fMEdLWllqTXNKQQ?oc=5",
+     "source": "TradingView",
+     "published": "2026-10-26T19:31:04+09:00"
     }
    ]
   },
   {
    "key": "europe",
    "label": "ヨーロッパ",
-   "count": 3,
+   "count": 4,
    "news": [
     {
      "title": "豊かだった欧州でなぜデモが？ インフレの日本との共通点は",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE40eDdFRjk5SUEyeUttZkUzLVZyOUs5Q2JKU01jdm9LdlFkOWUydzAtbUl1ZExfODdtUC04Nk5EVDZYdVR6ZmFBM3MyZmI5dnN0Q3FUTm5FSVgtZ2x3S2VMNzR5bEQwa1E?oc=5",
      "source": "朝日新聞",
      "published": "2026-10-25T16:15:00+09:00"
+    },
+    {
+     "title": "フランスで55万人大規模デモ 一部“暴徒化”車炎上や3000店被害 米イラン攻撃が追い打ち 生活苦を訴える抗議は欧州各国へ【サンデーモーニング】（TBS NEWS DIG Powered by JNN）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42MWR4QkN4d1lYRWNVU2VpbFUxZVJleGFubVdCX2tXM1lRRmJmX05NUDB4WV9zaXI1NFk1UW5xR2ZxbDVJLU91ckUwUURyR2NJZ0RlVkhXMzZnOENRcEl2dVY4aS1hR2hYZEhBUFFvU0Y3eUdQQU42UllqRERYTWc?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-25T15:50:26+09:00"
     },
     {
      "title": "ロシア軍の最新ドローンが「50年前の対空戦車」で撃ち落とされる映像が公開 ドイツ「いらない」→ウクライナは使いこなす",
@@ -750,12 +748,6 @@
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBjQ1ppMW5SR0dCRlJscmNJX2RSY3hWV1dUUDdsbzFVT0RwV0dLWU9CSHVxMmN4WklIV3E1a1lSR1BhS1h3SmdMeU9wamJIQmJwM3MteDZWWEtTVlBmLTJhejlOSWRBR2RYaDlYcw?oc=5",
      "source": "日本経済新聞",
      "published": "2026-10-24T01:44:48+09:00"
-    },
-    {
-     "title": "ヘンリー王子、イギリスに拠点を戻した理由を明かす",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPekZQZHdOYUV4c2JXTVI4YURieW16N195STlpOHFoN2VyZE1iZFdYTGhRcldSTW5BNHFjNEwwNW9WNm9ZTHphV2ZFaWZJU3dKY09hOGJhZXNMN1JwajZnMFNieUdWbWg0aHROaVZ5b1h0clBIRV84TWlkcV9sN0JsVTdEOEs0S00?oc=5",
-     "source": "Vogue Japan",
-     "published": "2026-10-26T23:30:00+09:00"
     }
    ]
   },
@@ -783,17 +775,17 @@
      "published": "2026-10-26T12:29:00+09:00"
     },
     {
-     "title": "ロシア軍の戦闘機が「地上に激突」 墜落の瞬間を捉えた映像が拡散、巨大な火の玉が立ち上がる",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQc1B0alZVSzJaaExZSjZsT3ZCM3hPZ2FEM09mRjUtd3JmX2JfdjlLTDEwLVUzRmRMRHNHa1RXVkwxLVVaMXFrUnR6OU52RmkxbHJ4UWl5d0JyYk1mS2NRVGo0Y0hkcFI5cXQ5cS1ma1dsVlBtOUVGTHpkM3lFZHQ5RUJQVXE0ZlBF?oc=5",
-     "source": "carview!",
-     "published": "2026-10-26T06:12:00+09:00"
+     "title": "イーロン・マスク氏、ウクライナを批判 「スターリンクを切れば前線が崩壊」",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9OZlFVSlJPbXpOX1J6blEyZjh5Tnh3MTRlOU9ldXFCbzhZV2VKN1lXbktlNWJBTm1kMmxqX3RPSUxsckR2S2JWazlRZkpabWtseWxtbnhZOGhaUFd2d3JxWFc2MkdYNTFlWGxjYg?oc=5",
+     "source": "日本経済新聞",
+     "published": "2026-10-26T09:48:53+09:00"
     }
    ]
   },
   {
    "key": "mideast",
    "label": "中東",
-   "count": 5,
+   "count": 6,
    "news": [
     {
      "title": "「メッカ防衛同盟」高官らイランへ 中東情勢巡り意見交換か",
@@ -827,6 +819,12 @@
    "count": 0,
    "news": [
     {
+     "title": "エジプト下院、サウジアラビアへの軍事支援承認…イエメンの反政府勢力フーシの攻撃から防御",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOWNzM0tVX2NSaTJWZ3pTWG14di1MQ1Fycld2WVEtbmFrTTFUT3NyQTFlcHpWZnNkaXNZc2JKeUZmMVlLZmdpejFpaDlPVTVBVE1oX1R6TGJ6VWtBQW83SkRrTjZPQVdkLUNTaExCZlFHTE5Wc0Z1LVVRWVpRX3JSLXVja9IBiAFBVV95cUxQaVdtOXZYZ1JWTHJFNnRHMzAyY1JkRlhLSk1uZXl3aDloQjFmeHdhalBSM2N1aHpNM0FRQ2pMYzZINDlyU29HZEgwNDJBbGhuS2RidFJ2US1Xb2c3NEdmOS1VVVJNM1J1R09ZT08wT0VjNTBxT3puOGlMQnhoZk03b3dtQWsxOWNS?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-26T23:35:00+09:00"
+    },
+    {
      "title": "エジプトがサウジ支援を議会で承認　防衛面で協力も フーシ派攻撃の意図は否定",
      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTXRobDhCUWNfTkktamZEUk9waEhLUzUtRDJta3Jjekk5aU05QlVfd004SzRfWjJhMUtLZVo3MV83Y2FvNk5JanVMRWFRQ1FVTlNtMWkzRE5oTFJHZ1V4eWM0Z3F1QlZtSEJRaXRUU2cxcTZ3TWdLbEZOUUlVUkszdFAxcjJ2NU9GZE91UG9jdXFXZXN1aVpGa9IBiwFBVV95cUxOWllfOGFRNE5XOV9meTVNT3FnSG9BTG45MjRKTnpVaFZ6Wm1tS1dtT2JfSzAwbzRHR3pQVlFkRXgyWnotSjZNSE12V1djX2FyZTE5SVlPS0tsV2tRemU4dzI3UDBfb2NOMEpZUWplZmNfLTNzXzJUVzBnaVVrSmgxQ3cxZEhKZDBrdDJr?oc=5",
      "source": "ｄメニューニュース",
@@ -843,12 +841,6 @@
      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUnQ5MnlKMEpxQURJM09SWkswVFprUXhDV0gxQXJ6eUQ0ZFNpS0lPUWtmeHdVSHBhWm8zSHc0bkVXdGxJSkw5cFk5QWRUN1BMMWd0QzE1c3oxRHhyV2pGbzMwT3BQN0IxeDhSNTdOdFdFUl9QS0VxSHFnZDJtMkZNVnlQaEtLTC1qWTlHMUY5RjRESmlHVTFabjFmWEllYTJUR2l0cGZyVlQ4R0p2b2hwLQ?oc=5",
      "source": "Laodong.vn",
      "published": "2026-10-26T16:52:30+09:00"
-    },
-    {
-     "title": "大日本印刷・北島義斉社長「フォトイメージング事業の海外展開加速」　半導体も重点投資　My Vision",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWjZFQ3IybGRzeW1kVFRCZld5LXdoUUJ5ZWdSb21FQml6OXJvcWZqQ3B2M3RuYVZYTjE2eXcxZ01yeEF3VHFpMWktdmtyNG12SHRtelNicDVVcEltcEs2MzR5T3NBN1RpV2p1MHBfTHNEQTRyNURuOWpTTnlSOGgwdWw5ZzF0MTJ1UTJEYkt5ZWJtVnFLSldwQVdpNDlxc3JZZkd0R05UVXZ4c1lfVW9JQtIBsAFBVV95cUxQWjZFQ3IybGRzeW1kVFRCZld5LXdoUUJ5ZWdSb21FQml6OXJvcWZqQ3B2M3RuYVZYTjE2eXcxZ01yeEF3VHFpMWktdmtyNG12SHRtelNicDVVcEltcEs2MzR5T3NBN1RpV2p1MHBfTHNEQTRyNURuOWpTTnlSOGgwdWw5ZzF0MTJ1UTJEYkt5ZWJtVnFLSldwQVdpNDlxc3JZZkd0R05UVXZ4c1lfVW9JQg?oc=5",
-     "source": "ｄメニューニュース",
-     "published": "2026-10-26T16:25:00+09:00"
     }
    ]
   },
@@ -889,6 +881,12 @@
    "count": 0,
    "news": [
     {
+     "title": "中国の「AI＋」、農業や製造業に浸透　広西企業はASEANへ",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOT2VvVElOaElwRkpXSW9BNUpIamtLNllSYTV0c2hoaE9Mc0xYVmhraGFoczE0a2lLM092NWUwZ0FfUm5tUWtzM0gyOWgzbVVWM0JpTWJOZ1lCSFQ1TFFIcnBaVU9zMnZKVDQ5Mkl2aUMwWnphYmhlTUlBUzFxU0pObHp3eDdId2ZrYVJF0gGQAUFVX3lxTE1iM3pFSF93WDVVSzR2alR5eFp1dmVsdHJwOXBuOW5lWGo1Q0FCWGpianZ4cDJFZ0FtRFNfRi16TmxjNVJsbUlxMWdMMUhHZGE2SkpVYzlxQlktbGM3LWxSX3dPNnBhOGVDS2hyZk1WLUZMU3Y4YkpFS0o3eXhWdFNQTUg4UDVxX1dKS3VVZHZQMg?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-26T23:31:00+09:00"
+    },
+    {
      "title": "国際投資家はベトナムのAI経済への投資機会に熱心",
      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUjZhUkNmbEJkYU5UU2hsLWVCRnI2cEtDdGg1Y1hJZTdRSzlxaVFYSG5DUm53bm1Vc1RsTF9lalRxdDJNSHhaRENETTE1N0Z3bUw0b2Q5QVhZYlQ0bUdTSF8xeFc3WTRjb2FBQmtndGdSTzVzQ3JRSGJfNkwtRWlkdURaRkprcU1aYlJDZVJGc0RQLVB5aVE4RlVJTlNSa3o2THljaFpmYUJCZGJ0d1o3VER6MEZqZUdV?oc=5",
      "source": "Laodong.vn",
@@ -905,12 +903,6 @@
      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa0FDcm5sRnFuZ3pNNEhVbm5vSTEyQ1ZHaWpQNEY5UjNQTkNCNHJHMVlsUkV3R1E0QXB3SDZ0MW54c2wzZGR0RFd0bWhzay1SbjRDR1piUE1ySnBDTUxxbThxQWN3YXZxNi1WcTBaRWdBTFh4c21sYlo0dWk2RU9JcC1jZGxVTjBjaF9JN1VkTGdTZ1o5MXlKcjVzVzJ0cFpmRGpUUTh6Zzg1aTJYaS00ZzExZVlkbnFXSWVN?oc=5",
      "source": "Laodong.vn",
      "published": "2026-10-26T20:29:41+09:00"
-    },
-    {
-     "title": "إلقاء القبض على رجال فيتناميين في طوكيو وفوكوكا بتهمة الس...",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lR2MtcmNHUzRGT2xTWlVLQTVja1dwX3ZsQnh5Y2N5WU5ReXBfUTI2VGZ5U0F2RGx1MkxPV3VEVDF2a3RheF9LWXRZQlBmcjJvc0pEa3kzbGNRWmRvM3BNNzJR?oc=5",
-     "source": "X",
-     "published": "2026-10-26T20:14:24+09:00"
     }
    ]
   }
