@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T01:24+09:00",
+ "updated": "2026-10-27T01:45+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 157.546,
-   "change": 1.0519967041015548,
-   "changePercent": 0.6722281250051749,
+   "price": 157.528,
+   "change": 1.033996704101554,
+   "changePercent": 0.6607260868306091,
    "currency": "JPY",
    "history": [
     {
@@ -95,10 +95,16 @@
     },
     {
      "date": "10/27",
-     "close": 157.54600524902344
+     "close": 157.5279998779297
     }
    ],
    "news": [
+    {
+     "title": "米ドル/円【USDJPY】：外国為替相場FXレート・チャートをリアルタイム表示",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzbWxqc1ltSU1ndEE0VElnZldUTGdyRVJpOTdKeXBsc0RDSm40dm9kLTJqaDZlOVpoR2E5eEZIX1o0bFR1SFR2N2k4WjRiTnN5dHVBTHJn?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-10-27T00:30:02+09:00"
+    },
     {
      "title": "ニューヨーク外国為替市場概況・24時 ドル円、底堅い(トレーダーズ・ウェブ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPU2JKZENlZjFRb1NTdGlSdmEyenNxWXJ3X2dKOHNRcllKM1ZUbTAwUlY0ZWNZYVpUWXE5N2Vza3dkLTFRV3lKcmRtOXVCdkt3Rmlyd3RRZ2xQeERnQWU2dkFYZFRoLWV3c0hyazlVMFR0djhGX3NQTjZqMzhoZGY5UFVRYkRzdUE?oc=5",
@@ -110,12 +116,6 @@
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdktOOXhCdWZtbmtxRVdfWkFURFhmM1RtR093aTVMOEIweEhLbkVFTnNEUWJzZ2g0ZjBxc1FhcVg2Z2VMMnpmTXZrVDZDVHhkaWpWQldtRkthdmhEdnJPM1phVzg4b01BMnJlQjM4TlBjbkVESkxLWWgxR28wSUVFTWlWM3FVYk0?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-10-26T23:42:01+09:00"
-    },
-    {
-     "title": "【テクニカル】週足テクニカル・ドル円 サポート＆レジスタンス",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8tWTFRVlRMaXc4V1ViVUotX1NoU0tXSVR3bDhjZG5vTXdLU2N0OFVHM19mY3FHV1hIaHI2RkNUTHlESnJOaldITFRjbTZybGJKUmZzZ1VsaEdzTHlwTERwcTZ6SQ?oc=5",
-     "source": "外為どっとコム",
-     "published": "2026-10-26T23:07:12+09:00"
     }
    ]
   },
@@ -126,9 +126,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1186,
-   "change": -0.0035455335617065042,
-   "changePercent": -0.3159602258053755,
+   "price": 1.1187,
+   "change": -0.0034455335617065153,
+   "changePercent": -0.3070487257361655,
    "currency": "USD",
    "history": [
     {
@@ -213,7 +213,7 @@
     },
     {
      "date": "10/27",
-     "close": 1.1185681819915771
+     "close": 1.1186933517456055
     }
    ],
    "news": [
@@ -230,10 +230,10 @@
      "published": "2026-10-26T23:00:11+09:00"
     },
     {
-     "title": "ユーロ/ドル【EURUSD】：外国為替相場FXレート・チャートをリアルタイム表示",
-     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0zSjRXUWxuZ01PRUNPNzdnU1lTcGdzY2hXLUIxMFV4dXhMaUlvOUJyaW4tNDFzZy1JX3A5U29ubUdXTG5BSk9VSVY1YXBnRk5fNUVBZVZB?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-26T19:43:04+09:00"
+     "title": "ユーロドル１．１２００ドル台＝ロンドン為替",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5ESW9TMlhqc3ZfZzZvWEQ5dzFVbEFCX1R5TjhiUGhxX19TUE5XRFVjVzdBQnFUNW1TaldJOXZIRlNRRU1FYTZaXw?oc=5",
+     "source": "みんかぶ FX/為替",
+     "published": "2026-10-26T16:27:29+09:00"
     }
    ]
   },
@@ -444,16 +444,16 @@
      "published": "2026-10-26T19:00:00+09:00"
     },
     {
+     "title": "【画像】サーバー調達難でシステム長期利用、OSサポート終了との「ずれ」が課題に - サイバートラスト調査",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAyRUZibElYMzVDR1VndkZPSmZweFZudjFZUkRab3l2Z21LLUZnMFZVUVp2WmxuX0EzaEg0aTdnbXgxWjZxT25xT0JoWEQ3Q0NlWGlYWVotZ2JFRTM0NXZ3VXhHdU9IQXR6QVM4dVdfaE13N0x2YUtXb1JkYzQ?oc=5",
+     "source": "ライブドアニュース",
+     "published": "2026-10-26T19:00:00+09:00"
+    },
+    {
      "title": "【調査レポート】システム利用の長期化により「延命の利用・検討は97.3%」、Linux選定で特に重視するのは「脆弱性発見時の修正提供の速さ」",
      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pVnI1N0x6Z3UySzM3SlJkU0RDOTFyLVlLWHQ3WVplT3ZOUGtDOXNEVF9kd2Vnb3hNdVVNY1B3cGNwVkJkOEtFYV9LV19zUlJtVlhYeUtNTkRCZTNyM0lQVTRRSEhTNTZsOFE?oc=5",
      "source": "PR TIMES",
      "published": "2026-10-26T15:30:02+09:00"
-    },
-    {
-     "title": "【ウェビナー】脱 VMWare に関する情シス調査レポートで見えた「長期コスト」の課題 ～仮想化基盤移行先の動向と、工数 60% 減・8 年サポートで実現する最適解～ 【11月 13 日開催】｜お知らせ｜サイバートラスト",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9LUHBHRm9KRU1SY1lTUUtOYnRUaGV2R1Vvam4xZzJqWVFkUm9YTWRHN01OZDhnbDdLU3JTTFJ3TmhKSEVxaVZjb0RLaDZrRFo5VXI1OUxCdVREc2Jja3BVZnk3RER1bnVCVmxlLVJ1T1k2TFQ0MC1GRDhGRHFhUQ?oc=5",
-     "source": "サイバートラスト",
-     "published": "2026-10-26T15:30:00+09:00"
     }
    ]
   }
@@ -519,37 +519,37 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52370.84,
-   "change": 155.6798437499965,
-   "changePercent": 0.2981506583224797
+   "price": 52303.36,
+   "change": 88.19984375000058,
+   "changePercent": 0.1689161605289902
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7681.91,
-   "change": 58.229824218749854,
-   "changePercent": 0.7638020336127578
+   "price": 7670.83,
+   "change": 47.14982421874993,
+   "changePercent": 0.6184654016381028
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26216.33,
-   "change": 260.99015625000175,
-   "changePercent": 1.0055354999054182
+   "price": 26169.281,
+   "change": 213.94115624999904,
+   "changePercent": 0.8242664420420437
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 102.83,
-   "change": -0.43999664306640796,
-   "changePercent": -0.42606435302518186
+   "price": 103.05,
+   "change": -0.2199966430664091,
+   "changePercent": -0.2130305511936702
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4032.3,
-   "change": 24.400097656250182,
-   "changePercent": 0.6088000761192023
+   "price": 4031.7,
+   "change": 23.800097656249818,
+   "changePercent": 0.5938296423603777
   },
   {
    "name": "米10年金利",
@@ -561,15 +561,15 @@
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 80092.37,
-   "change": 68.36218749999534,
-   "changePercent": 0.08542709790313321
+   "price": 79820.45,
+   "change": -203.5578125000029,
+   "changePercent": -0.254370929505241
   }
  ],
  "fear": {
-  "price": 18.37,
-  "change": -1.0800007629394521,
-  "changePercent": -5.552702933551109,
+  "price": 18.35,
+  "change": -1.1000007629394517,
+  "changePercent": -5.655530693013762,
   "history": [
    {
     "date": "09/28",
@@ -653,7 +653,7 @@
    },
    {
     "date": "10/26",
-    "close": 18.3700008392334
+    "close": 18.350000381469727
    }
   ]
  },
@@ -754,7 +754,7 @@
   {
    "key": "russia",
    "label": "ロシア・ウクライナ",
-   "count": 13,
+   "count": 12,
    "news": [
     {
      "title": "ロシア、首都防空網狙うドローン攻撃計画阻止 2人拘束",
@@ -819,6 +819,12 @@
    "count": 0,
    "news": [
     {
+     "title": "エジプト議会、サウジ軍事支援承認　対フーシ派に直接関与の可能性",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ucjZaTHA0Y3gyd1I3M0xTRGp1Z1pERjBVOUhrbEtZRkFlSHNldThxSmV4NFJuS3JDZFVHc3hJcFZ5RjNRWkpWTzE2Z3dRY0c3Z2lPbHhfb1B4SmZub2V5NWZuOGdWX2NnNzlKV3otT2tGeGxkNjFMcHI4WVk5d9IBgwFBVV95cUxPZlhpNEd0UWlIT0dqel9RV1RRUkp4bjFPNDBCY19DMDExUkUySEpYbjU4eHJjbk83QzZRS0d4OE05RDNxMHZXeFlWam91MTFWVzRXb2JSdUhYNW9KVGhGNXZQWi1zdnB1NGtrNGl6VXFYUXZicXhCZ2QxcmR3RllGX2lQTQ?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-27T01:36:27+09:00"
+    },
+    {
      "title": "RSFドローンが5つの発電所を攻撃し、スーダンで大規模停電",
      "link": "https://news.google.com/rss/articles/CBMi_AJBVV95cUxONVp5TU1wbGFXUllXQzZWWlMxeGlxT0tRODJrMFMydHQtSnBEUzU0NWVLYWVnbmNldWdSaVZZX04tOHRPTm04bDFlS1hlNXU3QUhRZkpBWUtVT2JBSHBIdjVXMGRacTc3WXhCSTFvb1R5RVdZc3ZKXzl2cW9sWVh6akV3amtNa2pnaUVtaEpvSHYzZzNFTUdMNl9UNDZmaWE4cTZqSXdvREFYZVBxTDhHbk12d2tyT3FySDJpSm01a2FaTDNhYXBPYnVremluakhOcGp6TXJJdzQ5UEl2QUFVanZ5ZEU3QkIzOXlrU0tDajZLeFBiTUZoRElmdlRETU10LUotOG5pTlgyVXZydElDMy13S3U2VEwxSFBWOVRLa2dKM1hxU1RVWnBMS3NfVThaYjdSa0xjS3VxQU4wQzFya3JfSzhtSnBCY2JwQW9EOU1HVHRCOUJpNFRHY1AwQ1hmYVpPSEJDT3NpM2wzbkpqaXdSZXZNa051WHdQcA?oc=5",
      "source": "アラブニュース",
@@ -835,12 +841,6 @@
      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWllfOGFRNE5XOV9meTVNT3FnSG9BTG45MjRKTnpVaFZ6Wm1tS1dtT2JfSzAwbzRHR3pQVlFkRXgyWnotSjZNSE12V1djX2FyZTE5SVlPS0tsV2tRemU4dzI3UDBfb2NOMEpZUWplZmNfLTNzXzJUVzBnaVVrSmgxQ3cxZEhKZDBrdDJr0gGLAUFVX3lxTE5aWV84YVE0Tlc5X2Z5NU1PcWdIb0FMbjkyNEpOelVoVnpabW1LV21PYl9LMDBvNEdHelBWUWRFeDJaei1KNk1ITXZXV2NfYXJlMTlJWU9LS2xXa1F6ZTh3MjdQMF9vY04wSllRamVmY18tM3NfMlRXMGdpVWtKaDFDdzFkSEpkMGt0Mms?oc=5",
      "source": "ｄメニューニュース",
      "published": "2026-10-26T23:06:00+09:00"
-    },
-    {
-     "title": "カントー市が総群れを再調査し、アフリカ豚コレラの発生源の監視を強化",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUnQ5MnlKMEpxQURJM09SWkswVFprUXhDV0gxQXJ6eUQ0ZFNpS0lPUWtmeHdVSHBhWm8zSHc0bkVXdGxJSkw5cFk5QWRUN1BMMWd0QzE1c3oxRHhyV2pGbzMwT3BQN0IxeDhSNTdOdFdFUl9QS0VxSHFnZDJtMkZNVnlQaEtLTC1qWTlHMUY5RjRESmlHVTFabjFmWEllYTJUR2l0cGZyVlQ4R0p2b2hwLQ?oc=5",
-     "source": "Laodong.vn",
-     "published": "2026-10-26T16:52:30+09:00"
     }
    ]
   },
@@ -868,10 +868,10 @@
      "published": "2026-10-26T11:15:00+09:00"
     },
     {
-     "title": "中国5中全会開幕、習近平氏が規律徹底指示へ 27年秋の4期目入り視野",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhaE0ycGlxVHVyNzlTNk5hNXBOMzE3eW1VWlgza2s0RUFOTm9sT0xlQmphVGZ3bU94ZTNsWFBrYkp5czVSUmZIcEs3T0hLRnhGUVg1T0V5c2VOZDYxZGlSSnBTVnFhNmtWMHlVSQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-10-26T11:00:00+09:00"
+     "title": "妻を強く抱きしめたら肋骨5本が「ボキボキッ」…一体何が　/中国・江蘇省",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVnc2RF8xcGhlaklpRER6cWp3d3F4bmk3d0o2T1VjbHhhRVdFU09GX1U3M3RjREh0cnZLQXNDYlVyaUVrNXNqRlAtTFFDNDNBLWlzZ2JEcXQtSndFUnhTNU95RGtwWHlVRVNyeFN4QVkyODBDRFJ4TTgwdnpBUkZfU3lnSdIBfEFVX3lxTE10ekI5T3ZBWFRRbTcxaS1UTUY3Z2FfRnNxYnVRX2tUcnNyWmVNMFB2QjJvVF9ScVh3a08zSGNJT1BscV9laFJqQzBGM21DcWJXNzhYRTVoTkNFOWxQTGUzX0Zfb1hMUHYyRDVSSUswV08tMGI2eEVNTzRuMnk?oc=5",
+     "source": "朝鮮日報",
+     "published": "2026-10-26T11:10:00+09:00"
     }
    ]
   },
