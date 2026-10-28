@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T23:51+09:00",
+ "updated": "2026-10-29T00:21+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 158.186,
-   "change": 0.6580001220703195,
-   "changePercent": 0.41770359718920547,
+   "price": 158.206,
+   "change": 0.6780001220703014,
+   "changePercent": 0.4303997528031155,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/28",
-     "close": 158.18600463867188
+     "close": 158.20599365234375
     }
    ],
    "news": [
@@ -261,8 +261,8 @@
    "kind": "stock",
    "errors": [],
    "price": 14340.0,
-   "change": 1735.0,
-   "changePercent": 13.764379214597383,
+   "change": 1790.0,
+   "changePercent": 14.262948207171315,
    "currency": "JPY",
    "history": [
     {
@@ -348,10 +348,6 @@
     {
      "date": "10/27",
      "close": 12605.0
-    },
-    {
-     "date": "10/28",
-     "close": 14340.0
     }
    ],
    "news": [
@@ -383,8 +379,8 @@
    "kind": "stock",
    "errors": [],
    "price": 2447.0,
-   "change": -500.0,
-   "changePercent": -16.9664065151001,
+   "change": -123.0,
+   "changePercent": -4.7859922178988334,
    "currency": "JPY",
    "history": [
     {
@@ -470,10 +466,6 @@
     {
      "date": "10/27",
      "close": 2947.0
-    },
-    {
-     "date": "10/28",
-     "close": 2447.0
     }
    ],
    "news": [
@@ -500,22 +492,22 @@
  ],
  "videos": [
   {
-   "id": "0BV5WKmZ2f4",
-   "title": "【ライブ】日銀・植田総裁 会見 金融政策決定会合｜政策金利どうなる？ 為替情報も【LIVE】(2026年10月30日) ANN/テレ朝",
-   "channel": "ANNnewsCH",
-   "published": "2026-10-28T23:06:32+09:00"
-  },
-  {
-   "id": "mqu8XqJh-dg",
-   "title": "【高市首相】ドイツ･メルツ首相と会談  経済安保やAI分野の連携で一致",
-   "channel": "日テレNEWS",
-   "published": "2026-10-28T22:17:39+09:00"
-  },
-  {
-   "id": "j50iHnnPCZg",
-   "title": "どこまで飛び火？フランス大規模デモの行方【立花剛の欧州リポート】",
+   "id": "SPKQAbnfGcg",
+   "title": "松井証券へ出資検討 ゆうちょ銀 顧客基盤を拡充【WBS】",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-28T21:00:35+09:00"
+   "published": "2026-10-29T00:14:10+09:00"
+  },
+  {
+   "id": "a2rxabHliaY",
+   "title": "自維国「比例31減」合意へ 参院でも可決の公算大【WBS】",
+   "channel": "テレ東BIZ ダイジェスト",
+   "published": "2026-10-29T00:14:05+09:00"
+  },
+  {
+   "id": "uUmVHLskfSY",
+   "title": "ニデック 監査「適正」得られず 追加調査 11月中に終了予定【WBS】",
+   "channel": "テレ東BIZ ダイジェスト",
+   "published": "2026-10-29T00:14:01+09:00"
   }
  ],
  "lives": [
@@ -553,63 +545,63 @@
    "name": "日経平均",
    "unit": "円",
    "price": 63954.19,
-   "change": 685.8189062500023,
-   "changePercent": 1.0839838206578252
+   "change": 1764.5415625000023,
+   "changePercent": 2.8373557446193796
   },
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52450.71,
-   "change": 73.13968749999913,
-   "changePercent": 0.13963932855920239
+   "price": 52528.9,
+   "change": 151.32968750000146,
+   "changePercent": 0.2889207853612224
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7728.04,
-   "change": 5.439902343749964,
-   "changePercent": 0.0704413316105923
+   "price": 7738.09,
+   "change": 15.489902343750146,
+   "changePercent": 0.2005788484172735
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26441.34,
-   "change": -36.470546874999854,
-   "changePercent": -0.13774004013826674
+   "price": 26476.29,
+   "change": -1.5205468749991269,
+   "changePercent": -0.005742721333802227
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 102.4,
-   "change": 2.4999984741210994,
-   "changePercent": 2.5025009368728384
+   "price": 102.36,
+   "change": 2.459998474121093,
+   "changePercent": 2.462460897444366
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4053.0,
-   "change": -21.60009765625,
-   "changePercent": -0.5301157693653075
+   "price": 4056.9,
+   "change": -17.70009765624991,
+   "changePercent": -0.43440085485766267
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 5.024,
-   "change": 0.030999969482421896,
-   "changePercent": 0.620868601901619
+   "price": 5.03,
+   "change": 0.036999969482422124,
+   "changePercent": 0.7410368366968882
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 80416.3,
-   "change": -388.7781249999971,
-   "changePercent": -0.4811308076437765
+   "price": 80603.72,
+   "change": -201.35812499999884,
+   "changePercent": -0.24918993913787377
   }
  ],
  "fear": {
-  "price": 17.38,
-  "change": -0.14000045776367287,
-  "changePercent": -0.7990893499185624,
+  "price": 17.28,
+  "change": -0.24000045776367074,
+  "changePercent": -1.3698655907130348,
   "history": [
    {
     "date": "09/28",
@@ -701,7 +693,7 @@
    },
    {
     "date": "10/28",
-    "close": 17.3799991607666
+    "close": 17.280000686645508
    }
   ]
  },
@@ -709,38 +701,38 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 3,
+   "count": 5,
    "news": [
+    {
+     "title": "米国の個人破産がコロナ後最高 1〜9月、金利・物価高が家計圧迫",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JSk5McjI0Zlh5ZGtiUmRIRGlQbkdFQlpqazJjT2lIYlVoM3lyVG1vTTNGSVlNcjYxQzRMOWhNREdPLWFPUWFVZ1FacncxVlM3SFdLemlSbXR5R1VfcEI0VjlhdDFna2tXaWlPTA?oc=5",
+     "source": "日本経済新聞",
+     "published": "2026-10-28T23:07:30+09:00"
+    },
     {
      "title": "ボルソナロ氏が米国到着と報道、ブラジル最高裁は旅券提出命令も出国",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBFbHZiTmdic2kzaDBjZGRxVFVmTFBpc1E4V0MzTUY0Y0NBTjhjbXBRVy1JOHV4VmNGaHhsWGR0eTNzNWEtVzI4ZG9sQnl4UzU3RDI2d0N2NzJGMThvSk9sM0QzcUZ4eWlzZUkxNA?oc=5",
      "source": "日本経済新聞",
      "published": "2026-10-28T17:43:51+09:00"
+    },
+    {
+     "title": "ベネズエラを米国51番目の州に　トランプ氏、「知事選」を提案",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdmxoa1NmNnZDRV9zRjBTMEthQ1d2dkpFcTJVdW1wOUVtV1ZHblhtclN2OXp6QTdmbGo1RE83SmowOU5CcVhQdkFVcTM1NWpXeUVnWTB2bU5CNGx2ckNmYWVBaW1lZ2lNSEtUN0hjT3d3V05FQVBZR0oxd2RLbFlvWEJrNmZ1TnJqTUHSAY8BQVVfeXFMTTdzVnIzdFhxTUxjUjV6eUtxMW1FNnZfeVZ6bTItRGhBRS1BTWcyeWI1a3hKcDc3dDNjbVk1OXJVbmtxSVY2cy1hWkczMzdsd05lVU40dGpYbmhPOWRXSlJsMTJqZHJZaVk2ek44MTRVUl9aTF9mRW9oOVlHdDR4aC1BZUJQTENlc0czdjdOTEk?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-28T11:25:00+09:00"
     },
     {
      "title": "ウクライナ、米国の「裏切り」に誤算 首脳間の確執に付け入るロシア",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLRHR3VDg2Q0p2UzBhcVBkdVRjSURscE5jZmVyM0xkVHdTZDBycWp5dENnZG9NZHA1MEFUVTJMWDBVSkxXdDZJVTlaWk5EUHl6ZEx2SVhobFY3TWV0Qi1vcmZoYmZHX3dkUmN0VQ?oc=5",
      "source": "日本経済新聞",
      "published": "2026-10-28T05:00:00+09:00"
-    },
-    {
-     "title": "肉食か筋肉か奉仕か 「男らしさ」競うアメリカ中間選挙の落とし穴",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBhUEM0TTVPWllGNXZSQjdpUG5zZWo3UFNlVkp0TE1POUduVnlrMmRTdGlpX0dSUVFqMldJWGtRbUhBUlNRSmFaX3ZCbEtoV0pzM2JULTdWQTJMREttYVFlU216RTFFYk0?oc=5",
-     "source": "朝日新聞",
-     "published": "2026-10-26T06:00:00+09:00"
-    },
-    {
-     "title": "ウクライナ大統領は、米国の援助パッケージに加えてパトリオットミサイルの供給源があると述べた",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdS1vUGRGYmZxdXVzY1NXT29hZTZ4SFR0NTRlTzkxSDktc0dZSkVLQnlSSFl3UEdSUHlEMlFsYmw1cHpfaWN0M3U5SFhGdWY0anFSMFZUcXdzWVB1Vkl3RzM4eFowRjZqTUp5WDNSeEY5cVdFN2VtSE9nNVF2elZyWmRINGs4em5qa1ZBSUp1R3VWRFQyZ0pLRnVhenlyOE9IVVFDUG1LR3JheGQ4ajhmSlJn?oc=5",
-     "source": "Laodong.vn",
-     "published": "2026-10-28T22:18:36+09:00"
     }
    ]
   },
   {
    "key": "latam",
    "label": "中南米",
-   "count": 1,
+   "count": 2,
    "news": [
     {
      "title": "ボルソナロ氏が米国到着と報道、ブラジル最高裁は旅券提出命令も出国",
@@ -749,29 +741,29 @@
      "published": "2026-10-28T17:43:51+09:00"
     },
     {
+     "title": "ベネズエラを米国51番目の州に　トランプ氏、「知事選」を提案",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdmxoa1NmNnZDRV9zRjBTMEthQ1d2dkpFcTJVdW1wOUVtV1ZHblhtclN2OXp6QTdmbGo1RE83SmowOU5CcVhQdkFVcTM1NWpXeUVnWTB2bU5CNGx2ckNmYWVBaW1lZ2lNSEtUN0hjT3d3V05FQVBZR0oxd2RLbFlvWEJrNmZ1TnJqTUHSAY8BQVVfeXFMTTdzVnIzdFhxTUxjUjV6eUtxMW1FNnZfeVZ6bTItRGhBRS1BTWcyeWI1a3hKcDc3dDNjbVk1OXJVbmtxSVY2cy1hWkczMzdsd05lVU40dGpYbmhPOWRXSlJsMTJqZHJZaVk2ek44MTRVUl9aTF9mRW9oOVlHdDR4aC1BZUJQTENlc0czdjdOTEk?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-28T11:25:00+09:00"
+    },
+    {
+     "title": "ボルソナロ氏、米マイアミに到着 大統領選敗北後にブラジルから逃亡",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUGQxYWJfbGFOVjhhVU5qdU91Y09WTkdSa2lNLVpXRFRBVkEzZlhHSGQtM0g1TUZhNllENjdwU0Z3X3J0X0JfRHV3Yk5MUElpQ1ZuTk91NS1iZXc4cGdSTHROOUhnWS1GRVRoMmZ0elJjQlJWU0Y0TnhOOS1KUXRPbThITmxBT0lvRDFmTU84RVphdw?oc=5",
+     "source": "WSJ",
+     "published": "2026-10-29T00:16:00+09:00"
+    },
+    {
      "title": "ブラジル大統領選敗北のボルソナロ氏 裁判所命令に従わず米国に到着",
      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ROEM5azhOSkZvTmlqd21JYVI1Zl84ZkRzM3ZoOURHZFVrQ3hNUkk3d3pUNWVXUGUtOGI3MEJLeElxMmxpRVVsWG5SUmdJNG5JNHFqQUstdWF4cWM?oc=5",
      "source": "ABEMA",
      "published": "2026-10-28T22:57:49+09:00"
-    },
-    {
-     "title": "ブラジル大統領選で敗れたボルソナロ氏、米マイアミに到着",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTFdwRGJWV21aeGFRUi1wakJqcHJOaGdkUDI3ZWtRN21ITTVSMEo3ZF93QUJEcW9FXzl4X3htYk1ZVXFkdnZfeXR0MnIyeDA2SHZQSVNuajcwRzY1emxTbW1fNE5wRjZ1cUFGMjd0OUZxTHg1MUtQWUVZS1kxMjZEakE4M1FHVU9SMUhfOUJR?oc=5",
-     "source": "Bloomberg.com",
-     "published": "2026-10-28T22:52:46+09:00"
-    },
-    {
-     "title": "渡航禁止のブラジル・ボルソナロ上院議員が米国逃亡 | スマートニュース",
-     "link": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxOcVIyUVZCVElSSVZIa0pfMm5tbjRlRTBEcHNqM21vellZcDJFc1NnTHJiUU9sWXl1dUZld1V6MzBUdk83ZGxIMFhHNXBoQWNRZzlMbFRveF9uWXVuM1l3cU9pSkZzdm82bnNZZVlUNzFLTTJ2U1h3NXVlc0RUcVRZb21qUm5OUHBuNWdYdVFQUjFMRTN6c0ZLTTQ0eDdZbm1rNU90cl8xM1E4LW9WR3Brb1ZRc0VDdXJ4UW5lT18ybGd2X3JlVTRUN3hfVHJZS1FIM1M4dnRKcFcwM0RyYjJwUl8wXzVmVEFwOU9pV0JkQWNRb25pZGJmTkoyWjMzSGVqdXlaekdaYm0ybDBzV3V6UTllWE1SN2dKOUNienNKcWF0N19sWnhaNnNab0ZqYTA3OTRHUk9CQmRXSFc3aS1mdW9oRlBmZlgzbDlhY3N2Vm9rZU94QWhON1ZSSFFUcDNjbEhMOHh3a3RjU1Y3WGhMMWVqbTl2VEhmMk03Smk5NEQtNXNES1dTdUZsQQ?oc=5",
-     "source": "SmartNews",
-     "published": "2026-10-28T21:45:00+09:00"
     }
    ]
   },
   {
    "key": "europe",
    "label": "ヨーロッパ",
-   "count": 2,
+   "count": 3,
    "news": [
     {
      "title": "17年間病気休暇を取り、給与だけ受け取っていた…ドイツの「幽霊教師」、起訴される",
@@ -786,16 +778,16 @@
      "published": "2026-10-27T13:09:00+09:00"
     },
     {
-     "title": "日独首脳、「AI対話」創設で合意　対中念頭に重要鉱物でも協力",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX3B6MmxwdmwzOHd6QVRObHRxYUh3MGFLSVhEMGl6NWdKcENtVEd3YUxGcXlHNWVadW1IQUFyWGRETGFhbzJPMnVBNWdYUmxjdjJVRTU4NnM2c0RRclNxVkxnaEVJdXBJZVBiYmtBS2FQc1lMNXFUR1JSaTRpdUFRMzRUOWpKT3pxN0FnMFJLUDlJV053M0HSAZsBQVVfeXFMTlc0ZzJVemgyeVFaM3BWRWsybk9mNUpEUXFuVmVUNUdWOXZyYkxsX3ktM0U4UjZiTGpQejdqSDB5TWwxOWZwNGtGckRzQTN2MElBbWdZZWJyX0hXYkRhcFMtVEQ1UUZmdlNxRy1BYThpb0ZRQ3NnTkM0UVhYRWtYNU9IcWtaOVNKbmlfT2V6VlNrWkVOSlVkUmVaOWM?oc=5",
-     "source": "ｄメニューニュース",
-     "published": "2026-10-28T22:23:00+09:00"
+     "title": "運転手ストでチーズ生産停止 ガソリン届かずスタンドで給油できず イタリア",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5RM0tUQU9uMG9tOTZSdTFSZHBLR1BGOUM2bUhyVlZKMlIyX0IzcnNOYmIzM09PN3FxZGJSMTUyajY2dW1kcUdvOGlmU3podUs4UUViTWR0THJnMzhvSlhWWmk5UTljRmh1eHZwdTRaOTJXMUFzd0phMGln?oc=5",
+     "source": "テレ朝NEWS",
+     "published": "2026-10-27T11:45:00+09:00"
     },
     {
-     "title": "日独首脳会談 次期戦闘機の共同開発にドイツが意欲",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0FuSkUyOWlsLVZTeDNjaG1fQnNjLUdEVkpOV292QTUxYXhZVWR0SEk1TU0zbWdKSC1zOWFMekVHU2hyelR5dHJ4SXFHUThMOVJ3Y1ZvZ2MtWDNidDRjUXpJU0tjWjlEZFVFMFZEaXg5MmNGNlJlYmZLZHpCajk3NFJhSERLQjV2bTlwcG9IMDZ1ZGl5ZmZLMktTblfSAY8BQVVfeXFMTkNwbU1LeGsyS3FtNERYYVh3a1ZYMkFMTG5WZUVLMVZ5QnZRSEdQVnh1eVBERTJUMW5XMlJ2dWh3ZGRNQmlWb2pFRlhYT1pfQ3lnSi1XbDRyUXVxb3FtQ0FSdUJCZG1Kbm5WaXMxQ2FqcjBzTF9uXzNvMVBKT09zMGdyQ3RSZWJ6SnRsT2hnSFU?oc=5",
-     "source": "ｄメニューニュース",
-     "published": "2026-10-28T22:12:24+09:00"
+     "title": "堀場明子和平調停センター長がEU Community of Practice on Peace Mediation 2026に登壇",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1JWUZ0b0JiNFl2ZVZJdUNnUFRfcjltNnh6WTc0TUJGRS15am44Mkg5WHBHMkJFQk90NS1kVlBxOVp6LUVyMlpiMkduQjhoSW9Ec1hPV3l5M1BJZkQxMGIzYVMyclV5azA?oc=5",
+     "source": "笹川平和財団",
+     "published": "2026-10-29T00:01:48+09:00"
     }
    ]
   },
@@ -811,16 +803,16 @@
      "published": "2026-10-28T12:59:17+09:00"
     },
     {
+     "title": "ウクライナの「局地停戦」は６日間、違反は確認されず…地雷撤去や住民退避を進める方針",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5mQWFrR1kwWEdNNmw4N2VqMTk3d3VHLXZDRGZuRVI5WGFfSEVCekNYRHZOSF90V2JqakJxYXp1c1RodG1MQWh2aGxPVmVjbTRJVXBOa0Z5d19iUVVuRmxlVFB3?oc=5",
+     "source": "読売新聞",
+     "published": "2026-10-28T10:07:00+09:00"
+    },
+    {
      "title": "ウクライナ、米国の「裏切り」に誤算 首脳間の確執に付け入るロシア",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLRHR3VDg2Q0p2UzBhcVBkdVRjSURscE5jZmVyM0xkVHdTZDBycWp5dENnZG9NZHA1MEFUVTJMWDBVSkxXdDZJVTlaWk5EUHl6ZEx2SVhobFY3TWV0Qi1vcmZoYmZHX3dkUmN0VQ?oc=5",
      "source": "日本経済新聞",
      "published": "2026-10-28T05:00:00+09:00"
-    },
-    {
-     "title": "【速報】停戦期限は11月1日夜までとロシア高官",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9QbG5tTk5OVTdoMDZ6LWJuOEQ4S09vWWVJbUNhVk40Y3BiUjYwekNUYzQ0QmZNd3Jmak9ibkRSbUhocVhGdGItY3RHWQ?oc=5",
-     "source": "47NEWS",
-     "published": "2026-10-28T01:41:31+09:00"
     },
     {
      "title": "北欧2カ国首脳がプーチン氏と電話会談 3カ国協議前にウクライナ侵攻終結へ意見交換",
@@ -836,28 +828,28 @@
    "count": 7,
    "news": [
     {
+     "title": "カタール、イランに戦争終結へ新合意案提示 週末までに回答へ",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdE1FbWhjRjM2d3ppb2FDZEtqQk90OENDdld2eVdXZGZqSWxsdWZsNFVIRkNCRzBldlRhYlFocThpX25DU2Z5YUxKRVZGSC1keXhjU01UdW1LaG9CZFNyd2QzVzdQU3VSX2oySG9zQXZrdjJXSk8xSkp5bkM5TDRRZEVRVi1IX1U?oc=5",
+     "source": "Reuters",
+     "published": "2026-10-28T23:53:22+09:00"
+    },
+    {
      "title": "与野党陣営、過半数届かず 右派リクード第１党か―ネタニヤフ氏、政権継続に意欲・イスラエル総選挙",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1nYTltRks2cnVJbjg0MW1YSTc0b1ZianNlUHZTSzdncVAzcUZ3TFVXTjZISjk3WTF5Nzh1VFRUTVhUS1FuMFNoLThVRUlveWw3WXNJNTRVVXJBODlnMDJ4ZmJCNA?oc=5",
      "source": "時事ドットコム",
      "published": "2026-10-28T22:19:00+09:00"
     },
     {
-     "title": "カタール、イランに戦争終結へ新合意案提示 週末までに回答へ",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdE1FbWhjRjM2d3ppb2FDZEtqQk90OENDdld2eVdXZGZqSWxsdWZsNFVIRkNCRzBldlRhYlFocThpX25DU2Z5YUxKRVZGSC1keXhjU01UdW1LaG9CZFNyd2QzVzdQU3VSX2oySG9zQXZrdjJXSk8xSkp5bkM5TDRRZEVRVi1IX1U?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-28T18:33:33+09:00"
+     "title": "イラン「核の寸止め」戦略からの変化…成立しなくなった「一挙両得」、核兵器製造論の高まりも（Wedge（ウェッジ））",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5pRlF0dThoT3BIeXBLN2M1WnM0dXMyYUNnLXhnT0lSLW1KMUNlUnBITHBqNXVNb1lKLUhSTFlSc2N2U0xaXzZXY00xajcySGF0SFdkOGR6ZEtrZDROS0FtWWNVUFhXN212UU93aVE2S2loa2Z2ZHJrbVRLUzU4VEU?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-10-28T05:00:37+09:00"
     },
     {
      "title": "サウジアラムコの主要製油所を攻撃 フーシ、付近で火災と報道",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ETmFhT1h6RUhtMWhYWDh6X1FfSmxxRWNOcDJxeWk4NDZUMUtHSlNrSVlmTzFCSENDTkFkMDFUUlg3bGFpZVhocVBJZVAwTVRDX0tBLTBsWEdicFV0dEczbU5mTnA5VHJIZFJFUA?oc=5",
      "source": "日本経済新聞",
      "published": "2026-10-27T22:41:30+09:00"
-    },
-    {
-     "title": "「敵追い詰められている」 イラン最高指導者モジタバ師、米念頭か",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Oc0k3OWs0dkRYUV9YTXpCMi1nNWZiNW9ua0ptcUNURXFfZEtXWVkxYlM1S054Y1FlU2g1OGYweEt5Y2ZHV3cyWFJRNkNpM2pRcEExeFR3cGpXMXdVcjhPWHN6aEdsTjdvajAxTA?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-10-27T22:34:16+09:00"
     }
    ]
   },
@@ -904,6 +896,12 @@
      "published": "2026-10-28T11:25:00+09:00"
     },
     {
+     "title": "台北市長選で与党新人猛追 中国が敵視、圧力強める―台湾統一地方選まで１カ月",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9adlkxWUw2X2xoZjFiTThOYVpzYTUzZnI0SThIVGJ5ZTJsR0JWWEkzdW5ZakwxS2tnUUU1YlA2d0ZwRzJvOF9STFlfRFRCMzdkal9FV19aWndKOEhZMDdwXy14Zw?oc=5",
+     "source": "時事ドットコム",
+     "published": "2026-10-28T07:15:00+09:00"
+    },
+    {
      "title": "飛ぶように売れる韓国製自走砲、インドがK9の335両追加調達案を承認",
      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPV09YZk1XbmdxNFpORDFrVW1GZ0FoUFRSLTlOS2xMWFBELUthR2xMWkFnYjM4U180bDZaemRwOG8xQk1sb3U1N2w0b3FkRW56LXQxcWhfVjVaNzkyLXAzWDNKQW9sNTRnZGkyZUx4QUJhMTZPS0dmLWFxeERaZnBuOGZaZW1EaUl0eFp1VGhtbkE5NElZQkluOVVOQ3BUbERnSzkwQVloS21ESW5ZUFpGV1lXOW02WjVpcGdxUUljWlJnZ3AwdUNRT0lpN09nNy14c3BZMHgzYVo0VWlsT0plVzJjaUpwakRmUU1pbDVsbkFPR2pZckRoSm5BTUc?oc=5",
      "source": "航空万能論GF",
@@ -914,12 +912,6 @@
      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZU51M1VUZUNSZkRwWG9YVFpwS2pJZEZmVWNfNVhqcXR2Vmt6V2w3V1AxVjg2enBCS0RmamY3dUl1SDBpc3R1bnNsVDVCcHJLdXQ1OEVBU0RCaEtLT3RfRWpDSlVFUDRrM2hlRjJ2eF8wcWFEYUluWWl3aTVWRzBNOEtKTQ?oc=5",
      "source": "Reuters",
      "published": "2026-10-27T19:06:37+09:00"
-    },
-    {
-     "title": "中国外相候補の劉氏、降格処分か 対日関係窓口担う―香港紙",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5oc0RraGJIZFdzaHZxMldJZXBXVkpwVGVZMlI0eGdBUzM1NURHdHM3WnZHenVrMENkQzhJSWh0dW15XzRWSHJjU0l1dUdLTFZoSXhVaTFPSnE1RGdOZXFjSm9uRQ?oc=5",
-     "source": "時事ドットコム",
-     "published": "2026-10-27T17:53:00+09:00"
     }
    ]
   },
@@ -947,10 +939,10 @@
      "published": "2026-10-28T23:06:58+09:00"
     },
     {
-     "title": "ベトナム国家銀行が商業銀行活動の検査ハンドブックを発行",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUWsxeU5PWkpZUFRWbzZ6VWx2Tk5BQzN6UEY4VFdJWExQNXdhcUxpYXVzRkZDVTNJclhqUXU2cmN2LWl3eEJXZ3lSbDh1Q0VpUTZUVEp4X19UT1dCRlVQaXF1cGszTkN6anV3VjM5VUxoQldJRGE2VVdUT0JWTWFMM2hRZzh6OEl3R0p3U0VPc293SGJKZjZwQldyOW9qRE1hTTlUVGtTeXpPcWI0aUltNVZQY3VESTAxc09UOQ?oc=5",
+     "title": "ホーチミン市労働総同盟委員長の承認決定を授与",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaDVwaDJ3VkEzOXR0cExQVDFuWlBTbUYweFpmQl9tSk1Ebi1Ob0NuZWNvSTFyRTJNa1BVanJpSDllWmlCTWFVbmg4Uk84YlRoTHdfaTFsdXg4OFZqTGJhTzZRZ1dFWm9DeENwcTI5bml6cEhjZzhPcGZDQ2twWURJeHRybFU3YzhWcnVzN1ZB?oc=5",
      "source": "Laodong.vn",
-     "published": "2026-10-28T22:17:36+09:00"
+     "published": "2026-10-28T22:44:19+09:00"
     }
    ]
   }
