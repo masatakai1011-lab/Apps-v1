@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:57+09:00",
+ "updated": "2026-10-29T23:52+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 157.799,
-   "change": -0.1939962158203059,
-   "changePercent": -0.12278785798536586,
+   "price": 157.859,
+   "change": -0.13399621582030363,
+   "changePercent": -0.0848114910342375,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/29",
-     "close": 157.7989959716797
+     "close": 157.85899353027344
     }
    ],
    "news": [
@@ -134,9 +134,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1137,
-   "change": 0.0007339393615721779,
-   "changePercent": 0.06594445127564538,
+   "price": 1.1166,
+   "change": 0.0036339393615723026,
+   "changePercent": 0.3265094498468153,
    "currency": "USD",
    "history": [
     {
@@ -229,10 +229,16 @@
     },
     {
      "date": "10/29",
-     "close": 1.113709807395935
+     "close": 1.1165698766708374
     }
    ],
    "news": [
+    {
+     "title": "ユーロドル、下げ渋り ECB総裁「深刻な二次的影響のリスク見当たらない」(トレーダーズ・ウェブ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVG8wLTNJRHpIa2FVRzNBSkMtajdlRWVVcjRqNkQyWTF0N1d2QTA5Skl4TDlKLXZzN2VxRE1qTUdJMFM0Z2lJOEdSeWROMWhaQ21WU0dYLTJvYzRDUUpHcmdLOUJjejlpcC12VDNJTnpZWExkVDRzQjE0QXRzZV9LZlhESjhVTmc?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-10-29T23:16:18+09:00"
+    },
     {
      "title": "ユーロドル、売り優勢 一時1.1105ドルまで下落(トレーダーズ・ウェブ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcmluWlh6ZWhnQmtmT1hDbFJqWURENm5ab0xsblp0WHN6M0I5Y0g5OHY4ZVhSLUx4emJ3aDVwVVJiSF9WTWRCdzgtZHMxM2xuNVdUZnJFNEl0eE1tUEhKejlxZUE3R2VpQmdYb3g1UncyS0Q5V2h1dG4yamVGeWl4VHBYa1NqVVU?oc=5",
@@ -240,16 +246,10 @@
      "published": "2026-10-29T22:25:33+09:00"
     },
     {
-     "title": "テクニカルEYE（ユーロドル）＝２１日線が抵抗となり、軟調な推移か",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5XX3p3TU85RFl0eU1KSHVHRzU2NkVOZGFIMDREU2laeG9qN1p3UGkyaUxMVi1wRWRsUmtkVF94VkdDNDNoMlFlUg?oc=5",
+     "title": "ユーロドルは１．１１５０ドル前後まで反発＝ロンドン為替",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ydzNVMGRNQkhOV1B0SXIwbFljbW9vbC1VaTNpZ3JDdXFoSFRkNkZ6ZnVValZNaFVNRnVfMUR1cGc1Qy1QWUpCcQ?oc=5",
      "source": "みんかぶ FX/為替",
-     "published": "2026-10-29T16:30:29+09:00"
-    },
-    {
-     "title": "テクニカルポイント ユーロドル ボリンジャーバンド2シグマ下限が迫る",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0zLUxZUGR0QTlVcFh6ZDYzU29qcXdqcTZzNVoyMUl3MjVxcHA2c3JDRmFMdE11d0QyYnNUZnZOMUItWjRscmRySA?oc=5",
-     "source": "みんかぶ FX/為替",
-     "published": "2026-10-29T16:13:29+09:00"
+     "published": "2026-10-29T17:12:29+09:00"
     }
    ]
   },
@@ -559,57 +559,57 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52266.52,
-   "change": -208.5815625000032,
-   "changePercent": -0.39748672473091645
+   "price": 52281.35,
+   "change": -193.75156250000146,
+   "changePercent": -0.3692257027253876
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7701.72,
-   "change": -42.259980468749745,
-   "changePercent": -0.5457139684675646
+   "price": 7703.5,
+   "change": -40.47998046875,
+   "changePercent": -0.5227283718558853
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 26117.965,
-   "change": -431.88460937499985,
-   "changePercent": -1.6266932420682993
+   "price": 26108.719,
+   "change": -441.13060937499904,
+   "changePercent": -1.6615182980894614
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 99.91,
-   "change": -2.8699987792968784,
-   "changePercent": -2.7923709022995107
+   "price": 100.57,
+   "change": -2.209998779296882,
+   "changePercent": -2.1502226167977394
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4036.5,
-   "change": -15.10009765625,
-   "changePercent": -0.3726946710507049
+   "price": 4045.1,
+   "change": -6.500097656250091,
+   "changePercent": -0.16043285367700125
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.974,
-   "change": -0.07100007629394511,
-   "changePercent": -1.4073354850393132
+   "price": 4.978,
+   "change": -0.06700007629394555,
+   "changePercent": -1.3280490640381473
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 80161.49,
-   "change": -1106.0959374999948,
-   "changePercent": -1.3610542564296837
+   "price": 80979.96,
+   "change": -287.6259374999936,
+   "changePercent": -0.3539245495998816
   }
  ],
  "fear": {
-  "price": 17.03,
-  "change": 0.12000015258789176,
-  "changePercent": 0.7096401754625472,
+  "price": 16.46,
+  "change": -0.4499998474121085,
+  "changePercent": -2.6611463718077806,
   "history": [
    {
     "date": "09/29",
@@ -701,7 +701,7 @@
    },
    {
     "date": "10/29",
-    "close": 17.030000686645508
+    "close": 16.459999084472656
    }
   ]
  },
@@ -709,7 +709,7 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 6,
+   "count": 7,
    "news": [
     {
      "title": "「アメリカが日本を守る」幻想かも 法学者が指摘する「致命的な見落とし」 (2026年10月29日掲載)",
@@ -724,16 +724,16 @@
      "published": "2026-10-29T18:00:00+09:00"
     },
     {
+     "title": "ヘグセス米国防長官、国防総省の戦略立案部門トップを解任 イラン攻撃再開を検討する中",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1UdTlfWGpERUFraGY4WU9QOXJMMkVrSkNaQk1jeWxnUVFHTE5QQkVUOTRFSzFBOWtGS1ZYQVdQSjJOeHFUUFpTb3c1cmdzdVNs?oc=5",
+     "source": "CNN",
+     "published": "2026-10-29T17:47:00+09:00"
+    },
+    {
      "title": "「ヨーロッパの人も大喜びする」大西洋を『アメリカ洋』に変更提案!? トランプ大統領の豪快発言に会場騒然…ミシシッピ川は「絶対変えない」 米（ABEMA TIMES）",
      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8tTjQ3UDRJTDI3YXQ4dGZPZTZDVjRaWFdVWnpidEo0MDB4MG9tUWVScXIxYU9CdVRGQVJaZ0I2ZmNDSTVfM2oxcExfWmVpOGg5amFzNU9Wb3MwVlNTVU5TODROUkVkTGhlcGE0LWFPRERhNkhWaXZzS3pOa05nQ0k?oc=5",
      "source": "Yahoo!ニュース",
      "published": "2026-10-29T11:57:16+09:00"
-    },
-    {
-     "title": "米国土安保省職員4万人超の情報、漏えいサイトが公開",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdHYxLTRlUGlWbHRiazdkUWJhckV1NXg2NXdTZ29wRFNBN05JenNaT05zTHZyYU1LUkNkcXBGakdpZHpqWElGT1JaWW41WmhDLTE3SXA3U3ZWZEVwTHVBUTVpQ2dMUzRUd0ZWa0o2WkM2VS0td0xoZzV3Zms4OG1LSk5ySkNReDg?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-29T11:10:00+09:00"
     }
    ]
   },
@@ -761,10 +761,10 @@
      "published": "2026-10-29T21:15:32+09:00"
     },
     {
-     "title": "【画像】 ホンダF1 メキシコGPでターボに試練 折原伸太郎「効率がカギ」",
-     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBQZWMwdVVJODJ1NnBXWDRXTkdaaDF3MUxLOVRrNFU1dElkM3lmTXlYSFVPRFJ0R3ZzR1RsdE5YQXktSEptOHYxVUd2Y0NYaEk1?oc=5",
-     "source": "F1-Gate.com",
-     "published": "2026-10-29T18:42:18+09:00"
+     "title": "亀田和毅、メキシコ人妻との“顔出し”報告に「世界一素敵な夫婦」　結婚11周年「16歳で出会ってからずっとそばで」SNSで感謝",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbHpmeE8wd1pWUVJPcURFbnBQY0U5VnVCVnV0ZXFva053dG5JUGVoZTE2ZkRlTVpham84QXZEb3hTb2s5blloN25jUFd6TzF2bzVsRlZTSWFablk0eGdOanZSOXNoeDNSSEg2aGtWeTgxb244R3BObkxBU2ZUclFZZGktNDRIa1FL0gGIAUFVX3lxTE9semZ4TzB3WlZRUk9xREVucFBjRTlWdUJWdXRlcW9rTnd0bklQZWhlMTZmRGVNWmFqbzhBdkRveFNvazluWWg3bmNQV3pPMXZvNWxGVlNJYVpuWTR4Z05qdlI5c2h4M1JISDZoa1Z5ODFvbjhHcE5uTEFTZlRyUVlkaS00NEhrUUs?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-29T20:20:00+09:00"
     }
    ]
   },
@@ -780,10 +780,10 @@
      "published": "2026-10-29T16:55:43+09:00"
     },
     {
-     "title": "ノルウェー首相、プーチン氏との電話会談擁護 「欧州の見解伝達」",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcjZvOGZ6a2hETUZqZnFUdFM0MkpWbnB3RDdFOUxLZjlsX0dFdFFmNl95QUZ0WERtZ3puRWlWeXc1bThDVEtVRTh3SllpdGwybno2Q2VrdERpUl9rRlAtazFmZWxMYW5vUGNjUW05ME5xVTdVMFZpN25Tbjg3bzBDVDB0c1JfQQ?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-28T20:24:10+09:00"
+     "title": "17年間病気休暇を取り、給与だけ受け取っていた…ドイツの「幽霊教師」、起訴される",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUTlhNzhpM0dsRDBQYTZHQUs4bDVSbU1UZXNxRi1OcGdxWHhFaXNnaDFXQXBrY2pCaktZb2xaMXIwaG9GVFNhaG1RTEE1LWcwa2pVNFNWSncxNkVXRHJ3ZXFsV09CWHJHRmllOEdHeEJmTWR5Umx0T0ZYQnktbFM2NGNDZkZ1UFHSAYwBQVVfeXFMUGl6Z0dZcVlhaXVycU5HTy12WktVNFVGeUNGVmVfcmk2RFBZWEdGRlVWTTJHRUpRWmNWYk5kdjBBcGtFVEhobEgyZUxkRHBMY2lia1BmSjRpTWxacVotbkIwd3Q3ckRJU29FdEhXM3BvOGx0Nnp4NXJ3Sk9UckdEYk9ETTFOdHFKVWoxRGY?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-28T11:51:00+09:00"
     },
     {
      "title": "クルーズ船がコンテナ船2隻と衝突、ぶつかる瞬間が映像に ドイツ",
@@ -802,7 +802,7 @@
   {
    "key": "russia",
    "label": "ロシア・ウクライナ",
-   "count": 10,
+   "count": 11,
    "news": [
     {
      "title": "プーチン氏「欧米と違いロシアは搾取せず」 アフリカ引き寄せ狙い、首脳会議行事で演説",
@@ -833,8 +833,14 @@
   {
    "key": "mideast",
    "label": "中東",
-   "count": 8,
+   "count": 9,
    "news": [
+    {
+     "title": "ヘグセス米国防長官、国防総省の戦略立案部門トップを解任 イラン攻撃再開を検討する中",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1UdTlfWGpERUFraGY4WU9QOXJMMkVrSkNaQk1jeWxnUVFHTE5QQkVUOTRFSzFBOWtGS1ZYQVdQSjJOeHFUUFpTb3c1cmdzdVNs?oc=5",
+     "source": "CNN",
+     "published": "2026-10-29T17:47:00+09:00"
+    },
     {
      "title": "スイスの防空システム導入が予想外の展開、イスラエルとフランスの一騎打ち",
      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPbUYxcktWcVBya0Vtd3N3YlpzUnZVclFNQnVoYVh4dmNPZktZczJELUs1a0VUUXR0UVltT0VvSmhxeVZPcXlobUpPTDJBOS1MNm9WRmVkNXZmYlpWd3Y2ejNTWWxCTlhuTXhPNE1qY094LVk2T05MWGl6Wm0xZXlHcXIteEdJQXRJYldpdzVSbWlSdFBwVGg4ajExRGZXTmE4ZUtfMFg5bFNMRlpwMExJaWE5MzRCcG05dW5mOEhwUkpvWW16Q1FVaXh6SWhuYjBUbGpzUHRBWHpZQTlHd2FpZkJlbDdreThOWlBQT3JPNzRyRU1sc3VhNG94d2VwaFpjQmc?oc=5",
@@ -852,12 +858,6 @@
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSTdoZmZBWnpBSzNrSmgwRDhuWldnNVdfVnhFeGQwRktPNlIxSmJ6cEJRbXZFMlZVanRZNi1Uc2QzNnEyV1ptd3Z0ZG5JUGNtTjQzVnZFb1ByeFc3eTlpQWtGdl9rdnhEVmFVZEZsQVgwVllJdTFQSEFxS1Y4S1RRY1lpYmFWOE0?oc=5",
      "source": "Reuters",
      "published": "2026-10-29T06:19:38+09:00"
-    },
-    {
-     "title": "カタール、イランに戦争終結へ新合意案 政府高官は拒否姿勢",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdE1FbWhjRjM2d3ppb2FDZEtqQk90OENDdld2eVdXZGZqSWxsdWZsNFVIRkNCRzBldlRhYlFocThpX25DU2Z5YUxKRVZGSC1keXhjU01UdW1LaG9CZFNyd2QzVzdQU3VSX2oySG9zQXZrdjJXSk8xSkp5bkM5TDRRZEVRVi1IX1U?oc=5",
-     "source": "Reuters",
-     "published": "2026-10-29T02:47:04+09:00"
     }
    ]
   },
@@ -895,7 +895,7 @@
   {
    "key": "china",
    "label": "中国・朝鮮半島・台湾",
-   "count": 11,
+   "count": 10,
    "news": [
     {
      "title": "中国の5中全会閉幕、過去最多33人の党籍剝奪 党大会にらみ引き締め",
@@ -916,10 +916,10 @@
      "published": "2026-10-29T17:01:00+09:00"
     },
     {
-     "title": "昨年の韓国の出生、54.4％が首都圏に集中…今年の合計特殊出生率予測は0.9人台",
-     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZWdoQ1pKT1NHSkNmRXZ1WFRqenNkTk9wWmxCWTg4RnU3MFFGRTJpcTl3TXl0ZnBnSEVfTTM4Q3JlaEFtVjdLU3pHSXdSZ2MwdDJCUnh4UE9BRjZXVWlPZzVTUjdvaFNJcG5PVk02cUxEWDhLWFdhMDdqbGZOd0ZQcjNkTdIBfEFVX3lxTE9TOXNkTlpKNHJnQ09Gd201Z3FSNkhCSEpYWE5vb1o0X1JsRTlNdzZuemFjcHQ1ZVRBV2d5a3pmNnRTRmJNOHN5cnRRaGtSUkhNcE1TeTNfSEMwUzVaclYxRXJjSkVHdW1rUXh0dXV5MzJGMnc0SWJsajBfSGM?oc=5",
+     "title": "韓国の8月の出生児数、19年ぶり最大の伸び…26カ月連続増の新記録",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbWtMU2ZGV3gweV9QNlZMN3RHZmpsQVNjSGozeTZMU0g4Q0taazM5NHd5S2VwUFJpV19RenRYWFVWTXl2SGpjRzAwLUEtcnZLczZJRHJQSFg5MUt2WFZpNG1xMFd2UXJlNndtZ2pJcHlDM2FhWVRzZnh5aVg0bHBuS0tQUdIBfEFVX3lxTFBjYXhqeXFPYlFrTG5RMjFzby1JOXhwRjZOa1Jwam1vekhYT25NRU4tYkFBdFJyRWRCUHNRVTgzdXJ1NlZ5NG5GMnN1MGVmRzVCZ0w1dzhuQl84anB0QjZIV0RaNk5nN2RGQlFUWGYzNl8tcmlDclljU3VTSk4?oc=5",
      "source": "朝鮮日報",
-     "published": "2026-10-29T15:12:00+09:00"
+     "published": "2026-10-29T15:05:00+09:00"
     }
    ]
   },
@@ -935,22 +935,22 @@
      "published": "2026-10-29T22:14:25+09:00"
     },
     {
+     "title": "日豪、新型艦開発の進展を確認　防衛協力具体化で一致",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4yeWhLdFhTc2JHaFZLTW9XcW9ybV9TeTdBVmRPZnFBaHloeE85NmRsMkdsNlNkb0pITmpLTUVKcVU0NVNIekJpdFMwb0E2ekdhejkxd09RVE5ibXk3MWMzX0dySWxoZWFVNnZKQ2dteDdsc3Qw0gF0QVVfeXFMTjJ5aEt0WFNzYkdoVktNb1dxb3JtX1N5N0FWZE9mcUFoeWh4Tzk2ZGwyR2w2U2RvSkhOaktNRUpxVTQ1U0h6Qml0UzBvQTZ6R2F6OTF3T1FUTmJteTcxYzNfR3JJbGhlYVU2dkpDZ214N2xzdDA?oc=5",
+     "source": "Infoseek",
+     "published": "2026-10-29T22:14:25+09:00"
+    },
+    {
+     "title": "スズキ世界販売、ホンダ抜き国内２位 ２０２６年度上半期、過去最高１８２万台 インド好調",
+     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE00VFNEc0lUWEdRYnduTTQ2cHhucVRZYzJhR3ZpUjg0bkFRZmt2Tzg5SXRtSHNETUJYT2s4TDl2ekUzUjVQT0drM1hVOHNOQQ?oc=5",
+     "source": "静岡新聞DIGITAL",
+     "published": "2026-10-29T22:11:00+09:00"
+    },
+    {
      "title": "Tempalay・小原綾斗率いるFCO.とフィリピン注目の新鋭・NEW LOREが共演",
      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ET280R0dGZDh6QjhNaVZmV053ZXg1MmQxaUlrUmJJaklYMkZ4QmZ0Z090N2ZWZUFOYklkU0wzOURVUDgxSlZjTmdXMU9KLTEzdHdXQzNXQTd0WC1ONTZHdHVR?oc=5",
      "source": "Spincoaster（スピンコースター）",
      "published": "2026-10-29T22:04:23+09:00"
-    },
-    {
-     "title": "小泉防衛相「専守防衛は不変」 安保３文書改定に理解求める",
-     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LQzhOYkIteWZianpKVTJHQlhnTnpFM09aUGZfTHlqM2JoVmNLTWJseXc3T3lyWFdpV003LXlVb3puMk5mUktrRHBLaUdKdw?oc=5",
-     "source": "静岡新聞DIGITAL",
-     "published": "2026-10-29T21:37:00+09:00"
-    },
-    {
-     "title": "【スズキ】新味「ココナッツ野菜」のインドベジタリアンレトルトカレーを調子に乗って追加発売",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5uX1luQW5vaE9qakxyMWlHSWFQT0RKdW9NLUR6cE54TTZLc1JEY2hFMWE1NWNadFpJNTRiUXZSUlJFYlYwMjNIdzZScDNoZERPYTJFbEFrNk5oSVliRUE?oc=5",
-     "source": "Auto Prove",
-     "published": "2026-10-29T21:35:06+09:00"
     }
    ]
   }
