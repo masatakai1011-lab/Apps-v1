@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T01:45+09:00",
+ "updated": "2026-10-31T02:39+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 157.591,
-   "change": -0.24199255371092931,
-   "changePercent": -0.15332190677977464,
+   "price": 157.471,
+   "change": -0.36199255371093386,
+   "changePercent": -0.22935163799023003,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/30",
-     "close": 157.59100341796875
+     "close": 157.4709930419922
     }
    ],
    "news": [
@@ -114,16 +114,16 @@
      "published": "2026-10-30T22:48:22+09:00"
     },
     {
-     "title": "ドル円、一時１５６円台に下落 円高の動きも日銀会合が要因ではない＝ＮＹ為替序盤",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ESGxuNF9tRHZIbUNwcnNFT2thUFlyQ1dkbnhhalhseS1PbnFTMEhsaFJ6SWY5Y0tNWlBnYnVPYkFYV05pdl83YQ?oc=5",
-     "source": "みんかぶ FX/為替",
-     "published": "2026-10-30T22:23:29+09:00"
-    },
-    {
      "title": "欧州外国為替市場概況・22時 ドル円、下げ渋り(トレーダーズ・ウェブ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdFpwLWxtbXpzek9xXzlNRjBaRHBNS1ZhXzI1SHlialZQQ1BFUXd0VDEzRGVaV1ZzU1ZmaUdYcEFYbm1scHlWdEl3WmZiZ3RXUF9Eb21lRnRmNnhVVW5EUmhWUU1qeTZnWjBrX3dSSnh2UlNkaVlWRVE1WjB5QWE4WFUzR3NKV1k?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-10-30T22:06:04+09:00"
+    },
+    {
+     "title": "オーストラリア ドル / 日本 円【AUDJPY=X】：為替レート・相場",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZNnNQU0VuNWo4LTdyaS1Ybng4dm55OTBYcGtfVmhrbHRRSGNUUmV5MUt2dDBDOHR4NnlleUZOWGtubEpMY2xaYnpVTXBlRE53MlRvVQ?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-10-30T21:33:52+09:00"
     }
    ]
   },
@@ -134,9 +134,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1162,
-   "change": 0.0006265937805176591,
-   "changePercent": 0.05616786641061077,
+   "price": 1.1157,
+   "change": 0.00012659378051749215,
+   "changePercent": 0.01134786647043696,
    "currency": "USD",
    "history": [
     {
@@ -229,7 +229,7 @@
     },
     {
      "date": "10/30",
-     "close": 1.1161960363388062
+     "close": 1.1156978607177734
     }
    ],
    "news": [
@@ -551,37 +551,37 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 51979.1,
-   "change": -363.45859375000146,
-   "changePercent": -0.6943844617358856
+   "price": 51843.42,
+   "change": -499.13859375000175,
+   "changePercent": -0.9535999140278972
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7600.51,
-   "change": -119.88013671874978,
-   "changePercent": -1.5527730412041088
+   "price": 7574.95,
+   "change": -145.44013671875018,
+   "changePercent": -1.8838443931353426
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 25497.453,
-   "change": -687.2677031249987,
-   "changePercent": -2.624689836936
+   "price": 25367.672,
+   "change": -817.0487031250013,
+   "changePercent": -3.120326210038556
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 104.12,
-   "change": 2.1200000000000045,
-   "changePercent": 2.0784313725490238
+   "price": 104.86,
+   "change": 2.8599999999999994,
+   "changePercent": 2.8039215686274503
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 3906.7,
-   "change": -124.69990234375018,
-   "changePercent": -3.0932158893800867
+   "price": 3898.9,
+   "change": -132.4999023437499,
+   "changePercent": -3.28669706686052
   },
   {
    "name": "米10年金利",
@@ -593,15 +593,15 @@
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 77327.35,
-   "change": -447.7593749999942,
-   "changePercent": -0.5757103764921503
+   "price": 77128.78,
+   "change": -646.3293750000012,
+   "changePercent": -0.8310234214955112
   }
  ],
  "fear": {
-  "price": 20.04,
-  "change": 2.839999237060546,
-  "changePercent": 16.511622738877104,
+  "price": 20.89,
+  "change": 3.6899992370605474,
+  "changePercent": 21.453482984787566,
   "history": [
    {
     "date": "09/30",
@@ -693,7 +693,7 @@
    },
    {
     "date": "10/30",
-    "close": 20.040000915527344
+    "close": 20.889999389648438
    }
   ]
  },
@@ -763,7 +763,7 @@
   {
    "key": "europe",
    "label": "ヨーロッパ",
-   "count": 5,
+   "count": 6,
    "news": [
     {
      "title": "動物園で8歳女児がオオカミに襲われ重傷 ドイツ",
@@ -871,23 +871,23 @@
      "published": "2026-10-29T07:19:47+09:00"
     },
     {
-     "title": "ベンザチンペニシリンG市場は、2026年から2033年にかけて年平均成長率（CAGR）3",
-     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBod2tXS1hyRlB5amM1TEt0OWI3LUdDN0lzNEdzdVBQTVk3R1hYRXBYMkU5RmNFN292ejVMOWVuNVNLTjNxWlIybXdB?oc=5",
-     "source": "pando.life",
-     "published": "2026-10-31T00:03:31+09:00"
+     "title": "エジプトが独立系メディアに閉鎖と罰金命じる…言論弾圧深刻化　国際メディア団体が非難",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNXgwYjBDSjFpYVpXM1Roc1FuUGl1eEppdVVpZ1JzTUNIb2xoQkpkM2pQdHVPWTFFU0VoakFIUHdvbFhSYTFic3B2R0RxQWpvTFJOZGYtTXVjVkRTZ0JiOENoVE5DNEpRQWFVNlU1SFJuMHFSQWx1M0JrQWp0UUdSYjl5UC1IT3FYd214cGtERU1PUGRkT2FVVHE1d0ZoNG8ydU54NW5RbHnSAagBQVVfeXFMUDV4MGIwQ0oxaWFaVzNUaHNRblBpdXhKaXVVaWdSc01DSG9saEJKZDNqUHR1T1kxRVNFaGpBSFB3b2xYUmExYnNwdkdEcUFqb0xSTmRmLU11Y1ZEU2dCYjhDaFROQzRKUUFhVTZVNUhSbjBxUkFsdTNCa0FqdFFHUmI5eVAtSE9xWHdteHBrREVNT1BkZE9hVVRxNXdGaDRvMnVOeDVuUWx5?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-30T17:31:00+09:00"
     },
     {
-     "title": "バンバラ豆市場の収益動向：2026年から2033年にかけて年平均成長率（CAGR）8.6",
-     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5FNHloc1JrSGkyRThMcUZ4NEkyanBiYWhMakg2ZlpGdWZqTkRHNWYySlZ2eEI1VTRHRnhuel84aFVNVTBzMV81ZGZn?oc=5",
-     "source": "pando.life",
-     "published": "2026-10-30T20:20:17+09:00"
+     "title": "仏パリ郊外の短機関銃乱射事件、被告の標的は「イスラム教徒とアフリカ系」 検察当局",
+     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9zNFg3TGszbnNLZGtFNXhZUFg5NHBjOWQ4RmpIS21LZndNZEpBcERwUnRxd0I3bS0ya2hSQ25IWXRkQ0tPRFdGclBtWmtxQ1NWTDQ2TE5WbVhmaUpQaVdKRzlkWlHSAWRBVV95cUxPczRYN0xrM25zS2RrRTV4WVBYOTRwYzlkOEZqSEttS2Z3TWRKQXBEcFJ0cXdCN20tMmtoUkNuSFl0ZENLT0RXRnJQbVprcUNTVkw0NkxOVm1YZmlKUGlXSkc5ZFpR?oc=5",
+     "source": "Infoseek",
+     "published": "2026-10-30T16:15:00+09:00"
     }
    ]
   },
   {
    "key": "china",
    "label": "中国・朝鮮半島・台湾",
-   "count": 13,
+   "count": 12,
    "news": [
     {
      "title": "金正恩は海外に｢専用トイレ｣を持参､では習近平は…会談終了と同時に警備員が突入し\"抹消する情報\"（プレジデントオンライン）",
@@ -921,10 +921,16 @@
    "count": 0,
    "news": [
     {
+     "title": "動画が拡散、インドでサイクロン「Arnab」通過後に赤い空との報告",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE84VHRzRk9SQUpDY1lrNnRNNjhlUlpNYXpkemItQ01oRWhEdVlLcU1YTHQ3b3p6NUZFMGpxWEw5d3lEMUVVekJsMk9JbDRNc1B6WGMtOWhNc2lGSlNBQXJpa3lSYWc3ZXZwS0E?oc=5",
+     "source": "cedarnews.net",
+     "published": "2026-10-31T01:51:29+09:00"
+    },
+    {
      "title": "工事責任者の起訴求める ベトナムのプール事故で捜査当局",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5icXl2Z3p3bi03NzJvaVFHWi1SbnVXWUtJZnljRkRxVk5BNllSWWJPbW51LVdqV2JxcHlveDBKYzhUdzh0X3pzbGVXTUdrZElEQndZbA?oc=5",
      "source": "中日新聞Web",
-     "published": "2026-10-31T00:22:48+09:00"
+     "published": "2026-10-31T00:21:00+09:00"
     },
     {
      "title": "環境NGOのRAN。インドネシアで森林を破壊しアブラヤシ農場に転換・生産したパーム油を、正常な同油と装う「森林破壊パーム油ロンダリング」の実態あばく。日本の金融機関も一部関与か（RIEF） | 一般社団法人環境金融研究機構",
@@ -937,12 +943,6 @@
      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNR2tXNnNiV3UwWEdxcjV0LTVTM0RNT2Q0Q256ekxTMGdnU3Y0S3lmTXJNS3Q5cXhidThMLXJ1LVhhWEU5WlI3amxGLVljWTZVMmJoZVllTG50M2pBalFZVWk5ZFU5V1g5dHdZczA2QWpDUVk5VW9fNFFzVXBNZ2dzNjJVbl9KOFd1eE5UMlNB?oc=5",
      "source": "cedarnews.net",
      "published": "2026-10-30T23:32:07+09:00"
-    },
-    {
-     "title": "ベトナム祖国戦線、AICESISにおける3つの協力方向性を提案",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM2hPRkRZZ1IxOWtwd0p4WHpvTWdreE5DOEdQRERoaV91a2ZCekZVbF9UUUdBUnRUbjBGUER1a0hVa29hbkxxeTdXdDB3X2FndVpVWVV6YmdaX3hOV3B1b0x6WnhHWm50Y215bVlSRkNDYzdfclFqeThUUHVaMUR5LWwyV2ptM1Vyb3k1LU5RRi1lM0hmQk1EaEVpbE1idw?oc=5",
-     "source": "Laodong.vn",
-     "published": "2026-10-30T23:13:01+09:00"
     }
    ]
   }
