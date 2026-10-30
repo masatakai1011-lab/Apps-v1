@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T23:52+09:00",
+ "updated": "2026-10-31T00:22+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 157.287,
-   "change": -0.5459925537109314,
-   "changePercent": -0.34593055917958904,
+   "price": 157.312,
+   "change": -0.5209925537109257,
+   "changePercent": -0.3300910318440745,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/30",
-     "close": 157.28700256347656
+     "close": 157.31199645996094
     }
    ],
    "news": [
@@ -120,10 +120,10 @@
      "published": "2026-10-30T22:23:29+09:00"
     },
     {
-     "title": "円買いが優勢、ドル円は一時１５７円割れ＝ロンドン為替",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBZTXA0blQwSlAycWZrNWZvbDlXRHhWTXk0MDhvRnVieHE0M0MtR0lJRno3dVBZWmZrVDFKemJKTlhWbF95dlVBRw?oc=5",
-     "source": "みんかぶ FX/為替",
-     "published": "2026-10-30T21:08:29+09:00"
+     "title": "欧州外国為替市場概況・22時 ドル円、下げ渋り(トレーダーズ・ウェブ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdFpwLWxtbXpzek9xXzlNRjBaRHBNS1ZhXzI1SHlialZQQ1BFUXd0VDEzRGVaV1ZzU1ZmaUdYcEFYbm1scHlWdEl3WmZiZ3RXUF9Eb21lRnRmNnhVVW5EUmhWUU1qeTZnWjBrX3dSSnh2UlNkaVlWRVE1WjB5QWE4WFUzR3NKV1k?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-10-30T22:06:04+09:00"
     }
    ]
   },
@@ -134,9 +134,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1156,
-   "change": 2.6593780517503163e-05,
-   "changePercent": 0.0023838664824061785,
+   "price": 1.1151,
+   "change": -0.00047340621948244177,
+   "changePercent": -0.04243613345774773,
    "currency": "USD",
    "history": [
     {
@@ -229,7 +229,7 @@
     },
     {
      "date": "10/30",
-     "close": 1.1155734062194824
+     "close": 1.1150758266448975
     }
    ],
    "news": [
@@ -261,8 +261,8 @@
    "kind": "stock",
    "errors": [],
    "price": 13470.0,
-   "change": -1035.0,
-   "changePercent": -7.135470527404343,
+   "change": -870.0,
+   "changePercent": -6.066945606694561,
    "currency": "JPY",
    "history": [
     {
@@ -348,10 +348,6 @@
     {
      "date": "10/29",
      "close": 14505.0
-    },
-    {
-     "date": "10/30",
-     "close": 13470.0
     }
    ],
    "news": [
@@ -383,8 +379,8 @@
    "kind": "stock",
    "errors": [],
    "price": 2150.0,
-   "change": -109.0,
-   "changePercent": -4.825143868968571,
+   "change": -297.0,
+   "changePercent": -12.137310993052717,
    "currency": "JPY",
    "history": [
     {
@@ -470,35 +466,37 @@
     {
      "date": "10/29",
      "close": 2259.0
-    },
-    {
-     "date": "10/30",
-     "close": 2150.0
     }
    ],
    "news": [
     {
+     "title": "サイバートラスト—中間期は2ケタ増収増益、両サービスがともに13%増収",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5HVkptTWJ1RE9Jb0V1WU9aR29nYTctaGVhYWxxYTYwMTFReFU1ODRhNDg2NzZyZWEweFdvZERRUnBuTGZVY1JQQ1dVWkRWY1BDMnfSAVJBVV95cUxOR1ZKbU1idURPSW9FdVlPWkdvZ2E3LWhlYWFscWE2MDExUXhVNTg0YTQ4Njc2cmVhMHhXb2REUVJwbkxmVWNSUENXVVpEVmNQQzJ3?oc=5",
+     "source": "まぐまぐ",
+     "published": "2026-10-30T19:26:08+09:00"
+    },
+    {
      "title": "サイバートラスト---中間期は2ケタ増収増益、両サービスがともに13%増収",
-     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSnVXWENxYTJmNWNDQ3R4QWU4akFaNTZGOWgtWHBpZU90cjJrd0M5eEFMY0FqUTFicng0amNhYUZOZkx1QjdERUxoNkNwZWhPaDFneXNZSjlaaW9KZXRuVklNMlg2ekVBWUN2SUE3Q0lVVVlQaENHZ3pvM3RaVUhFVXVZaWgtUXMycGxkVWVYejZXNU5NY0czSm930gGMAUFVX3lxTE9QTWs0MVJwMUNsOXFhaU1SMWVWVFp0M05RNjFZMWVGOU9RYmtVQWJ4a1FycVV1Wkg3ZWZOQW9ZNmtxNlZBR1V2YVZaUnlqTFp6blRjODRLUmdUUS1rcHpWVGxBdHpuNHpnQ1dUNXY2bjhKTmRwdmVyWERIbWxsd1p4cTZpSWRUWUFtczZa?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQVRYbWtRTkFnWGRrakFJSU54bFlBSExaSU1wM0I4NXhqNGxwbWp1R1p1NkYtaFNXak5ZcE11ZkFxMkhlSlNFX1hiUmJjZHpmTHdWUVlSNEhvZHpjb2xQVGlPcU1UN0tWVUZ0LWkzOTJ4ZW9TNVBzb1VSMWN2ME1RbkdmdFYwTm_SAYwBQVVfeXFMT1BNazQxUnAxQ2w5cWFpTVIxZVZUWnQzTlE2MVkxZUY5T1Fia1VBYnhrUXJxVXVaSDdlZk5Bb1k2a3E2VkFHVXZhVlpSeWpMWnpuVGM4NEtSZ1RRLWtwelZUbEF0em40emdDV1Q1djZuOEpOZHB2ZXJYREhtbGx3WnhxNmlJZFRZQW1zNlo?oc=5",
      "source": "ｄメニューニュース",
      "published": "2026-10-30T19:20:00+09:00"
     },
     {
-     "title": "新興市場銘柄ダイジェスト:サイバートラストとドリコムが大幅続落",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qa0VmUGxkczYtZ3IwTEpyeTZxcWNvbnhURExpVnpCUk1ZM3M5V09UMUNCYUpYdjdpUVMxX0h4MVhoLVVkakI1V2JhN2Q5aWxkSHVESXZmcHdmTE1mb2lLaQ?oc=5",
-     "source": "株探",
-     "published": "2026-10-30T15:42:15+09:00"
-    },
-    {
-     "title": "サイバートラスト---大幅続落、27年3月期上期は営業利益28.6%増・純利益62.7%増 執筆",
-     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE43U3hreElTSXdMWFFOcTU5SDdSbGI2UUQwNFh1YW5UVU1JMFVPajcxaEtERTU2eVF2a0M3LU9odmxSVVJGOUIwaDBnOFFQYXlkNUhhM3REc1Fubnc4TFlCRXg5V284Y2plOEhnT2xxT3k?oc=5",
-     "source": "Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
-     "published": "2026-10-30T14:00:00+09:00"
+     "title": "相次ぐ不正アクセスと情報漏洩の裏に「A2B 攻撃」、公開アプリを悪用した攻撃手法とは｜BLOG",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQzdUcVJ1SVpaSU9IaFg5aVFJbGRFUTRPeVd6QkJkV3FkLWhhakdXS21Nb3lPbG04SDBQd0Y2ZGNRUnVjYVZKVnM3MFZkOWV6Uk9Tem9tZFE1SVNobm02T2QwakRTTGxueDZhYkdjR1R5XzVmX2JMcmlGcHB5T2xZcC1Tc1BtcWo4bEN4d0UtcmZVNzJQbU43NHJpcG9BcEZLRjA4Mi1LUC0weXM?oc=5",
+     "source": "サイバートラスト",
+     "published": "2026-10-30T18:05:00+09:00"
     }
    ]
   }
  ],
  "videos": [
+  {
+   "id": "0BV5WKmZ2f4",
+   "title": "日銀・植田総裁 会見 金融政策決定会合｜チャットで生解説 為替情報も【LIVE】(2026年10月30日) ANN/テレ朝",
+   "channel": "ANNnewsCH",
+   "published": "2026-10-31T00:01:58+09:00"
+  },
   {
    "id": "_bfe-Fs2afY",
    "title": "【黒田前総裁単独インタビュー】日銀 物価上昇率｢2％到達｣／2023年当時に戻れたら「もっと大胆な異次元緩和をやる」【WBS未公開】",
@@ -510,12 +508,6 @@
    "title": "ガイアの夜明け【フィジカルAI～“ニッポンの勝ち筋～】予告",
    "channel": "テレ東BIZ ダイジェスト",
    "published": "2026-10-30T23:23:08+09:00"
-  },
-  {
-   "id": "y3e4KL3Gck8",
-   "title": "【日銀･植田総裁】物価安定の目標｢2%に達した｣  政策金利を“据え置き”",
-   "channel": "日テレNEWS",
-   "published": "2026-10-30T21:27:14+09:00"
   }
  ],
  "lives": [
@@ -553,63 +545,63 @@
    "name": "日経平均",
    "unit": "円",
    "price": 63290.11,
-   "change": -1369.3587499999994,
-   "changePercent": -2.117800805469809
+   "change": -664.0814062499994,
+   "changePercent": -1.0383704205274358
   },
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52102.8,
-   "change": -239.7585937499971,
-   "changePercent": -0.4580566945740127
+   "price": 52011.5,
+   "change": -331.05859375,
+   "changePercent": -0.6324845453571891
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7618.61,
-   "change": -101.78013671875033,
-   "changePercent": -1.3183289304859922
+   "price": 7609.79,
+   "change": -110.60013671875004,
+   "changePercent": -1.432571861786201
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 25619.582,
-   "change": -565.1387031250015,
-   "changePercent": -2.1582766130385163
+   "price": 25586.045,
+   "change": -598.6757031250017,
+   "changePercent": -2.2863551225641032
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 104.14,
-   "change": 2.1400000000000006,
-   "changePercent": 2.098039215686275
+   "price": 104.07,
+   "change": 2.069999999999993,
+   "changePercent": 2.0294117647058756
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 3921.6,
-   "change": -109.79990234375009,
-   "changePercent": -2.7236172298341157
+   "price": 3918.4,
+   "change": -112.99990234374991,
+   "changePercent": -2.80299412315942
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.943,
-   "change": -0.04599984359741249,
-   "changePercent": -0.9220253565741434
+   "price": 4.945,
+   "change": -0.043999843597411825,
+   "changePercent": -0.8819371612905266
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 77009.29,
-   "change": -765.8193750000064,
-   "changePercent": -0.9846586924198798
+   "price": 77744.01,
+   "change": -31.09937500000524,
+   "changePercent": -0.039986282565102775
   }
  ],
  "fear": {
-  "price": 19.66,
-  "change": 2.459999237060547,
-  "changePercent": 14.302320511293612,
+  "price": 19.36,
+  "change": 2.1599992370605463,
+  "changePercent": 12.558134542148741,
   "history": [
    {
     "date": "09/30",
@@ -701,7 +693,7 @@
    },
    {
     "date": "10/30",
-    "close": 19.65999984741211
+    "close": 19.360000610351562
    }
   ]
  },
@@ -709,7 +701,7 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 8,
+   "count": 10,
    "news": [
     {
      "title": "【韓察日報・週末版】「ホワイトハウス公式HPは高市首相ばかり」相次ぐ“韓国パッシング”と深まる対米不信 ほか今週読まれた人気記事3選【10月第4週】",
@@ -755,16 +747,16 @@
      "published": "2026-10-30T05:50:00+09:00"
     },
     {
-     "title": "ブラジル大統領選で敗れたボルソナロ氏、国外逃亡を否定　米マイアミ到着後",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE93UGF3SFlJbVlIbEpwcUpnbU9qdl9TYnNHcmdfTXR4bmhvYUx6ZWk4aDVuYlNGTWlhbmlqMmFvTWhnOEd6ZnVKd3NkemlpVzJka2V1S1ZLb1pXbmh4V19rSNIBZkFVX3lxTE8xemtpMExvOExSSlVlX0ZrNG5vZEprZGtBdDB4RVdjUVE2blJydEJicUlqNW04NFE4UWxkLTN6S01Zd19YWDlkdE4tcjZ5bTN5UUMxTURacE10VWRDTlBPRFB1M0x4dw?oc=5",
-     "source": "BBC",
-     "published": "2026-10-29T13:44:02+09:00"
+     "title": "ブラジル大統領選、「1000万人網」でルラ氏逆転 SNS選挙に新機軸",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBBSkdUMmRlenZPVjR3a1o2NmIwaTBQQmVVN1NLWTJJbkJKcXhId0FYMnUwcFJFeTJLdWVtaG1hS3R1U2dxakU4emptWjdkVTJtd21uOHdtTDdmWWVtY3ZOR2RTcDA0a2NrNi1XUg?oc=5",
+     "source": "日本経済新聞",
+     "published": "2026-10-30T03:58:15+09:00"
     },
     {
-     "title": "ブラジルといい、このセルビアといい、権威主義的な政権、勢力を、市民が民主主義により権力の座から...",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTQ2FTMDhDdlVGV1ZraFZtckR4cWQ0SjBOZEMtZm5LS2hNdnNXYXdOUkxEY0VNbzN2SnNENDAyNW1KU1N0ODFHMmlkRVVESVFweURuQXJIaDh4VzVjRUpF?oc=5",
-     "source": "選挙ドットコム",
-     "published": "2026-10-30T20:47:36+09:00"
+     "title": "ホンダF1初優勝の地。標高2000m超のメキシコシティでは人もマシンも“空気の対策”が必須／サーキット紹介第21回",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaHNPeDR5OEQ2c1Y3SVg3Rml1UEwzQ1QwUWN5UzFubkJZeHQwT1dWRUZSZ1E4V2ZSWHhtTlZ5NTBtc1ZCZzdNSVUwRUpRUGxaLWpoMnVOV3p2VEhraFItTEREOTVSRVJUTEdmRWxILTcyMW1PdWI5MVFyVW9rMmdRNDlLSnJfUdIBhgFBVV95cUxPaHNPeDR5OEQ2c1Y3SVg3Rml1UEwzQ1QwUWN5UzFubkJZeHQwT1dWRUZSZ1E4V2ZSWHhtTlZ5NTBtc1ZCZzdNSVUwRUpRUGxaLWpoMnVOV3p2VEhraFItTEREOTVSRVJUTEdmRWxILTcyMW1PdWI5MVFyVW9rMmdRNDlLSnJfUQ?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-10-30T22:15:00+09:00"
     }
    ]
   },
@@ -833,7 +825,7 @@
   {
    "key": "mideast",
    "label": "中東",
-   "count": 6,
+   "count": 5,
    "news": [
     {
      "title": "仲介役カタールの担当者、米イラン合意へテヘランに戻る＝当局者",
@@ -895,7 +887,7 @@
   {
    "key": "china",
    "label": "中国・朝鮮半島・台湾",
-   "count": 14,
+   "count": 12,
    "news": [
     {
      "title": "金正恩は海外に｢専用トイレ｣を持参､では習近平は…会談終了と同時に警備員が突入し\"抹消する情報\"（プレジデントオンライン）",
@@ -929,6 +921,12 @@
    "count": 0,
    "news": [
     {
+     "title": "環境NGOのRAN。インドネシアで森林を破壊しアブラヤシ農場に転換・生産したパーム油を、正常な同油と装う「森林破壊パーム油ロンダリング」の実態あばく。日本の金融機関も一部関与か（RIEF） | 一般社団法人環境金融研究機構",
+     "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9BZW04VU80WUxYT2k3Nm9HSzJBQy1JdWVCSGh0bk9CNnZSck0yT181RmY5RVlSbnRqSk9ZTDd0aXFBSHRa?oc=5",
+     "source": "環境金融研究機構",
+     "published": "2026-10-31T00:15:08+09:00"
+    },
+    {
      "title": "マヨン火山、フィリピンで警戒レベル3に引き上げ 噴煙は火口上空3000メートル",
      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNR2tXNnNiV3UwWEdxcjV0LTVTM0RNT2Q0Q256ekxTMGdnU3Y0S3lmTXJNS3Q5cXhidThMLXJ1LVhhWEU5WlI3amxGLVljWTZVMmJoZVllTG50M2pBalFZVWk5ZFU5V1g5dHdZczA2QWpDUVk5VW9fNFFzVXBNZ2dzNjJVbl9KOFd1eE5UMlNB?oc=5",
      "source": "cedarnews.net",
@@ -945,12 +943,6 @@
      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9VYkVZZ1NRSXBsT0VWTmtoSm5haTVyYVp0bHNtcGliV0lwU3c0bWg3dEJEMTlNbXFOZTBZLTFQYXMtaWp3SE1ZaQ?oc=5",
      "source": "スマホダイジェスト",
      "published": "2026-10-30T22:39:24+09:00"
-    },
-    {
-     "title": "ベトナムの新興エアラインのサン・フーコック航空、2機目のA330型機を受領 将来的に就航を計画する日本の都市は東京と大阪",
-     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPcTE4M19YTVFVZ05JRmllRmZEWjh6Nkw4ZmYyZU5mV01pS0Z3VnlnekVxYzIxS1oyaTY3eW5xM1ZIR2NOOW05d0o2TEJPd0hjWVlKQ2xwbV9VNmpXTjZ2UTFOc1pYNFVMQUdram5SUkRtNnJYNDFYcExLRWVmeG56akotQUhCdVZBbGYtWVduUUt1UnczVWozamFEMnJQVzJzQWd2YmpmaTNoVEZUYXVGREdNeHhncmtleHh5YmgwNmF0R1dNdUpGUG10bG15eEoycVhBcXZjNG1iWFlXb3J3dEln?oc=5",
-     "source": "sky-budget スカイバジェット",
-     "published": "2026-10-30T22:32:23+09:00"
     }
    ]
   }
