@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T00:48+09:00",
+ "updated": "2026-10-31T01:18+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -8,9 +8,9 @@
    "symbol": "USDJPY=X",
    "kind": "fx",
    "errors": [],
-   "price": 157.279,
-   "change": -0.5539925537109411,
-   "changePercent": -0.3509992079269587,
+   "price": 157.456,
+   "change": -0.37699255371094864,
+   "changePercent": -0.23885535439154598,
    "currency": "JPY",
    "history": [
     {
@@ -103,7 +103,7 @@
     },
     {
      "date": "10/30",
-     "close": 157.2790069580078
+     "close": 157.45599365234375
     }
    ],
    "news": [
@@ -134,9 +134,9 @@
    "symbol": "EURUSD=X",
    "kind": "fx",
    "errors": [],
-   "price": 1.1158,
-   "change": 0.00022659378051748114,
-   "changePercent": 0.020311866458467744,
+   "price": 1.1171,
+   "change": 0.00152659378051756,
+   "changePercent": 0.1368438663028878,
    "currency": "USD",
    "history": [
     {
@@ -229,16 +229,10 @@
     },
     {
      "date": "10/30",
-     "close": 1.1158223152160645
+     "close": 1.1170687675476074
     }
    ],
    "news": [
-    {
-     "title": "欧州 ユーロ / アメリカ ドル【EURUSD=X】：為替レート・相場",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBjcklfbmpsdDRFY2ZtU0NuQ0tGZUJnUVJtNW5SakJQQzY4YUVwLURVOUk5bHhNMXdBT2hoakhqZUlkRGlONDlCOGNtaU5xUzROenRySA?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-10-30T22:48:53+09:00"
-    },
     {
      "title": "ユーロドル、強含み 1.12ドル台を回復｜FX・為替ニュース",
      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IdTZBNDZvdXNRMlRyOEs3N3VaamtwVEJ1ZkYzbkRrV2dRLUtkelBmOWhOMUdRbUhmU2NPNzVmUU5PVmlta0luLXpscXAzQlRjU2c?oc=5",
@@ -250,6 +244,12 @@
      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE45UDllOHV4UTVMOW1LcjByODB2VnRHMDFrbENVQkF6SFZwNC1FcnUtRmlnZW5EVXJ5V2F3cENJMWY2OGZJbVl4aQ?oc=5",
      "source": "みんかぶ",
      "published": "2026-10-30T17:23:00+09:00"
+    },
+    {
+     "title": "ロンドン為替見通し＝ユーロドル、7－9月期ユーロ圏GDP速報値に要注目か(トレーダーズ・ウェブ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVERzUnRFZHJhOHhBd08xTzdBZ01Ib1h1QVZZdHl3R2owRTNlcExVMURaejZjQUV1R054cUVNbUhSR1JoRUZTTkNYejVpaFBjN000OU1Vdy1zZV9Ha0R1X3BqOEJoMjJqU0xidlR3LU1qenhac1RfMVZuSV9PZmNKTG9sZlV5RkE?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-10-30T13:38:03+09:00"
     }
    ]
   },
@@ -470,8 +470,14 @@
    ],
    "news": [
     {
+     "title": "サイバートラスト—中間期は2ケタ増収増益、両サービスがともに13%増収",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5HVkptTWJ1RE9Jb0V1WU9aR29nYTctaGVhYWxxYTYwMTFReFU1ODRhNDg2NzZyZWEweFdvZERRUnBuTGZVY1JQQ1dVWkRWY1BDMnfSAVJBVV95cUxOR1ZKbU1idURPSW9FdVlPWkdvZ2E3LWhlYWFscWE2MDExUXhVNTg0YTQ4Njc2cmVhMHhXb2REUVJwbkxmVWNSUENXVVpEVmNQQzJ3?oc=5",
+     "source": "まぐまぐ",
+     "published": "2026-10-30T19:26:08+09:00"
+    },
+    {
      "title": "サイバートラスト---中間期は2ケタ増収増益、両サービスがともに13%増収",
-     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSnVXWENxYTJmNWNDQ3R4QWU4akFaNTZGOWgtWHBpZU90cjJrd0M5eEFMY0FqUTFicng0amNhYUZOZkx1QjdERUxoNkNwZWhPaDFneXNZSjlaaW9KZXRuVklNMlg2ekVBWUN2SUE3Q0lVVVlQaENHZ3pvM3RaVUhFVXVZaWgtUXMycGxkVWVYejZXNU5NY0czSm930gGMAUFVX3lxTE9QTWs0MVJwMUNsOXFhaU1SMWVWVFp0M05RNjFZMWVGOU9RYmtVQWJ4a1FycVV1Wkg3ZWZOQW9ZNmtxNlZBR1V2YVZaUnlqTFp6blRjODRLUmdUUS1rcHpWVGxBdHpuNHpnQ1dUNXY2bjhKTmRwdmVyWERIbWxsd1p4cTZpSWRUWUFtczZa?oc=5",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUE1rNDFScDFDbDlxYWlNUjFlVlRadDNOUTYxWTFlRjlPUWJrVUFieGtRcnFVdVpIN2VmTkFvWTZrcTZWQUdVdmFWWlJ5akxaem5UYzg0S1JnVFEta3B6VlRsQXR6bjR6Z0NXVDV2Nm44Sk5kcHZlclhESG1sbHdaeHE2aUlkVFlBbXM2WtIBjAFBVV95cUxPUE1rNDFScDFDbDlxYWlNUjFlVlRadDNOUTYxWTFlRjlPUWJrVUFieGtRcnFVdVpIN2VmTkFvWTZrcTZWQUdVdmFWWlJ5akxaem5UYzg0S1JnVFEta3B6VlRsQXR6bjR6Z0NXVDV2Nm44Sk5kcHZlclhESG1sbHdaeHE2aUlkVFlBbXM2Wg?oc=5",
      "source": "ｄメニューニュース",
      "published": "2026-10-30T19:20:00+09:00"
     },
@@ -480,17 +486,17 @@
      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQzdUcVJ1SVpaSU9IaFg5aVFJbGRFUTRPeVd6QkJkV3FkLWhhakdXS21Nb3lPbG04SDBQd0Y2ZGNRUnVjYVZKVnM3MFZkOWV6Uk9Tem9tZFE1SVNobm02T2QwakRTTGxueDZhYkdjR1R5XzVmX2JMcmlGcHB5T2xZcC1Tc1BtcWo4bEN4d0UtcmZVNzJQbU43NHJpcG9BcEZLRjA4Mi1LUC0weXM?oc=5",
      "source": "サイバートラスト",
      "published": "2026-10-30T18:05:00+09:00"
-    },
-    {
-     "title": "新興市場銘柄ダイジェスト:サイバートラストとドリコムが大幅続落",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qa0VmUGxkczYtZ3IwTEpyeTZxcWNvbnhURExpVnpCUk1ZM3M5V09UMUNCYUpYdjdpUVMxX0h4MVhoLVVkakI1V2JhN2Q5aWxkSHVESXZmcHdmTE1mb2lLaQ?oc=5",
-     "source": "株探",
-     "published": "2026-10-30T15:42:15+09:00"
     }
    ]
   }
  ],
  "videos": [
+  {
+   "id": "-UTb-lR0JQk",
+   "title": "植田総裁“2％到達”は「一つの節目」と評価 政策金利は維持　次回含め毎会合で検討へ(2026年10月30日)",
+   "channel": "ANNnewsCH",
+   "published": "2026-10-31T00:40:00+09:00"
+  },
   {
    "id": "0BV5WKmZ2f4",
    "title": "日銀・植田総裁 会見 金融政策決定会合｜チャットで生解説 為替情報も【LIVE】(2026年10月30日) ANN/テレ朝",
@@ -502,12 +508,6 @@
    "title": "【黒田前総裁単独インタビュー】日銀 物価上昇率｢2％到達｣／2023年当時に戻れたら「もっと大胆な異次元緩和をやる」【WBS未公開】",
    "channel": "テレ東BIZ ダイジェスト",
    "published": "2026-10-30T23:28:52+09:00"
-  },
-  {
-   "id": "CFIfFVsHYmU",
-   "title": "ガイアの夜明け【フィジカルAI～“ニッポンの勝ち筋～】予告",
-   "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-10-30T23:23:08+09:00"
   }
  ],
  "lives": [
@@ -551,57 +551,57 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 51950.44,
-   "change": -392.1185937499977,
-   "changePercent": -0.7491391408535747
+   "price": 51960.12,
+   "change": -382.4385937499974,
+   "changePercent": -0.7306455855898162
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7596.25,
-   "change": -124.14013671875,
-   "changePercent": -1.6079515998593161
+   "price": 7596.56,
+   "change": -123.8301367187496,
+   "changePercent": -1.6039362587365145
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 25512.566,
-   "change": -672.1547031250011,
-   "changePercent": -2.5669729715497147
+   "price": 25494.127,
+   "change": -690.5937031249996,
+   "changePercent": -2.637391901005005
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 103.45,
-   "change": 1.4500000000000028,
-   "changePercent": 1.4215686274509831
+   "price": 104.13,
+   "change": 2.1299999999999955,
+   "changePercent": 2.0882352941176423
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 3915.8,
-   "change": -115.59990234374982,
-   "changePercent": -2.867487848986231
+   "price": 3909.6,
+   "change": -121.79990234375009,
+   "changePercent": -3.021280579804024
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.941,
-   "change": -0.04799984359741227,
-   "changePercent": -0.9621135518577424
+   "price": 4.952,
+   "change": -0.03699984359741215,
+   "changePercent": -0.7416284777979211
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 77172.39,
-   "change": -602.7193750000006,
-   "changePercent": -0.7749514977779491
+   "price": 77510.87,
+   "change": -264.23937500000466,
+   "changePercent": -0.33974799537207934
   }
  ],
  "fear": {
-  "price": 19.65,
-  "change": 2.4499992370605455,
-  "changePercent": 14.244180978988775,
+  "price": 20.02,
+  "change": 2.8199992370605464,
+  "changePercent": 16.395343674267448,
   "history": [
    {
     "date": "09/30",
@@ -693,7 +693,7 @@
    },
    {
     "date": "10/30",
-    "close": 19.649999618530273
+    "close": 20.020000457763672
    }
   ]
  },
@@ -753,17 +753,17 @@
      "published": "2026-10-30T03:58:15+09:00"
     },
     {
-     "title": "UFCファイトナイト・ラスベガス123",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04OTBaeWpHeGEtSmhUOFZhS3hpSWs2eEdpWXdCaEgyU1Bhb0dPaDNsb2lpWU5lbUN4dVVxUEZjVk50RUNpV3RZTFJIUVg4X0ZFT1B0MFg4cTBCYjI0Mk5ETUJSaVFEYXM?oc=5",
-     "source": "UFC.com",
-     "published": "2026-10-31T00:22:26+09:00"
+     "title": "【F1】ホンダ初優勝の地・メキシコでアストンマーティンに好機「標高」を味方にできれば勢力図が変わる可能性も",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE10TFZEbDZnN09DZFdSaGVUZ192dDhReVZGWEhCWTR4cHlIQ2p6NVdMVVRoa2g5TlZ4WW5xcDhNSU1pb3JKcHRfT09qUHZNRjRZU3habE5ZNFg?oc=5",
+     "source": "Ameba News [アメーバニュース]",
+     "published": "2026-10-30T22:34:06+09:00"
     }
    ]
   },
   {
    "key": "europe",
    "label": "ヨーロッパ",
-   "count": 6,
+   "count": 5,
    "news": [
     {
      "title": "動物園で8歳女児がオオカミに襲われ重傷 ドイツ",
@@ -794,7 +794,7 @@
   {
    "key": "russia",
    "label": "ロシア・ウクライナ",
-   "count": 9,
+   "count": 7,
    "news": [
     {
      "title": "＜独自＞ウクライナが日本に迎撃弾供与を要望 小野寺元防衛相「難しいが知恵絞る」と回答",
@@ -825,7 +825,7 @@
   {
    "key": "mideast",
    "label": "中東",
-   "count": 5,
+   "count": 6,
    "news": [
     {
      "title": "仲介役カタールの担当者、米イラン合意へテヘランに戻る＝当局者",
@@ -871,16 +871,16 @@
      "published": "2026-10-29T07:19:47+09:00"
     },
     {
-     "title": "ダカールラリー 2027年はポルトガルとモロッコで開催 20年ぶりアフリカ復帰",
-     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9wYzN1aF84UG9jSFVjWktwVzk0VFRjOEZPZEJkRUNRSWREZ1Nyamd3ekcxLVd3ZUJIM0YxY1hxVU5FSEpHc1VFVzRrRQ?oc=5",
-     "source": "F1-Gate.com",
-     "published": "2026-10-30T21:12:00+09:00"
+     "title": "バンバラ豆市場の収益動向：2026年から2033年にかけて年平均成長率（CAGR）8.6",
+     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5FNHloc1JrSGkyRThMcUZ4NEkyanBiYWhMakg2ZlpGdWZqTkRHNWYySlZ2eEI1VTRHRnhuel84aFVNVTBzMV81ZGZn?oc=5",
+     "source": "pando.life",
+     "published": "2026-10-30T20:20:17+09:00"
     },
     {
-     "title": "エジプトが独立系メディアに閉鎖と罰金命じる…言論弾圧深刻化　国際メディア団体が非難",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNXgwYjBDSjFpYVpXM1Roc1FuUGl1eEppdVVpZ1JzTUNIb2xoQkpkM2pQdHVPWTFFU0VoakFIUHdvbFhSYTFic3B2R0RxQWpvTFJOZGYtTXVjVkRTZ0JiOENoVE5DNEpRQWFVNlU1SFJuMHFSQWx1M0JrQWp0UUdSYjl5UC1IT3FYd214cGtERU1PUGRkT2FVVHE1d0ZoNG8ydU54NW5RbHnSAagBQVVfeXFMUDV4MGIwQ0oxaWFaVzNUaHNRblBpdXhKaXVVaWdSc01DSG9saEJKZDNqUHR1T1kxRVNFaGpBSFB3b2xYUmExYnNwdkdEcUFqb0xSTmRmLU11Y1ZEU2dCYjhDaFROQzRKUUFhVTZVNUhSbjBxUkFsdTNCa0FqdFFHUmI5eVAtSE9xWHdteHBrREVNT1BkZE9hVVRxNXdGaDRvMnVOeDVuUWx5?oc=5",
+     "title": "ユーチューバー「ヴァンビ」起訴猶予＝クラブで女性触る―東京地検",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1aUlVTb0x5cmJrRUhRRzdTU19Cdk41cDFTekc4Z0hBSEZCVTVMRjNkWHZSbFRoU21Fa2JHelcwT09BT3o0NDd3amNoNk1IQ250VWpzR05LR3dnNkkyek94RTVVbmlnMWZQbjlFTFRiZl9xaHZ5VkFMc1JQU0lYTlHSAX9BVV95cUxNWlJVU29MeXJia0VIUUc3U1NfQnZONXAxU3pHOGdIQUhGQlU1TEYzZFh2UmxUaFNtRWtiR3pXME9PQU96NDQ3d2pjaDZNSENudFVqc0dOS0d3ZzZJMnpPeEU1VW5pZzFmUG45RUxUYmZfcWh2eVZBTHNSUFNJWE5R?oc=5",
      "source": "ｄメニューニュース",
-     "published": "2026-10-30T17:31:00+09:00"
+     "published": "2026-10-30T20:09:00+09:00"
     }
    ]
   },
@@ -927,6 +927,12 @@
      "published": "2026-10-31T00:22:48+09:00"
     },
     {
+     "title": "工事責任者の起訴求める　ベトナムのプール事故で捜査当局",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5OZFFaQ2xzdmNjZE45UXZrLXFJbVBNMWJiUFZxQ3pILWhfQjd0eGRfa2ZrUmR0ZjRfTnJIME84c3J5cE1QbGtMLWpsMXVTcTFtTlZ1RDVpWGVpb0szZXpRRFNSM1JDdnhkbll4ZFl4b3FsWlZq0gF0QVVfeXFMTk5kUVpDbHN2Y2NkTjlRdmstcUltUE0xYmJQVnFDekgtaF9CN3R4ZF9rZmtSZHRmNF9OckgwTzhzcnlwTVBsa0wtamwxdVNxMW1OVnVENWlYZWlvSzNlelFEU1IzUkN2eGRuWXhkWXhvcWxaVmo?oc=5",
+     "source": "Infoseek",
+     "published": "2026-10-31T00:22:48+09:00"
+    },
+    {
      "title": "環境NGOのRAN。インドネシアで森林を破壊しアブラヤシ農場に転換・生産したパーム油を、正常な同油と装う「森林破壊パーム油ロンダリング」の実態あばく。日本の金融機関も一部関与か（RIEF） | 一般社団法人環境金融研究機構",
      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9BZW04VU80WUxYT2k3Nm9HSzJBQy1JdWVCSGh0bk9CNnZSck0yT181RmY5RVlSbnRqSk9ZTDd0aXFBSHRa?oc=5",
      "source": "環境金融研究機構",
@@ -937,12 +943,6 @@
      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNR2tXNnNiV3UwWEdxcjV0LTVTM0RNT2Q0Q256ekxTMGdnU3Y0S3lmTXJNS3Q5cXhidThMLXJ1LVhhWEU5WlI3amxGLVljWTZVMmJoZVllTG50M2pBalFZVWk5ZFU5V1g5dHdZczA2QWpDUVk5VW9fNFFzVXBNZ2dzNjJVbl9KOFd1eE5UMlNB?oc=5",
      "source": "cedarnews.net",
      "published": "2026-10-30T23:32:07+09:00"
-    },
-    {
-     "title": "ベトナム祖国戦線、AICESISにおける3つの協力方向性を提案",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM2hPRkRZZ1IxOWtwd0p4WHpvTWdreE5DOEdQRERoaV91a2ZCekZVbF9UUUdBUnRUbjBGUER1a0hVa29hbkxxeTdXdDB3X2FndVpVWVV6YmdaX3hOV3B1b0x6WnhHWm50Y215bVlSRkNDYzdfclFqeThUUHVaMUR5LWwyV2ptM1Vyb3k1LU5RRi1lM0hmQk1EaEVpbE1idw?oc=5",
-     "source": "Laodong.vn",
-     "published": "2026-10-30T23:13:01+09:00"
     }
    ]
   }
