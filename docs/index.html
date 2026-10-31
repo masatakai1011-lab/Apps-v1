@@ -203,6 +203,23 @@
   .portfolio .v { font-family: var(--mono); font-size: 1.05rem; font-variant-numeric: tabular-nums; }
   .portfolio .k { font-size: .76rem; color: var(--muted); margin-right: 6px; }
 
+  /* 毎晩の予想 */
+  .forecast { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .forecast .btns { display: flex; gap: 6px; }
+  .forecast .btns button { all: unset; cursor: pointer; flex: 1; text-align: center; font-size: .82rem; padding: 5px 0; border: 1px solid var(--line-strong);
+    color: var(--sub); transition: background .2s, color .2s, border-color .2s; }
+  .forecast .btns button:hover, .forecast .btns button:focus-visible { color: var(--text); border-color: var(--text); }
+  .forecast .btns button.up[aria-pressed="true"] { color: var(--bg); background: var(--up); border-color: var(--up); }
+  .forecast .btns button.down[aria-pressed="true"] { color: var(--bg); background: var(--down); border-color: var(--down); }
+  .forecast .st { font-size: .72rem; color: var(--muted); margin-top: 6px; line-height: 1.6; }
+  .forecast .res { font-weight: 600; white-space: nowrap; }
+  .forecast .res.hit { color: var(--up); }
+  .forecast .res.miss { color: var(--down); }
+  .forecast .res.new { display: inline-block; animation: stamp .6s var(--ease); }
+  @keyframes stamp { from { transform: scale(1.8); opacity: 0; } }
+  .record { font-family: var(--mono); font-size: .7rem; color: var(--muted); }
+  .record b { color: var(--text); font-weight: 500; }
+
   /* 動きの珍しさ */
   .rarity { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
   .rarity .big { font-size: .95rem; font-weight: 600; }
@@ -445,6 +462,7 @@
     <div class="brief-head">
       <p class="label-sm">DAILY BRIEFING ／ 今日のまとめ</p>
       <span class="asof" id="brief-asof"></span>
+      <span class="record" id="record"></span>
       <button class="voice" type="button" id="voice"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="voice-label">音声で聞く</span></button>
     </div>
     <ol id="brief-lines"></ol>
@@ -948,6 +966,87 @@ function updatePortfolio() {
   }
 }
 
+// ───────── 毎晩の予想と答え合わせ（この端末の中だけに保存） ─────────
+let forecasts = {};
+try { forecasts = JSON.parse(localStorage.getItem("forecasts") || "{}"); } catch {}
+function saveForecasts() { try { localStorage.setItem("forecasts", JSON.stringify(forecasts)); } catch {} }
+const jstDay = d => { const p = jstParts(d); return `${p.year}-${String(p.month).padStart(2, "0")}-${String(p.day).padStart(2, "0")}`; };
+const fmtDay = iso => `${+iso.slice(5, 7)}/${+iso.slice(8, 10)}`;
+
+// 予想した日より後の最初の取引日が終わっていたら、その終わり値で判定する
+function settle(item) {
+  const bars = (item.year || item.history || []).filter(h => h.day);
+  const now = Date.now();
+  let fresh = false;
+  for (const f of forecasts[item.code] || []) {
+    if (f.result) continue;
+    const bar = bars.find(h => h.day > f.day);
+    if (!bar) continue;
+    // 株は15時半、為替は翌朝7時（ニューヨークの終わり）でその日の値が決まる
+    const close = item.kind === "fx" ? new Date(`${bar.day}T07:00+09:00`).getTime() + 86400000 : new Date(`${bar.day}T15:30+09:00`).getTime();
+    if (now < close) continue;
+    const up = bar.close > f.base;
+    f.result = (f.call === "up") === up ? "hit" : "miss";
+    f.target = bar.day;
+    f.close = bar.close;
+    f.fresh = true;
+    fresh = true;
+  }
+  if (fresh) saveForecasts();
+}
+
+function recordOf(list) {
+  const done = list.filter(f => f.result);
+  const hit = done.filter(f => f.result === "hit").length;
+  return { hit, miss: done.length - hit, total: done.length };
+}
+function updateRecord() {
+  const r = recordOf(Object.values(forecasts).flat());
+  const box = document.getElementById("record");
+  box.replaceChildren();
+  if (!r.total) return;
+  box.append("予想の成績 ", el("b", {}, `${r.hit}勝${r.miss}敗`), `（的中率 ${Math.round(r.hit / r.total * 100)}%）`);
+}
+
+function forecastBlock(item) {
+  const box = el("div", { class: "forecast" });
+  if (item.price == null) return box;
+  settle(item);
+  const render = () => {
+    const list = forecasts[item.code] || [];
+    const today = jstDay(new Date());
+    const mine = list.find(f => f.day === today && !f.result);
+    const up = el("button", { type: "button", class: "up", "aria-pressed": mine?.call === "up" ? "true" : "false" }, "▲ 上がる");
+    const down = el("button", { type: "button", class: "down", "aria-pressed": mine?.call === "down" ? "true" : "false" }, "▼ 下がる");
+    const pick = call => {
+      const rest = list.filter(f => !(f.day === today && !f.result));
+      forecasts[item.code] = [...rest, { day: today, base: item.price, call }].slice(-60);
+      saveForecasts();
+      render();
+    };
+    up.addEventListener("click", () => pick("up"));
+    down.addEventListener("click", () => pick("down"));
+    const btns = el("div", { class: "btns" });
+    btns.append(up, down);
+    const st = el("div", { class: "st" });
+    if (mine) st.append(`${fmtNumber(mine.base, digitsFor(item))} から予想中。次の取引日の終わり値で答え合わせします。`);
+    else st.append("次の取引日の終わり値が、いまより上がるか下がるかを予想します。");
+    const last = [...list].reverse().find(f => f.result);
+    if (last) {
+      st.append(el("br"), `前回 ${fmtDay(last.day)}：${last.call === "up" ? "▲上がる" : "▼下がる"} → ${fmtDay(last.target)} ${fmtNumber(last.close, digitsFor(item))}　`);
+      const res = el("span", { class: `res ${last.result}${last.fresh ? " new" : ""}` }, last.result === "hit" ? "✓ 的中" : "✗ はずれ");
+      st.append(res);
+      const r = recordOf(list);
+      st.append(`　（この銘柄 ${r.hit}勝${r.miss}敗）`);
+      if (last.fresh) { delete last.fresh; saveForecasts(); }
+    }
+    box.replaceChildren(el("p", { class: "label-sm" }, "FORECAST ／ 次の取引日は？"), btns, st);
+    updateRecord();
+  };
+  render();
+  return box;
+}
+
 // ───────── 持ち株カード ─────────
 function eventsFor(item) {
   const now = Date.now();
@@ -991,6 +1090,7 @@ function holdingCard(item, i) {
     }
     const peers = peersBlock(item);
     if (peers) left.append(peers);
+    left.append(forecastBlock(item));
   }
   for (const msg of item.errors || []) left.append(el("p", { class: "error" }, msg));
   card.append(left);
