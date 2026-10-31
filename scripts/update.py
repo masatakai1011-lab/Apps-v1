@@ -251,7 +251,21 @@ def fetch_price(symbol, span="1mo"):
         "currency": meta.get("currency"),
         "history": [{"date": d.strftime("%m/%d"), "day": d.date().isoformat(), "close": c} for d, c in days if d > month_ago],
         "move": move_rarity([c for _, c in days], percent) if span == "1y" else None,
+        "year": [{"date": d.strftime("%m/%d"), "day": d.date().isoformat(), "close": c} for d, c in days] if span == "1y" else None,
     }
+
+
+def fetch_intraday(symbol):
+    """直近の取引日の5分ごとの値段（グラフの「1日」用）。"""
+    url = ("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(symbol)
+           + "?range=1d&interval=5m")
+    result = json.loads(get(url))["chart"]["result"][0]
+    closes = result["indicators"]["quote"][0]["close"]
+    return [
+        {"date": datetime.fromtimestamp(t, JST).strftime("%H:%M"), "close": c}
+        for t, c in zip(result.get("timestamp") or [], closes)
+        if c is not None
+    ]
 
 
 def move_rarity(closes, percent):
@@ -608,6 +622,10 @@ def main():
                 entry["peers"].append({**peer, "symbol": peer_symbol, **peer_prices[peer_symbol]})
         try:
             entry.update(fetch_price(symbol, "1y"))
+            try:
+                entry["intraday"] = fetch_intraday(symbol)
+            except Exception as e:
+                print(f"{item['name']} の1日の値動き: {e}", file=sys.stderr)
         except Exception as e:
             entry["errors"].append("値段を取得できませんでした")
             print(f"{item['name']} の値段: {e}", file=sys.stderr)

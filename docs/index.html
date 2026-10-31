@@ -217,6 +217,14 @@
 
   /* グラフ */
   .chart-col { display: flex; flex-direction: column; }
+  .chart-body { flex: 1; display: flex; flex-direction: column; }
+  .periods { display: flex; justify-content: flex-end; gap: 0; margin: -4px 0 10px; }
+  .periods button { all: unset; cursor: pointer; font: 500 .7rem var(--mono); letter-spacing: .08em; color: var(--muted); padding: 3px 12px;
+    border: 1px solid var(--line); transition: color .2s, background .2s, border-color .2s; }
+  .periods button + button { border-left: 0; }
+  .periods button:hover { color: var(--text); }
+  .periods button[aria-pressed="true"] { color: var(--text); background: rgba(121, 199, 217, .1); border-color: rgba(121, 199, 217, .45); }
+  .periods button:focus-visible { outline: 1px solid var(--cyan); outline-offset: 1px; }
   .hilo { display: flex; justify-content: space-between; gap: 12px; font-family: var(--mono); font-size: .76rem; color: var(--muted); }
   .hilo b { color: var(--sub); font-weight: 500; font-variant-numeric: tabular-nums; }
   .chart { flex: 1; min-height: 190px; margin-top: 10px; }
@@ -704,33 +712,68 @@ function chart(history, trend, key) {
   return { svg, last: [lx / w, ly / h], at: i => [xy[i][0] / w, xy[i][1] / h], color, start: () => rect.querySelector("animate")?.beginElement() };
 }
 
+// グラフの期間（最後に選んだものを、この端末に覚えておく）
+const PERIODS = [["day", "1日"], ["month", "1か月"], ["year", "1年"]];
+let periodPref = "month";
+try { periodPref = localStorage.getItem("period") || "month"; } catch {}
+const seriesOf = (item, period) => ({ day: item.intraday, month: item.history, year: item.year })[period] || [];
+
 function chartBlock(item, key) {
   const col = el("div", { class: "chart-col" });
   const digits = digitsFor(item);
-  const hi = item.history.reduce((a, b) => (b.close > a.close ? b : a));
-  const lo = item.history.reduce((a, b) => (b.close < a.close ? b : a));
-  const hilo = el("div", { class: "hilo" });
-  for (const [label, h] of [["1か月の高値", hi], ["安値", lo]]) {
-    const s = el("span", {}, `${label} `);
-    s.append(el("b", {}, fmtNumber(h.close, digits)), ` (${h.date})`);
-    hilo.append(s);
+  const periods = PERIODS.filter(([p]) => seriesOf(item, p).length > 1);
+  const tabs = el("div", { class: "periods", role: "group", "aria-label": "グラフの期間" });
+  const body = el("div", { class: "chart-body" });
+  let current = null;
+  const show = (period, animate) => {
+    const series = seriesOf(item, period);
+    const trend = period === "month" ? trendOf(item)
+      : series.at(-1).close > series[0].close ? "up" : series.at(-1).close < series[0].close ? "down" : "flat";
+    const label = PERIODS.find(([p]) => p === period)[1];
+    const hi = series.reduce((a, b) => (b.close > a.close ? b : a));
+    const lo = series.reduce((a, b) => (b.close < a.close ? b : a));
+    const hilo = el("div", { class: "hilo" });
+    for (const [name, h] of [[`${label}の高値`, hi], ["安値", lo]]) {
+      const s = el("span", {}, `${name} `);
+      s.append(el("b", {}, fmtNumber(h.close, digits)), ` (${h.date})`);
+      hilo.append(s);
+    }
+    const c = chart(series, trend, `${key}-${period}`);
+    const box = el("div", { class: "chart" });
+    box.style.position = "relative";
+    const dot = el("span");
+    Object.assign(dot.style, { position: "absolute", left: `${c.last[0] * 100}%`, top: `${c.last[1] * 100}%`, width: "7px", height: "7px",
+      margin: "-3.5px 0 0 -3.5px", borderRadius: "50%", background: c.color, boxShadow: `0 0 0 4px rgba(0,0,0,.4)`,
+      opacity: reduceMotion ? 1 : 0, transition: "opacity .4s 1.5s" });
+    box.append(c.svg, dot);
+    const marks = period === "month"
+      ? (item.marks || []).map(m => ({ ...m, i: series.findIndex(h => h.date === m.date) })).filter(m => m.i > 0) : [];
+    marks.forEach((m, k) => addMark(box, m, k, c.at(m.i)));
+    const ends = period === "year" ? [series[0].day.slice(0, 7).replace("-", "/"), series.at(-1).day.slice(0, 7).replace("-", "/")]
+      : [series[0].date, series.at(-1).date];
+    const range = el("div", { class: "range" });
+    range.append(el("span", {}, ends[0]),
+      el("span", {}, marks.length ? "◆ を押すと、その日のニュース" : period === "day" ? "― 直近の取引日 5分ごと ―" : `― ${label} ―`),
+      el("span", {}, ends[1]));
+    body.replaceChildren(hilo, box, range);
+    if (reduceMotion) box.classList.add("marks-on");
+    current = () => { c.start(); dot.style.opacity = 1; setTimeout(() => box.classList.add("marks-on"), 1400); };
+    for (const b of tabs.children) b.setAttribute("aria-pressed", b.dataset.period === period ? "true" : "false");
+    if (animate) current();
+  };
+  for (const [p, label] of periods) {
+    const b = el("button", { type: "button", "data-period": p }, label);
+    b.addEventListener("click", () => {
+      closePops();
+      show(p, true);
+      try { localStorage.setItem("period", p); } catch {}
+    });
+    tabs.append(b);
   }
-  const c = chart(item.history, trendOf(item), key);
-  const box = el("div", { class: "chart" });
-  box.style.position = "relative";
-  const dot = el("span");
-  Object.assign(dot.style, { position: "absolute", left: `${c.last[0] * 100}%`, top: `${c.last[1] * 100}%`, width: "7px", height: "7px",
-    margin: "-3.5px 0 0 -3.5px", borderRadius: "50%", background: c.color, boxShadow: `0 0 0 4px rgba(0,0,0,.4)`,
-    opacity: reduceMotion ? 1 : 0, transition: "opacity .4s 1.5s" });
-  box.append(c.svg, dot);
-  const marks = (item.marks || []).map(m => ({ ...m, i: item.history.findIndex(h => h.date === m.date) })).filter(m => m.i > 0);
-  marks.forEach((m, k) => addMark(box, m, k, c.at(m.i)));
-  const range = el("div", { class: "range" });
-  range.append(el("span", {}, item.history[0].date), el("span", {}, marks.length ? "◆ を押すと、その日のニュース" : "― 1 MONTH ―"),
-    el("span", {}, item.history.at(-1).date));
-  col.append(hilo, box, range);
-  if (reduceMotion) box.classList.add("marks-on");
-  starters.push(() => { c.start(); dot.style.opacity = 1; setTimeout(() => box.classList.add("marks-on"), 1400); });
+  if (periods.length > 1) col.append(tabs);
+  col.append(body);
+  show(periods.some(([p]) => p === periodPref) ? periodPref : periods.some(([p]) => p === "month") ? "month" : periods[0][0], false);
+  starters.push(() => current());
   return col;
 }
 
@@ -829,7 +872,7 @@ function holdingCard(item, i) {
   // 中：グラフ
   const mid = el("div");
   mid.style.color = "var(--text)";
-  if (item.history && item.history.length > 1) mid.append(chartBlock(item, `${item.kind}${i}`));
+  if (PERIODS.some(([p]) => seriesOf(item, p).length > 1)) mid.append(chartBlock(item, `${item.kind}${i}`));
   else mid.append(el("p", { class: "note" }, "グラフのデータがありません"));
   card.append(mid);
 
