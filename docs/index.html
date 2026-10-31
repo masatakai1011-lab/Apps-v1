@@ -112,6 +112,30 @@
   .tick .tp { font-weight: 500; }
   .tick .chg { font-size: .78rem; }
 
+  /* 今日のまとめ */
+  .brief { margin-top: 18px; padding: 18px 22px 16px; }
+  .brief-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 10px; }
+  .brief-head .label-sm { margin: 0; }
+  .brief-head .asof { font-family: var(--mono); font-size: .7rem; color: var(--muted); }
+  .voice { all: unset; cursor: pointer; margin-left: auto; display: inline-flex; align-items: center; gap: 10px;
+    font: 500 .74rem var(--mono); letter-spacing: .2em; color: var(--text); border: 1px solid var(--line-strong); padding: 6px 14px; transition: border-color .3s, background .3s; }
+  .voice:hover, .voice:focus-visible { border-color: var(--text); }
+  .voice .wave { display: inline-flex; gap: 2px; align-items: center; height: 12px; }
+  .voice .wave i { width: 2px; height: 4px; background: currentColor; }
+  .voice.on { border-color: var(--cyan); color: var(--cyan); background: rgba(121, 199, 217, .06); }
+  .voice.on .wave i { animation: wave .9s ease-in-out infinite; }
+  .voice.on .wave i:nth-child(2) { animation-delay: .15s; } .voice.on .wave i:nth-child(3) { animation-delay: .3s; } .voice.on .wave i:nth-child(4) { animation-delay: .45s; }
+  @keyframes wave { 50% { height: 12px; } }
+  .brief ol { list-style: none; margin: 0; padding: 0; }
+  .brief li { display: grid; grid-template-columns: 34px 1fr; gap: 6px; padding: 7px 10px 7px 0; border-left: 2px solid transparent;
+    font-size: 1.04rem; line-height: 1.65; transition: background .4s, border-color .4s; }
+  .brief li .no { font-family: var(--mono); font-size: .7rem; color: var(--muted); padding: 4px 0 0 10px; }
+  .brief li b { font-weight: 600; }
+  .brief li .sub { color: var(--muted); font-size: .85rem; }
+  .brief li.speaking { background: rgba(121, 199, 217, .06); border-left-color: var(--cyan); }
+  .brief li.typing .txt::after { content: ""; display: inline-block; width: .55em; height: 1.05em; margin-left: 2px; vertical-align: -2px;
+    background: var(--cyan); animation: blink 1s steps(1) infinite; }
+
   /* 市場の時間 */
   .sessions { margin-top: 18px; padding: 14px 20px 12px; display: grid; grid-template-columns: 210px 1fr; column-gap: 18px; }
   .sess-now { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; margin-bottom: 10px; }
@@ -346,6 +370,15 @@
     </div>
   </header>
   <div class="ticker" id="ticker-wrap" aria-label="世界の市場"><div class="ticker-track" id="ticker"></div></div>
+
+  <section class="panel brief reveal" id="brief" hidden>
+    <div class="brief-head">
+      <p class="label-sm">DAILY BRIEFING ／ 今日のまとめ</p>
+      <span class="asof" id="brief-asof"></span>
+      <button class="voice" type="button" id="voice"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="voice-label">音声で聞く</span></button>
+    </div>
+    <ol id="brief-lines"></ol>
+  </section>
 
   <div class="panel sessions" id="sessions" aria-label="市場の時間"></div>
 
@@ -1166,6 +1199,182 @@ function setupWorld(map, regions) {
   return true;
 }
 
+// ───────── 今日のまとめ ─────────
+// 表示する文（html は太字などの部品）と、読み上げる文を組にして作る
+const sayName = name => name.replace(/米ドル/g, "ドル").replace("/", "");
+const sayPct = v => `${Math.abs(v).toFixed(1)}パーセント`;
+function sayWhen(d) {
+  const p = jstParts(d);
+  return `${p.day}日${WEEKDAYS[WEEK_EN[p.weekday]]}曜の${p.hour}時${p.minute === "00" ? "" : `${+p.minute}分`}`;
+}
+const LEVEL_ORDER = { big: 0, some: 1, calm: 2 };
+
+function reasonOf(item) {
+  const peers = (item.peers || []).filter(p => p.changePercent != null);
+  if (item.kind === "fx") {
+    const v = verdictOf(item);
+    return v ? v[0] + v[1].replace(/[（）]/g, m => (m === "（" ? "。" : "")) : "";
+  }
+  if (!peers.length) return "";
+  const avg = peers.reduce((a, p) => a + p.changePercent, 0) / peers.length;
+  const diff = item.changePercent - avg;
+  // 一番よく似た動きの仲間を名前に出す
+  const near = peers.reduce((a, p) => (Math.abs(p.changePercent - item.changePercent) < Math.abs(a.changePercent - item.changePercent) ? p : a));
+  if (Math.abs(diff) < Math.max(1.5, Math.abs(avg) * .5)) {
+    return `${near.name}なども同じように${item.change < 0 ? "下げて" : "上げて"}おり、業界・市場全体の流れです`;
+  }
+  return `仲間の平均より${Math.abs(diff).toFixed(1)}パーセント${diff < 0 ? "弱く" : "強く"}、この銘柄だけの理由がありそうです`;
+}
+
+function briefLines(data) {
+  const lines = [];
+  const items = allItems.filter(i => i.changePercent != null);
+  const dir = i => (i.change > 0 ? "上昇" : i.change < 0 ? "下落" : "横ばい");
+  // 1. いちばん目立つ持ち株
+  const ranked = [...items].sort((a, b) => LEVEL_ORDER[moveLevel(a)] - LEVEL_ORDER[moveLevel(b)] || (b.move?.ratio ?? 0) - (a.move?.ratio ?? 0));
+  const top = ranked[0];
+  if (top && moveLevel(top) !== "calm") {
+    const reason = reasonOf(top);
+    const ratio = top.move ? `ふだんの${top.move.ratio.toFixed(1)}倍の動き` : "";
+    const news = top.news?.[0]?.title;
+    lines.push({
+      html: [["b", `${top.name}が${Math.abs(top.changePercent).toFixed(1)}%${dir(top)}`], `（${ratio}）。${reason ? reason.replace(/パーセント/g, "%") + "。" : ""}`,
+        ...(news ? [["sub", `最新：${news.length > 46 ? news.slice(0, 46) + "…" : news}`]] : [])],
+      speech: `${sayName(top.name)}が${sayPct(top.changePercent)}の${dir(top)}です。${ratio ? ratio + "です。" : ""}${reason ? reason + "。" : ""}`,
+    });
+  } else if (items.length) {
+    lines.push({ html: [["b", "持ち株はいずれも、ふだんどおりの落ち着いた動きです。"]], speech: "持ち株はいずれも、ふだんどおりの落ち着いた動きです。" });
+  }
+  // 2. ほかの持ち株
+  const rest = ranked.filter(i => i !== top || moveLevel(top) === "calm");
+  if (rest.length) {
+    const parts = rest.map(i => `${i.name} ${signed(i.changePercent, 1)}%`);
+    lines.push({
+      html: [`${top && moveLevel(top) !== "calm" ? "ほかは" : "前日比は"} ${parts.join("、")}。`],
+      speech: `${top && moveLevel(top) !== "calm" ? "ほかは、" : ""}${rest.map(i => `${sayName(i.name)}が${sayPct(i.changePercent)}の${dir(i)}`).join("、")}です。`,
+    });
+  }
+  // 3. 市場全体
+  const mk = name => (data.markets || []).find(m => m.name === name);
+  const idx = ["日経平均", "NYダウ"].map(mk).filter(Boolean);
+  const fear = data.fear;
+  if (idx.length || fear) {
+    const zone = fear && (FEAR_ZONES.find(([, to]) => fear.price < to) || FEAR_ZONES.at(-1));
+    lines.push({
+      html: [`市場全体は ${idx.map(m => `${m.name} ${signed(m.changePercent, 1)}%`).join("、")}。`,
+        ...(zone ? [["b", `恐怖指数は${fear.price.toFixed(1)}で「${zone[3]}」`], "の水準です。"] : [])],
+      speech: `市場全体は、${idx.map(m => `${m.name}が${sayPct(m.changePercent)}の${m.change > 0 ? "上昇" : "下落"}`).join("、")}。` +
+        (zone ? `恐怖指数は${fear.price.toFixed(1)}で、${zone[3]}の水準です。` : ""),
+    });
+  }
+  // 4. これから
+  const now = Date.now();
+  const next = allEvents.find(e => !e.earn && e.high && e.at.getTime() > now && allItems.some(it => affects(e, it)));
+  const earn = allEvents.find(e => e.earn && e.at.getTime() + 86400000 > now && e.at.getTime() - now < 3 * 86400000);
+  if (next || earn) {
+    const html = [], speech = [];
+    if (next) {
+      const who = allItems.filter(it => affects(next, it)).map(it => it.name).join("・");
+      html.push("次の重要発表は ", ["b", `${jstLabel(next.at)} ${next.country} ${next.title}`], `（${untilText(next.at.getTime() - now)}・${who}に影響）。`);
+      speech.push(`次の重要発表は、${sayWhen(next.at)}、${next.country}の${next.title.replace(/（.*?）/g, "")}。${untilText(next.at.getTime() - now)}です。`);
+    }
+    if (earn) {
+      html.push(["b", `${earn.name}の決算発表 ${jstLabel(earn.at, false)}`], "。");
+      speech.push(`${earn.name}の決算発表が、${sayWhen(earn.at).replace(/の.*$/, "")}にあります。`);
+    }
+    lines.push({ html, speech: speech.join("") });
+  } else {
+    lines.push({ html: ["しばらく、持ち株に関係する重要な発表はありません。"], speech: "しばらく、持ち株に関係する重要な発表はありません。" });
+  }
+  return lines;
+}
+
+function setupBrief(data) {
+  const lines = briefLines(data);
+  if (!lines.length) return;
+  const box = document.getElementById("brief-lines");
+  document.getElementById("brief").hidden = false;
+  const p = jstParts(new Date(data.updated));
+  document.getElementById("brief-asof").textContent = `${p.month}/${p.day} ${p.hour}:${p.minute} のデータから作成`;
+  const rows = lines.map((line, k) => {
+    const li = el("li");
+    const txt = el("span", { class: "txt" });
+    li.append(el("span", { class: "no" }, String(k + 1).padStart(2, "0")), txt);
+    box.append(li);
+    return { li, txt, line };
+  });
+  // 1文字ずつ打ち出す
+  const build = (txt, parts) => {
+    for (const part of parts) {
+      if (typeof part === "string") txt.append(part);
+      else if (part[0] === "sub") { txt.append(el("br")); txt.append(el("span", { class: "sub" }, part[1])); }
+      else txt.append(el("b", {}, part[1]));
+    }
+  };
+  if (reduceMotion) rows.forEach(r => build(r.txt, r.line.html));
+  else {
+    starters.push(async () => {
+      for (const r of rows) {
+        r.li.classList.add("typing");
+        const nodes = [];
+        build(r.txt, r.line.html);
+        const walker = document.createTreeWalker(r.txt, NodeFilter.SHOW_TEXT);
+        while (walker.nextNode()) { nodes.push([walker.currentNode, walker.currentNode.textContent]); walker.currentNode.textContent = ""; }
+        for (const [node, text] of nodes) {
+          for (let i = 1; i <= text.length; i += 2) { node.textContent = text.slice(0, i); await new Promise(res => setTimeout(res, 16)); }
+          node.textContent = text;
+        }
+        r.li.classList.remove("typing");
+      }
+    });
+    claim("brief-lines");
+  }
+  setupVoice(rows);
+}
+
+// 読み上げ（iPad・パソコンに入っている声を使う）
+function setupVoice(rows) {
+  const btn = document.getElementById("voice"), label = document.getElementById("voice-label");
+  if (!("speechSynthesis" in window)) { btn.hidden = true; return; }
+  const synth = window.speechSynthesis;
+  let voice = null;
+  const pickVoice = () => {
+    const ja = synth.getVoices().filter(v => v.lang.replace("_", "-").startsWith("ja"));
+    // 自然に聞こえる声を優先する
+    voice = ja.find(v => /Kyoko|O-ren|Otoya|Nanami|Google/.test(v.name)) || ja[0] || null;
+  };
+  pickVoice();
+  synth.addEventListener?.("voiceschanged", pickVoice);
+  let on = false;
+  const stop = () => {
+    on = false;
+    synth.cancel();
+    btn.classList.remove("on");
+    label.textContent = "音声で聞く";
+    rows.forEach(r => r.li.classList.remove("speaking"));
+  };
+  const say = (text, li) => {
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "ja-JP";
+    if (voice) u.voice = voice;
+    u.rate = 1.05;
+    u.onstart = () => { rows.forEach(r => r.li.classList.toggle("speaking", r.li === li)); };
+    return u;
+  };
+  btn.addEventListener("click", () => {
+    if (on) { stop(); return; }
+    on = true;
+    btn.classList.add("on");
+    label.textContent = "停止";
+    synth.cancel();
+    synth.speak(say("本日の状況を報告します。", null));
+    rows.forEach(r => synth.speak(say(r.line.speech, r.li)));
+    const end = say("報告は以上です。", null);
+    end.onend = () => { if (on) stop(); };
+    synth.speak(end);
+  });
+}
+
 // ───────── 時計・更新時刻 ─────────
 const jstTime = document.getElementById("jst-time"), jstDate = document.getElementById("jst-date");
 const jstFmt = new Intl.DateTimeFormat("ja-JP", { timeZone: "Asia/Tokyo", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
@@ -1234,6 +1443,7 @@ fetch("data.json", { cache: "no-store" })
     if (!setupTicker(data.markets || [])) document.getElementById("ticker-wrap").hidden = true;
     document.getElementById("gauge-card").hidden = !setupGauge(data.fear);
     claim("gauge");
+    setupBrief(data);
     setupCalendar();
     setupCountdown();
     return fetch("world.json").then(r => r.json()).then(map => {
