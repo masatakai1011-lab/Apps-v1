@@ -16,6 +16,9 @@ WATCHLIST = ROOT / "watchlist.txt"
 OUTPUT = ROOT / "docs" / "data.json"
 JST = timezone(timedelta(hours=9))
 NEWS_PER_ITEM = 3
+# グラフに付けるニュースのしるし（大きく動いた日のうち、ニュースがあった日）
+MARKS_MAX = 4
+NEWS_PER_MARK = 2
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 
 # ニュース映像を集める YouTube チャンネル
@@ -54,6 +57,8 @@ REGIONS = [
     ("asia", "インド・東南アジア", "インド OR 東南アジア OR ASEAN OR インドネシア OR ベトナム OR フィリピン"),
 ]
 REGION_NEWS = 4
+# 通貨ペアは、その通貨の地域と自動でつなぐ
+CURRENCY_REGIONS = {"USD": "us", "EUR": "europe", "GBP": "europe", "CHF": "europe", "CNY": "china"}
 WORLD_TOPIC_URL = "https://news.google.com/rss/headlines/section/topic/WORLD?hl=ja&gl=JP&ceid=JP:ja"
 # 世界情勢から外す話題（株価や個別銘柄のニュース）
 NOT_WORLD = ("-株価 -銘柄 -株式 -上場 -アナリスト -決算 -フィギュア -サッカー -野球 -五輪 -選手 -芸能 "
@@ -177,11 +182,16 @@ LIVE_CHANNELS = [
 
 
 def read_watchlist(path):
-    """銘柄のリストと、「表示名 → 名前 コード, …」で書いた比べる相手を読む。"""
-    items, peers = [], {}
+    """銘柄のリストと、「表示名 → 名前 コード, …」で書いた比べる相手、
+    「表示名 の地域 → 地域名, …」で書いた関係する地域を読む。"""
+    items, peers, regions = [], {}, {}
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if not line or line.startswith("#"):
+            continue
+        if "→" in line and line.split("→", 1)[0].strip().endswith("の地域"):
+            name, rest = (p.strip() for p in line.split("→", 1))
+            regions[name[: -len("の地域")].strip()] = [r.strip() for r in re.split(r"[,、，]", rest) if r.strip()]
             continue
         if "→" in line:
             name, rest = (p.strip() for p in line.split("→", 1))
@@ -197,7 +207,7 @@ def read_watchlist(path):
         name, code = parts[0], parts[1]
         keyword = parts[2] if len(parts) > 2 else name
         items.append({"name": name, "code": code, "keyword": keyword})
-    return items, peers
+    return items, peers, regions
 
 
 def to_symbol(code):
@@ -239,7 +249,7 @@ def fetch_price(symbol, span="1mo"):
         "change": change,
         "changePercent": percent,
         "currency": meta.get("currency"),
-        "history": [{"date": d.strftime("%m/%d"), "close": c} for d, c in days if d > month_ago],
+        "history": [{"date": d.strftime("%m/%d"), "day": d.date().isoformat(), "close": c} for d, c in days if d > month_ago],
         "move": move_rarity([c for _, c in days], percent) if span == "1y" else None,
     }
 
@@ -533,13 +543,58 @@ def fetch_earnings_date(code):
     return None
 
 
+def news_marks(entry, news):
+    """この1か月で大きく動いた日に、その日のニュースを結びつける。
+
+    日本の株は15時半の取引終了より後のニュースを次の取引日の分として数える。
+    """
+    history = entry.get("history") or []
+    if len(history) < 3:
+        return []
+    days = [datetime.fromisoformat(h["day"]).date() for h in history]
+    changes = [None] + [(b["close"] / a["close"] - 1) * 100 for a, b in zip(history, history[1:])]
+    by_day = {}
+    for n in news:
+        if not n["published"]:
+            continue
+        t = datetime.fromisoformat(n["published"]).astimezone(JST)
+        d = t.date()
+        if entry["symbol"].endswith(".T") and (t.hour, t.minute) > (15, 30):
+            d += timedelta(days=1)
+        # その日以降で最初の取引日に入れる（週末のニュースは月曜の分）
+        i = next((i for i, day in enumerate(days) if day >= d), None)
+        if i and (days[i] - d).days <= 4:
+            by_day.setdefault(i, []).append(n)
+    typical = statistics.median(abs(c) for c in changes[1:]) or 1e-9
+    picked = sorted((i for i in by_day if abs(changes[i]) >= typical * 1.3), key=lambda i: -abs(changes[i]))[:MARKS_MAX]
+    return [
+        {
+            "date": history[i]["date"],
+            "change": round(changes[i], 2),
+            "news": [{k: n[k] for k in ("title", "link", "source", "published")} for n in by_day[i][:NEWS_PER_MARK]],
+        }
+        for i in sorted(picked)
+    ]
+
+
 def main():
     entries = []
-    watchlist, peer_lists = read_watchlist(WATCHLIST)
+    watchlist, peer_lists, region_lists = read_watchlist(WATCHLIST)
+    region_keys = {label: key for key, label, _ in REGIONS}
     peer_prices = {}
     for item in watchlist:
         symbol, kind = to_symbol(item["code"])
-        entry = {**item, "symbol": symbol, "kind": kind, "errors": [], "peers": []}
+        entry = {**item, "symbol": symbol, "kind": kind, "errors": [], "peers": [], "regions": []}
+        for label in region_lists.get(item["name"], []):
+            if label in region_keys:
+                entry["regions"].append(region_keys[label])
+            else:
+                print(f"地域 {label}: 地図にない地域名です（{'、'.join(region_keys)} から選びます）", file=sys.stderr)
+        if kind == "fx":
+            for c in (symbol[:3], symbol[3:6]):
+                key = CURRENCY_REGIONS.get(c)
+                if key and key not in entry["regions"]:
+                    entry["regions"].append(key)
         for peer in peer_lists.get(item["name"], []):
             peer_symbol = to_symbol(peer["code"])[0]
             if peer_symbol not in peer_prices:
@@ -557,7 +612,9 @@ def main():
             entry["errors"].append("値段を取得できませんでした")
             print(f"{item['name']} の値段: {e}", file=sys.stderr)
         try:
-            entry["news"] = fetch_news(item["keyword"])[:NEWS_PER_ITEM]
+            month_news = fetch_news(item["keyword"], days=31)
+            entry["news"] = month_news[:NEWS_PER_ITEM]
+            entry["marks"] = news_marks(entry, month_news)
         except Exception as e:
             entry["news"] = []
             entry["errors"].append("ニュースを取得できませんでした")

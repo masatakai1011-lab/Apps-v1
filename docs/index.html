@@ -223,6 +223,37 @@
   .chart svg { width: 100%; height: 100%; display: block; overflow: visible; }
   .range { display: flex; justify-content: space-between; font-family: var(--mono); color: var(--muted); font-size: .68rem; letter-spacing: .08em; margin-top: 6px; }
 
+  /* グラフのニュースのしるし */
+  .mark-line { position: absolute; bottom: 0; width: 0; border-left: 1px dashed rgba(217, 166, 72, .45); pointer-events: none;
+    opacity: 0; transition: opacity .5s; }
+  .pin { all: unset; cursor: pointer; position: absolute; width: 22px; height: 22px; margin: -30px 0 0 -11px; display: grid; place-items: center;
+    font: 600 .62rem var(--mono); color: var(--bg); z-index: 2; opacity: 0; transform: translateY(-8px); transition: opacity .4s, transform .5s var(--ease); }
+  .pin::before { content: ""; position: absolute; inset: 3px; background: var(--amber); transform: rotate(45deg); z-index: -1; transition: background .2s; }
+  .pin:hover::before, .pin[aria-expanded="true"]::before { background: var(--text); }
+  .pin:focus-visible { outline: 1px solid var(--text); outline-offset: 2px; }
+  .marks-on .pin { opacity: 1; transform: none; transition-delay: calc(var(--k) * 120ms + .2s); }
+  .marks-on .mark-line { opacity: 1; transition-delay: calc(var(--k) * 120ms + .2s); }
+  .pop { position: absolute; z-index: 5; width: min(300px, 92%); padding: 12px 14px; background: #0f151b; border: 1px solid var(--line-strong);
+    box-shadow: 0 18px 40px -10px rgba(0, 0, 0, .7); animation: pop .25s var(--ease); }
+  @keyframes pop { from { opacity: 0; transform: translateY(4px); } }
+  .pop .ph { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-family: var(--mono); font-size: .74rem; color: var(--muted);
+    border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 4px; }
+  .pop .ph b { color: var(--amber); font-weight: 600; margin-right: 6px; }
+  .pop .ph button { all: unset; cursor: pointer; color: var(--muted); padding: 0 2px; }
+  .pop .ph button:hover { color: var(--text); }
+  .pop li { padding: 7px 0; border-bottom: 1px solid var(--line); }
+  .pop li:last-child { border-bottom: none; }
+  .pop a { color: var(--text); text-decoration: none; font-size: .86rem; line-height: 1.5; }
+  .pop a:hover { color: var(--cyan); }
+
+  /* 関係する地域 */
+  .watch { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .watch button { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font-size: .74rem; color: var(--sub);
+    border: 1px solid var(--line); padding: 2px 9px; transition: border-color .2s, color .2s; }
+  .watch button:hover, .watch button:focus-visible { border-color: var(--line-strong); color: var(--text); }
+  .watch i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .watch .lv { font-family: var(--mono); font-size: .64rem; }
+
   /* 予定とニュース */
   .events { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
   .event { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: baseline; font-size: .8rem; padding: 6px 10px;
@@ -346,6 +377,16 @@
   .level { font-family: var(--mono); font-size: .78rem; letter-spacing: .1em; margin: 4px 0 10px; }
   .level .bar { display: inline-block; width: 120px; height: 4px; background: var(--line); vertical-align: middle; margin-left: 8px; position: relative; }
   .level .bar i { position: absolute; inset: 0 auto 0 0; background: currentColor; transform-origin: left; animation: grow .8s var(--ease) both; }
+  .link { fill: none; stroke-width: 1.2; stroke-dasharray: 3 7; opacity: .5; animation: flow 1.4s linear infinite; transition: opacity .3s, stroke-width .3s; }
+  .link.sel { opacity: 1; stroke-width: 2; }
+  @keyframes flow { to { stroke-dashoffset: -20; } }
+  .home rect { fill: var(--bg); stroke: var(--text); stroke-width: 1.5; }
+  .home .halo { fill: none; stroke: var(--text); transform-box: fill-box; transform-origin: center; animation: ping 3.2s ease-out infinite; }
+  .home text { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; fill: var(--text); paint-order: stroke; stroke: #07090c; stroke-width: 4px; }
+  .impact { margin: 0 0 12px; padding: 10px 12px; background: rgba(150, 180, 200, .04); border: 1px solid var(--line); }
+  .impact .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .impact .chips span { font-size: .8rem; border: 1px solid var(--line-strong); padding: 1px 8px; }
+  .impact .chips em { font-style: normal; font-family: var(--mono); font-size: .72rem; margin-left: 6px; }
   .region li { padding: 10px 0; border-bottom: 1px solid var(--line); }
   .region li:last-child { border-bottom: none; }
 
@@ -660,7 +701,7 @@ function chart(history, trend, key) {
   svg.append(defs, g,
     svgEl("line", { x1: 0, x2: w, y1: ly, y2: ly, stroke: color, "stroke-opacity": .35, "stroke-dasharray": "1 3", "vector-effect": "non-scaling-stroke" }));
   // 最後の点は丸がつぶれないよう、別の重ねた絵で描く
-  return { svg, last: [lx / w, ly / h], color, start: () => rect.querySelector("animate")?.beginElement() };
+  return { svg, last: [lx / w, ly / h], at: i => [xy[i][0] / w, xy[i][1] / h], color, start: () => rect.querySelector("animate")?.beginElement() };
 }
 
 function chartBlock(item, key) {
@@ -682,11 +723,60 @@ function chartBlock(item, key) {
     margin: "-3.5px 0 0 -3.5px", borderRadius: "50%", background: c.color, boxShadow: `0 0 0 4px rgba(0,0,0,.4)`,
     opacity: reduceMotion ? 1 : 0, transition: "opacity .4s 1.5s" });
   box.append(c.svg, dot);
+  const marks = (item.marks || []).map(m => ({ ...m, i: item.history.findIndex(h => h.date === m.date) })).filter(m => m.i > 0);
+  marks.forEach((m, k) => addMark(box, m, k, c.at(m.i)));
   const range = el("div", { class: "range" });
-  range.append(el("span", {}, item.history[0].date), el("span", {}, "― 1 MONTH ―"), el("span", {}, item.history.at(-1).date));
+  range.append(el("span", {}, item.history[0].date), el("span", {}, marks.length ? "◆ を押すと、その日のニュース" : "― 1 MONTH ―"),
+    el("span", {}, item.history.at(-1).date));
   col.append(hilo, box, range);
-  starters.push(() => { c.start(); dot.style.opacity = 1; });
+  if (reduceMotion) box.classList.add("marks-on");
+  starters.push(() => { c.start(); dot.style.opacity = 1; setTimeout(() => box.classList.add("marks-on"), 1400); });
   return col;
+}
+
+// 大きく動いた日のしるし。押すとその日のニュースが開く
+const LETTERS = "ABCDEFGH";
+function closePops(except) {
+  for (const p of document.querySelectorAll(".pop")) if (p !== except) { p._pin.setAttribute("aria-expanded", "false"); p.remove(); }
+}
+document.addEventListener("click", e => { if (!e.target.closest(".pop, .pin")) closePops(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closePops(); });
+
+function addMark(box, mark, k, [x, y]) {
+  const line = el("div", { class: "mark-line" });
+  Object.assign(line.style, { left: `${x * 100}%`, top: `${y * 100}%` });
+  line.style.setProperty("--k", k);
+  const pin = el("button", { class: "pin", type: "button", "aria-expanded": "false",
+    "aria-label": `${mark.date} ${signed(mark.change, 1)}% のニュース` }, LETTERS[k]);
+  Object.assign(pin.style, { left: `${x * 100}%`, top: `${y * 100}%` });
+  pin.style.setProperty("--k", k);
+  pin.addEventListener("click", () => {
+    const open = box.querySelector(".pop");
+    if (open && open._pin === pin) { closePops(); return; }
+    const pop = el("div", { class: "pop", role: "dialog", "aria-label": `${mark.date} のニュース` });
+    pop._pin = pin;
+    closePops(pop);
+    // しるしの位置に合わせて、はみ出さない側に開く
+    if (x > .5) pop.style.right = `${(1 - x) * 100}%`; else pop.style.left = `${x * 100}%`;
+    if (y > .5) pop.style.top = "0"; else pop.style.bottom = "0";
+    const head = el("div", { class: "ph" });
+    const t = el("span");
+    t.append(el("b", {}, LETTERS[k]), `${mark.date}　`, el("span", { class: mark.change > 0 ? "up" : "down" }, `${mark.change > 0 ? "▲" : "▼"} ${signed(mark.change, 1)}%`));
+    const close = el("button", { type: "button", "aria-label": "閉じる" }, "✕");
+    close.addEventListener("click", () => closePops());
+    head.append(t, close);
+    const ul = el("ul");
+    for (const n of mark.news) {
+      const li = el("li");
+      li.append(el("a", { href: n.link, target: "_blank", rel: "noopener" }, n.title),
+        el("div", { class: "meta" }, [n.source, n.published && jstLabel(new Date(n.published))].filter(Boolean).join(" · ")));
+      ul.append(li);
+    }
+    pop.append(head, ul);
+    box.append(pop);
+    pin.setAttribute("aria-expanded", "true");
+  });
+  box.append(line, pin);
 }
 
 // ───────── 持ち株カード ─────────
@@ -758,6 +848,26 @@ function holdingCard(item, i) {
   }
   if (!evs.length) evBox.append(el("span", { class: "none" }, item.kind === "fx" ? "36時間以内に関係する重要発表はありません" : "2週間以内の決算発表はありません"));
   upCol.append(evBox);
+  const regions = (item.regions || []).map(key => allRegions.find(r => r.key === key)).filter(Boolean);
+  if (regions.length) {
+    upCol.append(el("p", { class: "label-sm" }, "WATCH ／ 関係する地域の騒がしさ"));
+    const watch = el("div", { class: "watch" });
+    for (const r of regions) {
+      const [level, color] = levelOf(r.count);
+      const b = el("button", { type: "button" });
+      const dot = el("i");
+      dot.style.color = color;
+      const lv = el("span", { class: "lv" }, level);
+      lv.style.color = color;
+      b.append(dot, r.label, lv);
+      b.addEventListener("click", () => {
+        document.getElementById("world-block").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
+        pickRegion(r.key);
+      });
+      watch.append(b);
+    }
+    upCol.append(watch);
+  }
   newsCol.append(el("p", { class: "label-sm" }, "LATEST NEWS ／ 関連ニュース"));
   if (item.news && item.news.length) {
     const ul = el("ul", { class: "news" });
@@ -1117,6 +1227,8 @@ function setupCountdown() {
 // ───────── 世界情勢の地図 ─────────
 // 騒がしさは、一番ニュースの多い地域と比べて決める
 let worldMax = 1;
+let allRegions = [];
+let pickRegion = () => {};
 function levelOf(count) {
   const ratio = count / worldMax;
   if (ratio >= .75) return ["高", "var(--down)", ratio];
@@ -1138,6 +1250,19 @@ function showRegion(region, spots) {
   fillBar.style.width = `${ratio * 100}%`;
   bar.append(fillBar);
   lv.append(bar);
+  const linked = allItems.filter(it => (it.regions || []).includes(region.key));
+  const impact = el("div", { class: "impact" });
+  impact.append(el("p", { class: "label-sm", style: "margin:0" }, "IMPACT ／ この地域とつながる持ち株"));
+  if (linked.length) {
+    const chips = el("div", { class: "chips" });
+    for (const it of linked) {
+      const c = el("span", {}, it.name);
+      if (it.changePercent != null) c.append(el("em", { class: trendOf(it) }, `${signed(it.changePercent, 1)}%`));
+      chips.append(c);
+    }
+    impact.append(chips);
+  } else impact.append(el("p", { class: "note" }, "つながる持ち株は登録されていません"));
+  for (const l of document.querySelectorAll(".link")) l.classList.toggle("sel", l.dataset.key === region.key);
   const ul = el("ul");
   for (const n of region.news) {
     const li = el("li");
@@ -1145,12 +1270,11 @@ function showRegion(region, spots) {
     li.append(el("div", { class: "meta" }, [n.source, timeAgo(n.published)].filter(Boolean).join(" · ")));
     ul.append(li);
   }
-  box.replaceChildren(el("h4", {}, region.label), lv,
+  box.replaceChildren(el("h4", {}, region.label), lv, impact,
     region.news.length ? ul : el("p", { class: "note" }, "この24時間のニュースは見つかりませんでした"));
 }
 function setupWorld(map, regions) {
   if (!regions.length) return false;
-  worldMax = Math.max(1, ...regions.map(r => r.count));
   const svg = svgEl("svg", { viewBox: `0 0 ${map.width} ${map.height}`, role: "img", "aria-label": "世界地図" });
   const grad = svgEl("linearGradient", { id: "sweep-g", x1: 0, x2: 1, y1: 0, y2: 0 });
   grad.append(svgEl("stop", { offset: 0, "stop-color": "#79c7d9", "stop-opacity": 0 }),
@@ -1167,6 +1291,23 @@ function setupWorld(map, regions) {
     svgEl("path", { d: map.land, fill: "rgba(121, 199, 217, .07)", stroke: "rgba(121, 199, 217, .35)", "stroke-width": .6 }),
     svgEl("path", { d: map.borders, fill: "none", stroke: "rgba(121, 199, 217, .14)", "stroke-width": .5 }),
     sweep);
+  // 持ち株（日本）と、関係する地域を線でつなぐ。線の模様は日本に向かって流れる
+  const home = map.points.japan;
+  if (home) {
+    for (const region of regions) {
+      const at = map.points[region.key];
+      if (!at || !allItems.some(it => (it.regions || []).includes(region.key))) continue;
+      const dist = Math.hypot(home[0] - at[0], home[1] - at[1]);
+      const cx = (at[0] + home[0]) / 2, cy = Math.min(at[1], home[1]) - dist * .28;
+      svg.append(svgEl("path", { class: "link", "data-key": region.key, d: `M${at[0]},${at[1]} Q${cx},${cy} ${home[0]},${home[1]}`,
+        stroke: levelOf(region.count)[1] }));
+    }
+    const g = svgEl("g", { class: "home", transform: `translate(${home[0]},${home[1]})` });
+    const label = svgEl("text", { x: 0, y: 24, "text-anchor": "middle" });
+    label.textContent = "JAPAN ／ 持ち株";
+    g.append(svgEl("rect", { class: "halo", x: -9, y: -9, width: 18, height: 18 }), svgEl("rect", { x: -5, y: -5, width: 10, height: 10 }), label);
+    svg.append(g);
+  }
   const tabs = document.getElementById("region-tabs");
   const spots = [];
   for (const region of regions) {
@@ -1178,9 +1319,9 @@ function setupWorld(map, regions) {
     g.append(svgEl("circle", { class: "ring", r: size, fill: "none", stroke: color, "stroke-width": 1.5 }),
       svgEl("circle", { r: size * .45, fill: color, opacity: .2 }),
       svgEl("circle", { class: "core", r: 4, fill: color }));
-    // 近くの点と文字が重ならないよう、ヨーロッパと中南米は点の左側に書く
-    const left = region.key === "europe" || region.key === "latam";
-    const label = svgEl("text", { x: left ? -10 : 10, y: -10, "text-anchor": left ? "end" : "start" });
+    // 近くの点や日本の目印と文字が重ならないよう、ヨーロッパ・中南米・中国は点の左側に書く
+    const left = region.key === "europe" || region.key === "latam" || region.key === "china";
+    const label = svgEl("text", { x: left ? -10 : 10, y: region.key === "china" ? -16 : -10, "text-anchor": left ? "end" : "start" });
     label.textContent = `${region.label} ${region.count}`;
     g.append(label);
     const tab = el("button", { class: "region-tab", type: "button" }, region.label);
@@ -1194,6 +1335,7 @@ function setupWorld(map, regions) {
     spots.push(spot);
   }
   document.getElementById("map").append(svg);
+  pickRegion = key => { const r = regions.find(x => x.key === key); if (r) showRegion(r, spots); };
   // 最初は一番騒がしい地域を表示
   showRegion(regions.reduce((a, b) => (b.count > a.count ? b : a)), spots);
   return true;
@@ -1431,6 +1573,8 @@ fetch("data.json", { cache: "no-store" })
       document.getElementById("sync").textContent = "STANDBY";
     }
     allItems = data.items;
+    allRegions = data.world || [];
+    worldMax = Math.max(1, ...allRegions.map(r => r.count));
     allEvents = buildEvents(data.calendar || [], data.earnings || []);
     const fx = data.items.filter(i => i.kind === "fx");
     const stocks = data.items.filter(i => i.kind !== "fx");

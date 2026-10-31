@@ -11,7 +11,7 @@ const proj = geoNaturalEarth1().fitExtent([[4, 4], [W - 4, H - 4]], { type: "Sph
 const path = geoPath(proj).digits(1);
 const out = { width: W, height: H, land: path(land), borders: path(borders), graticule: path(geoGraticule10()), sphere: path({ type: "Sphere" }) };
 // 地域の目印の位置（経度, 緯度）
-const regions = { us: [-98, 39], latam: [-60, -12], europe: [10, 50], russia: [37, 54], mideast: [45, 29], africa: [20, 5], china: [110, 34], asia: [100, 13] };
+const regions = { us: [-98, 39], latam: [-60, -12], europe: [10, 50], russia: [37, 54], mideast: [45, 29], africa: [20, 5], china: [110, 34], asia: [100, 13], japan: [139.7, 35.7] };
 out.points = Object.fromEntries(Object.entries(regions).map(([k, ll]) => [k, proj(ll).map(v => Math.round(v))]));
 writeFileSync(process.argv[2], JSON.stringify(out));
 console.log(Object.fromEntries(Object.entries(out).map(([k, v]) => [k, typeof v === "string" ? v.length : v])));
