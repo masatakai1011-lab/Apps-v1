@@ -433,6 +433,21 @@
   .impact .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
   .impact .chips span { font-size: .8rem; border: 1px solid var(--line-strong); padding: 1px 8px; }
   .impact .chips em { font-style: normal; font-family: var(--mono); font-size: .72rem; margin-left: 6px; }
+  .mini { display: flex; align-items: flex-end; gap: 3px; height: 34px; }
+  .mini span { flex: 1; min-width: 6px; background: var(--c, var(--cyan)); opacity: .35; transform-origin: bottom; animation: rise .7s var(--ease) both;
+    animation-delay: calc(var(--n) * 60ms + .2s); }
+  .mini span:last-child { opacity: 1; }
+  .mini span.none { background: transparent; border-top: 1px dashed var(--line-strong); opacity: 1; }
+  @keyframes rise { from { transform: scaleY(0); } }
+  .mini-days { display: flex; gap: 3px; font-family: var(--mono); font-size: .58rem; color: var(--muted); margin-top: 3px; }
+  .mini-days span { flex: 1; text-align: center; }
+  .trend { margin: 0 0 12px; padding: 10px 12px; border: 1px solid var(--line); }
+  .trend .tt { font-size: .8rem; margin: 4px 0 6px; }
+  .trend .tt b.up { color: var(--down); } .trend .tt b.down { color: var(--up); }
+  .buzz { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+  .buzz .label-sm { margin: 0; }
+  .buzz .mini { height: 18px; width: 84px; flex: none; }
+  .buzz .bn { font-family: var(--mono); font-size: .62rem; color: var(--muted); white-space: nowrap; }
   .region li { padding: 10px 0; border-bottom: 1px solid var(--line); }
   .region li:last-child { border-bottom: none; }
 
@@ -1137,7 +1152,15 @@ function holdingCard(item, i) {
     }
     upCol.append(watch);
   }
-  newsCol.append(el("p", { class: "label-sm" }, "LATEST NEWS ／ 関連ニュース"));
+  const buzzHead = el("div", { class: "buzz" });
+  buzzHead.append(el("p", { class: "label-sm" }, "LATEST NEWS ／ 関連ニュース"));
+  if (item.buzz?.some(b => b.count)) {
+    const right = el("span", { style: "display:flex;align-items:flex-end;gap:8px" });
+    right.append(el("span", { class: "bn" }, `話題の量 今日${item.buzz.at(-1).count ?? "-"}件`), miniBars(item.buzz.map(b => b.count)));
+    right.title = item.buzz.map(b => `${fmtDay(b.day)} ${b.count ?? "-"}件`).join("\n");
+    buzzHead.append(right);
+  }
+  newsCol.append(buzzHead);
   if (item.news && item.news.length) {
     const ul = el("ul", { class: "news" });
     for (const n of item.news) {
@@ -1496,6 +1519,7 @@ function setupCountdown() {
 // ───────── 世界情勢の地図 ─────────
 // 騒がしさは、一番ニュースの多い地域と比べて決める
 let worldMax = 1;
+let worldTrend = {};
 let allRegions = [];
 let pickRegion = () => {};
 function levelOf(count) {
@@ -1504,6 +1528,49 @@ function levelOf(count) {
   if (ratio >= .4) return ["中", "var(--amber)", ratio];
   return ["低", "var(--cyan)", ratio];
 }
+// 小さな棒グラフ（最後の棒が今日）
+function miniBars(values, color) {
+  const box = el("div", { class: "mini", "aria-hidden": "true" });
+  const max = Math.max(1, ...values.filter(v => v != null));
+  values.forEach((v, n) => {
+    const b = el("span", v == null ? { class: "none" } : {});
+    b.style.setProperty("--n", n);
+    if (color) b.style.setProperty("--c", color);
+    b.style.height = v == null ? "0" : `${Math.max(6, v / max * 100)}%`;
+    box.append(b);
+  });
+  return box;
+}
+
+// 今日の騒がしさが、前の数日と比べて増えたか減ったか
+function regionTrend(key) {
+  const list = (worldTrend[key] || []).filter(x => x.count != null);
+  if (list.length < 2) return { dir: null, list };
+  const today = list.at(-1).count, before = list.slice(-4, -1);
+  const avg = before.reduce((a, x) => a + x.count, 0) / before.length;
+  const dir = today >= avg * 1.4 && today - avg >= 3 ? "up" : today <= avg * .6 && avg - today >= 3 ? "down" : "flat";
+  return { dir, list, today, avg };
+}
+
+function trendBlock(region) {
+  const box = el("div", { class: "trend" });
+  box.append(el("p", { class: "label-sm", style: "margin:0" }, "TREND ／ この1週間の騒がしさ"));
+  const t = regionTrend(region.key);
+  const tt = el("div", { class: "tt" });
+  if (!t.dir) tt.append(`記録を始めたばかりです（${t.list.length}日分）。毎日たまっていきます。`);
+  else if (t.dir === "up") tt.append(el("b", { class: "up" }, "▲ 増えています"), `（前の数日の平均 ${t.avg.toFixed(0)}件 → 今日 ${t.today}件）`);
+  else if (t.dir === "down") tt.append(el("b", { class: "down" }, "▼ 落ち着いてきました"), `（平均 ${t.avg.toFixed(0)}件 → 今日 ${t.today}件）`);
+  else tt.append(`ほぼ横ばいです（平均 ${t.avg.toFixed(0)}件 → 今日 ${t.today}件）`);
+  box.append(tt);
+  if (t.list.length) {
+    box.append(miniBars(t.list.map(x => x.count), levelOf(region.count)[1]));
+    const days = el("div", { class: "mini-days" });
+    for (const x of t.list) days.append(el("span", {}, fmtDay(x.day)));
+    box.append(days);
+  }
+  return box;
+}
+
 function showRegion(region, spots) {
   for (const s of spots) {
     const on = s.dataset.key === region.key;
@@ -1539,7 +1606,7 @@ function showRegion(region, spots) {
     li.append(el("div", { class: "meta" }, [n.source, timeAgo(n.published)].filter(Boolean).join(" · ")));
     ul.append(li);
   }
-  box.replaceChildren(el("h4", {}, region.label), lv, impact,
+  box.replaceChildren(el("h4", {}, region.label), lv, impact, trendBlock(region),
     region.news.length ? ul : el("p", { class: "note" }, "この24時間のニュースは見つかりませんでした"));
 }
 function setupWorld(map, regions) {
@@ -1591,7 +1658,8 @@ function setupWorld(map, regions) {
     // 近くの点や日本の目印と文字が重ならないよう、ヨーロッパ・中南米・中国は点の左側に書く
     const left = region.key === "europe" || region.key === "latam" || region.key === "china";
     const label = svgEl("text", { x: left ? -10 : 10, y: region.key === "china" ? -16 : -10, "text-anchor": left ? "end" : "start" });
-    label.textContent = `${region.label} ${region.count}`;
+    const dir = regionTrend(region.key).dir;
+    label.textContent = `${region.label} ${region.count}${dir === "up" ? " ▲" : dir === "down" ? " ▼" : ""}`;
     g.append(label);
     const tab = el("button", { class: "region-tab", type: "button" }, region.label);
     const spot = { dataset: { key: region.key }, el: g, tab };
@@ -1849,6 +1917,7 @@ fetch("data.json", { cache: "no-store" })
     }
     allItems = data.items;
     allRegions = data.world || [];
+    worldTrend = data.worldTrend || {};
     worldMax = Math.max(1, ...allRegions.map(r => r.count));
     allEvents = buildEvents(data.calendar || [], data.earnings || []);
     const fx = data.items.filter(i => i.kind === "fx");

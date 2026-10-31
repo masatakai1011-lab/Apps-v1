@@ -14,6 +14,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WATCHLIST = ROOT / "watchlist.txt"
 OUTPUT = ROOT / "docs" / "data.json"
+HISTORY = ROOT / "docs" / "history.json"   # 地域ごとの騒がしさの記録（日ごと、14日分）
+HISTORY_DAYS = 14
 ALERTS = ROOT / "alerts.json"   # 大きく動いた銘柄（scripts/notify.py がお知らせにする。保存はしない）
 PAGE_URL = "https://masatakai1011-lab.github.io/Apps-v1/"
 JST = timezone(timedelta(hours=9))
@@ -593,6 +595,39 @@ def news_marks(entry, news):
     ]
 
 
+def record_world(world):
+    """今日の騒がしさを記録に足し、地域ごとの直近7日の移り変わりを返す（同じ日は一番多かった値を残す）。"""
+    try:
+        history = json.loads(HISTORY.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        history = {}
+    today = datetime.now(JST).date().isoformat()
+    day = history.setdefault(today, {})
+    for r in world:
+        day[r["key"]] = max(day.get(r["key"], 0), r["count"])
+    history = dict(sorted(history.items())[-HISTORY_DAYS:])
+    HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=1), encoding="utf-8")
+    days = list(history)[-7:]
+    return {r["key"]: [{"day": d, "count": history[d].get(r["key"])} for d in days] for r in world}
+
+
+def buzz_of(news, days=7):
+    """銘柄のニュースが1日に何件出たか（直近7日）。取得した件数が上限に届いて古い日が欠けるときは、その日を空にする。"""
+    today = datetime.now(JST).date()
+    counts = {}
+    for n in news:
+        if n["published"]:
+            d = datetime.fromisoformat(n["published"]).date()
+            counts[d] = counts.get(d, 0) + 1
+    oldest = min(counts, default=today)
+    full = len(news) < 100
+    return [
+        {"day": (today - timedelta(days=k)).isoformat(),
+         "count": counts.get(today - timedelta(days=k), 0) if full or today - timedelta(days=k) > oldest else None}
+        for k in range(days - 1, -1, -1)
+    ]
+
+
 def is_big_move(entry):
     """ページの「急落・急上昇」と同じ基準（ふだんの2.5倍以上、またはこの1年で10番以内の大きさ）。"""
     m = entry.get("move")
@@ -662,6 +697,7 @@ def main():
             month_news = fetch_news(item["keyword"], days=31)
             entry["news"] = month_news[:NEWS_PER_ITEM]
             entry["marks"] = news_marks(entry, month_news)
+            entry["buzz"] = buzz_of(month_news)
         except Exception as e:
             entry["news"] = []
             entry["errors"].append("ニュースを取得できませんでした")
@@ -684,6 +720,8 @@ def main():
                 earnings.append({"name": e["name"], "date": date})
 
     videos = fetch_videos([w for e in entries for w in (e["name"], e["keyword"])])
+    world = fetch_world()
+    world_trend = record_world(world)
 
     OUTPUT.parent.mkdir(exist_ok=True)
     OUTPUT.write_text(
@@ -695,7 +733,8 @@ def main():
                 "lives": fetch_lives(),
                 "markets": fetch_markets(),
                 "fear": fetch_fear(),
-                "world": fetch_world(),
+                "world": world,
+                "worldTrend": world_trend,
                 "calendar": fetch_calendar(currencies),
                 "earnings": earnings,
             },
