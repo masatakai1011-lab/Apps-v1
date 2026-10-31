@@ -2,6 +2,7 @@
 
 import json
 import re
+import statistics
 import sys
 import urllib.parse
 import urllib.request
@@ -135,6 +136,30 @@ EVENT_NAMES = {
     "French Flash Manufacturing PMI": "フランス製造業PMI速報値",
     "French Flash Services PMI": "フランス サービス業PMI速報値",
     "Revised UoM Inflation Expectations": "ミシガン大学期待インフレ率（確報）",
+    "Advance GDP Price Index q/q": "GDP物価指数速報（前期比）",
+    "Employment Cost Index q/q": "雇用コスト指数（前期比）",
+    "German Prelim GDP q/q": "ドイツGDP速報（前期比）",
+    "Prelim Flash GDP q/q": "ユーロ圏GDP速報（前期比）",
+    "Flash GDP q/q": "ユーロ圏GDP速報（前期比）",
+    "German Unemployment Change": "ドイツ失業者数",
+    "Spanish Flash CPI y/y": "スペイン消費者物価指数速報（前年比）",
+    "Italian Prelim CPI m/m": "イタリア消費者物価指数速報（前月比）",
+    "French Prelim CPI m/m": "フランス消費者物価指数速報（前月比）",
+    "Unemployment Rate (Eurozone)": "ユーロ圏失業率",
+    "Chicago PMI": "シカゴ購買部協会景気指数",
+    "Final Wholesale Inventories m/m": "卸売在庫（前月比）",
+    "Prelim Wholesale Inventories m/m": "卸売在庫速報（前月比）",
+    "Core PCE Price Index y/y": "PCEコア物価指数（前年比）",
+    "PCE Price Index m/m": "PCE物価指数（前月比）",
+    "PCE Price Index y/y": "PCE物価指数（前年比）",
+    "Treasury Currency Report": "米財務省 為替報告書",
+    "Ivey PMI": "Ivey購買担当者景気指数",
+    "Average Cash Earnings y/y": "現金給与総額（前年比）",
+    "BOJ Summary of Opinions": "日銀 主な意見",
+    "BOJ Core CPI y/y": "日銀版コアCPI（前年比）",
+    "Prelim Machine Tool Orders y/y": "工作機械受注速報（前年比）",
+    "Core Machinery Orders m/m": "機械受注（前月比）",
+    "Bank Holiday": "祝日（市場休み）",
     "Prelim UoM Inflation Expectations": "ミシガン大学期待インフレ率（速報）",
 }
 SPEAKERS = {"Fed Chair": "FRB議長", "BOJ Gov": "日銀総裁", "ECB President": "ECB総裁", "FOMC Member": "FOMC委員"}
@@ -152,10 +177,18 @@ LIVE_CHANNELS = [
 
 
 def read_watchlist(path):
-    items = []
+    """銘柄のリストと、「表示名 → 名前 コード, …」で書いた比べる相手を読む。"""
+    items, peers = [], {}
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if not line or line.startswith("#"):
+            continue
+        if "→" in line:
+            name, rest = (p.strip() for p in line.split("→", 1))
+            for part in re.split(r"[,、，]", rest):
+                words = part.split()
+                if len(words) >= 2:
+                    peers.setdefault(name, []).append({"name": " ".join(words[:-1]), "code": words[-1]})
             continue
         parts = [p.strip() for p in re.split(r"[,、，]", line) if p.strip()]
         if len(parts) < 2:
@@ -164,7 +197,7 @@ def read_watchlist(path):
         name, code = parts[0], parts[1]
         keyword = parts[2] if len(parts) > 2 else name
         items.append({"name": name, "code": code, "keyword": keyword})
-    return items
+    return items, peers
 
 
 def to_symbol(code):
@@ -184,30 +217,48 @@ def get(url):
         return res.read()
 
 
-def fetch_price(symbol):
+def fetch_price(symbol, span="1mo"):
+    """値段と、グラフ用のこの1か月の終値。span="1y" なら1年分から「今日の動きの珍しさ」も出す。"""
     url = (
         "https://query1.finance.yahoo.com/v8/finance/chart/"
         + urllib.parse.quote(symbol)
-        + "?range=1mo&interval=1d"
+        + f"?range={span}&interval=1d"
     )
     result = json.loads(get(url))["chart"]["result"][0]
     meta = result["meta"]
     closes = result["indicators"]["quote"][0]["close"]
-    history = [
-        {"date": datetime.fromtimestamp(t, JST).strftime("%m/%d"), "close": c}
-        for t, c in zip(result["timestamp"], closes)
-        if c is not None
-    ]
-    price = meta.get("regularMarketPrice") or history[-1]["close"]
+    days = [(datetime.fromtimestamp(t, JST), c) for t, c in zip(result["timestamp"], closes) if c is not None]
+    price = meta.get("regularMarketPrice") or days[-1][1]
     # 最後の1本が今日の値なら、その前の日と比べる
-    prev = history[-2]["close"] if len(history) >= 2 else meta.get("chartPreviousClose")
+    prev = days[-2][1] if len(days) >= 2 else meta.get("chartPreviousClose")
     change = price - prev if prev else None
+    percent = change / prev * 100 if prev else None
+    month_ago = days[-1][0] - timedelta(days=31)
     return {
         "price": price,
         "change": change,
-        "changePercent": change / prev * 100 if prev else None,
+        "changePercent": percent,
         "currency": meta.get("currency"),
-        "history": history,
+        "history": [{"date": d.strftime("%m/%d"), "close": c} for d, c in days if d > month_ago],
+        "move": move_rarity([c for _, c in days], percent) if span == "1y" else None,
+    }
+
+
+def move_rarity(closes, percent):
+    """今日の動きの大きさを、この1年の毎日の動きと比べる。
+
+    ratio: ふだん（毎日の動きの真ん中の値）の何倍か
+    rank:  この1年で何番目に大きい動きか（days 日のうち）
+    """
+    past = [abs(b / a - 1) * 100 for a, b in zip(closes[:-2], closes[1:-1]) if a]
+    if percent is None or len(past) < 20:
+        return None
+    today = abs(percent)
+    typical = statistics.median(past) or 1e-9
+    return {
+        "ratio": round(today / typical, 2),
+        "rank": 1 + sum(c > today for c in past),
+        "days": len(past) + 1,
     }
 
 
@@ -450,6 +501,7 @@ def fetch_calendar(currencies):
             events.append({
                 "date": datetime.fromisoformat(ev["date"]).astimezone(JST).isoformat(timespec="minutes"),
                 "country": COUNTRY_NAMES.get(ev["country"], ev["country"]),
+                "currency": ev["country"],
                 "title": name or title,
                 "forecast": ev.get("forecast") or "",
                 "previous": ev.get("previous") or "",
@@ -483,11 +535,24 @@ def fetch_earnings_date(code):
 
 def main():
     entries = []
-    for item in read_watchlist(WATCHLIST):
+    watchlist, peer_lists = read_watchlist(WATCHLIST)
+    peer_prices = {}
+    for item in watchlist:
         symbol, kind = to_symbol(item["code"])
-        entry = {**item, "symbol": symbol, "kind": kind, "errors": []}
+        entry = {**item, "symbol": symbol, "kind": kind, "errors": [], "peers": []}
+        for peer in peer_lists.get(item["name"], []):
+            peer_symbol = to_symbol(peer["code"])[0]
+            if peer_symbol not in peer_prices:
+                try:
+                    p = fetch_price(peer_symbol)
+                    peer_prices[peer_symbol] = {k: p[k] for k in ("price", "change", "changePercent")}
+                except Exception as e:
+                    print(f"比べる相手 {peer['name']}: {e}", file=sys.stderr)
+                    peer_prices[peer_symbol] = None
+            if peer_prices[peer_symbol]:
+                entry["peers"].append({**peer, "symbol": peer_symbol, **peer_prices[peer_symbol]})
         try:
-            entry.update(fetch_price(symbol))
+            entry.update(fetch_price(symbol, "1y"))
         except Exception as e:
             entry["errors"].append("値段を取得できませんでした")
             print(f"{item['name']} の値段: {e}", file=sys.stderr)
