@@ -14,6 +14,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WATCHLIST = ROOT / "watchlist.txt"
 OUTPUT = ROOT / "docs" / "data.json"
+ALERTS = ROOT / "alerts.json"   # 大きく動いた銘柄（scripts/notify.py がお知らせにする。保存はしない）
+PAGE_URL = "https://masatakai1011-lab.github.io/Apps-v1/"
 JST = timezone(timedelta(hours=9))
 NEWS_PER_ITEM = 3
 # グラフに付けるニュースのしるし（大きく動いた日のうち、ニュースがあった日）
@@ -591,6 +593,33 @@ def news_marks(entry, news):
     ]
 
 
+def is_big_move(entry):
+    """ページの「急落・急上昇」と同じ基準（ふだんの2.5倍以上、またはこの1年で10番以内の大きさ）。"""
+    m = entry.get("move")
+    return bool(m) and (m["ratio"] >= 2.5 or (m["rank"] <= 10 and m["ratio"] >= 1.5))
+
+
+def alert_of(entry):
+    pct = entry["changePercent"]
+    word = "急上昇" if pct > 0 else "急落"
+    day = entry["history"][-1]["date"] if entry.get("history") else datetime.now(JST).strftime("%m/%d")
+    m = entry["move"]
+    unit = "" if entry["kind"] == "fx" else "円"
+    lines = [
+        f"**{entry['name']}** が **{pct:+.2f}%** の{word}（{day}）",
+        "",
+        f"- 値段：{entry['price']:,.{4 if entry['price'] < 10 else 3}f}" if entry["kind"] == "fx" else f"- 値段：{entry['price']:,.0f}{unit}",
+        f"- ふだんの {m['ratio']:.1f} 倍の動き（この1年で {m['rank']} 番目の大きさ）",
+    ]
+    peers = [p for p in entry.get("peers", []) if p.get("changePercent") is not None]
+    if peers:
+        lines.append("- 仲間：" + "、".join(f"{p['name']} {p['changePercent']:+.1f}%" for p in peers))
+    if entry.get("news"):
+        lines += ["", "関連ニュース："] + [f"- [{n['title']}]({n['link']})" for n in entry["news"][:2]]
+    lines += ["", f"[株・FX監視を開く]({PAGE_URL})"]
+    return {"title": f"【{word}】{entry['name']} {pct:+.1f}%（{day}）", "body": "\n".join(lines)}
+
+
 def main():
     entries = []
     watchlist, peer_lists, region_lists = read_watchlist(WATCHLIST)
@@ -676,6 +705,12 @@ def main():
         encoding="utf-8",
     )
     print(f"{len(entries)} 件を書き出しました: {OUTPUT}")
+    alerts = [alert_of(e) for e in entries if e.get("changePercent") is not None and is_big_move(e)]
+    if alerts:
+        ALERTS.write_text(json.dumps(alerts, ensure_ascii=False, indent=1), encoding="utf-8")
+        print("大きな動き: " + "、".join(a["title"] for a in alerts))
+    elif ALERTS.exists():
+        ALERTS.unlink()
 
 
 if __name__ == "__main__":

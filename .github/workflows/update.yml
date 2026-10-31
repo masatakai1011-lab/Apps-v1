@@ -17,9 +17,15 @@ on:
       - scripts/update.py
       - .github/workflows/update.yml
   workflow_dispatch:
+    inputs:
+      test_alert:
+        description: "お知らせのテストを送る"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: update-board
@@ -43,3 +49,9 @@ jobs:
           git commit -m "ボードのデータを更新"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin HEAD:"${GITHUB_REF_NAME}"
+      - name: 大きな動きをお知らせ
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TEST_ALERT: ${{ inputs.test_alert }}
+        run: python scripts/notify.py
