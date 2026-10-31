@@ -182,6 +182,27 @@
   .holding .chg { font-size: .98rem; }
   .holding .chg .lbl { color: var(--muted); font-family: var(--sans); font-size: .76rem; margin-left: 6px; }
 
+  /* 持ち株の損得 */
+  .pl { margin-top: 12px; }
+  .pl .total { font-family: var(--mono); font-size: 1.15rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+  .pl .total .pct { font-size: .8rem; white-space: nowrap; }
+  .pl .total small { font-family: var(--sans); font-size: .74rem; color: var(--muted); font-weight: 400; margin-right: 8px; }
+  .pl .detail { font-size: .74rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: center; }
+  .pl .detail b { font-family: var(--mono); font-weight: 500; }
+  .linkbtn { all: unset; cursor: pointer; font-size: .74rem; color: var(--muted); border-bottom: 1px dotted var(--muted); }
+  .linkbtn:hover, .linkbtn:focus-visible { color: var(--text); border-color: var(--text); }
+  .hold-form { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px; border: 1px solid var(--line-strong); background: var(--panel-2); }
+  .hold-form label { font-size: .7rem; color: var(--muted); display: grid; gap: 3px; }
+  .hold-form input { font: 500 .9rem var(--mono); color: var(--text); background: var(--bg); border: 1px solid var(--line-strong); padding: 5px 8px; min-width: 0; }
+  .hold-form input:focus { outline: 1px solid var(--cyan); }
+  .hold-form .row { grid-column: 1 / -1; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .hold-form button { font: 500 .74rem var(--sans); color: var(--text); background: transparent; border: 1px solid var(--line-strong); padding: 4px 12px; cursor: pointer; }
+  .hold-form button.primary { border-color: var(--cyan); color: var(--cyan); }
+  .hold-form .hint { grid-column: 1 / -1; font-size: .68rem; color: var(--muted); margin: 0; }
+  .portfolio { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; margin-top: 10px; padding: 10px 12px 0 44px; border-top: 1px solid var(--line); }
+  .portfolio .v { font-family: var(--mono); font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+  .portfolio .k { font-size: .76rem; color: var(--muted); margin-right: 6px; }
+
   /* 動きの珍しさ */
   .rarity { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
   .rarity .big { font-size: .95rem; font-weight: 600; }
@@ -427,6 +448,7 @@
       <button class="voice" type="button" id="voice"><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="voice-label">音声で聞く</span></button>
     </div>
     <ol id="brief-lines"></ol>
+    <div class="portfolio" id="portfolio" hidden></div>
   </section>
 
   <div class="panel sessions" id="sessions" aria-label="市場の時間"></div>
@@ -822,6 +844,110 @@ function addMark(box, mark, k, [x, y]) {
   box.append(line, pin);
 }
 
+// ───────── 持ち株の損得（数量と買った値段は、この端末の中だけに保存） ─────────
+let holdings = {};
+try { holdings = JSON.parse(localStorage.getItem("holdings") || "{}"); } catch {}
+function saveHoldings() { try { localStorage.setItem("holdings", JSON.stringify(holdings)); } catch {} }
+const yen = v => `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.round(Math.abs(v)).toLocaleString("ja-JP")}円`;
+
+// 値段の単位（相手通貨）を円に直す割合。ユーロ/米ドルなら米ドル/円の値段を使う
+function toYen(item) {
+  if (item.kind !== "fx") return 1;
+  const quote = pairOf(item)[1];
+  if (quote === "JPY") return 1;
+  const sym = `${quote}JPY=X`;
+  const src = allItems.find(i => i.symbol === sym) || allItems.flatMap(i => i.peers || []).find(p => p.symbol === sym);
+  return src?.price || null;
+}
+
+function profitOf(item) {
+  const h = holdings[item.code];
+  const rate = toYen(item);
+  if (!h || item.price == null || !rate) return null;
+  return {
+    ...h,
+    total: (item.price - h.cost) * h.qty * rate,
+    today: (item.change ?? 0) * h.qty * rate,
+    pct: (item.price / h.cost - 1) * 100 * Math.sign(h.qty),
+  };
+}
+
+function plBlock(item) {
+  const box = el("div", { class: "pl" });
+  const unit = item.kind === "fx" ? "通貨" : "株";
+  const render = () => {
+    const p = profitOf(item);
+    if (!p) {
+      const add = el("button", { class: "linkbtn", type: "button" }, "＋ 持っている数を登録すると、損得を表示します");
+      add.addEventListener("click", form);
+      box.replaceChildren(add);
+      return;
+    }
+    const total = el("div", { class: `total ${p.total > 0 ? "up" : p.total < 0 ? "down" : "flat"}` });
+    total.append(el("small", {}, "含み損益"), yen(p.total), el("span", { class: "pct" }, `（${signed(p.pct, 1)}%）`));
+    const detail = el("div", { class: "detail" });
+    const today = el("b", { class: p.today > 0 ? "up" : p.today < 0 ? "down" : "flat" }, yen(p.today));
+    const edit = el("button", { class: "linkbtn", type: "button" }, "変更");
+    edit.addEventListener("click", form);
+    const t = el("span", {}, "今日 ");
+    t.append(today);
+    detail.append(el("span", {}, `${p.qty < 0 ? "売り " : ""}${Math.abs(p.qty).toLocaleString("ja-JP")}${unit}・平均 ${fmtNumber(p.cost, digitsFor(item))}`), t, edit);
+    box.replaceChildren(total, detail);
+  };
+  const form = () => {
+    const h = holdings[item.code] || {};
+    const f = el("form", { class: "hold-form" });
+    const qty = el("input", { type: "number", step: "any", inputmode: "decimal", value: h.qty ?? "", required: "" });
+    const cost = el("input", { type: "number", step: "any", inputmode: "decimal", value: h.cost ?? "", required: "", min: "0" });
+    const l1 = el("label", {}, `数量（${unit}）`), l2 = el("label", {}, "平均の買い値");
+    l1.append(qty);
+    l2.append(cost);
+    const row = el("div", { class: "row" });
+    const save = el("button", { class: "primary", type: "submit" }, "保存"), cancel = el("button", { type: "button" }, "やめる");
+    row.append(save, cancel);
+    if (holdings[item.code]) {
+      const del = el("button", { type: "button" }, "削除");
+      del.addEventListener("click", () => { delete holdings[item.code]; saveHoldings(); render(); updatePortfolio(); });
+      row.append(del);
+    }
+    cancel.addEventListener("click", render);
+    f.addEventListener("submit", e => {
+      e.preventDefault();
+      const q = parseFloat(qty.value), c = parseFloat(cost.value);
+      if (!q || !(c > 0)) return;
+      holdings[item.code] = { qty: q, cost: c };
+      saveHoldings();
+      render();
+      updatePortfolio();
+    });
+    f.append(l1, l2, row, el("p", { class: "hint" }, `この端末の中だけに保存され、サイトには公開されません。${item.kind === "fx" ? "売りで持っているときは数量をマイナスに。" : ""}`));
+    box.replaceChildren(f);
+    qty.focus();
+  };
+  render();
+  return box;
+}
+
+// 保有全体の合計（今日のまとめの下に出す）
+function portfolioTotal() {
+  const list = allItems.map(profitOf).filter(Boolean);
+  if (!list.length) return null;
+  return { total: list.reduce((a, p) => a + p.total, 0), today: list.reduce((a, p) => a + p.today, 0), count: list.length };
+}
+function updatePortfolio() {
+  const box = document.getElementById("portfolio");
+  const t = portfolioTotal();
+  box.hidden = !t;
+  if (!t) return;
+  const cls = v => (v > 0 ? "up" : v < 0 ? "down" : "flat");
+  box.replaceChildren(el("span", { class: "label-sm", style: "margin:0" }, "PORTFOLIO ／ 登録した保有の合計"));
+  for (const [k, v] of [["含み損益", t.total], ["今日の増減", t.today]]) {
+    const s = el("span");
+    s.append(el("span", { class: "k" }, k), el("span", { class: `v ${cls(v)}` }, yen(v)));
+    box.append(s);
+  }
+}
+
 // ───────── 持ち株カード ─────────
 function eventsFor(item) {
   const now = Date.now();
@@ -860,7 +986,7 @@ function holdingCard(item, i) {
     if (item.change != null) {
       const chg = el("div", { class: `chg ${trendOf(item)}` }, changeText(item));
       chg.append(el("span", { class: "lbl" }, "前日比"));
-      left.append(chg);
+      left.append(chg, plBlock(item));
       left.append(rarityBlock(item));
     }
     const peers = peersBlock(item);
@@ -1514,6 +1640,7 @@ function setupBrief(data) {
     });
     claim("brief-lines");
   }
+  updatePortfolio();
   setupVoice(rows);
 }
 
@@ -1554,6 +1681,11 @@ function setupVoice(rows) {
     synth.cancel();
     synth.speak(say("本日の状況を報告します。", null));
     rows.forEach(r => synth.speak(say(r.line.speech, r.li)));
+    const t = portfolioTotal();
+    if (t) {
+      const word = v => `${v >= 0 ? "プラス" : "マイナス"}${Math.round(Math.abs(v)).toLocaleString("ja-JP")}円`;
+      synth.speak(say(`登録した保有の含み損益は${word(t.total)}、今日の増減は${word(t.today)}です。`, null));
+    }
     const end = say("報告は以上です。", null);
     end.onend = () => { if (on) stop(); };
     synth.speak(end);
