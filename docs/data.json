@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T10:57+09:00",
+ "updated": "2026-11-03T12:49+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -13,34 +13,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 101.802,
-     "change": -0.07799725341796204,
-     "changePercent": -0.07655796576432015
+     "price": 101.784,
+     "change": 0.034000000000006025,
+     "changePercent": 0.03341523341523934
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.636,
-     "change": 0.7180007324218707,
-     "changePercent": 0.4081451218244948
+     "price": 176.609,
+     "change": 0.6910007324218839,
+     "changePercent": 0.39279706186906144
     },
     {
      "name": "英ポンド/円",
      "code": "GBPJPY",
      "symbol": "GBPJPY=X",
-     "price": 211.655,
-     "change": 0.5990002441406261,
-     "changePercent": 0.28381104769991106
+     "price": 211.621,
+     "change": 0.5650002441406343,
+     "changePercent": 0.26770157910422004
     }
    ],
    "regions": [
     "mideast",
     "us"
    ],
-   "price": 157.924,
-   "change": 0.2469980468750066,
-   "changePercent": 0.1566481121631393,
+   "price": 157.887,
+   "change": 0.20999804687500045,
+   "changePercent": 0.13318241993047897,
    "currency": "JPY",
    "history": [
     {
@@ -151,12 +151,12 @@
     {
      "date": "11/03",
      "day": "2026-11-03",
-     "close": 157.9239959716797
+     "close": 157.88699340820312
     }
    ],
    "move": {
-    "ratio": 0.75,
-    "rank": 156,
+    "ratio": 0.64,
+    "rank": 167,
     "days": 259
    },
    "year": [
@@ -1458,7 +1458,7 @@
     {
      "date": "11/03",
      "day": "2026-11-03",
-     "close": 157.9239959716797
+     "close": 157.88699340820312
     }
    ],
    "intraday": [
@@ -1556,31 +1556,119 @@
     },
     {
      "date": "10:55",
+     "close": 157.8990020751953
+    },
+    {
+     "date": "11:00",
+     "close": 157.9029998779297
+    },
+    {
+     "date": "11:05",
+     "close": 157.88800048828125
+    },
+    {
+     "date": "11:10",
+     "close": 157.89700317382812
+    },
+    {
+     "date": "11:15",
+     "close": 157.9080047607422
+    },
+    {
+     "date": "11:20",
+     "close": 157.9029998779297
+    },
+    {
+     "date": "11:25",
+     "close": 157.91799926757812
+    },
+    {
+     "date": "11:30",
+     "close": 157.93899536132812
+    },
+    {
+     "date": "11:35",
+     "close": 157.92799377441406
+    },
+    {
+     "date": "11:40",
+     "close": 157.92999267578125
+    },
+    {
+     "date": "11:45",
+     "close": 157.91200256347656
+    },
+    {
+     "date": "11:50",
+     "close": 157.906005859375
+    },
+    {
+     "date": "11:55",
+     "close": 157.89500427246094
+    },
+    {
+     "date": "12:00",
+     "close": 157.89999389648438
+    },
+    {
+     "date": "12:05",
+     "close": 157.91299438476562
+    },
+    {
+     "date": "12:10",
+     "close": 157.91400146484375
+    },
+    {
+     "date": "12:15",
+     "close": 157.9239959716797
+    },
+    {
+     "date": "12:20",
      "close": 157.93099975585938
     },
     {
-     "date": "10:57",
-     "close": 157.9239959716797
+     "date": "12:25",
+     "close": 157.92100524902344
+    },
+    {
+     "date": "12:30",
+     "close": 157.88999938964844
+    },
+    {
+     "date": "12:35",
+     "close": 157.87399291992188
+    },
+    {
+     "date": "12:40",
+     "close": 157.875
+    },
+    {
+     "date": "12:45",
+     "close": 157.8800048828125
+    },
+    {
+     "date": "12:49",
+     "close": 157.88699340820312
     }
    ],
    "news": [
     {
-     "title": "東京外国為替市場概況・10時 ドル円、もみ合い継続(トレーダーズ・ウェブ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPb0pGczdjeG1uZm1xNXZobWVic0x5Ulh2S2FaSmJ1Mm5qeG45WWlZZ1hObzNBT3FncHJYZ090dnBPZVVua1g0bWVnOUt3SUNoZHhlQWNILUVQU0ZqOFVhODhZQWpac2Q1dkJZZlNUU05jNDIweU1UTnZEUXl3bkRXcDFYb2p6cVE?oc=5",
+     "title": "豪ドル/円【AUDJPY】：外国為替相場FXレート・チャートをリアルタイム表示",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE05OFVuTURyMlFlNEM3WUpGTUFMWE92YU5yYjBSNm9Pc3NkeHplX0diaU9mVm5IRFIteUN6dzJOU1lFRXByX1BfVFhUdVh0YUdlbExySm5B?oc=5",
      "source": "Yahoo!ファイナンス",
-     "published": "2026-11-03T10:08:04+09:00"
+     "published": "2026-11-03T11:35:26+09:00"
     },
     {
-     "title": "東京外国為替市場概況・8時 ドル円、もみ合い(トレーダーズ・ウェブ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOejVsLTNzWXVXVExUN19YMFQ5WmRQQXQzTUhXa3NaSXU3SG1QVTU3bjhYYVlGejkwRkJKNG8taHJQMHB5bXRWWElJNkFQTEllTVQycGZTeGNrVy1lUkFTU1phSWtBaUhmOFRoSVp5OEk0VjV3QnNSTEVsdjd4QnlFajRDN3pUUkU?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-03T08:08:03+09:00"
+     "title": "【テクニカル】日足テクニカル・NZドル円＝年初来安値は維持",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4xd2ZNcjVEWUJnTW9SaXNpY3JKS3h5dXY4NHh6ajZsRVZpRUpiTGplek93ckg4bkZ1b096ZjBTYWhnWGlHVE10LV9SSy1Pdl9Hb3FVcFdURXdvN0c1QzBlVFp2Zw?oc=5",
+     "source": "外為どっとコム",
+     "published": "2026-11-03T11:16:10+09:00"
     },
     {
-     "title": "２日の為替市場の四本値（ドル円・ユーロドル・ユーロ円）",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBuRE1kOFZ4TFF2cWdTNUsxVUhQVHQzaDJiTDVrNDVaWnYtYnRyb2F6cUw1S1lMZ2hOZXFUQVY5TWlZa0cxUGhrbQ?oc=5",
-     "source": "みんかぶ FX/為替",
-     "published": "2026-11-03T07:20:29+09:00"
+     "title": "【テクニカル】日足テクニカル・ドル円＝158円台半ばの抵抗帯が焦点に",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ZZXR1WkZGSHNzZnVEb3oydndxMWxLVXNva0l0STNUd0EyOXVneTUwOHBiQ0NtWTRwUDMtdFVFYnlzSEtKN0RFckk0RU9RNTAwUXY1eGFzNjRrLTRTVUl2cFl4TQ?oc=5",
+     "source": "外為どっとコム",
+     "published": "2026-11-03T10:57:12+09:00"
     }
    ],
    "marks": [
@@ -1666,7 +1754,7 @@
     },
     {
      "day": "2026-10-31",
-     "count": 2
+     "count": 1
     },
     {
      "day": "2026-11-01",
@@ -1674,11 +1762,11 @@
     },
     {
      "day": "2026-11-02",
-     "count": 43
+     "count": 42
     },
     {
      "day": "2026-11-03",
-     "count": 9
+     "count": 12
     }
    ]
   },
@@ -1694,34 +1782,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 101.802,
-     "change": -0.07799725341796204,
-     "changePercent": -0.07655796576432015
+     "price": 101.784,
+     "change": 0.034000000000006025,
+     "changePercent": 0.03341523341523934
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.636,
-     "change": 0.7180007324218707,
-     "changePercent": 0.4081451218244948
+     "price": 176.609,
+     "change": 0.6910007324218839,
+     "changePercent": 0.39279706186906144
     },
     {
      "name": "英ポンド/米ドル",
      "code": "GBPUSD",
      "symbol": "GBPUSD=X",
-     "price": 1.3402,
-     "change": 0.001637392234802304,
-     "changePercent": 0.12232466567522146
+     "price": 1.3405,
+     "change": 0.001937392234802271,
+     "changePercent": 0.14473676640623118
     }
    ],
    "regions": [
     "europe",
     "us"
    ],
-   "price": 1.1188,
-   "change": 0.0031145370483398604,
-   "changePercent": 0.2791590597676189,
+   "price": 1.1191,
+   "change": 0.0034145370483398274,
+   "changePercent": 0.3060483587646934,
    "currency": "USD",
    "history": [
     {
@@ -1832,12 +1920,12 @@
     {
      "date": "11/03",
      "day": "2026-11-03",
-     "close": 1.1188185214996338
+     "close": 1.11906898021698
     }
    ],
    "move": {
-    "ratio": 1.46,
-    "rank": 94,
+    "ratio": 1.6,
+    "rank": 86,
     "days": 259
    },
    "year": [
@@ -3139,7 +3227,7 @@
     {
      "date": "11/03",
      "day": "2026-11-03",
-     "close": 1.1188185214996338
+     "close": 1.11906898021698
     }
    ],
    "intraday": [
@@ -3237,31 +3325,119 @@
     },
     {
      "date": "10:55",
+     "close": 1.1188185214996338
+    },
+    {
+     "date": "11:00",
      "close": 1.1186933517456055
     },
     {
-     "date": "10:57",
+     "date": "11:05",
      "close": 1.1188185214996338
+    },
+    {
+     "date": "11:10",
+     "close": 1.1186933517456055
+    },
+    {
+     "date": "11:15",
+     "close": 1.11831796169281
+    },
+    {
+     "date": "11:20",
+     "close": 1.1184431314468384
+    },
+    {
+     "date": "11:25",
+     "close": 1.1184431314468384
+    },
+    {
+     "date": "11:30",
+     "close": 1.1181930303573608
+    },
+    {
+     "date": "11:35",
+     "close": 1.118067979812622
+    },
+    {
+     "date": "11:40",
+     "close": 1.1181930303573608
+    },
+    {
+     "date": "11:45",
+     "close": 1.1185681819915771
+    },
+    {
+     "date": "11:50",
+     "close": 1.1188185214996338
+    },
+    {
+     "date": "11:55",
+     "close": 1.1188185214996338
+    },
+    {
+     "date": "12:00",
+     "close": 1.1188185214996338
+    },
+    {
+     "date": "12:05",
+     "close": 1.1188185214996338
+    },
+    {
+     "date": "12:10",
+     "close": 1.1185681819915771
+    },
+    {
+     "date": "12:15",
+     "close": 1.1185681819915771
+    },
+    {
+     "date": "12:20",
+     "close": 1.1185681819915771
+    },
+    {
+     "date": "12:25",
+     "close": 1.1186933517456055
+    },
+    {
+     "date": "12:30",
+     "close": 1.1188185214996338
+    },
+    {
+     "date": "12:35",
+     "close": 1.11906898021698
+    },
+    {
+     "date": "12:40",
+     "close": 1.11906898021698
+    },
+    {
+     "date": "12:45",
+     "close": 1.118943691253662
+    },
+    {
+     "date": "12:49",
+     "close": 1.11906898021698
     }
    ],
    "news": [
+    {
+     "title": "【テクニカル】日足テクニカル・ユーロドル＝反発するも一目・基準線が重し",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9xVGtpUWQ1RXduNExrUWpGTEhSS3A3V195ZHEwTk9WYm9DNnc4QTQ1Mk5HWnNkeHN4THdaSHVSTDZ3V3lPVzVhc3BrcjZDWnAzRDJSWHo2cmMyMkFydWZvR3N1aw?oc=5",
+     "source": "外為どっとコム",
+     "published": "2026-11-03T11:56:08+09:00"
+    },
+    {
+     "title": "ドル円よりユーロ円ユーロドルが動きそうな雰囲気？ IMMユーロショート37万枚→そろそろ巻き戻すか。",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1MaF9hM3J3QkEyVkxfOWVDM1NxTnlac2VZdmZoTzN1NnQ0ZFVsa1hOZjg2dmtNMEFvRTRYM2ZqRHhvdjRxWTZSUU11MFd2cTVVQkE?oc=5",
+     "source": "ザイFX！",
+     "published": "2026-11-03T09:31:00+09:00"
+    },
     {
      "title": "ドル円、157円後半で伸び悩み ユーロドルが下げ渋り(トレーダーズ・ウェブ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObWdtSDdNSDlfYkY2UDYtQzJmWUhYZ1ZfU0JyM1FMcHhIQVVQUjh2VF8xcTdtcHNCT2Qtb0NVWjE1V3VSeElJWV9mZFpHMWFQWmpmVEtXOHR3N3RVa3RnbmtZYVU5al9HLXVLWl9seXVQMTJtUlJiNjdMOUZfRTZoRnpYcHh2U3M?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-11-03T09:29:03+09:00"
-    },
-    {
-     "title": "ドル円、157円後半で伸び悩み ユーロドルが下げ渋り｜FX・為替ニュース",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XblE5d1hIZV81T1pKLWw1WTk1b2Y1UVJUdGQwMkdSb0FTVDY5cXd3c2pWMkh5NW54dWpKejI0YkxwVENIV2didHd6V1hITG5uOWc?oc=5",
-     "source": "ザイFX！",
-     "published": "2026-11-03T09:29:00+09:00"
-    },
-    {
-     "title": "２日の為替市場の四本値（ドル円・ユーロドル・ユーロ円）",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBuRE1kOFZ4TFF2cWdTNUsxVUhQVHQzaDJiTDVrNDVaWnYtYnRyb2F6cUw1S1lMZ2hOZXFUQVY5TWlZa0cxUGhrbQ?oc=5",
-     "source": "みんかぶ FX/為替",
-     "published": "2026-11-03T07:20:29+09:00"
     }
    ],
    "marks": [
@@ -3359,7 +3535,7 @@
     },
     {
      "day": "2026-11-03",
-     "count": 4
+     "count": 6
     }
    ]
   },
@@ -3376,8 +3552,8 @@
      "code": "^N225",
      "symbol": "^N225",
      "price": 63081.86,
-     "change": -1577.6087499999994,
-     "changePercent": -2.439872737123284
+     "change": -208.24937499999942,
+     "changePercent": -0.32903936658744226
     },
     {
      "name": "米半導体指数",
@@ -3392,16 +3568,16 @@
      "code": "MU",
      "symbol": "MU",
      "price": 833.59,
-     "change": -100.68001953124997,
-     "changePercent": -10.776329907467652
+     "change": -51.14999023437497,
+     "changePercent": -5.78135845547401
     },
     {
      "name": "サンディスク",
      "code": "SNDK",
      "symbol": "SNDK",
      "price": 1075.08,
-     "change": -254.97004882812507,
-     "changePercent": -19.169958984082818
+     "change": -75.81001464843757,
+     "changePercent": -6.587077277892211
     }
    ],
    "regions": [
@@ -5019,10 +5195,28 @@
      "change": -13.28,
      "news": [
       {
-       "title": "ハイパースケールデータセンター向けE1.L QLCベースSSDの開発について",
-       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5VOC05VUpQb2FvM2MxeDgxeDZ4YnRrUnpTSVRNLVZUQzcwRTFEaG12Y2NmUGpFVWJ1ck4zNnB0RVVFYWZQdE55VnFzdWgwUDV6MGxBM1RSMDNJOUx4V2tzNV94SUpwYk4zZVVuTUlqX2w?oc=5",
-       "source": "KIOXIA Corporation",
-       "published": "2026-10-09T16:00:00+09:00"
+       "title": "キオクシアも4位､信用買いの｢含み損｣に投資家が苦しむ20銘柄",
+       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA5MlA5ZWdOSS1oZXBvXzZQcExDR0czTlVBQ2s1R1FQRXhBOGtGWWZ1X2kya3htWk5XU0RuMzhRWGI3dktoRzBENzdiRDcxZkNid3pIMkNPMA?oc=5",
+       "source": "四季報オンライン",
+       "published": "2026-10-12T16:00:00+09:00"
+      },
+      {
+       "title": "【北浜流一郎のズバリ株先見！】 ─将来のファストリ、キオクシアを探せ！成長株候補にフォーカス（訂正）(株探ニュース)",
+       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMS1rWG1wZWpDVFU4algxaVdrTzRLVzRpU2ljWl9TOV94U0JrTnVFeUF1bFg4VTVQNmlaMlZQQmd3S0w2NVlDQTk1UENSV19rR1JUaVJvZlpHNDN4TVJFNG42YndydmVrNnNUQmlSdURNLU1qWnJDQlU0WUtSYzJScllOMUxxbTQ?oc=5",
+       "source": "Yahoo!ファイナンス",
+       "published": "2026-10-11T16:00:00+09:00"
+      }
+     ]
+    },
+    {
+     "date": "10/15",
+     "change": -12.32,
+     "news": [
+      {
+       "title": "ＡＩ・半導体株が大幅安、キオクシアの分割後下げ率30％超 | ロイター",
+       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMFdKalhEc0lRWklKRWlWLTE0c2pCM0tqVkhLLTktUzVWY255UzBlS01qbm0xOU1NSXVnaVlvNmsyNVZaSzBOZ0tTSlBQQU03QjdpQUNESlZ4cG9TaWJpTW9BMDY0SDc0bTN5bklzbU1jM1JnSDBnNUlOaFJPQ2drX0t0T01rZw?oc=5",
+       "source": "Reuters",
+       "published": "2026-10-14T16:00:00+09:00"
       }
      ]
     },
@@ -5031,34 +5225,10 @@
      "change": 13.76,
      "news": [
       {
-       "title": "話題株ピックアップ【昼刊】：ＭＡＲＵＷＡ、キオクシア、ハートシード",
-       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBURDJBYUtKRG1tQzMwUkZ0YnMzbTk5U3AtWE54V25QVnZvMG1Fd3dxRG8tSFBLYnNLNnJOSWxEdjUxZGl6NEtLanZfYjFNUk94aXFQTTE2TzhUaTRPTUptLQ?oc=5",
+       "title": "キオクシアが一時１０００円超の上昇、決算発表とＴＯＰＩＸ絡みの買い需要に思惑",
+       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE04VlRYUGFJdjhHcllsMkx6UVBwZkhxN3lrSEQ3dnBWSXJUUndDalg0Z1ZOUVVIaUJ0d1dFendEVFFDbGhVcm56UXkybkNSQlROSnMxWWJPQnVJZUdfVWFXZw?oc=5",
        "source": "株探",
-       "published": "2026-10-28T11:38:10+09:00"
-      },
-      {
-       "title": "キオクシアHD株価一時9%高 韓国SKハイニックスの好決算追い風",
-       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fNUo2amJQNENqME9ZUlNqRHdPRE41aWU1VXRuUHBrOGQxQWFXSmczM3Q3cjR3Tm1KdG5SUVV0R1JqMkk0Yk80cFQyWk1iYlc5NGNaM2VzOURibl9VNnZWX2JTc010dmhwc3FtNA?oc=5",
-       "source": "日本経済新聞",
-       "published": "2026-10-28T11:24:33+09:00"
-      }
-     ]
-    },
-    {
-     "date": "10/30",
-     "change": -7.14,
-     "news": [
-      {
-       "title": "日経平均は１３８０円程度安、売買代金はキオクシア、アドバンテス、太陽誘電が上位(ウエルスアドバイザー)",
-       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNN3VycUpBbEdyNEYxYmt3cjM1djdFRVQ0VFVIY2NuenVzenNGNVhUQkt0d3E5RFhjNWhlVGxlQnZkVFFBQkhsUXZtaHdSMDYyc3hUN2w1M2dOS1RFZkxBd2YzamYxMDhzNGxUY3QzNXRjU3Y2VEpGRDRUekVZS1ZEVG4xMktoSUk?oc=5",
-       "source": "Yahoo!ファイナンス",
-       "published": "2026-10-30T14:03:01+09:00"
-      },
-      {
-       "title": "キオクシアHD株価が大幅反落 米インテル決算などで投資家心理悪化",
-       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5zZk1KS3FlTHhZd3VkV1piSXVkRmdlOVpaLXMzWHhkOFMydEhWTG81WnBIOGRDLVh1V3RQWEEyZml5djRRcjF3WDE4UWJsWGRWU3RLM0FlUEdHS2hrbTVsNnFTVUFlQ0JHTldXaQ?oc=5",
-       "source": "日本経済新聞",
-       "published": "2026-10-30T11:05:38+09:00"
+       "published": "2026-10-28T09:40:00+09:00"
       }
      ]
     },
@@ -5067,16 +5237,16 @@
      "change": -15.78,
      "news": [
       {
-       "title": "日経平均は３０円程度高、売買代金はキオクシア、アドバンテス、レーザーテクが上位(ウエルスアドバイザー)",
-       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVG8wNkpUN0EtclYydDJpTjRhTEp5QmltMmgyNTR6LUFXSVNrbnlzazQ0WlBZRGFITEFyUmRUcE1mY0ZaaGhiQlVBb0NhV2VWVGtNdFhIWVF4SHRuNlFsM2pJb19FUnUtbm4wUkR4cU1vbGRGZ0pqVHhwNTZET2lsT2RfbDVZWEk?oc=5",
-       "source": "Yahoo!ファイナンス",
-       "published": "2026-11-02T14:05:13+09:00"
-      },
-      {
        "title": "キオクシアが「1株→3株」に株式分割！ 夫は「買いやすくなった今がチャンス」と言いますが、6月の“高値11万円超”から株価は約66％下落…値動きが激しいイメージですが「分割された今が買い時」ですか？（ファイナンシャルフィールド）",
        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12dF9QTmdrYnkyR0VXOTVjN3FnU2RTTE9pUmhiMGFfZmRpMFZfWTJEdWRZVlFvSGJrSUdwRjRGMHlzbUxYaXNBQ1Y1Ulp3SkdLMFFiLXJNak9yQ29pRGpyRXNIdjVhM3VkSUFiWWFmcVA3aVhUSi11Vy1ZS2tERVk?oc=5",
        "source": "Yahoo!ニュース",
        "published": "2026-11-02T13:50:26+09:00"
+      },
+      {
+       "title": "キオクシア岩手が親会社に吸収合併 2027年4月1日事業・従業員はキオクシアに承継 旺盛な半導体市場背景に製造力強化目指す 岩手・北上市（IBC岩手放送）",
+       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDd1phNFFFZ1RyWHYxU0R0QnkySEp0eW1peTJ2NmktSy1OZ2Foc2tjV19jRnUzNXhRMEc1V1VBekx5cXJTWHE0VjlNZ0J5Zi14V01jbWZ2alhJZ3hDaTBONVRoeFRnOHBCdnVIQUFNR3ZJN2FsQWhYYnROaUdOclk?oc=5",
+       "source": "Yahoo!ニュース",
+       "published": "2026-11-02T13:39:00+09:00"
       }
      ]
     }
@@ -5084,19 +5254,19 @@
    "buzz": [
     {
      "day": "2026-10-28",
-     "count": 10
+     "count": 3
     },
     {
      "day": "2026-10-29",
-     "count": 6
+     "count": 2
     },
     {
      "day": "2026-10-30",
-     "count": 29
+     "count": 25
     },
     {
      "day": "2026-10-31",
-     "count": 5
+     "count": 7
     },
     {
      "day": "2026-11-01",
@@ -5104,7 +5274,7 @@
     },
     {
      "day": "2026-11-02",
-     "count": 37
+     "count": 29
     },
     {
      "day": "2026-11-03",
@@ -5125,8 +5295,8 @@
      "code": "^N225",
      "symbol": "^N225",
      "price": 63081.86,
-     "change": -1577.6087499999994,
-     "changePercent": -2.439872737123284
+     "change": -208.24937499999942,
+     "changePercent": -0.32903936658744226
     },
     {
      "name": "トレンドマイクロ",
@@ -6830,16 +7000,16 @@
      "change": 24.27,
      "news": [
       {
-       "title": "サイバートラストの電子署名サービスがエメラダの金融機関向け業務支援プラットフォームに採用",
-       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0MnMyaUFVNkhlaXMyaWlpdXF2dFBwZEJaa0dfc3ZfeTUwcDhVOG9RNldnMTFINHB3WjJ4QnVva0p6ZHJNSTIya2ZlXzVKTE0zS3FUUUctNzRCemZpQnJMU2RmdVM5RDNLOXc?oc=5",
-       "source": "PR TIMES",
-       "published": "2026-10-22T15:30:02+09:00"
-      },
-      {
        "title": "サイバートラスト[4498]：SSL/TLS サーバー証明書発行サービスの一時停止に関するお知らせ（続報） 2026年10月22日(適時開示) ：日経会社情報DIGITAL",
        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wVnk5eTRxZU54TU9ia0RtanZSZFM2SEdpWGc5YmEzSENnaWNGTmo4elk2RnktNUZVUmpLMUc4TDBhT0JIdGNDTk5aV1NqT3dzOUc3V3ZyS1BsY2F2S2hoOUFNUnBITTlfX2c?oc=5",
        "source": "日本経済新聞",
        "published": "2026-10-22T12:00:00+09:00"
+      },
+      {
+       "title": "＜動意株・２２日＞（前引け）＝ＧＭＯプラ、サイバトラス、日エンター、ストライクＧ",
+       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wOWVTNmxvWXpmQklWejlzUnMxeVBCM1dDMnZReVZfQnR1Rk1ySEZ5N0JpWERIUzNuTVBhZkNTZzBwSFE4RW1vN21DVnpGdy03c2tidVAwWmd5ZTRRd0FGcQ?oc=5",
+       "source": "株探",
+       "published": "2026-10-22T11:33:00+09:00"
       }
      ]
     }
@@ -6867,7 +7037,7 @@
     },
     {
      "day": "2026-11-02",
-     "count": 6
+     "count": 5
     },
     {
      "day": "2026-11-03",
@@ -6878,22 +7048,22 @@
  ],
  "videos": [
   {
-   "id": "mBGdzN2oJJg",
-   "title": "サイバー攻撃か 空襲警報アプリに偽通知【WBS】",
+   "id": "zBr7O9_REuc",
+   "title": "北朝鮮・金与正氏「荒唐無稽なデマだ」 バイナンス不正アクセス問題",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-11-02T23:57+09:00"
+   "published": "2026-11-03T12:46+09:00"
   },
   {
-   "id": "MhrSxOE2CJA",
-   "title": "年賀はがきの販売開始 差し出し目安日繰り下げ【WBS】",
+   "id": "QtjfQ-Qk5NQ",
+   "title": "秋の叙勲　旭日大綬章に豊田章男会長など　受章者は3861人",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-11-02T23:57+09:00"
+   "published": "2026-11-03T12:44+09:00"
   },
   {
-   "id": "44WhFjKHebQ",
-   "title": "新車販売 7カ月ぶり減少 軽自動車が販売不振【WBS】",
+   "id": "zU5lNSE5IsU",
+   "title": "スペイン列車事故 日本人2人目の死亡確認",
    "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-11-02T23:57+09:00"
+   "published": "2026-11-03T12:43+09:00"
   }
  ],
  "lives": [
@@ -6931,8 +7101,8 @@
    "name": "日経平均",
    "unit": "円",
    "price": 63081.86,
-   "change": -1577.6087499999994,
-   "changePercent": -2.439872737123284
+   "change": -208.24937499999942,
+   "changePercent": -0.32903936658744226
   },
   {
    "name": "NYダウ",
@@ -6958,16 +7128,16 @@
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 96.58,
-   "change": -7.540002746582033,
-   "changePercent": -7.241646703500063
+   "price": 96.63,
+   "change": 0.1700009155273392,
+   "changePercent": 0.17623980628329133
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 3958.0,
-   "change": 59.10009765625,
-   "changePercent": 1.5158146948251505
+   "price": 3936.5,
+   "change": -33.10009765625,
+   "changePercent": -0.8338396020242219
   },
   {
    "name": "米10年金利",
@@ -6979,9 +7149,9 @@
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 76990.79,
-   "change": -1257.6631250000064,
-   "changePercent": -1.6072689935364217
+   "price": 76802.15,
+   "change": -1446.3031250000058,
+   "changePercent": -1.848347241688691
   }
  ],
  "fear": {
@@ -7100,8 +7270,14 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 3,
+   "count": 5,
    "news": [
+    {
+     "title": "米大統領の指名人事、FRB理事ら上院が関門に 下院は弾劾訴追の権限",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9EaWJaSmk1MlpwRE1zYVlpZFlZWklvY1E3TGpRSTZ6VUpfVUxYUE9odHVZdmRLdWRvdkZhbGx3dFJDdHpEQktIS19BOW9NMkdXbjkyNnNvMExrR0U5S3J5RUpZb25Zc19LOHVvdw?oc=5",
+     "source": "日本経済新聞",
+     "published": "2026-11-03T05:00:00+09:00"
+    },
     {
      "title": "モスクワ市内でテロ計画、米国の情報提供もとに少年１人拘束…動画アプリに自身が銃のようなもの持つ画像投稿",
      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Ha3AtLWItbjRkWTBPbldaTi1pX25TTE1DQUNmYUNwLWRYczJOQlNsbXEyd3A4c3BteVBuNFNGeVlGTGZsMUsydTFUNHZzZ2p1OXF6NzV0YmxHaHJQRUFvRFFn?oc=5",
@@ -7109,22 +7285,16 @@
      "published": "2026-11-02T12:04:00+09:00"
     },
     {
-     "title": "米国から北朝鮮に銃器類など密輸、香港拠点の中国人ら民間人集団が介在…帰任する北外交官の船便に紛れ込ませたか",
-     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE53bGU3bGZRNENGQ1pUbWd5TU9PeXk3djZySkNLN08xRkw1X0hIQU5hRzBIMldPNFZNVWdPT2RYWG9GcDQ5enhtUTczUmpaSUNfSUNZaTdyc2dwZ3NCam9BOHVB?oc=5",
-     "source": "読売新聞",
-     "published": "2026-11-02T05:00:00+09:00"
+     "title": "米国防総省、中間選挙での敗北を見越して国防予算の大幅削減を検討中",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcnVPWjN1Sl9pcC1VdVpsUldfc0RVVHdxNXpLSEppLVVic0JjVUNObWdkNl8zTkJtQkdpX0J4aFdEcGhCUEpLZ1pHUW8yaFlaLThDb3AxSWhNVUxIRVhmaW1YOWI0dGZxblVwTzk2UFVuREF3ZElKQWpHRUM3czBPay1hSmJBaGZaeUNveVpjYUFvM0xtZlB5aHhNTnh1OHZ6S2hnSlNxV1NPNi14clRXdFp0d0plTE1JRXZ0a0hkbHp0NFRINXg4cg?oc=5",
+     "source": "航空万能論GF",
+     "published": "2026-11-02T08:22:11+09:00"
     },
     {
-     "title": "「私の大統領…あ、夫は」ホワイトハウスの新報道官、最初の仕事での言い間違いが話題に",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbXV6N1F4Y0xiSXNyY0tIclNVWkZBUkE5cUJWTmN4WjlxVG94eGNKeXFEdGpQN2xtNnJJRVRaZkNCcXh6XzZacXdVNUUxZzJQb25pbWRybUFSZUl3WFpudFJIMFpvbUFnT3R0VFpfZ2lsZzU5RC1LYzFkSVg4T055N1QxSVhnQWpaVUd6R2VIcFJoM3M?oc=5",
-     "source": "madameFIGARO.jp",
-     "published": "2026-10-31T10:01:00+09:00"
-    },
-    {
-     "title": "ハッピーアワーよりハッカソン。「AIを一緒に学ぶ」イベントがアメリカで新しいネットワーキングに",
-     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORVB0QTV3OXREMUZNWW9JR0dnWmlCTUZQTmZPZDFpbnhvTnlTS29xTGtfX05RcTN5UXVkTlMxNG4tbE03QTFHandsQXMzQ043VGhwN2Z5UGpSMWJHVkpvd0xvclRmNU83X1JtMzlNMVFqSkxwdDRNWHNicmFtdktOX0ZpNzZsb1ZEQWlwNExwTkJaV1hNN2NjSA?oc=5",
-     "source": "Business Insider Japan",
-     "published": "2026-11-03T10:30:00+09:00"
+     "title": "「だまされた」ヒスパニックのトランプ離れ 選挙の決定打の可能性も [アメリカ中間選挙]",
+     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WU29rSVMtQm5DZTBoQXE0eWZuRTZTcW04Wk41NEJfdVpxbWlpWHJ5S1ZWSHVXbE03NmY1aTd2cE1ZYmJJQ3hsQVJjUkNnVWx4d1NVaHpCOW9PanJuME1oMnpzOHAxLTA?oc=5",
+     "source": "朝日新聞",
+     "published": "2026-11-02T06:00:00+09:00"
     }
    ]
   },
@@ -7140,6 +7310,12 @@
      "published": "2026-11-02T20:43:00+09:00"
     },
     {
+     "title": "【アルゼンチン共和国杯2026】前哨戦レビュー マイネルエンペラー、叩き一変に期待",
+     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VT3hRYkFrd0JwQmhNc184ZjhnVGpxMlNVMWVRcGVyTHQyMFp2dnBwNy0wYk1VMVZwTHg4M2F4Vlp5Z2pwZ29USHJQRmstR1FWT0RCWktfTEg2cUh0OVlfYzFuaXozRW9U?oc=5",
+     "source": "競馬予想のウマニティ",
+     "published": "2026-11-03T12:00:00+09:00"
+    },
+    {
      "title": "【アルゼンチン共和国杯・予想合戦】〝得意パターン〟で要警戒の伏兵 本格化顕著ミラージュナイトは好勝負必至",
      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE03aG5nQ01YVXdEVlI5Qld6RTFtLVhNdzdjbFZUMUl6TEYyTEpuZEZ4NGFXdlV3MHhFcFhjMWE3TTIxaFBJUHh5blZXWDdIdw?oc=5",
      "source": "東スポ競馬",
@@ -7150,12 +7326,6 @@
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9yS21nMXc4MjF2S1ZhbWJuU25HVHEzQmJ5NHA5V3Z3c21SU2tyMWpFbWdrRlpVVmxvNkFOS29Fcm1laUFpN2Z2N01UTmFCem5TbnJmbWNVVE9LdU5HaFNQOW1QZzJRRXdKX0RyaEx5SnVBeEVrSGc?oc=5",
      "source": "Pokémon GO",
      "published": "2026-11-03T09:03:12+09:00"
-    },
-    {
-     "title": "フェラーリ代表、メキシコシティGPの”チームメイトバトル”に苦言「我々は多くの人を代表して走っている。1周目に1-2だったのに、勝てないなんてガッカリだ」",
-     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNjBYMFdGMW0xWGZKYWcwLXJCVlVtS3J1M2JQa1NnbGp5b3UwMGMzQl9wN1FFMjNPeVFEcUU2RDRBblhfRlNRdVR4czdDSGNLU09lblJjbEE1ejlhWHdWVXN3Y0pUeGpTRmlXeVp6Qk9UMV9sSkZKWjJWTHJNODA4enRKT0RCeDVtXy1CVzZUWEI4VDVnaUxZ0gGXAUFVX3lxTE02MFgwV0YxbTFYZkphZzAtckJWVW1LcnUzYlBrU2dsanlvdTAwYzNCX3A3UUUyM095UURxRTZENEFuWF9GU1F1VHhzN0NIY0tTT2VuUmNsQTV6OWFYd1ZVc3djSlR4alNGaVd5WnpCT1QxX2xKRkpaMlZMck04MDh6dEpPREJ4NW1fLUJXNlRYQjhUNWdpTFk?oc=5",
-     "source": "ｄメニューニュース",
-     "published": "2026-11-03T07:58:00+09:00"
     }
    ]
   },
@@ -7183,10 +7353,10 @@
      "published": "2026-11-01T16:00:00+09:00"
     },
     {
-     "title": "CryptoUK、デジタル資産維持戦略条項への呼びかけに参加",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOekFkQ0ttdmxkUmlienJhaU1fdTBEMUJaazhvX1NxeWgySEhOLWxSVkJkdXpkRDgwMUtWR21WNTJ6ZHhhS0s4Qko1UEJlQXl1N19MWUc2emRQSTJZbDJGeUNKMEl5UVQ3eTE4YTZaMjBGVThDd3gtdGU2ZW10Q3hGY3EzQkZhUFhXbnY1elk4OGczLVltbkE?oc=5",
-     "source": "Coinfomania",
-     "published": "2026-11-03T10:28:57+09:00"
+     "title": "PNY、PS5とPC対応SSD「CS2341」を欧州で発売 読み出し最大7,100MB/sの新製品",
+     "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxONVhGMkdfUE9LNWJETDdVbzlmaXZ5WWI4N1Vvam83anNxQ1ZRb21lZkRCZjhxOFdEa25tdjVTR2lkZi1EQ0RPU2NuTHZNd05Yc2VRLTBFdEhzRXZPQ3F1N20wWXB5dEhKZFFfUHB1YllnVXk3OXFsaEstLVlSSXBidXZFRUt0d2czRjdGMXNPelpzWUNJWWZfY3A3Vi1ReTBPSmtxVF8xaDVKYmRZbTVkbDVIQjU1WXc3Q1V0d2xUWFk1U19JU0dTYTdKYlo3aFZDd2NrVjNHWVA3d3BGX2xvLTdaSHV5ZEp3OVUtY3BpazlKOW1oMDdkbk1HT3kyM21iYzQtV1FydGJTRldYSFZFX2NMWU94WnAyYnNSU0owSmJnZmtjTUlpMUhta3VWQTFkRWVWRmlZTmtORVMzUzMtV2Viang?oc=5",
+     "source": "Mix Vale",
+     "published": "2026-11-03T11:36:01+09:00"
     }
    ]
   },
@@ -7196,10 +7366,16 @@
    "count": 8,
    "news": [
     {
-     "title": "ウクライナの学校にロシア軍が空爆、２６人死亡…ゼレンスキー氏「真の正義も望んでいないこと裏付けるもの」",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9aLXJhcXp1aFV6YUJWejNqT3VrRnhlT05jSmRpVmtPVDRNbHA1aWFYTW5DNlF0aExESHBqTlhIUGgydVdWSURlNkZBdE4zNTlvMm5LRjFqenFkTkREcXZHUWZDMmF4LTZiU2YweUI4RUlSMW9OeHpYNmpnbFIyM1U?oc=5",
+     "title": "米、ウクライナとロシアの協議仲介 10─11日にＵＡＥで3者協議（ロイター）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85WHRnY2RHd0xjZlk2bTdZOFVpQ09TcFdQMzFBYllYZWtoRWRfRDhaNGU1YjBVcmliYVNDTnZaMjhFbnZQeGRDcXNfV3ItODF1SnFuWW8zZkpHTjRqb3VBLUE4RHd2ODZtck1RUXh3bk00LU43SHVzOHlSeHZWS28?oc=5",
      "source": "Yahoo!ニュース",
-     "published": "2026-11-03T09:43:13+09:00"
+     "published": "2026-11-03T08:30:12+09:00"
+    },
+    {
+     "title": "ウクライナの学校にロシア軍が空爆、２６人死亡…ゼレンスキー氏「真の正義も望んでいないこと裏付けるもの」",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBqTmNqVnZPNWwySkdHYnp1SklxRTBNcU9zR1NDYVFMRWl1Y0o0T29XSnpVb3I2Q1FjRlA1Y0FlZS1XSUlWMjBiT0hUSDVQZ2hRMEtYM1N6UXFTeVNzR1FwbVln?oc=5",
+     "source": "読売新聞",
+     "published": "2026-11-03T06:54:00+09:00"
     },
     {
      "title": "米中ロ「現代版ヤルタ」が揺らすアジア ロシアとASEANが近づく理由",
@@ -7208,30 +7384,18 @@
      "published": "2026-11-03T05:00:00+09:00"
     },
     {
-     "title": "ウクライナの空襲警報アプリにサイバー攻撃 核の偽通知も、空軍発表",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBINVMtTTNZM2J2LVFsSTJmbTlLVHFka3dRQ2YxWWNGc0hMSGJtTzVReXFmWlA4ZTA3OGpGMGhaSnE1U2JWejQ3SWRnOWFOWklyYzBuN3ZJSDE5QjRfSktCeW5xNlM4X0RRMTlSOQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-11-02T12:33:57+09:00"
-    },
-    {
-     "title": "ウクライナ南部の局地停戦終了 異例の成立、ロシアは米との取引意識",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB0cjhhUzN6Ql9rY2tOODVkWXRVbVJaWHpmSWVheFZRUzY4ZERfakU5WTlodlk5U2dVUzhnempWamhvSHV4YTBhdW9DbGsyWVdkUVlMazFHT3puMXdlTmRBNmhiZVlXNi1Ba0pUSQ?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-11-02T09:38:29+09:00"
+     "title": "ロシアとウクライナの緊急警報用アプリ、核攻撃警告の偽情報配信…ハッキング被害か",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1WNmpwVDZSNHVHcTE4cE1WNnF4bl9ZNHI2UElZR202X2RkeC00cl9YS1dfOENZOXVsOVFPSDJ3TEFST3hsNHhqRHhLSFBzVGR6UVk2b1dYb0h3eVVhY0JBNmxB?oc=5",
+     "source": "読売新聞",
+     "published": "2026-11-02T19:12:00+09:00"
     }
    ]
   },
   {
    "key": "mideast",
    "label": "中東",
-   "count": 11,
+   "count": 8,
    "news": [
-    {
-     "title": "トランプ氏、中間選挙直後のイラン再攻撃は否定 バンス氏も交渉明言",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiVlJqQ3hSNURUSU5fdFNFQkVIUjVjM0cwOU5ZY2lWRGJfVGdjUUZQNkw5bFdldEl2VmxZWmYzanA5TVNKdE5CaDRNSjBvWTdhekhYUVlKZTFkRTljQ3kwMTlfTFVuQmFuX2l2Rw?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-11-03T06:57:19+09:00"
-    },
     {
      "title": "イラン“ホルムズ海峡でタンカー炎上” 不安定な状況続く",
      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9vdTgyQzJ4RTRaWFZjS05Jczc5RmxrMU1vbzZjVWRBT2dQdUw5QzA1NlpaNTJPOXFCNWRrWWZOdUl2LXE1d1R5cUFvZktJSHBQM29nekN1ZHhpNkoxMGpN?oc=5",
@@ -7239,16 +7403,22 @@
      "published": "2026-11-03T05:35:39+09:00"
     },
     {
-     "title": "トランプ支持層が急進左派へ 激戦州ミシガン 物価高・中東政策に失望",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE04d1JDX0ZnOUYyclV6WVdEVXcwZU9MQ1B1NTR4UEc5TUQ5aGtCV1FvUGFKSzFrZUZtRmVjcDVVZWFiUmcwd04zSzV6dW9iQ09hTDJaam93ZDQ4UndWUkdxbnhCR205bmJqUlZUVE9Ib0tmNG1qWGJMV0dR?oc=5",
-     "source": "テレ朝NEWS",
-     "published": "2026-11-03T04:23:39+09:00"
+     "title": "カタール代表団がテヘラン入り、米・イラン合意案の修正版を協議＝当局者 | ロイター",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbkpOektQdU9yM2xrbDRTMlJvQW5TVHdkbjcyZmdYREhJLWE1WTNzNlIwMkNTeG1LUFUwSm1DcGhhLW55MlNXY21jeW50VWNLbkJ2U29pMHpGV29BcnQtLTUydDFPTE5IVlBxMkFqbzhsVGRRS0lVTHJicGRGTDFwSURpU0JXQzg?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-03T04:51:08+09:00"
     },
     {
      "title": "フーシ派、イエメン暫定首都アデンの80キロ地点まで進軍＝関係筋 | ロイター",
      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EVkRGRS1YYmdvWTV3M24tbEhzVkhrTzFPQXQySXBLOUpxLXJVS1Rsd1FqSkJhd25CbktCSkNDMTZieWNmdWtxU2V3eWE2b1g5MGVQR01XOHNkVU9DdzNpVHpSSTFrWDZQUW9DVXlWNWVObUphZTZDaWZMMjRjZw?oc=5",
      "source": "Reuters",
      "published": "2026-11-03T01:23:44+09:00"
+    },
+    {
+     "title": "イラン安保トップがプーチン氏と電話会談、中東情勢巡り協議＝報道",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNa1Nqc0Fla1J0clRDR25jWXZDYXVyYzBmdVBYbnJVaV9ranVkZmxSVjhoTUNLWlNhYTdZeWYtWjZxSHhYYjAwVGNLNHdUTjA0ajlqTXlWTzhlOVNyZ0lfMFBYM0FlZWpibkRGWWFLemtJUExoc01aWHhjbHRhX0p1R0NVcHE5Zkk?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-03T00:25:44+09:00"
     }
    ]
   },
@@ -7257,6 +7427,12 @@
    "label": "アフリカ",
    "count": 0,
    "news": [
+    {
+     "title": "2027年春夏ラゴスコレクションSNAP──アフリカならではの個性派ファッション",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSGVqTWtMTndHRVZoRWh1d0VmTTlVM1lqVkE0UnhCbkRYLTBkMk5LNDVHczBYMVFjNHBUR1NWZTdPZ05MZkdIQ3d4bFRIdWY1cUlRVWxCdGlKYW50VHFEYzJzT0dhbWc5a0huT2tOLWo5N1N2LU5pRW9Ma0JDc1prbVRQY19QRFYzdUhpVlVWZm5BWV9uOGdrYWNEVEM?oc=5",
+     "source": "Vogue Japan",
+     "published": "2026-11-03T11:00:00+09:00"
+    },
     {
      "title": "ガーナ銀行が仮想資産のバランスを提唱",
      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcjYyTVBaTUNneVNtV2ZfSW9HaWxRNS10T0RuUUtQcDFwUUkxbE9QVU9LMVMxS2Z5TmFDelFWc204a2RZNnVsbjYtb0hDeXJqRy12cEpVenVkeHN2S1licS1rQnY3aVUzTllKc0l6RGlfQUpvbzR1TFhwakRNMFJRWVBCVFFRVS1KMzV3?oc=5",
@@ -7274,12 +7450,6 @@
      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONDAtbkVHUVFfM21iTnFJM1JJdmNUY1ZRcllKRWViWUI4YWp2ZFhBY3FzUWFiZE9DTjZZZ3Z5dWFjMUtRQkhfWGdzd093ak96QlhQcG5HS0xCSnNDT3FVSEdTdUFyU3FhRlM3amdsOXpoS2lpeTJQalpHZGJaX3VNcWZ5SlNCQURIWU1heER3cEU5bXBwVGZlTmtfT01ROTVwd0hKS0g1RkNnNWVrWUt4TnhGUHVyTmZDME1KLQ?oc=5",
      "source": "Laodong.vn",
      "published": "2026-11-03T08:38:33+09:00"
-    },
-    {
-     "title": "録画【悪】あしなが育英会がアフリカに募金半分流し「日本の申請者半分しか救えない」子ども街頭に立たせ募金無断流用する。 ＃あしなが育英会がアフリカに募金を流していた ＃あしなが育英会は半分を海外に流し",
-     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sYzNKWWg4Y0dFUGlSWE4tUk9fLTZSX0RpNExPX2NRSHNCcWNSc1hLeUJnTWcyaXlUMU5FallKSWh6Mi1lcVdFc0kxN1h5UU5GbXltZFlEZERXOERH?oc=5",
-     "source": "YouTube",
-     "published": "2026-11-03T07:22:33+09:00"
     }
    ]
   },
@@ -7295,6 +7465,12 @@
      "published": "2026-11-03T07:00:00+09:00"
     },
     {
+     "title": "北朝鮮の新型艦「動いていない」　追加建造も運用能力に疑問",
+     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9wMzU4aUdKMWZLcjQ5NHRFbDl5SjQ4Q2dvaEZNRzE1N21fMGpFaWQxSTdaWFM0Wm9taGV4T0JTRm02dW83cUlIMWF3amtZRUlFS1Job08zVXh5aXhTZ2xmSUlweEZEZ3J0VncySUtYMktvcmlWbm5z0gF8QVVfeXFMTmNGY2hGNXpaMzJZVjdZWGdUOWVYdGw5YkIyWlNNQ0g2ejVIaEUwMm1zbkJtN0JUMkRZRDlFZWZpZXI1S2JyTXgzLVJFT1c4U2tPYjJBbjdNdVNGU1BlQW1FMm1RTkxjeGhMVF80Z29pLXI0TTFnS09SMmtaYw?oc=5",
+     "source": "ｄメニューニュース",
+     "published": "2026-11-03T05:47:00+09:00"
+    },
+    {
      "title": "イラン、中国に支援要請か 最高安全保障委員会高官が王毅外相と会談",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1UbXZIYWRUWlY1QmJwbF91RDBLd2haeGpKQ05ReHlNaDRTOWFiSlpkYnAyaFJPNGtxWnJHLVloMkhMLXdaQU9xdUlianpSMDlXZ2dvNXZaYlZmM0VqVUdFMjNqTURFQmdvRVhvcWVhLVNxXy1yaUE?oc=5",
      "source": "産経ニュース",
@@ -7305,12 +7481,6 @@
      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYemd0alNkZmp6Y0EzU1EzTDVsRldmVTZ6YlVOYlRxMkJ5Xy1nQm41Zjh5cE5FR05NakxQUG5yOVpkTVd4WmhCb29uVU5zQWIwSDdSRkVyWnUyZWF1T000cThLTGE2dEhG?oc=5",
      "source": "毎日新聞",
      "published": "2026-11-02T19:09:15+09:00"
-    },
-    {
-     "title": "中国共産党の5中全会終了 台湾の識者「27年の有事シナリオ遠のく」",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9mMC00WlAyTDBtZjVnNm0wYk9pVjRRWDA4dlF3dDlqWTFMVnpGV2s3MzVzUXF0NzVmV0lVQzBJbUl1c1lyS21JZ0lMa0xyTGlLcUpCUm9ZYUtBU2s5S0Y3SkhFRW9NSzFHQW05MA?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-11-02T17:48:05+09:00"
     }
    ]
   },
@@ -7338,10 +7508,10 @@
      "published": "2026-11-01T19:07:00+09:00"
     },
     {
-     "title": "ベトナムとラオスの偉大な友好関係に関する広報活動を緊密に連携し、推進する",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMnV1VU5oVmNwS1hobzFuVDg3QjF2YzdlOUJuLXZiSXU5UkpSY00tUlg5TF8yT3g4QkZnZWpIVTBrT3g1VHVxMEd5MWZiU3RSSVNIa0F0RlVpdnhiSUZzbWFOQUdoSVVDS2hRRjVHcGhJUmtQNzJzMVJyQzBDLWVFQ0p0alpZeTN3V09aR1k5dGZtYkN4SDJOUlE3dHBraTg2Vm9KYmJldmhzQno0M0JlWFprbGlwa1pqZkotRWxB?oc=5",
+     "title": "ベトナムの外国人組織で働くベトナム人労働者の8つの権利と義務",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNUVBUkRvdkJKUDJiYXN6ODJhdFVDNm4tNVc1cENVemNHWXY0aFc5RWFJanhycWU4Ri1wS01zMGtTaWtneEo5NHFFTUpvRDBYUXJuUkE0UDFpbkYybDR2dXJKTm01MVZpRXZ5cGRRVldoYWtHaHR0bjNSZjZaN3l4WWVzQjJ2eTFUWmc1SU9uSGp0cEhQVFNpSGlwMS1UbWNTdVZUSF9GM0tvM0pibFp4c0dMVjVSd2ppTU5LWWFUY0xLbFpkUE00ZzRueXBxMnBERFdQaWhn?oc=5",
      "source": "Laodong.vn",
-     "published": "2026-11-03T10:32:46+09:00"
+     "published": "2026-11-03T12:00:00+09:00"
     }
    ]
   }
