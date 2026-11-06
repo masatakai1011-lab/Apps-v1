@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T22:42+09:00",
+ "updated": "2026-11-06T23:11+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -13,34 +13,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 102.194,
-     "change": 0.6439969482421901,
-     "changePercent": 0.6341673351934406
+     "price": 102.26,
+     "change": 0.7099969482421926,
+     "changePercent": 0.6991599477159274
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.66,
-     "change": -1.2489965820312534,
-     "changePercent": -0.702042395846665
+     "price": 176.415,
+     "change": -1.493996582031258,
+     "changePercent": -0.8397532506695905
     },
     {
      "name": "英ポンド/円",
      "code": "GBPJPY",
      "symbol": "GBPJPY=X",
-     "price": 211.922,
-     "change": -1.4950074462890655,
-     "changePercent": -0.7005099847374235
+     "price": 211.444,
+     "change": -1.973007446289074,
+     "changePercent": -0.924484636860829
     }
    ],
    "regions": [
     "mideast",
     "us"
    ],
-   "price": 158.485,
-   "change": 0.12800537109376364,
-   "changePercent": 0.0808334178062241,
+   "price": 158.356,
+   "change": -0.000994628906255457,
+   "changePercent": -0.0006280928155944548,
    "currency": "JPY",
    "history": [
     {
@@ -156,12 +156,12 @@
     {
      "date": "11/06",
      "day": "2026-11-06",
-     "close": 158.48500061035156
+     "close": 158.3560028076172
     }
    ],
    "move": {
-    "ratio": 0.39,
-    "rank": 204,
+    "ratio": 0.0,
+    "rank": 259,
     "days": 259
    },
    "year": [
@@ -1463,7 +1463,7 @@
     {
      "date": "11/06",
      "day": "2026-11-06",
-     "close": 158.48500061035156
+     "close": 158.3560028076172
     }
    ],
    "intraday": [
@@ -2125,11 +2125,35 @@
     },
     {
      "date": "22:40",
-     "close": 158.47000122070312
+     "close": 158.45599365234375
     },
     {
-     "date": "22:41",
-     "close": 158.4720001220703
+     "date": "22:45",
+     "close": 158.406005859375
+    },
+    {
+     "date": "22:50",
+     "close": 158.38099670410156
+    },
+    {
+     "date": "22:55",
+     "close": 158.4219970703125
+    },
+    {
+     "date": "23:00",
+     "close": 158.35000610351562
+    },
+    {
+     "date": "23:05",
+     "close": 158.3249969482422
+    },
+    {
+     "date": "23:10",
+     "close": 158.36000061035156
+    },
+    {
+     "date": "23:11",
+     "close": 158.3560028076172
     }
    ],
    "news": [
@@ -2257,34 +2281,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 102.194,
-     "change": 0.6439969482421901,
-     "changePercent": 0.6341673351934406
+     "price": 102.26,
+     "change": 0.7099969482421926,
+     "changePercent": 0.6991599477159274
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.66,
-     "change": -1.2489965820312534,
-     "changePercent": -0.702042395846665
+     "price": 176.415,
+     "change": -1.493996582031258,
+     "changePercent": -0.8397532506695905
     },
     {
      "name": "英ポンド/米ドル",
      "code": "GBPUSD",
      "symbol": "GBPUSD=X",
-     "price": 1.3373,
-     "change": -0.010408940505981512,
-     "changePercent": -0.7723433593958053
+     "price": 1.3354,
+     "change": -0.012308940505981525,
+     "changePercent": -0.9133233546228667
     }
    ],
    "regions": [
     "europe",
     "us"
    ],
-   "price": 1.1151,
-   "change": -0.008394505882263203,
-   "changePercent": -0.747178187192925,
+   "price": 1.1143,
+   "change": -0.009194505882263115,
+   "changePercent": -0.8183845879195297,
    "currency": "USD",
    "history": [
     {
@@ -2400,12 +2424,12 @@
     {
      "date": "11/06",
      "day": "2026-11-06",
-     "close": 1.1150758266448975
+     "close": 1.1143302917480469
     }
    ],
    "move": {
-    "ratio": 3.79,
-    "rank": 14,
+    "ratio": 4.15,
+    "rank": 8,
     "days": 259
    },
    "year": [
@@ -3707,7 +3731,7 @@
     {
      "date": "11/06",
      "day": "2026-11-06",
-     "close": 1.1150758266448975
+     "close": 1.1143302917480469
     }
    ],
    "intraday": [
@@ -4369,11 +4393,31 @@
     },
     {
      "date": "22:40",
-     "close": 1.1155734062194824
+     "close": 1.114951491355896
     },
     {
-     "date": "22:41",
-     "close": 1.1150758266448975
+     "date": "22:45",
+     "close": 1.114951491355896
+    },
+    {
+     "date": "22:50",
+     "close": 1.1154489517211914
+    },
+    {
+     "date": "22:55",
+     "close": 1.1148271560668945
+    },
+    {
+     "date": "23:00",
+     "close": 1.1147029399871826
+    },
+    {
+     "date": "23:05",
+     "close": 1.1143302917480469
+    },
+    {
+     "date": "23:10",
+     "close": 1.1143302917480469
     }
    ],
    "news": [
@@ -4447,7 +4491,7 @@
     },
     {
      "date": "11/06",
-     "change": -0.75,
+     "change": -0.82,
      "news": [
       {
        "title": "ユーロドル一時１．１１５９レベル、再び安値を更新＝ＮＹ為替",
@@ -8012,6 +8056,12 @@
  ],
  "videos": [
   {
+   "id": "5E_y0Cu4uNo",
+   "title": "ガイアの夜明け【ニデックの誤算、十の証言】予告",
+   "channel": "テレ東BIZ ダイジェスト",
+   "published": "2026-11-06T22:53:32+09:00"
+  },
+  {
    "id": "hOzia6M7ht0",
    "title": "【キッコーマン茂木名誉会長】利益の9割が海外！／アメリカ第3工場本格稼働／攻める老舗企業キッコーマン 次の一手とは【WBS未公開インタビュー】",
    "channel": "テレ東BIZ ダイジェスト",
@@ -8022,12 +8072,6 @@
    "title": "物価高でも“あえて値下げ” ブラックフライデーセール“前倒し”で長くお得に｜TBS NEWS DIG",
    "channel": "TBS NEWS DIG Powered by JNN",
    "published": "2026-11-06T20:43:23+09:00"
-  },
-  {
-   "id": "JiFlJjmX5dI",
-   "title": "米中間選挙 トランプ共和党の歴史的大敗 中国メディアや市民の反応は？【大橋達也の「中国の今を知る」】",
-   "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-11-06T20:09:11+09:00"
   }
  ],
  "lives": [
@@ -8092,36 +8136,36 @@
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 91.13,
-   "change": 0.6100033569335892,
-   "changePercent": 0.6738879579712334
+   "price": 90.65,
+   "change": 0.13000335693359943,
+   "changePercent": 0.1436183846164088
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4054.0,
-   "change": -59.5,
-   "changePercent": -1.4464567886228272
+   "price": 4055.8,
+   "change": -57.69999999999982,
+   "changePercent": -1.4026984319922162
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.872,
-   "change": 0.035000106811523324,
-   "changePercent": 0.7235912256440383
+   "price": 4.868,
+   "change": 0.031000106811523764,
+   "changePercent": 0.6408953379382641
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 75608.82,
-   "change": -333.304999999993,
-   "changePercent": -0.43889343365094535
+   "price": 75500.02,
+   "change": -442.1049999999959,
+   "changePercent": -0.582160428089148
   }
  ],
  "fear": {
-  "price": 26.93,
-  "change": -1.2500003051757815,
-  "changePercent": -4.435771084595041,
+  "price": 26.54,
+  "change": -1.640000305175782,
+  "changePercent": -5.819731325107777,
   "history": [
    {
     "date": "10/07",
@@ -8236,7 +8280,7 @@
    {
     "date": "11/06",
     "day": "2026-11-06",
-    "close": 26.93000030517578
+    "close": 26.540000915527344
    }
   ]
  },
@@ -8296,10 +8340,10 @@
      "published": "2026-11-06T20:16:02+09:00"
     },
     {
-     "title": "アルゼンチン共和国杯2026買い目発表！/神部美咲 | 競馬予想動画 - netkeiba",
-     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FRFNTejVLVEV6d3pqU0hyNkxYQjBJMF9sRmFiLWEzLWZRV3Q2ZmwzUHNxakk0a0FsbzJTcnJVQ3VDX3BCV3kxbmR2TkROaDBRTDcyUFlqQ3ZlaU4wVTkxbGRCa1Nrc1ZWVkJmWkFiWdIBb0FVX3lxTE9FRFNTejVLVEV6d3pqU0hyNkxYQjBJMF9sRmFiLWEzLWZRV3Q2ZmwzUHNxakk0a0FsbzJTcnJVQ3VDX3BCV3kxbmR2TkROaDBRTDcyUFlqQ3ZlaU4wVTkxbGRCa1Nrc1ZWVkJmWkFiWQ?oc=5",
-     "source": "netkeiba",
-     "published": "2026-11-06T19:00:00+09:00"
+     "title": "【アルゼンチン共和国杯2026 最終予想】AI全18頭診断！枠順確定後のTOP5＆1,000円勝負｜PureScore競馬AI",
+     "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5jdVRteTJ0TFN0SE9sc0ZzT3liS1Bha0ZZbE1tSlM1NWZHWGRxdUZtcjhJVmZuZHRaN1l1X095MHFXUQ?oc=5",
+     "source": "YouTube",
+     "published": "2026-11-06T19:21:26+09:00"
     }
    ]
   },
@@ -8337,8 +8381,14 @@
   {
    "key": "russia",
    "label": "ロシア・ウクライナ",
-   "count": 9,
+   "count": 10,
    "news": [
+    {
+     "title": "ロシア海軍“戦後の戦艦”ともいえる巨艦の改修を断念へ!? 大幅遅延していた姉妹艦も影響か",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOd2Zlc0JZWjNrMFREMGtHYmxlNnBDRzdGd2tCeFQyVmh0TTZhTWhHWWhxV2pURUg4S0dDSnVYeDBMRlRTYTNIMkIzM0pPdFE2T3VTYlZETEVhVWpFZ2FLT0cwSmU5YjJtOUhnclhVMlhpa1A1Y25namp4NWpnaUFLYjVWaDhSRmdD?oc=5",
+     "source": "carview!",
+     "published": "2026-11-06T20:12:00+09:00"
+    },
     {
      "title": "メラニア夫人、ロシアとウクライナの関係者を招いて局地停戦の記念式典を主催…「さらに大きな平和のきっかけに」",
      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9DdDBBSVBQNEY5ZEFCVWFvdEI2LXloYjNHbDBQTzE1aXg4QVNCMXZUWTZSQXpfQmF2NlUyLWw3aDZkYWpLbVVmNUkxQnNvTEU3Skh5NFFxT3FoRXh2V2hQZ2x3?oc=5",
@@ -8356,12 +8406,6 @@
      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTlRxSGEzTUZTeThSNjVlUFpsejdlaUFueEU1VmpMckdBU2xocEpaWjFMWFhEUVBtM0llUGlpNDVlellvODVlcFJsYXpZdW9RRkYwUHN3N3VCczhwdktlVURkMWxnMVNSSmt3NHFjNnZZSTlFaklKLTVxY3BEOHpud3BXcnc2dw?oc=5",
      "source": "Reuters",
      "published": "2026-11-06T09:09:00+09:00"
-    },
-    {
-     "title": "トランプ氏、ロシア特使と会談 戦争終結へ近く「大きな合意」",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaXB4WkFWSjNGSDEyeF9KT3BHWWFlcml4NVpxN0ZmY1dQWkhiWXIwUk1rWUExM0hQY2VpQVVtNmMyVTFaVndPeEwtbURVX2RRck9ubFl4WUFvYm1MeWRVWHB1ejVuR2tLazVXVzBxNEt0a2FyakJkVC14SlJWeEJHOGNsNVFCQQ?oc=5",
-     "source": "Reuters",
-     "published": "2026-11-06T07:11:00+09:00"
     }
    ]
   },
@@ -8389,10 +8433,10 @@
      "published": "2026-11-06T09:25:00+09:00"
     },
     {
-     "title": "イラン安保トップ、 プーチン氏と会談　 最高指導者の親書手渡す＝国営メディア",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5ZX0NKRnhKNy1fVElJR3loNUZ2c2dkbE9pbFFnNDRBUnhKSjZSOEl2Y0FJdHhvNXpnZmlNbTUydVlXSkd2WjdKXzZpWWRKQ3pGZmVsUUZpczVKdTlmdXB4Y0pNUXczUlE0Y3piNU5xUXZKZkQ5RFprVDV2N2E5UdIBgwFBVV95cUxOalFTYzhwSTJMSFJTVG9aaEZKd3hLa1hJYW1EajBNN3JhYXBMdEs1dmlPQXNOcE42b3RHZ0gycktwb1NxaVlvMkg2Nl84YUlEbVBXR2tlOTVsQ0czR3Btck9VNUpPX3BEbDdvQ01jMmdpMDJSaUFjTDdoNWh5SnMtSHRUMA?oc=5",
-     "source": "ｄメニューニュース",
-     "published": "2026-11-06T01:16:00+09:00"
+     "title": "イスラエル、野党アイゼンコット氏が組閣の見通し 議会過半数が推薦",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CZE1tb2M0MkRNS01NNEl5RXMwN2w5UjFzVVdZSTNxdXRRWDNQTDFtQTNvSlNXSy0yeTNxazhJZ3YyRUo1Yk1WV1NXM1ExTndWc3RueHpNYjVkeThUYk4xalg5M1JOT1VlZEU1MA?oc=5",
+     "source": "日本経済新聞",
+     "published": "2026-11-06T08:44:30+09:00"
     }
    ]
   },
