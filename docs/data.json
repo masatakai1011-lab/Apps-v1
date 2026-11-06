@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T21:57+09:00",
+ "updated": "2026-11-06T22:42+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -13,34 +13,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 102.026,
-     "change": 0.47599694824218375,
-     "changePercent": 0.46873159422711047
+     "price": 102.194,
+     "change": 0.6439969482421901,
+     "changePercent": 0.6341673351934406
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.815,
-     "change": -1.0939965820312523,
-     "changePercent": -0.6149192019791008
+     "price": 176.66,
+     "change": -1.2489965820312534,
+     "changePercent": -0.702042395846665
     },
     {
      "name": "英ポンド/円",
      "code": "GBPJPY",
      "symbol": "GBPJPY=X",
-     "price": 212.001,
-     "change": -1.4160074462890577,
-     "changePercent": -0.6634932535287406
+     "price": 211.922,
+     "change": -1.4950074462890655,
+     "changePercent": -0.7005099847374235
     }
    ],
    "regions": [
     "mideast",
     "us"
    ],
-   "price": 158.338,
-   "change": -0.01899462890625614,
-   "changePercent": -0.011994815227939978,
+   "price": 158.485,
+   "change": 0.12800537109376364,
+   "changePercent": 0.0808334178062241,
    "currency": "JPY",
    "history": [
     {
@@ -156,12 +156,12 @@
     {
      "date": "11/06",
      "day": "2026-11-06",
-     "close": 158.33799743652344
+     "close": 158.48500061035156
     }
    ],
    "move": {
-    "ratio": 0.06,
-    "rank": 251,
+    "ratio": 0.39,
+    "rank": 204,
     "days": 259
    },
    "year": [
@@ -1463,7 +1463,7 @@
     {
      "date": "11/06",
      "day": "2026-11-06",
-     "close": 158.33799743652344
+     "close": 158.48500061035156
     }
    ],
    "intraday": [
@@ -1877,7 +1877,7 @@
     },
     {
      "date": "17:30",
-     "close": 157.83599853515625
+     "close": 157.8300018310547
     },
     {
      "date": "17:35",
@@ -1905,7 +1905,7 @@
     },
     {
      "date": "18:05",
-     "close": 158.17599487304688
+     "close": 158.1790008544922
     },
     {
      "date": "18:10",
@@ -2089,14 +2089,56 @@
     },
     {
      "date": "21:55",
-     "close": 158.3489990234375
+     "close": 158.3280029296875
     },
     {
-     "date": "21:57",
-     "close": 158.33799743652344
+     "date": "22:00",
+     "close": 158.3000030517578
+    },
+    {
+     "date": "22:05",
+     "close": 158.3280029296875
+    },
+    {
+     "date": "22:10",
+     "close": 158.3209991455078
+    },
+    {
+     "date": "22:15",
+     "close": 158.32000732421875
+    },
+    {
+     "date": "22:20",
+     "close": 158.3470001220703
+    },
+    {
+     "date": "22:25",
+     "close": 158.31199645996094
+    },
+    {
+     "date": "22:30",
+     "close": 158.36900329589844
+    },
+    {
+     "date": "22:35",
+     "close": 158.44000244140625
+    },
+    {
+     "date": "22:40",
+     "close": 158.47000122070312
+    },
+    {
+     "date": "22:41",
+     "close": 158.4720001220703
     }
    ],
    "news": [
+    {
+     "title": "豪ドル/円【AUDJPY】：外国為替相場FXレート・チャートをリアルタイム表示",
+     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE05OFVuTURyMlFlNEM3WUpGTUFMWE92YU5yYjBSNm9Pc3NkeHplX0diaU9mVm5IRFIteUN6dzJOU1lFRXByX1BfVFhUdVh0YUdlbExySm5B?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-11-06T21:17:39+09:00"
+    },
     {
      "title": "FX実践解説、相場分析＆リアルトレード、ドル円などの注目材料（2026年11月6日）",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9jTkdzNmxHR1ZrMnpQQXA0RFlXTFhFZ0pSRzUzUDJoVzgwTnFoaGNmYjhUSURfOGJTaFpJbU1ZMzVibmhyN1Z5Mm81RGtQUy1XTGlKQmdDUVVQeFZqclFTcVVJMA?oc=5",
@@ -2108,12 +2150,6 @@
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JUjk1UmkyWS01UTN2ajFXQTl1WGxGM0ZaeWVwN3FtUzN5QzVfM3JVWkRNUG5kZ3NBVTZVYlJLOGNPcVFQc1lWX0h6bU9MRUJPbjJ0bExXVWZLV3R4dmRldHdiNA?oc=5",
      "source": "外為どっとコム",
      "published": "2026-11-06T18:59:00+09:00"
-    },
-    {
-     "title": "欧州為替：ドル・円は小高い、ドル買い地合いで(フィスコ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ1E4TjR2amFlME83NnU5c3VSRHJOMF9GYUo1dl9PSGtKZDRWckNXczJEU2h3cWpBc05UVXFIS25DMnh6RkUyUkNpejJqVmI3d2hJaE1yZGdHcFNpLUtlTU1kVDVRWFlvNXZCUi1PbmNVYXlrX2VrSFZtN0FTODZWM3NiQ2laX28?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-06T18:29:55+09:00"
     }
    ],
    "marks": [
@@ -2201,7 +2237,7 @@
     },
     {
      "day": "2026-11-05",
-     "count": 14
+     "count": 15
     },
     {
      "day": "2026-11-06",
@@ -2221,34 +2257,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 102.026,
-     "change": 0.47599694824218375,
-     "changePercent": 0.46873159422711047
+     "price": 102.194,
+     "change": 0.6439969482421901,
+     "changePercent": 0.6341673351934406
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.815,
-     "change": -1.0939965820312523,
-     "changePercent": -0.6149192019791008
+     "price": 176.66,
+     "change": -1.2489965820312534,
+     "changePercent": -0.702042395846665
     },
     {
      "name": "英ポンド/米ドル",
      "code": "GBPUSD",
      "symbol": "GBPUSD=X",
-     "price": 1.339,
-     "change": -0.008708940505981477,
-     "changePercent": -0.6462033636663276
+     "price": 1.3373,
+     "change": -0.010408940505981512,
+     "changePercent": -0.7723433593958053
     }
    ],
    "regions": [
     "europe",
     "us"
    ],
-   "price": 1.1171,
-   "change": -0.006394505882263202,
-   "changePercent": -0.5691621853763934,
+   "price": 1.1151,
+   "change": -0.008394505882263203,
+   "changePercent": -0.747178187192925,
    "currency": "USD",
    "history": [
     {
@@ -2364,12 +2400,12 @@
     {
      "date": "11/06",
      "day": "2026-11-06",
-     "close": 1.1170687675476074
+     "close": 1.1150758266448975
     }
    ],
    "move": {
-    "ratio": 2.89,
-    "rank": 26,
+    "ratio": 3.79,
+    "rank": 14,
     "days": 259
    },
    "year": [
@@ -3671,7 +3707,7 @@
     {
      "date": "11/06",
      "day": "2026-11-06",
-     "close": 1.1170687675476074
+     "close": 1.1150758266448975
     }
    ],
    "intraday": [
@@ -4297,14 +4333,56 @@
     },
     {
      "date": "21:55",
+     "close": 1.1170687675476074
+    },
+    {
+     "date": "22:00",
+     "close": 1.1173185110092163
+    },
+    {
+     "date": "22:05",
      "close": 1.1169440746307373
     },
     {
-     "date": "21:57",
-     "close": 1.1170687675476074
+     "date": "22:10",
+     "close": 1.1166945695877075
+    },
+    {
+     "date": "22:15",
+     "close": 1.1166945695877075
+    },
+    {
+     "date": "22:20",
+     "close": 1.1169440746307373
+    },
+    {
+     "date": "22:25",
+     "close": 1.1166945695877075
+    },
+    {
+     "date": "22:30",
+     "close": 1.115946888923645
+    },
+    {
+     "date": "22:35",
+     "close": 1.1153244972229004
+    },
+    {
+     "date": "22:40",
+     "close": 1.1155734062194824
+    },
+    {
+     "date": "22:41",
+     "close": 1.1150758266448975
     }
    ],
    "news": [
+    {
+     "title": "ユーロドル一時１．１１５９レベル、再び安値を更新＝ＮＹ為替",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE55cGtSYTJ6aTRkZUVNUUUycXR6QVcxTWVzYi1JcExzVVVSdU5Ha2hnZXlYZkRTZ2hleG1URENpZjlxYTJrWU5Wbg?oc=5",
+     "source": "みんかぶ FX/為替",
+     "published": "2026-11-06T22:15:29+09:00"
+    },
     {
      "title": "東京外国為替市場概況・17時 ユーロドル、上値が重い(トレーダーズ・ウェブ)",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN19KdEdUS2dIVktNN285cHdmQ0tNTFN3MzJwazktaVlXUmNGa2NRQ3VnVk05NlgyY0ZwLUhvbnNYeHFseFFQQ190dDI3NC1hUGpsMi1QZ1RFUmRXeDU0Z3ZPMUkxTXZ6Vzl0WVhIRXNwSG5uc0pNV3NNZ0RkenRkZlo4eUFEeGs?oc=5",
@@ -4316,12 +4394,6 @@
      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0zSjRXUWxuZ01PRUNPNzdnU1lTcGdzY2hXLUIxMFV4dXhMaUlvOUJyaW4tNDFzZy1JX3A5U29ubUdXTG5BSk9VSVY1YXBnRk5fNUVBZVZB?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-11-06T15:03:11+09:00"
-    },
-    {
-     "title": "ロンドン為替見通し＝ユーロドル、米欧・中銀要人の対談に注目 ポンドはピル氏講演が焦点(トレーダーズ・ウェブ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdXh3N2hVSnA1cWJ5MWpKWTROYy1qQzUzQkdIdm40RHhfR1NnSXllWnBVVEFpTkZFMG92LUNWTTZWdVZFQ2NsUDU4RFpoZjVzaVEwQlpsTWlQeUJyd0hHQlpySEtlczZ6Q2FqSmVMZ0xhaVoydzlUYk5SMEZBd3VEUVVKZFVHRkk?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-06T13:45:04+09:00"
     }
    ],
    "marks": [
@@ -4375,19 +4447,19 @@
     },
     {
      "date": "11/06",
-     "change": -0.57,
+     "change": -0.75,
      "news": [
+      {
+       "title": "ユーロドル一時１．１１５９レベル、再び安値を更新＝ＮＹ為替",
+       "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE55cGtSYTJ6aTRkZUVNUUUycXR6QVcxTWVzYi1JcExzVVVSdU5Ha2hnZXlYZkRTZ2hleG1URENpZjlxYTJrWU5Wbg?oc=5",
+       "source": "みんかぶ FX/為替",
+       "published": "2026-11-06T22:15:29+09:00"
+      },
       {
        "title": "東京外国為替市場概況・17時 ユーロドル、上値が重い(トレーダーズ・ウェブ)",
        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN19KdEdUS2dIVktNN285cHdmQ0tNTFN3MzJwazktaVlXUmNGa2NRQ3VnVk05NlgyY0ZwLUhvbnNYeHFseFFQQ190dDI3NC1hUGpsMi1QZ1RFUmRXeDU0Z3ZPMUkxTXZ6Vzl0WVhIRXNwSG5uc0pNV3NNZ0RkenRkZlo4eUFEeGs?oc=5",
        "source": "Yahoo!ファイナンス",
        "published": "2026-11-06T17:09:18+09:00"
-      },
-      {
-       "title": "ユーロ/ドル【EURUSD】：外国為替相場FXレート・チャートをリアルタイム表示",
-       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0zSjRXUWxuZ01PRUNPNzdnU1lTcGdzY2hXLUIxMFV4dXhMaUlvOUJyaW4tNDFzZy1JX3A5U29ubUdXTG5BSk9VSVY1YXBnRk5fNUVBZVZB?oc=5",
-       "source": "Yahoo!ファイナンス",
-       "published": "2026-11-06T15:03:11+09:00"
       }
      ]
     }
@@ -4419,7 +4491,7 @@
     },
     {
      "day": "2026-11-06",
-     "count": 9
+     "count": 10
     }
    ]
   },
@@ -5824,7 +5896,7 @@
     },
     {
      "date": "09:50",
-     "close": 8043.0
+     "close": 8041.0
     },
     {
      "date": "09:55",
@@ -5864,7 +5936,7 @@
     },
     {
      "date": "10:40",
-     "close": 8312.0
+     "close": 8314.0
     },
     {
      "date": "10:45",
@@ -5888,7 +5960,7 @@
     },
     {
      "date": "11:10",
-     "close": 8608.0
+     "close": 8606.0
     },
     {
      "date": "11:15",
@@ -5952,7 +6024,7 @@
     },
     {
      "date": "13:25",
-     "close": 8441.0
+     "close": 8440.0
     },
     {
      "date": "13:30",
@@ -8020,36 +8092,36 @@
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 90.25,
-   "change": -0.26999664306640625,
-   "changePercent": -0.29827292651262743
+   "price": 91.13,
+   "change": 0.6100033569335892,
+   "changePercent": 0.6738879579712334
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4072.3,
-   "change": -41.19999999999982,
-   "changePercent": -1.001580162878323
+   "price": 4054.0,
+   "change": -59.5,
+   "changePercent": -1.4464567886228272
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 4.837,
-   "change": -0.057000053405761975,
-   "changePercent": -1.1646925374693309
+   "price": 4.872,
+   "change": 0.035000106811523324,
+   "changePercent": 0.7235912256440383
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 75938.79,
-   "change": -3.335000000006403,
-   "changePercent": -0.004391502081363147
+   "price": 75608.82,
+   "change": -333.304999999993,
+   "changePercent": -0.43889343365094535
   }
  ],
  "fear": {
-  "price": 26.98,
-  "change": -1.2000003051757808,
-  "changePercent": -4.258340284529303,
+  "price": 26.93,
+  "change": -1.2500003051757815,
+  "changePercent": -4.435771084595041,
   "history": [
    {
     "date": "10/07",
@@ -8164,7 +8236,7 @@
    {
     "date": "11/06",
     "day": "2026-11-06",
-    "close": 26.979999542236328
+    "close": 26.93000030517578
    }
   ]
  },
@@ -8172,7 +8244,7 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 7,
+   "count": 6,
    "news": [
     {
      "title": "米大統領選、民主はオソフ氏有力 次期2028年、英紙FT報道（共同通信）",
@@ -8206,6 +8278,12 @@
    "count": 0,
    "news": [
     {
+     "title": "【アルゼンチン共和国杯2026／全頭診断】レッドバンデの前走は着差以上の強さ 「0.0.1.11」の人気一角は過信禁物か",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PdzlrNHh6ZTF3YUE0dm16NWI0a2tCLTh3TExVY1d2MWhrenpocDc0dEdvclAyY3cxVGJobGZvZUJzbGVabnFEVnpOZEdlYjNqRk11UXdfWEE1bVE?oc=5",
+     "source": "Winsight",
+     "published": "2026-11-06T22:16:59+09:00"
+    },
+    {
      "title": "マルコ・ルビオ氏は、選挙制度、司法、治安の改革後、ベネズエラの選挙は2027年に実施される可能性があると述べた",
      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaGVMT1lkVElCeXl5TTZJcVN5bi1pZmstTVRHQnFsNFpsd1ZrVU13U2VER0EyWTVfdHpQRXhlbEIxVFpNTkNVRC0tZVk0V1NvY3huRUlrU2dIM2ozU0FoTlVQTHFLQkI2RlNvTGR0SFJNaURjbzI1cTVfQzBaR2ZueUpwaTBjMUx0N213bkpqWHhaUG9nZTFTUU5vOG5VVUNwSnc?oc=5",
      "source": "Informat.ro",
@@ -8216,12 +8294,6 @@
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA2ZVI1Sk12XzFXSjh2dFpoUG9ZdGZSa29kMEhUbTJhbGZUWnlFVVl2d1pReWtfTHdpd2lDVDZHZXpRZjBqOWItczA5YnpOV1ZMcGMxX25kMElZV0FYemNwSWpZdUpPUnpiLWZrQg?oc=5",
      "source": "アドレナリン競馬予想",
      "published": "2026-11-06T20:16:02+09:00"
-    },
-    {
-     "title": "【アルゼンチン共和国杯2026／全頭診断】レッドバンデの前走は着差以上の強さ 「0.0.1.11」の人気一角は過信禁物か",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PdzlrNHh6ZTF3YUE0dm16NWI0a2tCLTh3TExVY1d2MWhrenpocDc0dEdvclAyY3cxVGJobGZvZUJzbGVabnFEVnpOZEdlYjNqRk11UXdfWEE1bVE?oc=5",
-     "source": "Winsight",
-     "published": "2026-11-06T19:13:39+09:00"
     },
     {
      "title": "アルゼンチン共和国杯2026買い目発表！/神部美咲 | 競馬予想動画 - netkeiba",
@@ -8296,13 +8368,19 @@
   {
    "key": "mideast",
    "label": "中東",
-   "count": 6,
+   "count": 7,
    "news": [
     {
      "title": "イラン アメリカへ核に関する提案 提示の「7つの条件」受け入れ後に議論",
      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9yOUdLeG5OR1FXekZ0V0k0MTczZVo2MzdZYk9qSTVvUkpvTkE4Snd6UmhFNFZ1SzBmWnYyWnY0ajN6R0x1endURDBNc2JhZnFlaFRLS1JOTmp6blgyZEloWWIyOVFjWldEU21qUmZxSnlpY2VuTDVqMDVB?oc=5",
      "source": "テレ朝NEWS",
      "published": "2026-11-06T12:06:06+09:00"
+    },
+    {
+     "title": "サウジ、紅海の石油輸出拠点ヤンブーに警報 フーシ派攻撃続く",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSmVVYW1fRWlkSnBZZVNaQjNWSmctalIxZ2RpZFM1cTY1Nk5BOEJ1V2ZEcWgzWllTRDlPZEdlc0Z3VlpMMk95RW1pTHBuZWdYMHI0YkpKaTlGbEhIM0Y1OFN5TFE4c19XQUpGSkRBOUl4eWxFSFdaR05fU29jeDlLMWhJMHlvN2M?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-06T09:44:00+09:00"
     },
     {
      "title": "「まさに青天の霹靂」 イスラエル大統領、トランプ氏の支援打ち切り表明に衝撃（CNN.co.jp）",
@@ -8315,12 +8393,6 @@
      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5ZX0NKRnhKNy1fVElJR3loNUZ2c2dkbE9pbFFnNDRBUnhKSjZSOEl2Y0FJdHhvNXpnZmlNbTUydVlXSkd2WjdKXzZpWWRKQ3pGZmVsUUZpczVKdTlmdXB4Y0pNUXczUlE0Y3piNU5xUXZKZkQ5RFprVDV2N2E5UdIBgwFBVV95cUxOalFTYzhwSTJMSFJTVG9aaEZKd3hLa1hJYW1EajBNN3JhYXBMdEs1dmlPQXNOcE42b3RHZ0gycktwb1NxaVlvMkg2Nl84YUlEbVBXR2tlOTVsQ0czR3Btck9VNUpPX3BEbDdvQ01jMmdpMDJSaUFjTDdoNWh5SnMtSHRUMA?oc=5",
      "source": "ｄメニューニュース",
      "published": "2026-11-06T01:16:00+09:00"
-    },
-    {
-     "title": "トルコ兵にイラン側から銃撃か 国境で取り締まり中に死亡",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9IbkpjTFd0eDJEcTZ3dXJxbU5JLXlvYWk3c3VJRlFnVzRoOTNRemVadnVOeHFDT1V2Wkt1S0doc01zRXh4ajhucWdNUWFFSjRGcUtLVjBGdlhBTnQ2Q1JKYTlxZ3NQbUlvaDdPcw?oc=5",
-     "source": "日本経済新聞",
-     "published": "2026-11-06T00:25:05+09:00"
     }
    ]
   },
@@ -8410,10 +8482,10 @@
      "published": "2026-11-06T19:06:00+09:00"
     },
     {
-     "title": "ベトナム・米国、第14回国防政策対話を開催",
-     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeEdUc1dlRzF4MTQ1U1hlbDF6c1N4anpjNV9PNDNnQ3hQbTFKSENUb2pFMVVtTWhZdDJ3b0ptUDRjMHVBbmdtazZmUkJ4VXBhTE5STnVyU2FOeVZQRlktVG9UOHM3b3RPdGlSYXNzUDdFWWQybTdPUHZ2aURMYWxPRmI0Qzl3bzB3R0ZQeXZ3ekV4QU5yOFNTeWtR?oc=5",
-     "source": "VOV World",
-     "published": "2026-11-06T18:15:27+09:00"
+     "title": "自然災害に受動的にならないように、都市管理と都市計画の考え方を変える",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRWw1VkJWNkdnWnFDMHluWjhhcGpjWVd5aXZIQjMybUUxOEpLRjV5NlV6RHQtNV9feUJudjg2VzIxNWlsY1pabHlDMVBwaDNvSzNUMEI0dWVvUVI0Mlg2dUtnVGxqczUyYXRaeWNGaXMwN0VIalM5RGRadXJqaG5jTndxT19oT1NlOHdsaEpJQ1VqSENqZzJmdHVxdGgtYURLbkE1WjJUdFViTVNCRU4tNzQ2TThTN2lQXzJsLUpn?oc=5",
+     "source": "Laodong.vn",
+     "published": "2026-11-06T18:10:36+09:00"
     }
    ]
   }
