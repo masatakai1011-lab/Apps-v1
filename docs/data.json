@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T00:58+09:00",
+ "updated": "2026-11-10T01:34+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -13,34 +13,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 101.92,
-     "change": -0.3800030517578108,
-     "changePercent": -0.37145947255304723
+     "price": 101.835,
+     "change": -0.46500305175781875,
+     "changePercent": -0.4545484241310867
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 177.013,
-     "change": 0.19200085449219273,
-     "changePercent": 0.10858487137842338
+     "price": 177.024,
+     "change": 0.2030008544921884,
+     "changePercent": 0.11480585194812575
     },
     {
      "name": "英ポンド/円",
      "code": "GBPJPY",
      "symbol": "GBPJPY=X",
-     "price": 211.908,
-     "change": 0.01800061035154954,
-     "changePercent": 0.0084952618827696
+     "price": 211.982,
+     "change": 0.09200061035156182,
+     "changePercent": 0.04341904319060391
     }
    ],
    "regions": [
     "mideast",
     "us"
    ],
-   "price": 158.095,
-   "change": 0.5969989013671864,
-   "changePercent": 0.37905173221425015,
+   "price": 158.021,
+   "change": 0.5229989013671741,
+   "changePercent": 0.33206700892644797,
    "currency": "JPY",
    "history": [
     {
@@ -146,12 +146,12 @@
     {
      "date": "11/10",
      "day": "2026-11-10",
-     "close": 158.09500122070312
+     "close": 158.02099609375
     }
    ],
    "move": {
-    "ratio": 1.84,
-    "rank": 76,
+    "ratio": 1.61,
+    "rank": 86,
     "days": 258
    },
    "year": [
@@ -1448,7 +1448,7 @@
     {
      "date": "11/10",
      "day": "2026-11-10",
-     "close": 158.09500122070312
+     "close": 158.02099609375
     }
    ],
    "intraday": [
@@ -2218,14 +2218,48 @@
     },
     {
      "date": "00:55",
-     "close": 158.11900329589844
+     "close": 158.10899353027344
     },
     {
-     "date": "00:57",
-     "close": 158.09500122070312
+     "date": "01:00",
+     "close": 158.156005859375
+    },
+    {
+     "date": "01:05",
+     "close": 158.0760040283203
+    },
+    {
+     "date": "01:10",
+     "close": 158.02999877929688
+    },
+    {
+     "date": "01:15",
+     "close": 158.02200317382812
+    },
+    {
+     "date": "01:20",
+     "close": 158.03799438476562
+    },
+    {
+     "date": "01:25",
+     "close": 158.04600524902344
+    },
+    {
+     "date": "01:30",
+     "close": 158.01800537109375
+    },
+    {
+     "date": "01:34",
+     "close": 158.02099609375
     }
    ],
    "news": [
+    {
+     "title": "ドル円、１５７円台に下落 株式市場が落ち着きドル安が強まる＝ＮＹ為替序盤",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1ZRDhBYUZRZllhbXlNWEliT0JpRkJoMWVBR0szTnJ0cm5yNDZtakpicVltQngwSm5ya2JGeUxwNExQNnZscXhoRQ?oc=5",
+     "source": "みんかぶ FX/為替",
+     "published": "2026-11-09T23:24:29+09:00"
+    },
     {
      "title": "【テクニカル】週足テクニカル・ドル円 サポート＆レジスタンス",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5LaTRFby15LWdCZ2VFSElWVVVFXy0ySHZUdkdSTzE2bEE4RmgyQ05qNjB0S0dENEZtZjhIODJJZHlFVUVlX0xHTmUyQlJwVWEyamRSNzVjRWFiMy1qTnVjM2NlTQ?oc=5",
@@ -2237,12 +2271,6 @@
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5GbXlHTWpZVE8xLWJiSVY5N3pRTGJxSFRZVFhUbnNUSHY3WXMyX1VEbXJHMzJueXFRS24wWVE0Qm02RWZ0NGRINVNqVkpwTVpoUjh2VTVCMVozWG9Uc3JOOEljQQ?oc=5",
      "source": "外為どっとコム",
      "published": "2026-11-09T23:00:11+09:00"
-    },
-    {
-     "title": "欧州外国為替市場概況・22時 ドル円、戻り鈍い(トレーダーズ・ウェブ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPd0o1Y2NHWFBNcGJmSjlVaUtyOUMxbXY4TXd4UWw3V01ZV3ota0toWF9pMmszbnlabldaNnZDSW0wVnJUQ0NqTUplaU1uLUlCR1VWeVBHajRsNkpOSkZzekE1SGVsTkRwVExkcWhvUi1FUGFHZ1NmU2xLUmF3bWpGZ1ZGLW9BMWc?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-09T22:06:18+09:00"
     }
    ],
    "marks": [
@@ -2336,7 +2364,7 @@
     },
     {
      "day": "2026-11-09",
-     "count": 44
+     "count": 45
     },
     {
      "day": "2026-11-10",
@@ -2356,34 +2384,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 101.92,
-     "change": -0.3800030517578108,
-     "changePercent": -0.37145947255304723
+     "price": 101.835,
+     "change": -0.46500305175781875,
+     "changePercent": -0.4545484241310867
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 177.013,
-     "change": 0.19200085449219273,
-     "changePercent": 0.10858487137842338
+     "price": 177.024,
+     "change": 0.2030008544921884,
+     "changePercent": 0.11480585194812575
     },
     {
      "name": "英ポンド/米ドル",
      "code": "GBPUSD",
      "symbol": "GBPUSD=X",
-     "price": 1.3404,
-     "change": -0.005205254173278773,
-     "changePercent": -0.3868336688739231
+     "price": 1.3415,
+     "change": -0.004105254173278894,
+     "changePercent": -0.30508606893045354
     }
    ],
    "regions": [
     "europe",
     "us"
    ],
-   "price": 1.1199,
-   "change": -0.002925980186462507,
-   "changePercent": -0.2605907093436334,
+   "price": 1.1206,
+   "change": -0.002225980186462362,
+   "changePercent": -0.19824801222471747,
    "currency": "USD",
    "history": [
     {
@@ -2489,12 +2517,12 @@
     {
      "date": "11/10",
      "day": "2026-11-10",
-     "close": 1.1199462413787842
+     "close": 1.1205737590789795
     }
    ],
    "move": {
-    "ratio": 1.35,
-    "rank": 100,
+    "ratio": 1.03,
+    "rank": 129,
     "days": 258
    },
    "year": [
@@ -3791,7 +3819,7 @@
     {
      "date": "11/10",
      "day": "2026-11-10",
-     "close": 1.1199462413787842
+     "close": 1.1205737590789795
     }
    ],
    "intraday": [
@@ -4564,8 +4592,36 @@
      "close": 1.1198208332061768
     },
     {
-     "date": "00:57",
-     "close": 1.1199462413787842
+     "date": "01:00",
+     "close": 1.1195701360702515
+    },
+    {
+     "date": "01:05",
+     "close": 1.1201971769332886
+    },
+    {
+     "date": "01:10",
+     "close": 1.1205737590789795
+    },
+    {
+     "date": "01:15",
+     "close": 1.1206992864608765
+    },
+    {
+     "date": "01:20",
+     "close": 1.1205737590789795
+    },
+    {
+     "date": "01:25",
+     "close": 1.1205737590789795
+    },
+    {
+     "date": "01:30",
+     "close": 1.1206992864608765
+    },
+    {
+     "date": "01:33",
+     "close": 1.1205737590789795
     }
    ],
    "news": [
@@ -4582,10 +4638,10 @@
      "published": "2026-11-10T00:06:18+09:00"
     },
     {
-     "title": "欧州 ユーロ / アメリカ ドル【EURUSD=X】：為替レート・相場",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBjcklfbmpsdDRFY2ZtU0NuQ0tGZUJnUVJtNW5SakJQQzY4YUVwLURVOUk5bHhNMXdBT2hoakhqZUlkRGlONDlCOGNtaU5xUzROenRySA?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-09T22:46:32+09:00"
+     "title": "テクニカルポイント ユーロドル 10日線 1.1175",
+     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBMLXp2VGZtNFlGU19RTmNuTVN3N192azZIMnVVSkQyc0w1ejk1WS01MmxPWFRic1VEVzY4dzVya1RUSFJma2NkdA?oc=5",
+     "source": "みんかぶ FX/為替",
+     "published": "2026-11-09T15:17:29+09:00"
     }
    ],
    "marks": [
@@ -4685,7 +4741,7 @@
     },
     {
      "day": "2026-11-09",
-     "count": 8
+     "count": 7
     },
     {
      "day": "2026-11-10",
@@ -4705,41 +4761,41 @@
      "name": "S&P500",
      "code": "^GSPC",
      "symbol": "^GSPC",
-     "price": 7537.04,
-     "change": 160.18013671874996,
-     "changePercent": 2.1713864664293805
+     "price": 7520.19,
+     "change": 143.3301367187496,
+     "changePercent": 1.9429694934586423
     },
     {
      "name": "米公益株ETF",
      "code": "XLU",
      "symbol": "XLU",
-     "price": 43.655,
-     "change": 0.5249989318847668,
-     "changePercent": 1.2172476672459054
+     "price": 43.835,
+     "change": 0.7049989318847665,
+     "changePercent": 1.6345905736736739
     },
     {
      "name": "デューク・エナジー",
      "code": "DUK",
      "symbol": "DUK",
-     "price": 127.745,
-     "change": -0.03499877929687045,
-     "changePercent": -0.027389872930990367
+     "price": 128.45,
+     "change": 0.6700012207031136,
+     "changePercent": 0.5243396674782785
     },
     {
      "name": "サザン",
      "code": "SO",
      "symbol": "SO",
-     "price": 92.85,
-     "change": 0.5100036621093693,
-     "changePercent": 0.5523106804587291
+     "price": 93.385,
+     "change": 1.0450036621093801,
+     "changePercent": 1.1316912535771622
     }
    ],
    "regions": [
     "us"
    ],
-   "price": 87.53,
-   "change": 0.5800030517578136,
-   "changePercent": 0.66705356194902,
+   "price": 87.55,
+   "change": 0.6000030517578097,
+   "changePercent": 0.6900552878857111,
    "currency": "USD",
    "history": [
     {
@@ -4845,12 +4901,12 @@
     {
      "date": "11/09",
      "day": "2026-11-09",
-     "close": 87.52999877929688
+     "close": 87.55000305175781
     }
    ],
    "move": {
-    "ratio": 0.86,
-    "rank": 137,
+    "ratio": 0.89,
+    "rank": 136,
     "days": 250
    },
    "year": [
@@ -6107,7 +6163,7 @@
     {
      "date": "11/09",
      "day": "2026-11-09",
-     "close": 87.52999877929688
+     "close": 87.55000305175781
     }
    ],
    "intraday": [
@@ -6173,7 +6229,7 @@
     },
     {
      "date": "00:45",
-     "close": 87.52010345458984
+     "close": 87.52999877929688
     },
     {
      "date": "00:50",
@@ -6181,11 +6237,39 @@
     },
     {
      "date": "00:55",
-     "close": 87.52999877929688
+     "close": 87.55000305175781
     },
     {
-     "date": "00:58",
-     "close": 87.52999877929688
+     "date": "01:00",
+     "close": 87.53500366210938
+    },
+    {
+     "date": "01:05",
+     "close": 87.56999969482422
+    },
+    {
+     "date": "01:10",
+     "close": 87.47000122070312
+    },
+    {
+     "date": "01:15",
+     "close": 87.5199966430664
+    },
+    {
+     "date": "01:20",
+     "close": 87.47000122070312
+    },
+    {
+     "date": "01:25",
+     "close": 87.53199768066406
+    },
+    {
+     "date": "01:30",
+     "close": 87.54000091552734
+    },
+    {
+     "date": "01:34",
+     "close": 87.55000305175781
     }
    ],
    "news": [
@@ -6319,42 +6403,42 @@
      "name": "ナスダック",
      "code": "^IXIC",
      "symbol": "^IXIC",
-     "price": 25256.928,
-     "change": 677.4983124999999,
-     "changePercent": 2.756363028408854
+     "price": 25127.588,
+     "change": 548.1583124999997,
+     "changePercent": 2.230150656338331
     },
     {
      "name": "米半導体指数",
      "code": "^SOX",
      "symbol": "^SOX",
-     "price": 10017.842,
-     "change": 627.5920000000006,
-     "changePercent": 6.68344293282927
+     "price": 9924.222,
+     "change": 533.9719999999998,
+     "changePercent": 5.686451372434171
     },
     {
      "name": "AMD",
      "code": "AMD",
      "symbol": "AMD",
-     "price": 499.15,
-     "change": 50.1099914550781,
-     "changePercent": 11.159360079618631
+     "price": 496.49,
+     "change": 47.449991455078134,
+     "changePercent": 10.56698524677924
     },
     {
      "name": "ブロードコム",
      "code": "AVGO",
      "symbol": "AVGO",
-     "price": 319.73,
-     "change": 26.039997558593768,
-     "changePercent": 8.866490974199566
+     "price": 317.445,
+     "change": 23.754997558593743,
+     "changePercent": 8.088459723218898
     }
    ],
    "regions": [
     "us",
     "china"
    ],
-   "price": 179.78,
-   "change": -6.859999389648436,
-   "changePercent": -3.6755247600096763,
+   "price": 174.86,
+   "change": -11.779999389648424,
+   "changePercent": -6.311615638754538,
    "currency": "USD",
    "history": [
     {
@@ -6460,12 +6544,12 @@
     {
      "date": "11/09",
      "day": "2026-11-09",
-     "close": 179.77999877929688
+     "close": 174.86000061035156
     }
    ],
    "move": {
-    "ratio": 2.4,
-    "rank": 28,
+    "ratio": 4.12,
+    "rank": 4,
     "days": 250
    },
    "year": [
@@ -7722,7 +7806,7 @@
     {
      "date": "11/09",
      "day": "2026-11-09",
-     "close": 179.77999877929688
+     "close": 174.86000061035156
     }
    ],
    "intraday": [
@@ -7796,11 +7880,39 @@
     },
     {
      "date": "00:55",
-     "close": 179.61000061035156
+     "close": 179.64999389648438
     },
     {
-     "date": "00:58",
-     "close": 179.7899932861328
+     "date": "01:00",
+     "close": 177.1199951171875
+    },
+    {
+     "date": "01:05",
+     "close": 176.9199981689453
+    },
+    {
+     "date": "01:10",
+     "close": 175.720703125
+    },
+    {
+     "date": "01:15",
+     "close": 176.57000732421875
+    },
+    {
+     "date": "01:20",
+     "close": 176.0
+    },
+    {
+     "date": "01:25",
+     "close": 175.27499389648438
+    },
+    {
+     "date": "01:30",
+     "close": 174.93499755859375
+    },
+    {
+     "date": "01:34",
+     "close": 174.86000061035156
     }
    ],
    "news": [
@@ -7862,7 +7974,7 @@
     },
     {
      "date": "11/09",
-     "change": -3.68,
+     "change": -6.31,
      "news": [
       {
        "title": "エヌビディアCEO“中国スパイ”との不貞行為を謝罪 半導体が狙われ？…専門家「中国はのどから手がでるほど欲しい」",
@@ -7930,9 +8042,9 @@
      "name": "NYダウ",
      "code": "^DJI",
      "symbol": "^DJI",
-     "price": 52184.3,
-     "change": 898.5695312500029,
-     "changePercent": 1.752084884113193
+     "price": 52202.31,
+     "change": 916.5795312499977,
+     "changePercent": 1.787201864675591
     }
    ],
    "regions": [],
@@ -9531,22 +9643,22 @@
    ],
    "news": [
     {
-     "title": "eMAXIS Slim国内株式(TOPIX)【03317172】：基準価格・投資信託情報",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBSalpJb2FzZjBqSU1vTFo3RVd1X3liczdRc25wZU9jMVI2dWJ0R0xDcU1UaWhMOUNxODRGdlNhMU5JYkUzaWJnNEk1QThpODAwM2x4Yg?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-09T23:40:39+09:00"
-    },
-    {
      "title": "TOPIXの指数情報・推移",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1DeFBMbTJZUmR2akJBZlhCYU12WGMyZ3U3TEVkTm5JOUZHenE2eWRfanNXb0Zvc3NYWFRZSTZSbWdvTDllbjcwejhfSGN3b0ZiUzJxXw?oc=5",
      "source": "Yahoo!ファイナンス",
-     "published": "2026-11-09T22:12:23+09:00"
+     "published": "2026-11-10T01:14:28+09:00"
     },
     {
      "title": "(NEXT FUNDS)TOPIX連動型上場投信【1306】：株価・株式情報（夜間PTS含む）",
      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9XLTlQQkttSm9oZjlYWF96RGJiTzJKT0dRSXRybUN6TGpEMkVoQWNUZFp0U09xQ1pKc2UxSGNPR1U5a3U2ZDZPdlFGZ00yenFPbXc?oc=5",
      "source": "Yahoo!ファイナンス",
-     "published": "2026-11-09T20:55:59+09:00"
+     "published": "2026-11-10T00:10:57+09:00"
+    },
+    {
+     "title": "eMAXIS Slim国内株式(TOPIX)【03317172】：基準価格・投資信託情報",
+     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBSalpJb2FzZjBqSU1vTFo3RVd1X3liczdRc25wZU9jMVI2dWJ0R0xDcU1UaWhMOUNxODRGdlNhMU5JYkUzaWJnNEk1QThpODAwM2x4Yg?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-11-09T23:40:39+09:00"
     }
    ],
    "marks": [
@@ -9636,15 +9748,15 @@
     },
     {
      "day": "2026-11-08",
-     "count": 3
+     "count": 4
     },
     {
      "day": "2026-11-09",
-     "count": 26
+     "count": 23
     },
     {
      "day": "2026-11-10",
-     "count": 0
+     "count": 2
     }
    ]
   },
@@ -11424,9 +11536,9 @@
      "name": "原油 WTI",
      "code": "CL=F",
      "symbol": "CL=F",
-     "price": 88.35,
-     "change": -2.480001831054693,
-     "changePercent": -2.730377387493108
+     "price": 87.81,
+     "change": -3.0200018310546852,
+     "changePercent": -3.3248946054982347
     }
    ],
    "regions": [
@@ -18390,17 +18502,17 @@
      "name": "銀",
      "code": "SI=F",
      "symbol": "SI=F",
-     "price": 52.725,
-     "change": 0.9219985961914077,
-     "changePercent": 1.7798169434322035
+     "price": 52.785,
+     "change": 0.9819985961914028,
+     "changePercent": 1.8956403482042368
     },
     {
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 101.92,
-     "change": -0.3800030517578108,
-     "changePercent": -0.37145947255304723
+     "price": 101.835,
+     "change": -0.46500305175781875,
+     "changePercent": -0.4545484241310867
     },
     {
      "name": "米10年金利",
@@ -18415,17 +18527,17 @@
      "code": "1540",
      "symbol": "1540.T",
      "price": 19530.0,
-     "change": 70.0,
-     "changePercent": 0.3597122302158274
+     "change": 435.0,
+     "changePercent": 2.2780832678711707
     }
    ],
    "regions": [
     "mideast",
     "us"
    ],
-   "price": 4127.4,
-   "change": 52.500097656249636,
-   "changePercent": 1.288377602258482,
+   "price": 4129.1,
+   "change": 54.200097656250364,
+   "changePercent": 1.3300964184439532,
    "currency": "USD",
    "history": [
     {
@@ -18531,12 +18643,12 @@
     {
      "date": "11/09",
      "day": "2026-11-09",
-     "close": 4127.39990234375
+     "close": 4129.10009765625
     }
    ],
    "move": {
-    "ratio": 1.35,
-    "rank": 87,
+    "ratio": 1.4,
+    "rank": 84,
     "days": 250
    },
    "year": [
@@ -19793,7 +19905,7 @@
     {
      "date": "11/09",
      "day": "2026-11-09",
-     "close": 4127.39990234375
+     "close": 4129.10009765625
     }
    ],
    "intraday": [
@@ -20314,8 +20426,36 @@
      "close": 4127.89990234375
     },
     {
-     "date": "00:48",
-     "close": 4127.39990234375
+     "date": "00:50",
+     "close": 4129.2998046875
+    },
+    {
+     "date": "00:55",
+     "close": 4130.0
+    },
+    {
+     "date": "01:00",
+     "close": 4134.0
+    },
+    {
+     "date": "01:05",
+     "close": 4135.10009765625
+    },
+    {
+     "date": "01:10",
+     "close": 4136.39990234375
+    },
+    {
+     "date": "01:15",
+     "close": 4133.2998046875
+    },
+    {
+     "date": "01:20",
+     "close": 4127.60009765625
+    },
+    {
+     "date": "01:24",
+     "close": 4129.10009765625
     }
    ],
    "news": [
@@ -20329,7 +20469,7 @@
      "title": "三菱UFJ 純金ファンド【03311112】：基準価格・投資信託情報",
      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5mNEtpeXdmblRBVlJBQnJZQXltdTd2dGE4TUVnYnBqazJkNVZ2all3MXVwaEFZNGNaNEVjaDlHNWRrMElRM2lpa2xRZVhLTksyVEh5Qg?oc=5",
      "source": "Yahoo!ファイナンス",
-     "published": "2026-11-10T00:26:43+09:00"
+     "published": "2026-11-09T23:27:03+09:00"
     },
     {
      "title": "ベトナムのSJC金地金、1両1億4200万ドンに急騰 国際価格との差は約1500万ドン",
@@ -20419,15 +20559,15 @@
     },
     {
      "day": "2026-11-08",
-     "count": 8
+     "count": 9
     },
     {
      "day": "2026-11-09",
-     "count": 19
+     "count": 20
     },
     {
      "day": "2026-11-10",
-     "count": 2
+     "count": 1
     }
    ]
   }
@@ -20493,37 +20633,37 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52188.19,
-   "change": 902.4595312500023,
-   "changePercent": 1.7596698399370545
+   "price": 52195.29,
+   "change": 909.5595312500009,
+   "changePercent": 1.773513846710683
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7539.25,
-   "change": 162.39013671875,
-   "changePercent": 2.201345013032664
+   "price": 7519.06,
+   "change": 142.2001367187504,
+   "changePercent": 1.9276513225710015
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 25263.7,
-   "change": 684.2703125000007,
-   "changePercent": 2.783914522019972
+   "price": 25117.576,
+   "change": 538.1463125000009,
+   "changePercent": 2.1894174085482465
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 88.33,
-   "change": -2.500001831054689,
-   "changePercent": -2.7523965437155162
+   "price": 87.79,
+   "change": -3.0400018310546812,
+   "changePercent": -3.346913761720643
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 4127.4,
-   "change": 52.500097656249636,
-   "changePercent": 1.288377602258482
+   "price": 4128.4,
+   "change": 53.500097656249636,
+   "changePercent": 1.3129180823675721
   },
   {
    "name": "米10年金利",
@@ -20535,15 +20675,15 @@
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 75458.2,
-   "change": 873.5515624999971,
-   "changePercent": 1.171221666657061
+   "price": 74934.68,
+   "change": 350.031562499993,
+   "changePercent": 0.46930778629775316
   }
  ],
  "fear": {
-  "price": 20.86,
-  "change": -4.779999389648438,
-  "changePercent": -18.642743773146318,
+  "price": 20.71,
+  "change": -4.929999389648437,
+  "changePercent": -19.227767188008634,
   "history": [
    {
     "date": "10/12",
@@ -20648,7 +20788,7 @@
    {
     "date": "11/09",
     "day": "2026-11-09",
-    "close": 20.860000610351562
+    "close": 20.709999084472656
    }
   ]
  },
@@ -20656,7 +20796,7 @@
   {
    "key": "us",
    "label": "アメリカ",
-   "count": 11,
+   "count": 10,
    "news": [
     {
      "title": "トランプ氏、イランと戦闘再開の可能性「極めて低い」…イラン外相「米国の有権者は選択行った」と投稿",
@@ -20699,7 +20839,7 @@
      "title": "Round5 イタリアvsアルゼンチン 【ラグビー世界12カ国最強決定戦 ネーションズチャンピオンシップ】",
      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBldF9VdmZjUEFRQTJXdEpucFZ5N0VFb181Z3BXQkMwZ3BBaGkyWFRiNFV4ME1oT1BHeTZjS2tzam9LckhiMUYwVkhxX2FzNk92VzMyYkxERXAtS3pvbHRxS2pQaWNldHVnY21TZllWajZsZw?oc=5",
      "source": "ABEMA",
-     "published": "2026-11-09T23:58:22+09:00"
+     "published": "2026-11-10T01:02:38+09:00"
     },
     {
      "title": "若者や中南米系が離反 出口調査から考える共和党の敗因 アメリカ中間選挙は民主党が大勝",
@@ -20820,6 +20960,12 @@
      "published": "2026-11-09T10:30:00+09:00"
     },
     {
+     "title": "エジプトのギザで列車衝突、7人死亡、112人負傷：保健省",
+     "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxQNVYtZ2ZmeFBPQjVRbXZobjFQN1dsZEFjdHdOS19kNmhVai1vZS0wWkhIOXh6VF9CTWFncVRsQU44NXN1WGxxT0RLV3FTQ091X3M0ckVyLVItVVU4TlhZNUQxVnlJY19Eanp1UEFucDZJSU5UM09KTlRIQXI2dlJJSWFBTGlMbG9KMkhUOWtoWjd0dXpoYmUxSjlWMEp0eS1MT05mcExmVWdoZ1RLNDFYb2JYdFdXbXEtSThrR0x0eWxSWnhkNkVPazlzUVpxemtWYnhRYm11d2tsOVYwQmxRN2NQT0o4ajNNS1pRR0ZJLUo1LTVXSmpIdXZrcFNKdFdDOU0zUnVTNzF0dWdGRnYyV1lKdDFxb1lSX1plRnJGRGJ1eXFEREh2d0h0cnpsYnJfZUxQVnUyNVdrbnY4RUdHMmhILUNORXJkbTBaSDF3bXpiNlhGSTVXVA?oc=5",
+     "source": "アラブニュース",
+     "published": "2026-11-09T22:15:55+09:00"
+    },
+    {
      "title": "ナイジェリアが仮想通貨・ステーブルコインの新規則を制定",
      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1nWGxzcWN3RGJvVTkzQnl2dWNISGQ5U0NNRmRvcVFpOElhdUwxV3d0YVpOU01HRV9MR2xqeXFjNVU2YXM?oc=5",
      "source": "NEXTMONEY",
@@ -20830,12 +20976,6 @@
      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRHZwYnkyZFFSVHlWcm9ZNlYxMXhsbG1jX1RKUnM1WDAtanMxNGFyNS0yNTB5aGRFU2g3SkRiYkNaT2EtM0J2TERGanNIWl94THBNaGppdC1JeTZkbHhSeUJVZkx3WVFieG8wRmZybm81UzIzT2RSSVMwOWZkQVExYS1IV01jb2YwaU9Z?oc=5",
      "source": "IndexBox",
      "published": "2026-11-09T19:20:50+09:00"
-    },
-    {
-     "title": "エジプトのギザで列車衝突、7人死亡、112人負傷：保健省",
-     "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxQNVYtZ2ZmeFBPQjVRbXZobjFQN1dsZEFjdHdOS19kNmhVai1vZS0wWkhIOXh6VF9CTWFncVRsQU44NXN1WGxxT0RLV3FTQ091X3M0ckVyLVItVVU4TlhZNUQxVnlJY19Eanp1UEFucDZJSU5UM09KTlRIQXI2dlJJSWFBTGlMbG9KMkhUOWtoWjd0dXpoYmUxSjlWMEp0eS1MT05mcExmVWdoZ1RLNDFYb2JYdFdXbXEtSThrR0x0eWxSWnhkNkVPazlzUVpxemtWYnhRYm11d2tsOVYwQmxRN2NQT0o4ajNNS1pRR0ZJLUo1LTVXSmpIdXZrcFNKdFdDOU0zUnVTNzF0dWdGRnYyV1lKdDFxb1lSX1plRnJGRGJ1eXFEREh2d0h0cnpsYnJfZUxQVnUyNVdrbnY4RUdHMmhILUNORXJkbTBaSDF3bXpiNlhGSTVXVA?oc=5",
-     "source": "アラブニュース",
-     "published": "2026-11-09T19:17:35+09:00"
     }
    ]
   },
