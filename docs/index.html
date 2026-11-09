@@ -180,6 +180,7 @@
   .now small { font-size: .8rem; margin-left: 4px; color: var(--muted); font-weight: 400; }
   .chg { font-family: var(--mono); font-weight: 500; font-variant-numeric: tabular-nums; font-size: .86rem; }
   .holding .chg { font-size: .98rem; }
+  .gram { font-size: .8rem; color: var(--sub); margin: 2px 0 4px; }
   .holding .chg .lbl { color: var(--muted); font-family: var(--sans); font-size: .76rem; margin-left: 6px; }
 
   /* 持ち株の損得 */
@@ -496,8 +497,13 @@
     <div class="holdings" id="stocks"></div>
   </section>
 
+  <section class="block reveal" id="commodity-block">
+    <h2 class="block-title"><span class="no">03</span>金・商品<span class="en">COMMODITIES</span></h2>
+    <div class="holdings" id="commodities"></div>
+  </section>
+
   <section class="block reveal" id="condition-block">
-    <h2 class="block-title"><span class="no">03</span>市場の状況<span class="en">MARKET CONDITION</span></h2>
+    <h2 class="block-title"><span class="no">04</span>市場の状況<span class="en">MARKET CONDITION</span></h2>
     <div class="condition">
       <div class="panel gauge-card" id="gauge-card">
         <p class="label-sm">FEAR INDEX ／ 市場の温度計</p>
@@ -512,7 +518,7 @@
   </section>
 
   <section class="block reveal">
-    <h2 class="block-title"><span class="no">04</span>ニュース映像<span class="en">BROADCAST</span></h2>
+    <h2 class="block-title"><span class="no">05</span>ニュース映像<span class="en">BROADCAST</span></h2>
     <div id="live-area">
       <h3><b>LIVE</b> ／ 海外ニュース ライブ配信（局を選んで「受信開始」）</h3>
       <div class="panel onair">
@@ -527,7 +533,7 @@
   </section>
 
   <section class="block reveal" id="world-block">
-    <h2 class="block-title"><span class="no">05</span>世界情勢<span class="en">GLOBAL SITUATION</span></h2>
+    <h2 class="block-title"><span class="no">06</span>世界情勢<span class="en">GLOBAL SITUATION</span></h2>
     <div class="panel world">
       <div class="map">
         <div id="map"></div>
@@ -695,6 +701,16 @@ function verdictOf(item) {
       }
     }
     return [`${bn}側の動きが中心です`, `（${bn}${me > 0 ? "高" : "安"}）`];
+  }
+  if (item.kind === "commodity") {
+    if (Math.abs(me) < .1) return ["ほとんど動いていません", ""];
+    // 同じ先物（銀など）が同じ向きなら貴金属全体の動き。ドルが反対に動いていればその影響
+    const metals = peers.filter(p => p.symbol?.endsWith("=F"));
+    const together = metals.length && metals.every(p => Math.sign(p.changePercent) === Math.sign(me));
+    const dxy = peers.find(p => p.symbol === "DX-Y.NYB");
+    const dollar = dxy && Math.sign(dxy.changePercent) === -Math.sign(me) && Math.abs(dxy.changePercent) >= .15
+      ? `ドル${dxy.changePercent < 0 ? "安" : "高"}が${me > 0 ? "追い風" : "重し"}になっています` : "";
+    return [together ? `貴金属全体が${me > 0 ? "上げて" : "下げて"}います` : `${item.name}だけの動きです`, dollar ? `（${dollar}）` : ""];
   }
   const avg = peers.reduce((a, p) => a + p.changePercent, 0) / peers.length;
   const diff = me - avg;
@@ -909,7 +925,7 @@ function profitOf(item) {
 
 function plBlock(item) {
   const box = el("div", { class: "pl" });
-  const unit = item.kind === "fx" ? "通貨" : "株";
+  const unit = item.kind === "fx" ? "通貨" : UNIT_NAME[item.symbol] || "株";
   const render = () => {
     const p = profitOf(item);
     if (!p) {
@@ -1064,6 +1080,14 @@ function forecastBlock(item) {
   return box;
 }
 
+// 金・銀は1トロイオンス（約31.1グラム）あたりのドル。円に直して1グラムあたりの値段も出す
+const GRAMS_PER_UNIT = { "GC=F": 31.1035, "SI=F": 31.1035, "PL=F": 31.1035 };
+const UNIT_NAME = { "GC=F": "トロイオンス", "SI=F": "トロイオンス", "PL=F": "トロイオンス" };
+function yenPerGram(item) {
+  const grams = GRAMS_PER_UNIT[item.symbol], rate = toYen(item);
+  return grams && rate && item.price != null ? item.price * rate / grams : null;
+}
+
 // ───────── 持ち株カード ─────────
 function eventsFor(item) {
   const now = Date.now();
@@ -1096,9 +1120,11 @@ function holdingCard(item, i) {
     const now = el("div", { class: "now" });
     const num = el("span", {}, fmtNumber(item.price, digitsFor(item)));
     now.append(num);
-    if (item.kind !== "fx") now.append(el("small", {}, item.currency === "USD" ? "ドル" : item.currency && item.currency !== "JPY" ? item.currency : "円"));
+    if (item.kind !== "fx") now.append(el("small", {}, (item.currency === "USD" ? "ドル" : item.currency && item.currency !== "JPY" ? item.currency : "円")));
     left.append(now);
     starters.push(() => countUp(num, item.price, digitsFor(item)));
+    const perGram = yenPerGram(item);
+    if (perGram) left.append(el("div", { class: "gram" }, `1トロイオンス（約31.1g）あたり ・ 円に直すと 1グラム 約 ${Math.round(perGram).toLocaleString("ja-JP")}円`));
     if (item.change != null) {
       const chg = el("div", { class: `chg ${trendOf(item)}` }, changeText(item));
       chg.append(el("span", { class: "lbl" }, "前日比"));
@@ -1693,7 +1719,7 @@ const LEVEL_ORDER = { big: 0, some: 1, calm: 2 };
 
 function reasonOf(item) {
   const peers = (item.peers || []).filter(p => p.changePercent != null);
-  if (item.kind === "fx") {
+  if (item.kind !== "stock") {
     const v = verdictOf(item);
     return v ? v[0] + v[1].replace(/[（）]/g, m => (m === "（" ? "。" : "")) : "";
   }
@@ -1924,11 +1950,14 @@ fetch("data.json", { cache: "no-store" })
     worldMax = Math.max(1, ...allRegions.map(r => r.count));
     allEvents = buildEvents(data.calendar || [], data.earnings || []);
     const fx = data.items.filter(i => i.kind === "fx");
-    const stocks = data.items.filter(i => i.kind !== "fx");
+    const stocks = data.items.filter(i => i.kind === "stock");
+    const commodities = data.items.filter(i => i.kind === "commodity");
     if (!fill("fx", fx, holdingCard)) document.getElementById("fx-block").hidden = true;
     claim("fx");
     if (!fill("stocks", stocks, holdingCard)) document.getElementById("stock-block").hidden = true;
     claim("stocks");
+    if (!fill("commodities", commodities, holdingCard)) document.getElementById("commodity-block").hidden = true;
+    claim("commodities");
     if (!setupLive(data.lives || [])) document.getElementById("live-area").hidden = true;
     if (!fill("videos", data.videos || [], videoTile)) document.getElementById("video-area").hidden = true;
     if (!setupTicker(data.markets || [])) document.getElementById("ticker-wrap").hidden = true;

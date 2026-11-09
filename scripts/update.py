@@ -219,6 +219,9 @@ def to_symbol(code):
     code = code.upper().replace(" ", "")
     if re.fullmatch(r"\d{4}|\d{3}[A-Z]", code):
         return code + ".T", "stock"
+    # 金・銀・原油などの先物（GC=F のように「=F」で終わる）
+    if code.endswith("=F"):
+        return code, "commodity"
     m = re.fullmatch(r"([A-Z]{3})/?([A-Z]{3})", code)
     if m:
         return f"{m.group(1)}{m.group(2)}=X", "fx"
@@ -719,7 +722,8 @@ def main():
             if date:
                 earnings.append({"name": e["name"], "date": date})
 
-    videos = fetch_videos([w for e in entries for w in (e["name"], e["keyword"])])
+    # 「金」のような1文字の名前は、どの見出しにも入ってしまうので動画選びには使わない
+    videos = fetch_videos([w for e in entries for w in (e["name"], e["keyword"]) if len(w) >= 2])
     world = fetch_world()
     world_trend = record_world(world)
 
