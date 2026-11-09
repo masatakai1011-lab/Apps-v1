@@ -555,6 +555,7 @@ const fmtNumber = (v, digits) =>
 
 function digitsFor(item) {
   if (item.kind === "fx") return item.price < 10 ? 4 : 3;
+  if (item.currency && item.currency !== "JPY") return 2;
   return item.price >= 1000 ? 0 : 1;
 }
 
@@ -629,10 +630,12 @@ function jstLabel(d, withTime = true) {
 const CURRENCY_OF = { "米国": "USD", "日本": "JPY", "ユーロ圏": "EUR", "英国": "GBP", "中国": "CNY", "豪州": "AUD", "カナダ": "CAD", "スイス": "CHF", "NZ": "NZD" };
 const CURRENCY_NAME = { USD: "ドル", JPY: "円", EUR: "ユーロ", GBP: "ポンド", AUD: "豪ドル", CHF: "フラン", CAD: "カナダドル", NZD: "NZドル", CNY: "人民元" };
 const pairOf = item => item.kind === "fx" ? [item.symbol.slice(0, 3), item.symbol.slice(3, 6)] : [];
+// 予定の影響を受ける通貨。アメリカの株は米国の発表の影響を受ける
+const currenciesOf = item => item.kind === "fx" ? pairOf(item) : item.currency && item.currency !== "JPY" ? [item.currency] : [];
 const eventCurrency = e => e.currency || CURRENCY_OF[e.country];
 function affects(event, item) {
   if (event.earn) return event.name === item.name;
-  return pairOf(item).includes(eventCurrency(event));
+  return currenciesOf(item).includes(eventCurrency(event));
 }
 
 let allItems = [];
@@ -885,10 +888,9 @@ const yen = v => `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.round(Math.abs(v)).t
 
 // 値段の単位（相手通貨）を円に直す割合。ユーロ/米ドルなら米ドル/円の値段を使う
 function toYen(item) {
-  if (item.kind !== "fx") return 1;
-  const quote = pairOf(item)[1];
-  if (quote === "JPY") return 1;
-  const sym = `${quote}JPY=X`;
+  const cur = item.kind === "fx" ? pairOf(item)[1] : item.currency || "JPY";
+  if (cur === "JPY") return 1;
+  const sym = `${cur}JPY=X`;
   const src = allItems.find(i => i.symbol === sym) || allItems.flatMap(i => i.peers || []).find(p => p.symbol === sym);
   return src?.price || null;
 }
@@ -998,7 +1000,7 @@ function settle(item) {
     const bar = bars.find(h => h.day > f.day);
     if (!bar) continue;
     // 株は15時半、為替は翌朝7時（ニューヨークの終わり）でその日の値が決まる
-    const close = item.kind === "fx" ? new Date(`${bar.day}T07:00+09:00`).getTime() + 86400000 : new Date(`${bar.day}T15:30+09:00`).getTime();
+    const close = item.kind === "fx" || item.currency === "USD" ? new Date(`${bar.day}T07:00+09:00`).getTime() + 86400000 : new Date(`${bar.day}T15:30+09:00`).getTime();
     if (now < close) continue;
     const up = bar.close > f.base;
     f.result = (f.call === "up") === up ? "hit" : "miss";
@@ -1094,7 +1096,7 @@ function holdingCard(item, i) {
     const now = el("div", { class: "now" });
     const num = el("span", {}, fmtNumber(item.price, digitsFor(item)));
     now.append(num);
-    if (item.kind !== "fx") now.append(el("small", {}, "円"));
+    if (item.kind !== "fx") now.append(el("small", {}, item.currency === "USD" ? "ドル" : item.currency && item.currency !== "JPY" ? item.currency : "円"));
     left.append(now);
     starters.push(() => countUp(num, item.price, digitsFor(item)));
     if (item.change != null) {
@@ -1130,7 +1132,8 @@ function holdingCard(item, i) {
       el("span", {}, e.earn ? `${e.name} の決算発表` : `${e.country}　${e.title}`));
     evBox.append(row);
   }
-  if (!evs.length) evBox.append(el("span", { class: "none" }, item.kind === "fx" ? "36時間以内に関係する重要発表はありません" : "2週間以内の決算発表はありません"));
+  if (!evs.length) evBox.append(el("span", { class: "none" }, item.kind === "fx" ? "36時間以内に関係する重要発表はありません"
+    : currenciesOf(item).length ? "関係する重要発表・決算はしばらくありません" : "2週間以内の決算発表はありません"));
   upCol.append(evBox);
   const regions = (item.regions || []).map(key => allRegions.find(r => r.key === key)).filter(Boolean);
   if (regions.length) {

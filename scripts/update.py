@@ -639,11 +639,11 @@ def alert_of(entry):
     word = "急上昇" if pct > 0 else "急落"
     day = entry["history"][-1]["date"] if entry.get("history") else datetime.now(JST).strftime("%m/%d")
     m = entry["move"]
-    unit = "" if entry["kind"] == "fx" else "円"
+    unit = "" if entry["kind"] == "fx" else {"JPY": "円", "USD": "ドル"}.get(entry.get("currency"), "")
     lines = [
         f"**{entry['name']}** が **{pct:+.2f}%** の{word}（{day}）",
         "",
-        f"- 値段：{entry['price']:,.{4 if entry['price'] < 10 else 3}f}" if entry["kind"] == "fx" else f"- 値段：{entry['price']:,.0f}{unit}",
+        f"- 値段：{entry['price']:,.{4 if entry['price'] < 10 else 3}f}" if entry["kind"] == "fx" else f"- 値段：{entry['price']:,.{0 if entry.get('currency') == 'JPY' else 2}f}{unit}",
         f"- ふだんの {m['ratio']:.1f} 倍の動き（この1年で {m['rank']} 番目の大きさ）",
     ]
     peers = [p for p in entry.get("peers", []) if p.get("changePercent") is not None]
