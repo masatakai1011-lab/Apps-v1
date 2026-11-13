@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T00:17+09:00",
+ "updated": "2026-11-14T00:46+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -13,34 +13,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 103.184,
-     "change": 0.014001831054684999,
-     "changePercent": 0.013571611227283729
+     "price": 103.28,
+     "change": 0.11000183105468864,
+     "changePercent": 0.1066219182000526
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.589,
-     "change": -0.6340072021484389,
-     "changePercent": -0.3577454260356061
+     "price": 176.319,
+     "change": -0.9040072021484491,
+     "changePercent": -0.5100958484003707
     },
     {
      "name": "英ポンド/円",
      "code": "GBPJPY",
      "symbol": "GBPJPY=X",
-     "price": 211.549,
-     "change": -0.5160024414062434,
-     "changePercent": -0.24332277153973833
+     "price": 211.328,
+     "change": -0.737002441406247,
+     "changePercent": -0.3475361011583613
     }
    ],
    "regions": [
     "mideast",
     "us"
    ],
-   "price": 159.817,
-   "change": 0.08300646972656978,
-   "changePercent": 0.051965438221412814,
+   "price": 159.84,
+   "change": 0.10600646972656591,
+   "changePercent": 0.06636437703942782,
    "currency": "JPY",
    "history": [
     {
@@ -156,12 +156,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 159.81700134277344
+     "close": 159.83999633789062
     }
    ],
    "move": {
-    "ratio": 0.25,
-    "rank": 226,
+    "ratio": 0.32,
+    "rank": 213,
     "days": 259
    },
    "year": [
@@ -1463,7 +1463,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 159.81700134277344
+     "close": 159.83999633789062
     }
    ],
    "intraday": [
@@ -1525,11 +1525,11 @@
     },
     {
      "date": "10:10",
-     "close": 159.8780059814453
+     "close": 159.88999938964844
     },
     {
      "date": "10:15",
-     "close": 159.91799926757812
+     "close": 159.92300415039062
     },
     {
      "date": "10:20",
@@ -1773,7 +1773,7 @@
     },
     {
      "date": "15:20",
-     "close": 160.08799743652344
+     "close": 160.08900451660156
     },
     {
      "date": "15:25",
@@ -2049,7 +2049,7 @@
     },
     {
      "date": "21:05",
-     "close": 159.98800659179688
+     "close": 159.98699951171875
     },
     {
      "date": "21:10",
@@ -2201,11 +2201,35 @@
     },
     {
      "date": "00:15",
+     "close": 159.77200317382812
+    },
+    {
+     "date": "00:20",
      "close": 159.802001953125
     },
     {
-     "date": "00:17",
-     "close": 159.81100463867188
+     "date": "00:25",
+     "close": 159.86099243164062
+    },
+    {
+     "date": "00:30",
+     "close": 159.843994140625
+    },
+    {
+     "date": "00:35",
+     "close": 159.83099365234375
+    },
+    {
+     "date": "00:40",
+     "close": 159.85000610351562
+    },
+    {
+     "date": "00:45",
+     "close": 159.86399841308594
+    },
+    {
+     "date": "00:46",
+     "close": 159.83999633789062
     }
    ],
    "news": [
@@ -2216,16 +2240,16 @@
      "published": "2026-11-13T23:48:29+09:00"
     },
     {
-     "title": "米ドル/円【USDJPY】：外国為替相場FXレート・チャートをリアルタイム表示",
-     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzbWxqc1ltSU1ndEE0VElnZldUTGdyRVJpOTdKeXBsc0RDSm40dm9kLTJqaDZlOVpoR2E5eEZIX1o0bFR1SFR2N2k4WjRiTnN5dHVBTHJn?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-13T20:16:34+09:00"
-    },
-    {
      "title": "FX実践解説、相場分析＆リアルトレード、ドル円などの注目材料（2026年11月13日）",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9zc2VtUnF4TkpiZzU2elNlWTFfc0ViRmRGNXVCTC1zcjNQNUxVU2hTRV9yTjJUV3cwa2VBN1JuYUZxbFhmVUxLRkJsQ1hQTmYzV052Y19TYS1sV2FoUTBNYnhlbw?oc=5",
      "source": "外為どっとコム",
      "published": "2026-11-13T20:00:00+09:00"
+    },
+    {
+     "title": "ドル円160円台では神経質な展開、売り注文は限定的 今日の外為注文情報 2026/11/13 17:00",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0wRGhWcXAzMHUzTkk1TFNjelk4Z3A1cWNSazdqY1F4bnI3ZHdlNUxZQVdpU2h3UC03bHZCS1NTSjMtYXhSb3ZQTmw5S2tkNUhvdVA3c0dLaFlxYmg3ZG1sZ0FXWQ?oc=5",
+     "source": "外為どっとコム",
+     "published": "2026-11-13T17:18:00+09:00"
     }
    ],
    "marks": [
@@ -2315,11 +2339,11 @@
     },
     {
      "day": "2026-11-12",
-     "count": 28
+     "count": 27
     },
     {
      "day": "2026-11-13",
-     "count": 27
+     "count": 26
     },
     {
      "day": "2026-11-14",
@@ -2339,34 +2363,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 103.184,
-     "change": 0.014001831054684999,
-     "changePercent": 0.013571611227283729
+     "price": 103.28,
+     "change": 0.11000183105468864,
+     "changePercent": 0.1066219182000526
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.589,
-     "change": -0.6340072021484389,
-     "changePercent": -0.3577454260356061
+     "price": 176.319,
+     "change": -0.9040072021484491,
+     "changePercent": -0.5100958484003707
     },
     {
      "name": "英ポンド/米ドル",
      "code": "GBPUSD",
      "symbol": "GBPUSD=X",
-     "price": 1.324,
-     "change": -0.0036686668395995436,
-     "changePercent": -0.276323975343373
+     "price": 1.3222,
+     "change": -0.0054686668395995675,
+     "changePercent": -0.4118999699388294
     }
    ],
    "regions": [
     "europe",
     "us"
    ],
-   "price": 1.1053,
-   "change": -0.004220792961120656,
-   "changePercent": -0.38041585050930715,
+   "price": 1.1034,
+   "change": -0.006120792961120669,
+   "changePercent": -0.5516609512819786,
    "currency": "USD",
    "history": [
     {
@@ -2482,12 +2506,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 1.1053388118743896
+     "close": 1.1033873558044434
     }
    ],
    "move": {
-    "ratio": 1.88,
-    "rank": 57,
+    "ratio": 2.72,
+    "rank": 31,
     "days": 259
    },
    "year": [
@@ -3789,7 +3813,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 1.1053388118743896
+     "close": 1.1033873558044434
     }
    ],
    "intraday": [
@@ -4527,31 +4551,55 @@
     },
     {
      "date": "00:15",
-     "close": 1.1057054996490479
+     "close": 1.1052166223526
     },
     {
-     "date": "00:16",
-     "close": 1.1053388118743896
+     "date": "00:20",
+     "close": 1.1050944328308105
+    },
+    {
+     "date": "00:25",
+     "close": 1.1039965152740479
+    },
+    {
+     "date": "00:30",
+     "close": 1.1043622493743896
+    },
+    {
+     "date": "00:35",
+     "close": 1.1039965152740479
+    },
+    {
+     "date": "00:40",
+     "close": 1.1036310195922852
+    },
+    {
+     "date": "00:45",
+     "close": 1.1035091876983643
+    },
+    {
+     "date": "00:46",
+     "close": 1.1033873558044434
     }
    ],
    "news": [
+    {
+     "title": "ユーロ、軟調 ユーロドルは1.1035ドルと1年7カ月ぶり安値(トレーダーズ・ウェブ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTFh2VngycE5abkhfTjlqdkh3NHJFNkhxX2NFS1E3SkZaaGtsei0wVm9kNjBOam5LWjg1cmxfRUY5Z1VTbUV2MkhlMjNPRVRMdWdmc05Pd19ZM29MU1JYMVFkVGgwRVk3d3E0bk9yc3MzdlR1M2trUDktWmVvNW5VbF9FZmREWGM?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-11-14T00:31:47+09:00"
+    },
+    {
+     "title": "ユーロ、軟調 ユーロドルは1.1035ドルと1年7カ月ぶり安値｜FX・為替ニュース",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9fYUZHaUx0TmlYQ2NUUVA2S25MTW0yVHBYaFU5V25ZajJuZDJRTTlvU054TXM5QUNLdzFZdmx0WU96dl9qOHR2ODY0MVRXZmIxX2c?oc=5",
+     "source": "ザイFX！",
+     "published": "2026-11-14T00:31:00+09:00"
+    },
     {
      "title": "ユーロドル一時１．１０４４レベル、本日の安値を小幅に更新＝ロンドン為替",
      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBmT3djcUxibjhwU2lLUW12N3ZQSTNNNUpfQzNVWlV2dnpPd2QwbVJTeWIyaE43a0wxUXYxTDFteV9LNVJReDM2LQ?oc=5",
      "source": "みんかぶ FX/為替",
      "published": "2026-11-13T21:54:29+09:00"
-    },
-    {
-     "title": "欧州外国為替市場概況・20時 ユーロドル、戻り鈍い｜FX・為替ニュース",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB6OEJmdnlDNGV2cXhfN3c0djljQzJ6MXdQUVBVMGJNQkNnYVBCemh3OWN4TjJNSDVkT1ZZeVZJX1NWcnZYTEFUXzNhczFZSHdRRlE?oc=5",
-     "source": "ザイFX！",
-     "published": "2026-11-13T20:06:00+09:00"
-    },
-    {
-     "title": "ドル円１５９．９０近辺、ユーロドル１．１０６５近辺＝ロンドン為替",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB5Q0szNkwyRFdlS1F3R295R1pDZ1Z0eExVX2hzb05Nd2VzSC0tckRNNzRfT0RfVkUwVFBBSElkMU1wOHo5SDZRbA?oc=5",
-     "source": "みんかぶ FX/為替",
-     "published": "2026-11-13T17:23:29+09:00"
     }
    ],
    "marks": [
@@ -4592,24 +4640,6 @@
      ]
     },
     {
-     "date": "11/11",
-     "change": -0.48,
-     "news": [
-      {
-       "title": "ユーロドル、下げ幅拡大 一時1.1093ドルと1年半ぶり安値｜FX・為替ニュース",
-       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0zQ0ZIdS00M1JaUjF6XzhHdGkyNGlYVVlzU2JoZjRJeTI2Q05hdjJOdFlzc241aF9zSTc0cFl5RzZCMGRoYVk1Ni1LaGs1X0w0dHc?oc=5",
-       "source": "ザイFX！",
-       "published": "2026-11-11T23:15:00+09:00"
-      },
-      {
-       "title": "ユーロドル、さえない 年初来安値の1.1105ドルに接近｜FX・為替ニュース",
-       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE92cXlEUTJIQ2hFSXVrU2YzMEdpa3NlTUpEUGpKVVdiOFBGS1hhcHpWMFFvejFBd0Zub3ZxeWIzbWk5NXRrVThDN1FWcFR3cFFiOHc?oc=5",
-       "source": "ザイFX！",
-       "published": "2026-11-11T22:38:00+09:00"
-      }
-     ]
-    },
-    {
      "date": "11/12",
      "change": -0.66,
      "news": [
@@ -4626,6 +4656,24 @@
        "published": "2026-11-12T21:45:29+09:00"
       }
      ]
+    },
+    {
+     "date": "11/13",
+     "change": -0.55,
+     "news": [
+      {
+       "title": "ユーロドル一時１．１０４４レベル、本日の安値を小幅に更新＝ロンドン為替",
+       "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBmT3djcUxibjhwU2lLUW12N3ZQSTNNNUpfQzNVWlV2dnpPd2QwbVJTeWIyaE43a0wxUXYxTDFteV9LNVJReDM2LQ?oc=5",
+       "source": "みんかぶ FX/為替",
+       "published": "2026-11-13T21:54:29+09:00"
+      },
+      {
+       "title": "欧州外国為替市場概況・20時 ユーロドル、戻り鈍い｜FX・為替ニュース",
+       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB6OEJmdnlDNGV2cXhfN3c0djljQzJ6MXdQUVBVMGJNQkNnYVBCemh3OWN4TjJNSDVkT1ZZeVZJX1NWcnZYTEFUXzNhczFZSHdRRlE?oc=5",
+       "source": "ザイFX！",
+       "published": "2026-11-13T20:06:00+09:00"
+      }
+     ]
     }
    ],
    "buzz": [
@@ -4635,7 +4683,7 @@
     },
     {
      "day": "2026-11-09",
-     "count": 7
+     "count": 6
     },
     {
      "day": "2026-11-10",
@@ -4655,7 +4703,7 @@
     },
     {
      "day": "2026-11-14",
-     "count": 0
+     "count": 2
     }
    ]
   },
@@ -4671,41 +4719,41 @@
      "name": "S&P500",
      "code": "^GSPC",
      "symbol": "^GSPC",
-     "price": 7514.1,
-     "change": -78.29990234374964,
-     "changePercent": -1.0312931793750577
+     "price": 7520.46,
+     "change": -71.93990234374996,
+     "changePercent": -0.9475251997927867
     },
     {
      "name": "米公益株ETF",
      "code": "XLU",
      "symbol": "XLU",
-     "price": 43.79,
-     "change": -0.020001373291016478,
-     "changePercent": -0.045654810919979597
+     "price": 44.0,
+     "change": 0.18999862670898438,
+     "changePercent": 0.43368778989543233
     },
     {
      "name": "デューク・エナジー",
      "code": "DUK",
      "symbol": "DUK",
-     "price": 128.34,
-     "change": -0.2499963378906216,
-     "changePercent": -0.19441351972179588
+     "price": 129.085,
+     "change": 0.49500366210938296,
+     "changePercent": 0.3849472557792772
     },
     {
      "name": "サザン",
      "code": "SO",
      "symbol": "SO",
-     "price": 93.45,
-     "change": 0.9799987792968778,
-     "changePercent": 1.059801845311824
+     "price": 94.21,
+     "change": 1.7399987792968687,
+     "changePercent": 1.8816900144122635
     }
    ],
    "regions": [
     "us"
    ],
-   "price": 84.58,
-   "change": -0.7100009155273455,
-   "changePercent": -0.8324550450298885,
+   "price": 84.81,
+   "change": -0.4800009155273415,
+   "changePercent": -0.5627868570463992,
    "currency": "USD",
    "history": [
     {
@@ -4821,12 +4869,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 84.58000183105469
+     "close": 84.80999755859375
     }
    ],
    "move": {
-    "ratio": 1.11,
-    "rank": 114,
+    "ratio": 0.75,
+    "rank": 151,
     "days": 251
    },
    "year": [
@@ -6088,7 +6136,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 84.58000183105469
+     "close": 84.80999755859375
     }
    ],
    "intraday": [
@@ -6118,7 +6166,7 @@
     },
     {
      "date": "00:00",
-     "close": 84.68000030517578
+     "close": 84.69000244140625
     },
     {
      "date": "00:05",
@@ -6130,11 +6178,35 @@
     },
     {
      "date": "00:15",
-     "close": 84.6050033569336
+     "close": 84.63999938964844
     },
     {
-     "date": "00:17",
-     "close": 84.58000183105469
+     "date": "00:20",
+     "close": 84.6500015258789
+    },
+    {
+     "date": "00:25",
+     "close": 84.55000305175781
+    },
+    {
+     "date": "00:30",
+     "close": 84.68499755859375
+    },
+    {
+     "date": "00:35",
+     "close": 84.8499984741211
+    },
+    {
+     "date": "00:40",
+     "close": 84.77999877929688
+    },
+    {
+     "date": "00:45",
+     "close": 84.73999786376953
+    },
+    {
+     "date": "00:46",
+     "close": 84.80999755859375
     }
    ],
    "news": [
@@ -6250,42 +6322,42 @@
      "name": "ナスダック",
      "code": "^IXIC",
      "symbol": "^IXIC",
-     "price": 24988.283,
-     "change": -377.80684375000055,
-     "changePercent": -1.48941695814063
+     "price": 24949.822,
+     "change": -416.2678437499999,
+     "changePercent": -1.641040642503933
     },
     {
      "name": "米半導体指数",
      "code": "^SOX",
      "symbol": "^SOX",
-     "price": 10000.462,
-     "change": -506.20792187500047,
-     "changePercent": -4.817967306854003
+     "price": 9914.504,
+     "change": -592.1659218749992,
+     "changePercent": -5.636095225967871
     },
     {
      "name": "AMD",
      "code": "AMD",
      "symbol": "AMD",
-     "price": 531.693,
-     "change": -53.606987792968766,
-     "changePercent": -9.15889098086408
+     "price": 529.285,
+     "change": -56.01498779296878,
+     "changePercent": -9.570303940068131
     },
     {
      "name": "ブロードコム",
      "code": "AVGO",
      "symbol": "AVGO",
-     "price": 343.81,
-     "change": -20.549985351562498,
-     "changePercent": -5.64002255399541
+     "price": 340.49,
+     "change": -23.86998535156249,
+     "changePercent": -6.551209329018634
     }
    ],
    "regions": [
     "us",
     "china"
    ],
-   "price": 160.974,
-   "change": -5.2160024414062605,
-   "changePercent": -3.1385777512370345,
+   "price": 160.035,
+   "change": -6.155002441406253,
+   "changePercent": -3.703593688541119,
    "currency": "USD",
    "history": [
     {
@@ -6401,12 +6473,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 160.97410583496094
+     "close": 160.03500366210938
     }
    ],
    "move": {
-    "ratio": 2.02,
-    "rank": 45,
+    "ratio": 2.39,
+    "rank": 31,
     "days": 251
    },
    "year": [
@@ -7668,7 +7740,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 160.97410583496094
+     "close": 160.03500366210938
     }
    ],
    "intraday": [
@@ -7710,11 +7782,35 @@
     },
     {
      "date": "00:15",
-     "close": 160.60000610351562
+     "close": 160.41000366210938
     },
     {
-     "date": "00:17",
-     "close": 161.02999877929688
+     "date": "00:20",
+     "close": 160.21629333496094
+    },
+    {
+     "date": "00:25",
+     "close": 160.27499389648438
+    },
+    {
+     "date": "00:30",
+     "close": 159.9799041748047
+    },
+    {
+     "date": "00:35",
+     "close": 159.30499267578125
+    },
+    {
+     "date": "00:40",
+     "close": 159.8699951171875
+    },
+    {
+     "date": "00:45",
+     "close": 160.1300048828125
+    },
+    {
+     "date": "00:46",
+     "close": 160.03500366210938
     }
    ],
    "news": [
@@ -7826,15 +7922,15 @@
     },
     {
      "day": "2026-11-11",
-     "count": 2
+     "count": 3
     },
     {
      "day": "2026-11-12",
-     "count": 31
+     "count": 29
     },
     {
      "day": "2026-11-13",
-     "count": 58
+     "count": 59
     },
     {
      "day": "2026-11-14",
@@ -7862,9 +7958,9 @@
      "name": "NYダウ",
      "code": "^DJI",
      "symbol": "^DJI",
-     "price": 52053.65,
-     "change": -243.43984374999854,
-     "changePercent": -0.4654940542147431
+     "price": 52210.21,
+     "change": -86.87984375000087,
+     "changePercent": -0.16612749200686897
     }
    ],
    "regions": [],
@@ -9296,7 +9392,7 @@
     },
     {
      "date": "11:00",
-     "close": 417.70001220703125
+     "close": 417.79998779296875
     },
     {
      "date": "11:05",
@@ -9475,16 +9571,16 @@
      "published": "2026-11-14T00:00:07+09:00"
     },
     {
-     "title": "TOPIXブル2倍上場投信【1568】：株価・株式情報（夜間PTS含む）",
-     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA0eEVQb25fSmZGMURXT3Ytekp6ckswNVhESXNNanlMNDJJYTk0UTV0TXR4WVRTSVptcVV2LTRYdGVaNGptMG5UVjNCcTBLR1QxRGc?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-13T22:24:04+09:00"
-    },
-    {
      "title": "(NEXT FUNDS)TOPIX連動型上場投信【1306】：株価・株式情報（夜間PTS含む）",
      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9XLTlQQkttSm9oZjlYWF96RGJiTzJKT0dRSXRybUN6TGpEMkVoQWNUZFp0U09xQ1pKc2UxSGNPR1U5a3U2ZDZPdlFGZ00yenFPbXc?oc=5",
      "source": "Yahoo!ファイナンス",
      "published": "2026-11-13T18:28:01+09:00"
+    },
+    {
+     "title": "外国証券 先物取引高情報まとめ（11月13日・夜間）",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBOZzRvYkRVX0xQQ0NGUmtsQndSTnFzUTMwa3NTWU5UaXFZQ3NIaUY1RURtbmp3VkRIMnVHZl9zcGZycFFtenJzeWJmdFNucl9FTjJ3cDZGM1Mzcnd6S0xZ?oc=5",
+     "source": "ライブドアニュース",
+     "published": "2026-11-13T18:11:15+09:00"
     }
    ],
    "marks": [
@@ -11223,16 +11319,16 @@
    ],
    "news": [
     {
+     "title": "三菱UFJフィナンシャル・グループ 2026年9月中間決算【会見全文】：記者会見録",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBKSVFYbzFNWWpYaFdZWkJFbDdRV3gzY2NNR0VxUkpibWtNOEMwZ290TmdUNVMxRmpiSDdpbUt2YVpQUmJvYnM5ZTNWVEc0dGlDRVJmU0ItU2x3V0JCNTB3?oc=5",
+     "source": "中日BIZナビ",
+     "published": "2026-11-13T23:07:01+09:00"
+    },
+    {
      "title": "【11/26東京開催】IPO/M&A交流イベント第9弾「先行事例に学ぶストック・オプション設計 ～2025年上場企業を題材に～」を開催",
      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XcFMtemxKM3hTMENQQmJTeWVMTjJHWXQ0ODhWVHIyelZab3FtX21zMFVwOENvRFFWUmNFdnpiQ0xuMHRtNU9vNzVqRFhvZkh1WnBudGNVVEdNNmxvU1EyY1VramhIV0ZwdE1YZmhhWjgwaVc0ckhsSg?oc=5",
      "source": "ニコニコニュース",
      "published": "2026-11-13T22:51:27+09:00"
-    },
-    {
-     "title": "三菱UFJ 純金ファンド【03311112】：基準価格・投資信託情報",
-     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5mNEtpeXdmblRBVlJBQnJZQXltdTd2dGE4TUVnYnBqazJkNVZ2all3MXVwaEFZNGNaNEVjaDlHNWRrMElRM2lpa2xRZVhLTksyVEh5Qg?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-13T22:31:41+09:00"
     },
     {
      "title": "年間配当100円へ増配！利回り2.88%【三菱ＵＦＪフィナンシャル・グループ】2027年3月期中間決算の注目点",
@@ -11330,7 +11426,7 @@
     },
     {
      "day": "2026-11-11",
-     "count": 11
+     "count": 12
     },
     {
      "day": "2026-11-12",
@@ -11374,9 +11470,9 @@
      "name": "原油 WTI",
      "code": "CL=F",
      "symbol": "CL=F",
-     "price": 89.46,
-     "change": 0.7200021362304625,
-     "changePercent": 0.8113614531924871
+     "price": 89.11,
+     "change": 0.3700021362304682,
+     "changePercent": 0.4169508058795338
     }
    ],
    "regions": [
@@ -13071,15 +13167,15 @@
     },
     {
      "day": "2026-11-09",
-     "count": 0
+     "count": 1
     },
     {
      "day": "2026-11-10",
-     "count": 12
+     "count": 10
     },
     {
      "day": "2026-11-11",
-     "count": 6
+     "count": 5
     },
     {
      "day": "2026-11-12",
@@ -16236,7 +16332,7 @@
     },
     {
      "date": "09:10",
-     "close": 1979.5
+     "close": 1978.5
     },
     {
      "date": "09:15",
@@ -18374,25 +18470,25 @@
      "name": "銀",
      "code": "SI=F",
      "symbol": "SI=F",
-     "price": 49.625,
-     "change": -0.3470001220703125,
-     "changePercent": -0.6943891003415303
+     "price": 49.1,
+     "change": -0.8720001220703111,
+     "changePercent": -1.7449774272396776
     },
     {
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 103.184,
-     "change": 0.014001831054684999,
-     "changePercent": 0.013571611227283729
+     "price": 103.28,
+     "change": 0.11000183105468864,
+     "changePercent": 0.1066219182000526
     },
     {
      "name": "米10年金利",
      "code": "^TNX",
      "symbol": "^TNX",
-     "price": 5.156,
-     "change": 0.05299983596801727,
-     "changePercent": 1.0386014945008555
+     "price": 5.1330004,
+     "change": 0.03000023596801782,
+     "changePercent": 0.5878940819847834
     },
     {
      "name": "純金上場信託",
@@ -18407,9 +18503,9 @@
     "mideast",
     "us"
    ],
-   "price": 3892.0,
-   "change": 6.699951171875,
-   "changePercent": 0.1724435973457397,
+   "price": 3880.3,
+   "change": -5.000048828124818,
+   "changePercent": -0.1286914463564512,
    "currency": "USD",
    "history": [
     {
@@ -18525,12 +18621,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 3892.0
+     "close": 3880.300048828125
     }
    ],
    "move": {
-    "ratio": 0.18,
-    "rank": 225,
+    "ratio": 0.13,
+    "rank": 233,
     "days": 251
    },
    "year": [
@@ -19792,7 +19888,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 3892.0
+     "close": 3880.300048828125
     }
    ],
    "intraday": [
@@ -19802,7 +19898,7 @@
     },
     {
      "date": "14:05",
-     "close": 3919.60009765625
+     "close": 3919.5
     },
     {
      "date": "14:10",
@@ -19814,7 +19910,7 @@
     },
     {
      "date": "14:20",
-     "close": 3920.39990234375
+     "close": 3920.199951171875
     },
     {
      "date": "14:25",
@@ -19874,7 +19970,7 @@
     },
     {
      "date": "15:35",
-     "close": 3898.5
+     "close": 3898.60009765625
     },
     {
      "date": "15:40",
@@ -19890,7 +19986,7 @@
     },
     {
      "date": "15:55",
-     "close": 3905.0
+     "close": 3904.800048828125
     },
     {
      "date": "16:00",
@@ -19906,7 +20002,7 @@
     },
     {
      "date": "16:15",
-     "close": 3899.300048828125
+     "close": 3899.10009765625
     },
     {
      "date": "16:20",
@@ -20010,7 +20106,7 @@
     },
     {
      "date": "18:25",
-     "close": 3898.800048828125
+     "close": 3898.5
     },
     {
      "date": "18:30",
@@ -20150,7 +20246,7 @@
     },
     {
      "date": "21:20",
-     "close": 3899.10009765625
+     "close": 3899.0
     },
     {
      "date": "21:25",
@@ -20206,7 +20302,7 @@
     },
     {
      "date": "22:30",
-     "close": 3908.0
+     "close": 3908.60009765625
     },
     {
      "date": "22:35",
@@ -20250,7 +20346,7 @@
     },
     {
      "date": "23:25",
-     "close": 3891.699951171875
+     "close": 3892.0
     },
     {
      "date": "23:30",
@@ -20282,11 +20378,35 @@
     },
     {
      "date": "00:05",
-     "close": 3889.0
+     "close": 3889.10009765625
     },
     {
-     "date": "00:07",
-     "close": 3892.0
+     "date": "00:10",
+     "close": 3894.5
+    },
+    {
+     "date": "00:15",
+     "close": 3888.60009765625
+    },
+    {
+     "date": "00:20",
+     "close": 3885.89990234375
+    },
+    {
+     "date": "00:25",
+     "close": 3881.60009765625
+    },
+    {
+     "date": "00:30",
+     "close": 3879.800048828125
+    },
+    {
+     "date": "00:35",
+     "close": 3879.0
+    },
+    {
+     "date": "00:36",
+     "close": 3880.300048828125
     }
    ],
    "news": [
@@ -20351,16 +20471,16 @@
      "change": -2.05,
      "news": [
       {
-       "title": "インドネシアのアンタム金地金価格、1グラム1.5万ルピア上昇 買い戻し価格も2.5万ルピア急騰",
-       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tVV9tTXRXVnhVWDBHTzZldWJ1UmRqaDVuUURkYThRZFAyQXAwZWJCWi1pRFJ1QlU5NGhsTklJYjMxbk9PWkFVZ0JtWUFYYzVHR19oNW43c1BOb2N1YWRYcWQ5Tk93QmFhN1FsUEsxcTZBb201?oc=5",
-       "source": "BigGo ファイナンス",
-       "published": "2026-11-10T20:55:00+09:00"
-      },
-      {
        "title": "金相場が下げ幅拡大－FRBウォラー理事が大幅利上げの可能性示唆",
        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE16ZTQ3Yy1oSV9zc1YyV19DdTVVcVlpdlZZQ0FhS0pCLVBDRlpRZGlFQ2pvYXRXcEY1cGtDTm5McUtEY2pXcVFsOUhBNi00SHA3V3FDNHhsTGF5UmtqNTBQOGFZeTJvU2l3bUx0cVdaeHIyX1NOTDBJ?oc=5",
        "source": "Bloomberg.com",
        "published": "2026-11-10T19:36:37+09:00"
+      },
+      {
+       "title": "世界の金価格は米国からの強い圧力に直面し、反転して下落した。",
+       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdHRRM1lZN1hDMkhSUTVFUzVOUF9ONEpLYldkZ09PRUlCOHlhc05uQ0syaTktMnN4VTc3bnBORzlzX2R6U1paTC0yc3JXenVKZUxCbG9CaGRSQ09fcjJtUldoUTlyZ0Vaa0trZ3VhYVEyelJzMHNHdktZbzhWbW4wVVNtWjMxYllSNVE?oc=5",
+       "source": "Vietnam.vn",
+       "published": "2026-11-10T18:23:16+09:00"
       }
      ]
     },
@@ -20394,11 +20514,11 @@
     },
     {
      "day": "2026-11-10",
-     "count": 3
+     "count": 2
     },
     {
      "day": "2026-11-11",
-     "count": 20
+     "count": 22
     },
     {
      "day": "2026-11-12",
@@ -20406,7 +20526,7 @@
     },
     {
      "day": "2026-11-13",
-     "count": 22
+     "count": 21
     },
     {
      "day": "2026-11-14",
@@ -20416,6 +20536,12 @@
   }
  ],
  "videos": [
+  {
+   "id": "s6j6EWojiIk",
+   "title": "ラトニック商務長官“更迭”を協議…エヌビディア・フアンCEO辞任　世界に“激震”【報道ステーション】(2026年11月13日)",
+   "channel": "ANNnewsCH",
+   "published": "2026-11-14T00:27:01+09:00"
+  },
   {
    "id": "yBB7IIs5bIk",
    "title": "【アメリカライブ】「エヌビディア」フアン氏　CEOを辞任　“中国のスパイ”らとの不倫問題受け　ラトニック米商務長官の“更迭議論”報道も ── 国際ニュースライブ（日テレNEWS LIVE）",
@@ -20427,12 +20553,6 @@
    "title": "ガイアの夜明け【働く！じーちゃんばーちゃん２】予告",
    "channel": "テレ東BIZ ダイジェスト",
    "published": "2026-11-13T22:53:14+09:00"
-  },
-  {
-   "id": "UY2V2Kud2rE",
-   "title": "【エヌビディア】フアンCEOが辞任/3人目の不倫相手か 別の女性社員と不適切関係の報道【ニュースまとめ】(2026年11月10日～13日) ANN/テレ朝 LIVE",
-   "channel": "ANNnewsCH",
-   "published": "2026-11-13T22:17:53+09:00"
   }
  ],
  "lives": [
@@ -20476,57 +20596,57 @@
   {
    "name": "NYダウ",
    "unit": "ドル",
-   "price": 52044.61,
-   "change": -252.47984374999942,
-   "changePercent": -0.4827799108981839
+   "price": 52227.74,
+   "change": -69.34984375000204,
+   "changePercent": -0.13260746239838814
   },
   {
    "name": "S&P500",
    "unit": "",
-   "price": 7513.93,
-   "change": -78.46990234374971,
-   "changePercent": -1.0335322605903081
+   "price": 7520.45,
+   "change": -71.94990234375018,
+   "changePercent": -0.9476569104525101
   },
   {
    "name": "ナスダック",
    "unit": "",
-   "price": 24993.219,
-   "change": -372.87084374999904,
-   "changePercent": -1.4699579085574808
+   "price": 24940.92,
+   "change": -425.16984375000175,
+   "changePercent": -1.6761347388145447
   },
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 89.41,
-   "change": 0.6700021362304653,
-   "changePercent": 0.7550170750049247
+   "price": 89.1,
+   "change": 0.36000213623046307,
+   "changePercent": 0.40568193024201493
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 3893.2,
-   "change": 7.899951171874818,
-   "changePercent": 0.20332924285365253
+   "price": 3880.4,
+   "change": -4.900048828124909,
+   "changePercent": -0.12611764256412705
   },
   {
    "name": "米10年金利",
    "unit": "%",
-   "price": 5.1540003,
-   "change": 0.051000135968017446,
-   "changePercent": 0.99941474287003
+   "price": 5.1330004,
+   "change": 0.03000023596801782,
+   "changePercent": 0.5878940819847834
   },
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 68834.9,
-   "change": -2508.068750000006,
-   "changePercent": -3.5155093682585306
+   "price": 68283.16,
+   "change": -3059.8087499999965,
+   "changePercent": -4.288872195271516
   }
  ],
  "fear": {
-  "price": 19.69,
-  "change": 0.9899992370605482,
-  "changePercent": 5.2941133511746985,
+  "price": 20.26,
+  "change": 1.5599992370605484,
+  "changePercent": 8.342241569060407,
   "history": [
    {
     "date": "10/14",
@@ -20641,7 +20761,7 @@
    {
     "date": "11/13",
     "day": "2026-11-13",
-    "close": 19.690000534057617
+    "close": 20.260000228881836
    }
   ]
  },
@@ -20670,10 +20790,10 @@
      "published": "2026-11-12T08:00:00+09:00"
     },
     {
-     "title": "米国でソーセージやベーコンなど食肉製品約68万kgを自主回収。倉庫の冷却設備が故障、USDAが最高リスク指定の対象ブランドまとめ",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZnRVVmtyd0oxX2FWc3hCcU11X1JubjRDajQway1VZkt2Smx0M1RjanFPdWZEUGh1OVRNc1k0bWg4WWx1MG1tNkMyZ0hmU3ZlUnVXZzc2ZEUzYlktUFRTSUpFRTFNZkJNMmRfMUV6VlpJb2llSFV4Q3ZybmdVUl9zZjBRa3hFZDQ4dDBv?oc=5",
-     "source": "Women's Health",
-     "published": "2026-11-13T21:23:01+09:00"
+     "title": "RTX Spark搭載の1.1LミニPC、ASUS「ProArt GR1X」が米国で18日発売",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1UzAzNTdxREFLQUNVZ0duQ2hkUExHVi1VTjd2NzU5aHRWUXRSVkhuZnFBSnVRMW01Wk43VjRVOXNmUDcxbG5LemY1Yzd3aFNqcDA5b3FQUUJIbjB5WDZRUg?oc=5",
+     "source": "エルミタージュ秋葉原",
+     "published": "2026-11-14T00:00:00+09:00"
     }
    ]
   },
@@ -20701,10 +20821,10 @@
      "published": "2026-11-12T05:00:00+09:00"
     },
     {
-     "title": "メキシコシティ発の新世代音楽コレクティブLATIN MAFIA、2年ぶりの新曲リリース",
-     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1wX0JGc1RCTV9rV3F2RGdpTjNuM0ZKc3NvdWpsNVBUNUNfbDE3Ty1tUTByM2dUWXZQeWdWYlJYdEQ0djdWOUxLTjlPNmd6NEZ4eFAwbW9HQk5qMUZkZUt5VA?oc=5",
-     "source": "Rolling Stone Japan(ローリングストーン ジャパン）",
-     "published": "2026-11-13T23:27:00+09:00"
+     "title": "アルゼンチンのカジノクラブへの WAP 入門 | Zitro lanza の概要ヨゴネット ラテンアメリカ",
+     "link": "https://news.google.com/rss/articles/CBMijwVBVV95cUxNZUpVWUNNX09ONkhvclgwVG1nSjJObG5vOUphZnlYS2ppV0phLWgxRHBTNVlLYko0YnViWmJzeDdkX1JPblI3ell0cUhIOGJJbzFybVpiLUM4bGpaQ1pOS2FJU2Z2Wk1nNGlfbVJTQ3ZUei1sd1Q5QjJKcm11em5aNjlMWmgwVE9qQll3MU03WHM4U2NKNVZJV1VLZ2ZiT2w5WnFFdEhUTm53SGlCQWIzY0JNMU1qbUtDZnBDcGdmX01PMlc4NkVlb0tldFVCT25Qd21LZFh6X3ZwekI4bm5aWU9veEFVRzhjSF9OSnJVRHBKaHlldXhPSWd2QjI4YklxNDIwb0R3aVBWV1RKVlg1NFR6bXZ6ZUp6Mmxoa0FnYjhYTzh5WHE4dUN3R2t4RUdaNHBEdWVHNmxPR0M2RDBhb2VqbGNWTlA4M1pBQXZhR3ZpT2NqUExveUlINXhESzlzS2o4YkktZm9VZ0k3eGVMRFV6LW0wQ3h2eV9rLUVxa1lDYnllMWFfeTV2aVVOWGdIUWNvelNkdlZ5ekZ1eFBsTEdTQ2xDaE5JazBia3gxYlpaT0x5cmt4M2lvNm1jOHNTeFd6dzdoYU1NWEQ2SUN0MHkwVHhFaEpTemJNMGxYeU5ueEtHR2FPUGozbC1kRF96ZF9DbHVfbmVFWkU1NU1zU2hIOUpnNzl2Z01TaUdYaUlQMFRYc2E2RlBEVEFOMG1Za3NqUnE3Tm9XTUttTjRubEktY1lBOXVJTWFVcEtWbHo5UnZzUUprd0RsRWpjSDhiU1lPWnNJYkIzNnJkTjNlSU5vZFlBVTkwQXNXNlFCdFZQNFpDcVRUblRZQ2pjSW9IRHBUUmZGc3hrMG9pcVFz?oc=5",
+     "source": "Yogonet",
+     "published": "2026-11-13T23:49:03+09:00"
     }
    ]
   },
