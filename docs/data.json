@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T12:52+09:00",
+ "updated": "2026-11-13T16:09+09:00",
  "items": [
   {
    "name": "米ドル/円",
@@ -13,34 +13,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 103.159,
-     "change": -0.010998168945306475,
-     "changePercent": -0.01066023954686565
+     "price": 103.104,
+     "change": -0.0659981689453133,
+     "changePercent": -0.06397031125001908
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.87,
-     "change": -0.35300720214843295,
-     "changePercent": -0.19918813461153903
+     "price": 176.889,
+     "change": -0.3340072021484275,
+     "changePercent": -0.18846717896364554
     },
     {
      "name": "英ポンド/円",
      "code": "GBPJPY",
      "symbol": "GBPJPY=X",
-     "price": 211.618,
-     "change": -0.447002441406255,
-     "changePercent": -0.210785578129405
+     "price": 211.567,
+     "change": -0.4980024414062427,
+     "changePercent": -0.23483480804138873
     }
    ],
    "regions": [
     "mideast",
     "us"
    ],
-   "price": 159.904,
-   "change": 0.17000646972655886,
-   "changePercent": 0.10643098940260236,
+   "price": 159.817,
+   "change": 0.08300646972656978,
+   "changePercent": 0.051965438221412814,
    "currency": "JPY",
    "history": [
     {
@@ -156,12 +156,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 159.9040069580078
+     "close": 159.81700134277344
     }
    ],
    "move": {
-    "ratio": 0.51,
-    "rank": 185,
+    "ratio": 0.25,
+    "rank": 226,
     "days": 259
    },
    "year": [
@@ -1463,7 +1463,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 159.9040069580078
+     "close": 159.81700134277344
     }
    ],
    "intraday": [
@@ -1525,11 +1525,11 @@
     },
     {
      "date": "10:10",
-     "close": 159.88999938964844
+     "close": 159.8780059814453
     },
     {
      "date": "10:15",
-     "close": 159.92300415039062
+     "close": 159.91799926757812
     },
     {
      "date": "10:20",
@@ -1653,31 +1653,187 @@
     },
     {
      "date": "12:50",
-     "close": 159.90699768066406
+     "close": 159.88099670410156
     },
     {
-     "date": "12:51",
-     "close": 159.9040069580078
+     "date": "12:55",
+     "close": 159.88600158691406
+    },
+    {
+     "date": "13:00",
+     "close": 159.8800048828125
+    },
+    {
+     "date": "13:05",
+     "close": 159.906005859375
+    },
+    {
+     "date": "13:10",
+     "close": 159.9250030517578
+    },
+    {
+     "date": "13:15",
+     "close": 159.9340057373047
+    },
+    {
+     "date": "13:20",
+     "close": 159.92300415039062
+    },
+    {
+     "date": "13:25",
+     "close": 159.9219970703125
+    },
+    {
+     "date": "13:30",
+     "close": 159.91099548339844
+    },
+    {
+     "date": "13:35",
+     "close": 159.91600036621094
+    },
+    {
+     "date": "13:40",
+     "close": 159.91200256347656
+    },
+    {
+     "date": "13:45",
+     "close": 159.9080047607422
+    },
+    {
+     "date": "13:50",
+     "close": 159.91299438476562
+    },
+    {
+     "date": "13:55",
+     "close": 159.91299438476562
+    },
+    {
+     "date": "14:00",
+     "close": 159.927001953125
+    },
+    {
+     "date": "14:05",
+     "close": 159.93800354003906
+    },
+    {
+     "date": "14:10",
+     "close": 159.95399475097656
+    },
+    {
+     "date": "14:15",
+     "close": 159.95700073242188
+    },
+    {
+     "date": "14:20",
+     "close": 159.9550018310547
+    },
+    {
+     "date": "14:25",
+     "close": 159.96499633789062
+    },
+    {
+     "date": "14:30",
+     "close": 159.96600341796875
+    },
+    {
+     "date": "14:35",
+     "close": 159.97799682617188
+    },
+    {
+     "date": "14:40",
+     "close": 159.9429931640625
+    },
+    {
+     "date": "14:45",
+     "close": 159.93600463867188
+    },
+    {
+     "date": "14:50",
+     "close": 159.9080047607422
+    },
+    {
+     "date": "14:55",
+     "close": 159.96200561523438
+    },
+    {
+     "date": "15:00",
+     "close": 159.9709930419922
+    },
+    {
+     "date": "15:05",
+     "close": 160.05799865722656
+    },
+    {
+     "date": "15:10",
+     "close": 160.11700439453125
+    },
+    {
+     "date": "15:15",
+     "close": 160.09800720214844
+    },
+    {
+     "date": "15:20",
+     "close": 160.08799743652344
+    },
+    {
+     "date": "15:25",
+     "close": 160.093994140625
+    },
+    {
+     "date": "15:30",
+     "close": 159.9340057373047
+    },
+    {
+     "date": "15:35",
+     "close": 159.6999969482422
+    },
+    {
+     "date": "15:40",
+     "close": 159.79400634765625
+    },
+    {
+     "date": "15:45",
+     "close": 159.8260040283203
+    },
+    {
+     "date": "15:50",
+     "close": 159.79400634765625
+    },
+    {
+     "date": "15:55",
+     "close": 159.7740020751953
+    },
+    {
+     "date": "16:00",
+     "close": 159.8459930419922
+    },
+    {
+     "date": "16:05",
+     "close": 159.80999755859375
+    },
+    {
+     "date": "16:08",
+     "close": 159.81700134277344
     }
    ],
    "news": [
     {
-     "title": "東京外為市場・午前＝ドル159円後半で小動き、値幅は上下15銭程度",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBPbUZwS2lZUk5EelVWbjZtb1QtMUJLTEZhemVNbkZJUVN3QXJUYkgzaFpKZi1QOU5vRnVXb25QS3A4cTRtWDQ2RDllTjhLZmZYcDZvbVhRVDU3Sy0yZFFWel96ZEFLb0phSGE3TlRkSEpFTlNHWm1JeHlEdlg5dw?oc=5",
+     "title": "東京外為市場・15時＝ドル159円後半、一時160円に強含み 米利上げ思惑が支援",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1oT1F4NFJaeUNpS3hxSnVFNUNORXU5ZFBkaERkMnZMa19oaGJzRm5HLWp3OFJ4bUZTZzFyUlRLM1FNUkdQd21NZVN2ZnBZV2N1M0xGcVUzWXpsdjlFeFpNOXYwNGd2SHBLa09YYm1kdFFDel8xckxQR1A1VGRoZw?oc=5",
      "source": "Reuters",
-     "published": "2026-11-13T12:33:00+09:00"
+     "published": "2026-11-13T15:24:00+09:00"
     },
     {
-     "title": "【テクニカル】日足テクニカル・ドル円＝160円超えから失速も底堅さは維持",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5nWXd0bGxEd3hsMkxSeWRmNFFaSTlTUGM2MXk1TnppR0RGUWRyZUJSU0tXSXJsRGF2czFyYmJZRUZ6ckVIUkIxdk5Gajk3TVk5d0NEcUp3ZEZWaFRVVzRsbFpQQQ?oc=5",
+     "title": "来週の豪ドル・NZドル為替予想： 「豪賃金指数や雇用統計は RBAの利上げ観測を高めるか？」2026/11/13",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE96VjkydFNCazhDV0V2NklldWhxWGVvRl83MDB5SnZ6TG04NU1mYTFRNmsxS3U3aVdLTXJIM1Rkc2l1VEZOWDZPdEd3OUNwMHFrTUJnOXNsNEFBZVFUSzl4d0RDUQ?oc=5",
      "source": "外為どっとコム",
-     "published": "2026-11-13T11:48:14+09:00"
+     "published": "2026-11-13T15:17:00+09:00"
     },
     {
-     "title": "【FX】11/13 ドル円160円突破も定着できず！米PPIに注目 ｜為替市場ニュースの振り返り、今日の見通し",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9hd29RNnM3bnpiNFNBYkVEUGs0WEh0dWtyZlhROHotMzlzMVRSbk9XZnJnRjJ2UUc2Q1hYLWJkVmhzNnhNMlh3QzRELWpVY2tldFhwSldycE9Ca2VZekgzUjNOOA?oc=5",
+     "title": "FX個人投資家動向｜トルコリラ円はインフレ見通し悪化が重し、ドル円は160円台へ上昇 2026年11月13日",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB1RmgtZVBlVjhoU2dCaGlxUEZPRmpkYU1vQmlrYnI3V2RuaEJDZmJ2OUdGYURXbzFpSjBzNkk3VDYtNFRvclFUTVM1MTd6RjhhdlJ2c0hLYlZsbHJIZ3k1NDdGZw?oc=5",
      "source": "外為どっとコム",
-     "published": "2026-11-13T11:30:00+09:00"
+     "published": "2026-11-13T15:12:00+09:00"
     }
    ],
    "marks": [
@@ -1703,6 +1859,12 @@
      "date": "11/06",
      "change": -0.54,
      "news": [
+      {
+       "title": "【ドル/円、今夜から来週の見通し】ドル/円、米10月雇用統計を受けた米株に注目…来週は米10月消費者物価指数発表も注意点あり＿2026/11/6",
+       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5JUjk1UmkyWS01UTN2ajFXQTl1WGxGM0ZaeWVwN3FtUzN5QzVfM3JVWkRNUG5kZ3NBVTZVYlJLOGNPcVFQc1lWX0h6bU9MRUJPbjJ0bExXVWZLV3R4dmRldHdiNA?oc=5",
+       "source": "外為どっとコム",
+       "published": "2026-11-06T18:59:00+09:00"
+      },
       {
        "title": "FX/為替「ドル/円今日の見通し｜米政局不安でリスク回避 米雇用統計の反応は限定的か」 外為どっとコム トゥデイ 2026年11月6日号",
        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1TcWdkZm1uQVVGajNFTHBRRm9fZ0J4NzBjVENIQW1SMWU5TVhESWl1d0c2ck1HeEpPSzFQUFhtUHhWaE9Nczc2U24xT21PbFc5T3ItblcweE5nRjYtTk9JSlhKUQ?oc=5",
@@ -1761,15 +1923,15 @@
     },
     {
      "day": "2026-11-11",
-     "count": 13
+     "count": 5
     },
     {
      "day": "2026-11-12",
-     "count": 26
+     "count": 28
     },
     {
      "day": "2026-11-13",
-     "count": 12
+     "count": 20
     }
    ]
   },
@@ -1785,34 +1947,34 @@
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 103.159,
-     "change": -0.010998168945306475,
-     "changePercent": -0.01066023954686565
+     "price": 103.104,
+     "change": -0.0659981689453133,
+     "changePercent": -0.06397031125001908
     },
     {
      "name": "ユーロ/円",
      "code": "EURJPY",
      "symbol": "EURJPY=X",
-     "price": 176.87,
-     "change": -0.35300720214843295,
-     "changePercent": -0.19918813461153903
+     "price": 176.889,
+     "change": -0.3340072021484275,
+     "changePercent": -0.18846717896364554
     },
     {
      "name": "英ポンド/米ドル",
      "code": "GBPUSD",
      "symbol": "GBPUSD=X",
-     "price": 1.3235,
-     "change": -0.004168666839599711,
-     "changePercent": -0.31398397384212295
+     "price": 1.3239,
+     "change": -0.0037686668395995326,
+     "changePercent": -0.2838559750431196
     }
    ],
    "regions": [
     "europe",
     "us"
    ],
-   "price": 1.1064,
-   "change": -0.0031207929611205554,
-   "changePercent": -0.2812739500619627,
+   "price": 1.1072,
+   "change": -0.0023207929611206435,
+   "changePercent": -0.2091707497366359,
    "currency": "USD",
    "history": [
     {
@@ -1928,12 +2090,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 1.106439471244812
+     "close": 1.1071745157241821
     }
    ],
    "move": {
-    "ratio": 1.39,
-    "rank": 96,
+    "ratio": 1.03,
+    "rank": 127,
     "days": 259
    },
    "year": [
@@ -3235,7 +3397,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 1.106439471244812
+     "close": 1.1071745157241821
     }
    ],
    "intraday": [
@@ -3425,14 +3587,176 @@
     },
     {
      "date": "12:50",
+     "close": 1.106439471244812
+    },
+    {
+     "date": "12:55",
+     "close": 1.1066844463348389
+    },
+    {
+     "date": "13:00",
+     "close": 1.106439471244812
+    },
+    {
+     "date": "13:05",
+     "close": 1.106439471244812
+    },
+    {
+     "date": "13:10",
+     "close": 1.1060723066329956
+    },
+    {
+     "date": "13:15",
+     "close": 1.1060723066329956
+    },
+    {
+     "date": "13:20",
+     "close": 1.1059499979019165
+    },
+    {
+     "date": "13:25",
+     "close": 1.1060723066329956
+    },
+    {
+     "date": "13:30",
      "close": 1.1063170433044434
     },
     {
-     "date": "12:51",
+     "date": "13:35",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "13:40",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "13:45",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "13:50",
+     "close": 1.1063170433044434
+    },
+    {
+     "date": "13:55",
      "close": 1.106439471244812
+    },
+    {
+     "date": "14:00",
+     "close": 1.1063170433044434
+    },
+    {
+     "date": "14:05",
+     "close": 1.1063170433044434
+    },
+    {
+     "date": "14:10",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "14:15",
+     "close": 1.1063170433044434
+    },
+    {
+     "date": "14:20",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "14:25",
+     "close": 1.1063170433044434
+    },
+    {
+     "date": "14:30",
+     "close": 1.1063170433044434
+    },
+    {
+     "date": "14:35",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "14:40",
+     "close": 1.1059499979019165
+    },
+    {
+     "date": "14:45",
+     "close": 1.1060723066329956
+    },
+    {
+     "date": "14:50",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "14:55",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "15:00",
+     "close": 1.106439471244812
+    },
+    {
+     "date": "15:05",
+     "close": 1.1060723066329956
+    },
+    {
+     "date": "15:10",
+     "close": 1.1060723066329956
+    },
+    {
+     "date": "15:15",
+     "close": 1.1063170433044434
+    },
+    {
+     "date": "15:20",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "15:25",
+     "close": 1.1060723066329956
+    },
+    {
+     "date": "15:30",
+     "close": 1.1060723066329956
+    },
+    {
+     "date": "15:35",
+     "close": 1.1063170433044434
+    },
+    {
+     "date": "15:40",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "15:45",
+     "close": 1.1061947345733643
+    },
+    {
+     "date": "15:50",
+     "close": 1.1065618991851807
+    },
+    {
+     "date": "15:55",
+     "close": 1.107051968574524
+    },
+    {
+     "date": "16:00",
+     "close": 1.1071745157241821
+    },
+    {
+     "date": "16:05",
+     "close": 1.1072970628738403
+    },
+    {
+     "date": "16:08",
+     "close": 1.1071745157241821
     }
    ],
    "news": [
+    {
+     "title": "ロンドン為替見通し＝ユーロドル、ドル高基調継続か 1.10ドルの節目視野(トレーダーズ・ウェブ)",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaWs4d3RCbXg3Zm0yYldHR0x0ZjN4WHVpeUNVZFV1UHU4eUFyRkRVaFVMbHMwYlFya2RLRF9YSmxYeVNtUnlscl82czRyT2tYWV9mcmd3V3hPLWZYay1qT2pDdFRYLWx6SnhQV1JoQ0lGV1NsMmJ0VkZZRmNsTlhxWHRkX21FQVk?oc=5",
+     "source": "Yahoo!ファイナンス",
+     "published": "2026-11-13T13:43:03+09:00"
+    },
     {
      "title": "【テクニカル】日足テクニカル・ユーロドル＝昨年4月10日安値が目標値に",
      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBySE9aT3BuSi1maGJoRHdQM3pQdlc4Mjh6cFp5c1d5dUVnSFFvSjdHYmFNZnQ4cXotN2g0WFNlTm9lMzhYaEI5ZjRLbEYtdVpiWFBYVWIxR1AwbU9IOHdoTWtjdw?oc=5",
@@ -3444,12 +3768,6 @@
      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5pZlJyM1RaMHU5UkxOWTFtZ2VXMV91LVNLaTYtZDNzLUhNdmtDWlVvUmtSdEdsdnJGQVZSd3ItMnA0cFAxVERXaWpod3NOVTI3LTRZSHNvbDJ0MjJzSnFuRkhTYWI1MjEyejltaEowa3llTVJJOFVaYUtR?oc=5",
      "source": "OANDA証券",
      "published": "2026-11-13T07:52:25+09:00"
-    },
-    {
-     "title": "ユーロ/ドル見通し(為替/FX ニュース )：1.105台で一服｜ドル全面高で33.5pips安(2026年11月13日)",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1LMTNoT2I1QlVDWVczeWZPb2hUWi1uUmFudVpjdE50WUZuRXBnMXNGQVNQRE1lLTg2S3F2dXFHNVQ0Nzd0SFlaYnh2OG5POGVpQ293NGtrN3RYcHR5WGpMeEFyOWxzTUd4VS00Rk1OZ0V5dkV1MDVOREln?oc=5",
-     "source": "OANDA証券",
-     "published": "2026-11-13T07:52:22+09:00"
     }
    ],
    "marks": [
@@ -6870,7 +7188,7 @@
     },
     {
      "date": "00:15",
-     "close": 163.67999267578125
+     "close": 163.67930603027344
     },
     {
      "date": "00:20",
@@ -6878,7 +7196,7 @@
     },
     {
      "date": "00:25",
-     "close": 165.07000732421875
+     "close": 165.0699005126953
     },
     {
      "date": "00:30",
@@ -6954,7 +7272,7 @@
     },
     {
      "date": "02:00",
-     "close": 164.94500732421875
+     "close": 164.9499969482422
     },
     {
      "date": "02:05",
@@ -7134,7 +7452,7 @@
     },
     {
      "date": "05:45",
-     "close": 164.85009765625
+     "close": 164.8699951171875
     },
     {
      "date": "05:50",
@@ -7151,22 +7469,22 @@
    ],
    "news": [
     {
-     "title": "「AI界の中央銀行」エヌビディア、フアンCEO辞任はどう響くか",
-     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9acTdDV0xLaFFJb01oQmlNdVI3bDJoQ3NNaTdIREYzSUVOYndhQUgxMkNndEZHcWdxeXJ2dEgwLXVkQkswZHJ4TmM3WVJDUWprQUFNdkZIRDBVU09obzZfNGFVMDRpdw?oc=5",
-     "source": "朝日新聞",
-     "published": "2026-11-13T12:35:17+09:00"
-    },
-    {
-     "title": "エヌビディア「格好の標的」 識者が見る私企業による機密管理の限界",
-     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Nc3NpdEtOZEp2VXdka24tdXh2NENZQ0dDNzE2TXZVRll2NFFFU0JCY1ZERk16VS1Zd2VLWGJyZDFlZ2lBTkpwYnJudTlFR1pnR1BkQnRjWHRjRUpsbDVwYkZSd1EycGc?oc=5",
-     "source": "朝日新聞",
-     "published": "2026-11-13T12:00:00+09:00"
-    },
-    {
-     "title": "【更新中】米エヌビディアCEO辞任 3人目の不倫報道も “中国女性工作員”と親密交際 株価大幅下落 アメリカの政財界にも波紋広がる",
-     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5udHkzSDljZUtrNExnZ2ljNmstNjZqNy1tZUxlVERxaG9qdEhEWnBiYThtSFhTRHRjNGlMN25nWHB6ZTFkanRlQnhGbkN4Yl81MkppUmxJS2R3dng5NDNuSkptVTdvV1lVRVZSWFlxQUNwV2t6TWVVQ3pB?oc=5",
+     "title": "エヌビディアのフアンCEOが辞任 “スパイ”女性に続き2人目の不倫報道も",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1GQTI1UkF3RG1SSHJqQWg3Q3pJNWZhWTY5NzBfV0VveXJCSGZnMnN0RFViWUV2bkdhMmt1WGdGclFqU0wzdEFsX1BLc0tNTmJmVUxhZ19XcEtlUzdvSVVsYlpzSjV0UTgydDRKVVJ2TVN3dUR2ZDZWTi13?oc=5",
      "source": "テレ朝NEWS",
-     "published": "2026-11-13T11:57:26+09:00"
+     "published": "2026-11-13T15:15:00+09:00"
+    },
+    {
+     "title": "〈ついに辞任〉フアン氏のエヌビディア持ち株比率は3％超､取締役会が担う後継者選びの重み､マスク氏との決定的な差",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51SUJRbUp1VmE5UUpRZWcwZnBPM1BXVHVsNmZuUVFOb2l2cUpkR3ZPS1JoamFuUlR5NWxydk9VSElkdlp3Z2ZFN1JPTUhYcFJyY3BCUEc3ZWdSM21TUDlV?oc=5",
+     "source": "東洋経済オンライン",
+     "published": "2026-11-13T14:05:27+09:00"
+    },
+    {
+     "title": "米エヌビディアのフアンCEOが辞任、不倫問題で大揺れのAI半導体大手",
+     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9MWDV6S1l4ejMyTXZ6bm9vNEVYaTlyUk9SOHRBRU15OFdidmFRdHF0OFoza2R1QlhMWFBub3dZRTFMTWJnNzJQVFkyVDVDeE5uSFJpcjlqZGtxNnVHUDRWR9IBZkFVX3lxTE9wUWNRX3BnY3lRQm5sazBlNm5FanRXeGNMM2NPbGgzT3ZnUll0ZC1KRnpZR3BDR0k1MkVWeGh2d3M0akl6WjVDbS0zelNBOWdleGlsa2Rfb2x0MjI2WXAxVGxESlJ5QQ?oc=5",
+     "source": "BBC",
+     "published": "2026-11-13T13:22:27+09:00"
     }
    ],
    "marks": [
@@ -7175,15 +7493,15 @@
      "change": -4.22,
      "news": [
       {
-       "title": "エヌビディアＣＥＯ、シンガポール企業との取引擁護 元幹部に中国スパイ疑惑＝報道（ロイター）",
-       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaQURTbmJ0Q2hCMmttMC1KMmEzVDlUTmZvUExIak91UWdiYS05amJYSFNXb0x6UjlGQ0cwbE5IYWpSdmVUbHREYzNITXdWRmFncXNQZE16SWtMM1RMdjFQMTUxbVYtS2s0UFgtZ05rbzhPaVVnSXl6MU5OTGVzRUE?oc=5",
-       "source": "Yahoo!ニュース",
-       "published": "2026-10-30T16:00:00+09:00"
-      },
-      {
        "title": "エヌビディアに中国女性スパイか ＣＥＯと親密な関係―米報道：時事ドットコム",
        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE03UWtZa3hmMHFhVmNqZXZFOXl2N1hURzM3SFJEZndTeGQ5Z0hXUVNlYXFhTkw0RVhiZmZRQlIyc2hiZm0zcWR1OW9ld3V5bTBKODk1bTZYb1hjSmxqdllEekhacw?oc=5",
        "source": "時事ドットコム",
+       "published": "2026-10-30T16:00:00+09:00"
+      },
+      {
+       "title": "エヌビディアＣＥＯ、シンガポール企業との取引擁護 元幹部に中国スパイ疑惑＝報道（ロイター）",
+       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBaQURTbmJ0Q2hCMmttMC1KMmEzVDlUTmZvUExIak91UWdiYS05amJYSFNXb0x6UjlGQ0cwbE5IYWpSdmVUbHREYzNITXdWRmFncXNQZE16SWtMM1RMdjFQMTUxbVYtS2s0UFgtZ05rbzhPaVVnSXl6MU5OTGVzRUE?oc=5",
+       "source": "Yahoo!ニュース",
        "published": "2026-10-30T16:00:00+09:00"
       }
      ]
@@ -7199,10 +7517,10 @@
        "published": "2026-11-09T14:11:57+09:00"
       },
       {
-       "title": "エヌビディアが社内調査を開始 フアンCEOと中国スパイの交際めぐり 「妻を裏切った」不倫認めるメッセージも",
-       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UTGxicDAyUU92S3U4aWxsUXM1cmphZkY0ZGNoM29BY3BhWEp6TTFWRFVQWURRU2J1SjA2WHA3WEgwVWdIMmk5ank3Mkx1cjd2cWd1aHlldw?oc=5",
-       "source": "TBS NEWS DIG",
-       "published": "2026-11-09T07:51:27+09:00"
+       "title": "エヌビディアが調査開始、中国スパイ疑惑巡り ＣＥＯは不貞認める | ロイター",
+       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5jQ1N5WlpIeFk5NWR4RmpYYnlXc0toS0Vlc1htVWtoREdQNXRxRjBUUXQ4WEtCMXFFbzQtUlEwN2w5VGI1enpxUGZqeEpBNXc1anM4OVZMN3dsMDZiUVg2ZUlidi1rTkdhR1RCcHFlWUdvS3NRN3BWYW1xeTdZQQ?oc=5",
+       "source": "Reuters",
+       "published": "2026-11-09T07:07:00+09:00"
       }
      ]
     },
@@ -7254,11 +7572,11 @@
     },
     {
      "day": "2026-11-09",
-     "count": 3
+     "count": 2
     },
     {
      "day": "2026-11-10",
-     "count": 5
+     "count": 4
     },
     {
      "day": "2026-11-11",
@@ -7266,11 +7584,11 @@
     },
     {
      "day": "2026-11-12",
-     "count": 36
+     "count": 33
     },
     {
      "day": "2026-11-13",
-     "count": 48
+     "count": 53
     }
    ]
   },
@@ -7286,9 +7604,9 @@
      "name": "日経平均",
      "code": "^N225",
      "symbol": "^N225",
-     "price": 61378.6,
-     "change": 559.2406249999985,
-     "changePercent": 0.9195108773702018
+     "price": 61142.35,
+     "change": 322.99062499999854,
+     "changePercent": 0.5310654836209355
     },
     {
      "name": "NYダウ",
@@ -7300,9 +7618,9 @@
     }
    ],
    "regions": [],
-   "price": 416.1,
-   "change": 1.8000122070312727,
-   "changePercent": 0.43447073619774346,
+   "price": 415.5,
+   "change": 1.20001220703125,
+   "changePercent": 0.2896481396062488,
    "currency": "JPY",
    "history": [
     {
@@ -7413,12 +7731,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 416.1000061035156
+     "close": 415.5
     }
    ],
    "move": {
-    "ratio": 0.53,
-    "rank": 173,
+    "ratio": 0.36,
+    "rank": 205,
     "days": 242
    },
    "year": [
@@ -8635,7 +8953,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 416.1000061035156
+     "close": 415.5
     }
    ],
    "intraday": [
@@ -8733,7 +9051,7 @@
     },
     {
      "date": "11:00",
-     "close": 417.79998779296875
+     "close": 417.70001220703125
     },
     {
      "date": "11:05",
@@ -8765,31 +9083,163 @@
     },
     {
      "date": "12:35",
-     "close": 416.29998779296875
+     "close": 416.1000061035156
     },
     {
-     "date": "12:36",
-     "close": 416.1000061035156
+     "date": "12:40",
+     "close": 415.8999938964844
+    },
+    {
+     "date": "12:45",
+     "close": 415.8999938964844
+    },
+    {
+     "date": "12:50",
+     "close": 415.29998779296875
+    },
+    {
+     "date": "12:55",
+     "close": 415.3999938964844
+    },
+    {
+     "date": "13:00",
+     "close": 415.70001220703125
+    },
+    {
+     "date": "13:05",
+     "close": 415.5
+    },
+    {
+     "date": "13:10",
+     "close": 415.3999938964844
+    },
+    {
+     "date": "13:15",
+     "close": 415.20001220703125
+    },
+    {
+     "date": "13:20",
+     "close": 415.3999938964844
+    },
+    {
+     "date": "13:25",
+     "close": 415.3999938964844
+    },
+    {
+     "date": "13:30",
+     "close": 415.20001220703125
+    },
+    {
+     "date": "13:35",
+     "close": 415.0
+    },
+    {
+     "date": "13:40",
+     "close": 414.8999938964844
+    },
+    {
+     "date": "13:45",
+     "close": 415.1000061035156
+    },
+    {
+     "date": "13:50",
+     "close": 415.20001220703125
+    },
+    {
+     "date": "13:55",
+     "close": 414.79998779296875
+    },
+    {
+     "date": "14:00",
+     "close": 415.20001220703125
+    },
+    {
+     "date": "14:05",
+     "close": 415.0
+    },
+    {
+     "date": "14:10",
+     "close": 415.3999938964844
+    },
+    {
+     "date": "14:15",
+     "close": 414.79998779296875
+    },
+    {
+     "date": "14:20",
+     "close": 414.6000061035156
+    },
+    {
+     "date": "14:25",
+     "close": 414.79998779296875
+    },
+    {
+     "date": "14:30",
+     "close": 414.29998779296875
+    },
+    {
+     "date": "14:35",
+     "close": 414.6000061035156
+    },
+    {
+     "date": "14:40",
+     "close": 414.8999938964844
+    },
+    {
+     "date": "14:45",
+     "close": 414.6000061035156
+    },
+    {
+     "date": "14:50",
+     "close": 414.70001220703125
+    },
+    {
+     "date": "14:55",
+     "close": 414.70001220703125
+    },
+    {
+     "date": "15:00",
+     "close": 414.3999938964844
+    },
+    {
+     "date": "15:05",
+     "close": 414.6000061035156
+    },
+    {
+     "date": "15:10",
+     "close": 414.79998779296875
+    },
+    {
+     "date": "15:15",
+     "close": 415.1000061035156
+    },
+    {
+     "date": "15:20",
+     "close": 415.1000061035156
+    },
+    {
+     "date": "15:30",
+     "close": 415.5
     }
    ],
    "news": [
     {
-     "title": "東証、一時１０００円超高",
-     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DeXFJMmtTbTFSZFkxNVFsSU5UeDdiNmt2bWk2S2hnbVB1R1RzZk9ndzVnMFBlSWR4dkZQZVVyR3hpSnZaN3BibkJDR3lLS3FhQjZuNmVRYUEtOTQ?oc=5",
+     "title": "東証反発、終値は３２２円高",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5nZ0lVWExiSnpOOG1nQzBWcUNOc2VqME5RaUJZeDZaeVpfYTRqbFEzTHprZ0NhRWNEZ0c4aTVlem9Yd0hxV0tvbUxSTFFPRnFYNmVUNHJzM0dUaXc?oc=5",
      "source": "下野新聞社",
-     "published": "2026-11-13T12:10:10+09:00"
+     "published": "2026-11-13T15:50:36+09:00"
     },
     {
-     "title": "東京株式 １３日０９時１５分 ｜全国のニュース｜Web東奥",
-     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1qT0gzcUVCVWh3Mnh6UHVNLVF5T3JwNUt0dUJSMXNSUXRQS2x4d3RTM3pLSWZxcEVmNk80RlhwMFpjX1d4eThMV2lrcFRiVVpwTk1nVHdQR0w?oc=5",
-     "source": "東奥日報社",
-     "published": "2026-11-13T09:16:21+09:00"
+     "title": "日経平均反発、終値は前日比322円高の６万1142円 ＴＯＰＩＸは５ 日続伸",
+     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE11Qm0yM2ZENDBnY1VEb0RiUDBZdXEzc3EyOHFLQlVCTVptUmg2ajhXOUE2UVhUUDljSEZDVzhfYlVkdDM2RkNBdW5HUjBUZHhyY1J0U3NQUHhYR0dV?oc=5",
+     "source": "- 神戸経済ニュース",
+     "published": "2026-11-13T15:50:00+09:00"
     },
     {
-     "title": "東京株式 １３日０９時１５分",
-     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1EV3RMUGtyY0JTNU9oVnVLSnRpSGppWTB0ZFFCMFZzYnpTUndXRTlmN1ZMN0dud1Y0SGsxTWloVUdzODhlVUFSRFN0MGxEcVF2?oc=5",
-     "source": "nnn.co.jp",
-     "published": "2026-11-13T09:16:21+09:00"
+     "title": "TOPIX先物：13日清算値＝3ポイント高、3941.5ポイント",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9taTJEWDh6UmxzcTBrZmxwckV4N0lxN1pHd3hWcFJlbW01dTA5S244UFR3MDUwNm91cVFVSnQ4b2lWVXpMY09XcEIwLXIxaW5NaEE?oc=5",
+     "source": "株探",
+     "published": "2026-11-13T15:47:16+09:00"
     }
    ],
    "marks": [
@@ -8877,7 +9327,7 @@
     },
     {
      "day": "2026-11-09",
-     "count": 9
+     "count": 8
     },
     {
      "day": "2026-11-10",
@@ -8893,7 +9343,7 @@
     },
     {
      "day": "2026-11-13",
-     "count": 9
+     "count": 13
     }
    ]
   },
@@ -8909,33 +9359,33 @@
      "name": "日経平均",
      "code": "^N225",
      "symbol": "^N225",
-     "price": 61378.6,
-     "change": 559.2406249999985,
-     "changePercent": 0.9195108773702018
+     "price": 61142.35,
+     "change": 322.99062499999854,
+     "changePercent": 0.5310654836209355
     },
     {
      "name": "三井住友FG",
      "code": "8316",
      "symbol": "8316.T",
-     "price": 3301.0,
-     "change": 31.0,
-     "changePercent": 0.9480122324159022
+     "price": 3275.0,
+     "change": 5.0,
+     "changePercent": 0.1529051987767584
     },
     {
      "name": "みずほFG",
      "code": "8411",
      "symbol": "8411.T",
-     "price": 8103.0,
-     "change": -55.0,
-     "changePercent": -0.6741848492277519
+     "price": 8020.0,
+     "change": -138.0,
+     "changePercent": -1.6915910762441775
     }
    ],
    "regions": [
     "us"
    ],
-   "price": 3515.0,
-   "change": 17.0,
-   "changePercent": 0.48599199542595767,
+   "price": 3475.0,
+   "change": -23.0,
+   "changePercent": -0.657518582046884,
    "currency": "JPY",
    "history": [
     {
@@ -9046,12 +9496,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 3515.0
+     "close": 3475.0
     }
    ],
    "move": {
-    "ratio": 0.33,
-    "rank": 204,
+    "ratio": 0.45,
+    "rank": 189,
     "days": 242
    },
    "year": [
@@ -10268,7 +10718,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 3515.0
+     "close": 3475.0
     }
    ],
    "intraday": [
@@ -10398,31 +10848,163 @@
     },
     {
      "date": "12:35",
-     "close": 3518.0
+     "close": 3517.0
     },
     {
-     "date": "12:36",
-     "close": 3515.0
+     "date": "12:40",
+     "close": 3510.0
+    },
+    {
+     "date": "12:45",
+     "close": 3509.0
+    },
+    {
+     "date": "12:50",
+     "close": 3500.0
+    },
+    {
+     "date": "12:55",
+     "close": 3507.0
+    },
+    {
+     "date": "13:00",
+     "close": 3510.0
+    },
+    {
+     "date": "13:05",
+     "close": 3507.0
+    },
+    {
+     "date": "13:10",
+     "close": 3508.0
+    },
+    {
+     "date": "13:15",
+     "close": 3503.0
+    },
+    {
+     "date": "13:20",
+     "close": 3504.0
+    },
+    {
+     "date": "13:25",
+     "close": 3499.0
+    },
+    {
+     "date": "13:30",
+     "close": 3484.0
+    },
+    {
+     "date": "13:35",
+     "close": 3484.0
+    },
+    {
+     "date": "13:40",
+     "close": 3489.0
+    },
+    {
+     "date": "13:45",
+     "close": 3492.0
+    },
+    {
+     "date": "13:50",
+     "close": 3496.0
+    },
+    {
+     "date": "13:55",
+     "close": 3489.0
+    },
+    {
+     "date": "14:00",
+     "close": 3485.0
+    },
+    {
+     "date": "14:05",
+     "close": 3487.0
+    },
+    {
+     "date": "14:10",
+     "close": 3493.0
+    },
+    {
+     "date": "14:15",
+     "close": 3487.0
+    },
+    {
+     "date": "14:20",
+     "close": 3492.0
+    },
+    {
+     "date": "14:25",
+     "close": 3493.0
+    },
+    {
+     "date": "14:30",
+     "close": 3491.0
+    },
+    {
+     "date": "14:35",
+     "close": 3493.0
+    },
+    {
+     "date": "14:40",
+     "close": 3497.0
+    },
+    {
+     "date": "14:45",
+     "close": 3493.0
+    },
+    {
+     "date": "14:50",
+     "close": 3494.0
+    },
+    {
+     "date": "14:55",
+     "close": 3488.0
+    },
+    {
+     "date": "15:00",
+     "close": 3486.0
+    },
+    {
+     "date": "15:05",
+     "close": 3485.0
+    },
+    {
+     "date": "15:10",
+     "close": 3487.0
+    },
+    {
+     "date": "15:15",
+     "close": 3491.0
+    },
+    {
+     "date": "15:20",
+     "close": 3491.0
+    },
+    {
+     "date": "15:30",
+     "close": 3475.0
     }
    ],
    "news": [
     {
-     "title": "三菱UFJ、三井住友、みずほ AI活用で課題を克服！ 3メガバンクが再注力する「中小企業向け融資」(財界オンライン)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPX0lIVEtjYy1NdVYzT204T3cyR1ByTWMycDJFbUFjbmNuek1kNjlkc1BkX0xnSUlQQklBaDVURjZtUXFER0Jwa2FDRlVfS1JRS0xVN3FBVVB5M2tkWGZ5YXVoQWdHamRMWHgzenR2QS1ReW10elFuQzdPMFU3T1lnNEVKaEUwdnc?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-13T11:30:00+09:00"
+     "title": "【11/26東京開催】IPO/M&A交流イベント第9弾「先行事例に学ぶストック・オプション設計 ～2025年上場企業を題材に～」を開催",
+     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBxeVFJUDc5YkVJZWZqMUtXZmpZM0ZkYzdyb3BOaktJSXNuWGFTQU5ITzhEY2hfZDRqcEF1aWdkUWNDRzZaQUZOenhaN3lkZkhSbUY3R1BEVVBYcjVhOGF3LVpURHRYN2p2ZEtz?oc=5",
+     "source": "時事ドットコム",
+     "published": "2026-11-13T14:46:00+09:00"
     },
     {
-     "title": "【三菱ＵＦＪ銀行】預金にエンタメという付加価値を。口座残高でエンタメチケットが当たる新施策「円貯めでエンタメ！エムトクキャンペーン」実施中！",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KakJrVDVRYzlJRjZYTVhKdm9NNnlIRWpTWi1xaWtYTHVxaUl5NHdEcVRuU0RKUW5wZmJwLXNSbUZiY0VMZ1kzU01SbVJWS1ZoekQtaDZzbTI4ekN2RXNj?oc=5",
-     "source": "千葉テレビ放送株式会社",
-     "published": "2026-11-13T10:06:18+09:00"
+     "title": "三菱電機・NTT・三菱UFJ銀行など5社、メガコンステレーションの事業化検討へ（sorae 宇宙へのポータルサイト）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4xUlR4dFhTUkk0SGh5Y0plU196eVRwZ3VHeGxkeUVGTFdwVFlndGJBMGVGTnJ6QmxpWXo5SGtzV3ZKaEt4cGZOYnhkZHFVZWNIOUJpZ3ptalhodF8yV0NZUU16bVRPQmgtR0IxTjNSTmU4T19JU3JkN0F0SmdLb2M?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-11-13T13:30:51+09:00"
     },
     {
-     "title": "ドル円仲値、159.91円 三菱UFJ銀行(トレーダーズ・ウェブ)",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPU29TTVVkTjJFU2RVb0tMQ2ZrTHRRTVdWZVg0Q2Z3TFZlazFsMEx6ZFJNZy1wOGZiVU1LWVJIWjd1bmZqdXJIVE9zMU9NUzhqTHRuRzd0eHFHY21WXzlwN3FUcjJaa1UwN2Q2MThlTUdneWlBY3dmblRTaTRZOTJsaUR0U0w3Y1E?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-13T09:58:03+09:00"
+     "title": "「サッカーを仕事にする」ということ ＃01 株式会社三菱UFJフィナンシャル・グループ 安藤豪規さん",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE03dDU5VnF4cHVBdDVGbUFWQUtqcVMtODZnMGZZVmsxX05TTTRwbnVZcVRhdFNrMjBQNktFOV8zUmhGVF9IMHM3LVo5VExRdF9U?oc=5",
+     "source": "サカママ",
+     "published": "2026-11-13T13:00:00+09:00"
     }
    ],
    "marks": [
@@ -10485,16 +11067,16 @@
      "change": 4.4,
      "news": [
       {
-       "title": "ＮＴＴや三菱電、三菱ＵＦＪ銀など5社、衛星コンステレーション事業化へ協業 | ロイター",
-       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBDdGVxdmJHbTFZcVVfSWpZV1h2NE1oNHVCRFp6eERzMVJBOHhyd2FGOTBRc2lwZmpmNmIyeFcwQndDZHhrNHNSWVg0YnM2bFFyd0xnNUljVlZnRzc5ZGlHa3k4STNTTi00SWl4aXZvUXpFVDFFYXBCeEI2UQ?oc=5",
-       "source": "Reuters",
-       "published": "2026-11-09T12:31:00+09:00"
-      },
-      {
        "title": "三菱ＵＦＪなど銀行株が堅調、金利低下一服追い風に自律反発の動きが加速",
        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9pV3JOQzhra3hSbTlncmNycVcwNnBYZ3h3RWZ4eTNlVEVKR3ZXWkVQT3Jkd3owcDlxZWNhNlR2Q1EzZjBrRkdDTElNbGNsQmRUamUzSUNtWDJwM2FWVk0wVw?oc=5",
        "source": "株探",
        "published": "2026-11-09T10:16:00+09:00"
+      },
+      {
+       "title": "＜特別気配＞ チャームケア、三菱重、三菱ＵＦＪが買い気配",
+       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBaVWhZVDZ0QUZDdDlncEpUMjg5UFB2d3pPMWFpaGRrT3VOVzEzR3RRaWdTTXZROWVDNWRNNVZWcWk3bTluUXhWZ0dMMWZUTy1KUTBCY01veDdWMVZuSDBWdg?oc=5",
+       "source": "株探",
+       "published": "2026-11-09T09:03:46+09:00"
       }
      ]
     }
@@ -10510,23 +11092,23 @@
     },
     {
      "day": "2026-11-09",
-     "count": 4
+     "count": 3
     },
     {
      "day": "2026-11-10",
-     "count": 4
+     "count": 2
     },
     {
      "day": "2026-11-11",
-     "count": 13
+     "count": 8
     },
     {
      "day": "2026-11-12",
-     "count": 12
+     "count": 10
     },
     {
      "day": "2026-11-13",
-     "count": 9
+     "count": 13
     }
    ]
   },
@@ -10542,34 +11124,34 @@
      "name": "日経平均",
      "code": "^N225",
      "symbol": "^N225",
-     "price": 61378.6,
-     "change": 559.2406249999985,
-     "changePercent": 0.9195108773702018
+     "price": 61142.35,
+     "change": 322.99062499999854,
+     "changePercent": 0.5310654836209355
     },
     {
      "name": "ANA",
      "code": "9202",
      "symbol": "9202.T",
-     "price": 3315.0,
-     "change": -12.0,
-     "changePercent": -0.36068530207394045
+     "price": 3332.0,
+     "change": 5.0,
+     "changePercent": 0.15028554253080853
     },
     {
      "name": "原油 WTI",
      "code": "CL=F",
      "symbol": "CL=F",
-     "price": 88.23,
-     "change": -0.5099978637695273,
-     "changePercent": -0.5747102502216167
+     "price": 88.96,
+     "change": 0.2200021362304625,
+     "changePercent": 0.24791767131683043
     }
    ],
    "regions": [
     "mideast",
     "china"
    ],
-   "price": 3532.0,
-   "change": -3.0,
-   "changePercent": -0.08486562942008487,
+   "price": 3544.0,
+   "change": 9.0,
+   "changePercent": 0.2545968882602546,
    "currency": "JPY",
    "history": [
     {
@@ -10680,12 +11262,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 3532.0
+     "close": 3544.0
     }
    ],
    "move": {
-    "ratio": 0.09,
-    "rank": 237,
+    "ratio": 0.27,
+    "rank": 208,
     "days": 242
    },
    "year": [
@@ -11902,7 +12484,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 3532.0
+     "close": 3544.0
     }
    ],
    "intraday": [
@@ -12035,28 +12617,160 @@
      "close": 3532.0
     },
     {
-     "date": "12:36",
+     "date": "12:40",
      "close": 3532.0
+    },
+    {
+     "date": "12:45",
+     "close": 3536.0
+    },
+    {
+     "date": "12:50",
+     "close": 3534.0
+    },
+    {
+     "date": "12:55",
+     "close": 3534.0
+    },
+    {
+     "date": "13:00",
+     "close": 3533.0
+    },
+    {
+     "date": "13:05",
+     "close": 3533.0
+    },
+    {
+     "date": "13:10",
+     "close": 3533.0
+    },
+    {
+     "date": "13:15",
+     "close": 3530.0
+    },
+    {
+     "date": "13:20",
+     "close": 3531.0
+    },
+    {
+     "date": "13:25",
+     "close": 3533.0
+    },
+    {
+     "date": "13:30",
+     "close": 3532.0
+    },
+    {
+     "date": "13:35",
+     "close": 3527.0
+    },
+    {
+     "date": "13:40",
+     "close": 3530.0
+    },
+    {
+     "date": "13:45",
+     "close": 3530.0
+    },
+    {
+     "date": "13:50",
+     "close": 3526.0
+    },
+    {
+     "date": "13:55",
+     "close": 3527.0
+    },
+    {
+     "date": "14:00",
+     "close": 3529.0
+    },
+    {
+     "date": "14:05",
+     "close": 3526.0
+    },
+    {
+     "date": "14:10",
+     "close": 3529.0
+    },
+    {
+     "date": "14:15",
+     "close": 3530.0
+    },
+    {
+     "date": "14:20",
+     "close": 3531.0
+    },
+    {
+     "date": "14:25",
+     "close": 3533.0
+    },
+    {
+     "date": "14:30",
+     "close": 3533.0
+    },
+    {
+     "date": "14:35",
+     "close": 3532.0
+    },
+    {
+     "date": "14:40",
+     "close": 3534.0
+    },
+    {
+     "date": "14:45",
+     "close": 3533.0
+    },
+    {
+     "date": "14:50",
+     "close": 3533.0
+    },
+    {
+     "date": "14:55",
+     "close": 3535.0
+    },
+    {
+     "date": "15:00",
+     "close": 3535.0
+    },
+    {
+     "date": "15:05",
+     "close": 3536.0
+    },
+    {
+     "date": "15:10",
+     "close": 3536.0
+    },
+    {
+     "date": "15:15",
+     "close": 3538.0
+    },
+    {
+     "date": "15:20",
+     "close": 3540.0
+    },
+    {
+     "date": "15:30",
+     "close": 3544.0
     }
    ],
    "news": [
     {
-     "title": "日本航空（株）第１回社債型種類株式【92015】：株価・株式情報",
-     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wM1BIWUdEZEZHLV9wRmxFN3Q5akZVTzFSZXhhQTlrLWs5QnlBN1phSjBUY2hyVG9nSnA3NFdJTm9rU241aDR0SjFKVVNfR1BteEpV?oc=5",
-     "source": "Yahoo!ファイナンス",
-     "published": "2026-11-13T06:57:26+09:00"
+     "title": "日本・タイ・香港・シンガなど複数の航空会社で乗客情報が流出。「アマデウス」の被害拡大！",
+     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5KNmRmTk1XN2JvMUFoNlg1cVNDbXZfTFUxZEh2OUp3aFBPS0J3clBKRFhiY29fNXlUNFg0M01wTXlydktxVERacUFCWkZMdjRY?oc=5",
+     "source": "タイニュース・クロスボンバー",
+     "published": "2026-11-13T15:42:13+09:00"
     },
     {
-     "title": "JAL路線事業本部副本部長の内藤氏、アラスカ航空の共同事業参画は「競争力上の大きなアドバンテージ」 北米線の上級クラス需要も引き続き堅調との見通し",
-     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5oeGNEckhRc3U0TkNkcWd5RWY1QUVfbW15V29hZjdzNHowb0lBb0x1cGlveVRuaU9WUUJPYzl0N1FNNjh6T1ExV19MSmV4N1p1dWh4UndheHgxd3JCeGhZRkNLYw?oc=5",
-     "source": "sky-budget スカイバジェット",
-     "published": "2026-11-12T23:59:45+09:00"
+     "title": "JAL、国内線でブラックフライデータイムセール開催 羽田〜千歳線が11,000円など",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE94ckRpdlEyZnBSc0tYWUdKakVqQVBQZ2lSVm9aVEdZQk1sT0NRcmhZMVFrWUZEYzljUzRVM2dDa2c0VG96WWZJSU9UWFVBbFFWcEkyYlJ3bXBZQjRSTEpv?oc=5",
+     "source": "ライブドアニュース",
+     "published": "2026-11-13T15:28:08+09:00"
     },
     {
-     "title": "JAL伝説の「”ゴジラ”松井秀喜氏の特別塗装機」再び羽田に降臨！ なぜ今？ ヤンキース時代のユニも",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0zaEdlWU9fenBFYUg5THlJY1ozSmxoMG9RNWtucGd3WHcwR3FDYWhKMEdZQ25haDRETkdqeTdfbEpKWnVWQTZ5Zk5aeHRGRzZ0LVRidy1FeEFpWEc2elJVSEZrcGN3RkVYZXZOQldSWURiZm96VHZjMEU5Q0g4RkU?oc=5",
-     "source": "Yahoo!ニュース",
-     "published": "2026-11-12T19:12:00+09:00"
+     "title": "JAL、Life Statusプログラム3周年でLSP2倍キャンペーン 2027年1月から",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5yS2dFTkRqckRQeFhIb3NaVkJpcUR0cnY3VmlaRzJUclZicXFOb3NZRGFrNVBMWkR1QUc0czdraGMxdEdYYUl6aWFacmM5Umlqbnhwd0NjcnNCS1E4bUhr?oc=5",
+     "source": "ライブドアニュース",
+     "published": "2026-11-13T14:58:08+09:00"
     }
    ],
    "marks": [
@@ -12142,19 +12856,19 @@
     },
     {
      "day": "2026-11-10",
-     "count": 12
+     "count": 11
     },
     {
      "day": "2026-11-11",
-     "count": 6
+     "count": 5
     },
     {
      "day": "2026-11-12",
-     "count": 19
+     "count": 18
     },
     {
      "day": "2026-11-13",
-     "count": 1
+     "count": 7
     }
    ]
   },
@@ -12170,33 +12884,33 @@
      "name": "日経平均",
      "code": "^N225",
      "symbol": "^N225",
-     "price": 61378.6,
-     "change": 559.2406249999985,
-     "changePercent": 0.9195108773702018
+     "price": 61142.35,
+     "change": 322.99062499999854,
+     "changePercent": 0.5310654836209355
     },
     {
      "name": "ユニ・チャーム",
      "code": "8113",
      "symbol": "8113.T",
-     "price": 1111.5,
-     "change": 8.5,
-     "changePercent": 0.7706255666364461
+     "price": 1120.0,
+     "change": 17.0,
+     "changePercent": 1.5412511332728922
     },
     {
      "name": "花王",
      "code": "4452",
      "symbol": "4452.T",
-     "price": 3994.0,
-     "change": 25.0,
-     "changePercent": 0.6298815822625347
+     "price": 4006.0,
+     "change": 37.0,
+     "changePercent": 0.9322247417485512
     }
    ],
    "regions": [
     "china"
    ],
-   "price": 2325.5,
-   "change": 26.5,
-   "changePercent": 1.1526750761200522,
+   "price": 2346.0,
+   "change": 47.0,
+   "changePercent": 2.044367116137451,
    "currency": "JPY",
    "history": [
     {
@@ -12307,12 +13021,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 2325.5
+     "close": 2346.0
     }
    ],
    "move": {
-    "ratio": 1.38,
-    "rank": 84,
+    "ratio": 2.45,
+    "rank": 30,
     "days": 242
    },
    "year": [
@@ -13529,7 +14243,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 2325.5
+     "close": 2346.0
     }
    ],
    "intraday": [
@@ -13663,11 +14377,143 @@
     },
     {
      "date": "12:35",
+     "close": 2328.5
+    },
+    {
+     "date": "12:40",
+     "close": 2337.0
+    },
+    {
+     "date": "12:45",
+     "close": 2337.0
+    },
+    {
+     "date": "12:50",
+     "close": 2330.5
+    },
+    {
+     "date": "12:55",
+     "close": 2330.5
+    },
+    {
+     "date": "13:00",
+     "close": 2329.0
+    },
+    {
+     "date": "13:05",
+     "close": 2325.0
+    },
+    {
+     "date": "13:10",
+     "close": 2323.5
+    },
+    {
+     "date": "13:15",
+     "close": 2322.5
+    },
+    {
+     "date": "13:20",
+     "close": 2321.0
+    },
+    {
+     "date": "13:25",
+     "close": 2322.0
+    },
+    {
+     "date": "13:30",
+     "close": 2322.5
+    },
+    {
+     "date": "13:35",
+     "close": 2323.5
+    },
+    {
+     "date": "13:40",
+     "close": 2324.5
+    },
+    {
+     "date": "13:45",
      "close": 2326.0
     },
     {
-     "date": "12:36",
+     "date": "13:50",
+     "close": 2327.0
+    },
+    {
+     "date": "13:55",
+     "close": 2327.0
+    },
+    {
+     "date": "14:00",
+     "close": 2326.5
+    },
+    {
+     "date": "14:05",
      "close": 2325.5
+    },
+    {
+     "date": "14:10",
+     "close": 2326.0
+    },
+    {
+     "date": "14:15",
+     "close": 2328.5
+    },
+    {
+     "date": "14:20",
+     "close": 2326.5
+    },
+    {
+     "date": "14:25",
+     "close": 2328.0
+    },
+    {
+     "date": "14:30",
+     "close": 2328.5
+    },
+    {
+     "date": "14:35",
+     "close": 2328.5
+    },
+    {
+     "date": "14:40",
+     "close": 2327.0
+    },
+    {
+     "date": "14:45",
+     "close": 2327.5
+    },
+    {
+     "date": "14:50",
+     "close": 2328.0
+    },
+    {
+     "date": "14:55",
+     "close": 2330.0
+    },
+    {
+     "date": "15:00",
+     "close": 2325.0
+    },
+    {
+     "date": "15:05",
+     "close": 2328.5
+    },
+    {
+     "date": "15:10",
+     "close": 2335.5
+    },
+    {
+     "date": "15:15",
+     "close": 2338.5
+    },
+    {
+     "date": "15:20",
+     "close": 2334.0
+    },
+    {
+     "date": "15:30",
+     "close": 2346.0
     }
    ],
    "news": [
@@ -13807,34 +14653,34 @@
      "name": "日経平均",
      "code": "^N225",
      "symbol": "^N225",
-     "price": 61378.6,
-     "change": 559.2406249999985,
-     "changePercent": 0.9195108773702018
+     "price": 61142.35,
+     "change": 322.99062499999854,
+     "changePercent": 0.5310654836209355
     },
     {
      "name": "第一三共",
      "code": "4568",
      "symbol": "4568.T",
-     "price": 2851.5,
-     "change": -6.0,
-     "changePercent": -0.2099737532808399
+     "price": 2852.5,
+     "change": -5.0,
+     "changePercent": -0.17497812773403326
     },
     {
      "name": "武田薬品",
      "code": "4502",
      "symbol": "4502.T",
-     "price": 6887.0,
-     "change": 62.0,
-     "changePercent": 0.9084249084249084
+     "price": 6926.0,
+     "change": 101.0,
+     "changePercent": 1.47985347985348
     }
    ],
    "regions": [
     "china",
     "europe"
    ],
-   "price": 2033.0,
-   "change": 31.5,
-   "changePercent": 1.5738196352735447,
+   "price": 2035.0,
+   "change": 33.5,
+   "changePercent": 1.6737446914813892,
    "currency": "JPY",
    "history": [
     {
@@ -13945,12 +14791,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 2033.0
+     "close": 2035.0
     }
    ],
    "move": {
-    "ratio": 1.54,
-    "rank": 72,
+    "ratio": 1.64,
+    "rank": 67,
     "days": 242
    },
    "year": [
@@ -15167,7 +16013,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 2033.0
+     "close": 2035.0
     }
    ],
    "intraday": [
@@ -15177,7 +16023,7 @@
     },
     {
      "date": "09:10",
-     "close": 1978.5
+     "close": 1979.5
     },
     {
      "date": "09:15",
@@ -15297,14 +16143,152 @@
     },
     {
      "date": "12:35",
+     "close": 2032.5
+    },
+    {
+     "date": "12:40",
+     "close": 2032.5
+    },
+    {
+     "date": "12:45",
+     "close": 2031.5
+    },
+    {
+     "date": "12:50",
+     "close": 2032.0
+    },
+    {
+     "date": "12:55",
+     "close": 2031.5
+    },
+    {
+     "date": "13:00",
+     "close": 2030.5
+    },
+    {
+     "date": "13:05",
+     "close": 2027.5
+    },
+    {
+     "date": "13:10",
+     "close": 2027.5
+    },
+    {
+     "date": "13:15",
+     "close": 2024.0
+    },
+    {
+     "date": "13:20",
+     "close": 2023.5
+    },
+    {
+     "date": "13:25",
+     "close": 2022.5
+    },
+    {
+     "date": "13:30",
+     "close": 2025.0
+    },
+    {
+     "date": "13:35",
+     "close": 2026.0
+    },
+    {
+     "date": "13:40",
+     "close": 2027.5
+    },
+    {
+     "date": "13:45",
+     "close": 2029.0
+    },
+    {
+     "date": "13:50",
+     "close": 2028.5
+    },
+    {
+     "date": "13:55",
+     "close": 2028.5
+    },
+    {
+     "date": "14:00",
+     "close": 2026.0
+    },
+    {
+     "date": "14:05",
+     "close": 2024.0
+    },
+    {
+     "date": "14:10",
+     "close": 2025.0
+    },
+    {
+     "date": "14:15",
+     "close": 2026.0
+    },
+    {
+     "date": "14:20",
+     "close": 2028.0
+    },
+    {
+     "date": "14:25",
+     "close": 2026.0
+    },
+    {
+     "date": "14:30",
+     "close": 2027.5
+    },
+    {
+     "date": "14:35",
+     "close": 2029.0
+    },
+    {
+     "date": "14:40",
+     "close": 2027.0
+    },
+    {
+     "date": "14:45",
+     "close": 2030.5
+    },
+    {
+     "date": "14:50",
      "close": 2030.0
     },
     {
-     "date": "12:36",
-     "close": 2033.0
+     "date": "14:55",
+     "close": 2032.5
+    },
+    {
+     "date": "15:00",
+     "close": 2031.5
+    },
+    {
+     "date": "15:05",
+     "close": 2034.5
+    },
+    {
+     "date": "15:10",
+     "close": 2034.0
+    },
+    {
+     "date": "15:15",
+     "close": 2029.0
+    },
+    {
+     "date": "15:20",
+     "close": 2030.5
+    },
+    {
+     "date": "15:30",
+     "close": 2035.0
     }
    ],
    "news": [
+    {
+     "title": "参天製薬、Copilot活用で4,000超のAIエージェントを創出",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ReF9BcV8wdnpQV0VZX2FLS1NXSGRRZElEWUZSQUxROTZ4STVFbV83WVZpSXVabTFKVUtkWF81cWtvREtQQzQwckdjRmpMd2lrVXRteU55Wk1SYkNjam1oVE9MOA?oc=5",
+     "source": "株式会社インプレス",
+     "published": "2026-11-13T14:20:30+09:00"
+    },
     {
      "title": "参天製薬決算は海外成長で増収増益、ドライアイ薬の第2b相では主要評価項目達成",
      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE84ZDNVZGtDLXBTRWd5MGdRdUdJZGdKdlh3R1NtUm9FeGJvWUVwOU1qMWREX1NidVBOUUVpWDJacW1Jc2M1aWkxVVEzNWFpbDQtV3M1TnVveE1sa2pNVjBOY1VHU1Ridw?oc=5",
@@ -15316,12 +16300,6 @@
      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5PNlVJellPUDNuRl91dmtDWk5aWnlmUzhKRUNaWEFxNUNMNjRfSmZTZDhXa24wOEl5SXJZSktSbVcxRVRocVNSWkRoOFlvR2ZWWGw1M296M05SRnFKYUtQazJFT0NVb2xNNzVpTi1ZQ21lNlZyUUZOa2dEMA?oc=5",
      "source": "日経メディカル",
      "published": "2026-11-09T20:37:01+09:00"
-    },
-    {
-     "title": "ヒアレイン点眼液0.3%の基本情報（薬効分類・副作用・添付文書など）｜日経メディカル処方薬事典",
-     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9xUElJNjVYTHhWa1pwMjdYdm85MU5SbTBSYmtsQ0M5VE5hbGdrdWd2Z2JadnBIX0lBcDdFd3BzUDlYWE9Yelg5T0xqYzd2T1FTWWZfLW9jVi1UYVM4NC00WERPbW5aNEZTRl9oOU5XRXNQd25pM2tvMXo3TQ?oc=5",
-     "source": "日経メディカル",
-     "published": "2026-11-09T13:35:56+09:00"
     }
    ],
    "marks": [
@@ -15334,18 +16312,6 @@
        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUmlScmRSWUk3TDNwY0xmZFA2REFMRU5IcEcwZF8tcEFUSEFTbXFLZ2xtaFNlaXhKUzJhSmtSWkY2eEthRDRKYjg1bXZERlQ1Q25xaXpHQlc4MllWNUUwcC1jVDhqVzkzYk9qRzJnMktvYkZ5Y1U2amh5d0lPeHZleW4tWjRnM3M?oc=5",
        "source": "Yahoo!ファイナンス",
        "published": "2026-10-14T16:00:00+09:00"
-      }
-     ]
-    },
-    {
-     "date": "10/16",
-     "change": 1.49,
-     "news": [
-      {
-       "title": "【FISCO銘柄コメント】参天製薬---眼科用医薬品の研究開発、製造、販売等を行う(フィスコ)",
-       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPU2hUdVA5SW81R0h0LVZEM3pWa0g3emNqejBhQzQ0N1FMMUp0TnJ6bjJSZGpkaFlrcTdSUGpQNk1tZmtaVWx5STlJS2U2OXg1YWZJRVphSDNtWU00eUx6Vl82T1BfTTdQb19KZ0s4Y284LVlOUTlfQl9VRGlzdGVmanJKRWZWb0k?oc=5",
-       "source": "Yahoo!ファイナンス",
-       "published": "2026-10-15T16:00:00+09:00"
       }
      ]
     },
@@ -15384,6 +16350,18 @@
        "published": "2026-11-09T06:43:10+09:00"
       }
      ]
+    },
+    {
+     "date": "11/13",
+     "change": 1.67,
+     "news": [
+      {
+       "title": "参天製薬、Copilot活用で4,000超のAIエージェントを創出",
+       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ReF9BcV8wdnpQV0VZX2FLS1NXSGRRZElEWUZSQUxROTZ4STVFbV83WVZpSXVabTFKVUtkWF81cWtvREtQQzQwckdjRmpMd2lrVXRteU55Wk1SYkNjam1oVE9MOA?oc=5",
+       "source": "株式会社インプレス",
+       "published": "2026-11-13T14:20:30+09:00"
+      }
+     ]
     }
    ],
    "buzz": [
@@ -15413,7 +16391,7 @@
     },
     {
      "day": "2026-11-13",
-     "count": 0
+     "count": 1
     }
    ]
   },
@@ -15429,33 +16407,33 @@
      "name": "日経平均",
      "code": "^N225",
      "symbol": "^N225",
-     "price": 61378.6,
-     "change": 559.2406249999985,
-     "changePercent": 0.9195108773702018
+     "price": 61142.35,
+     "change": 322.99062499999854,
+     "changePercent": 0.5310654836209355
     },
     {
      "name": "任天堂",
      "code": "7974",
      "symbol": "7974.T",
-     "price": 8788.0,
-     "change": 225.0,
-     "changePercent": 2.6275837907275488
+     "price": 8773.0,
+     "change": 210.0,
+     "changePercent": 2.4524115380123788
     },
     {
      "name": "パナソニック",
      "code": "6752",
      "symbol": "6752.T",
-     "price": 3225.0,
-     "change": 8.0,
-     "changePercent": 0.24867889337892446
+     "price": 3193.0,
+     "change": -24.0,
+     "changePercent": -0.7460366801367734
     }
    ],
    "regions": [
     "us"
    ],
-   "price": 4346.0,
-   "change": 65.0,
-   "changePercent": 1.5183368371875732,
+   "price": 4353.0,
+   "change": 72.0,
+   "changePercent": 1.6818500350385426,
    "currency": "JPY",
    "history": [
     {
@@ -15566,12 +16544,12 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 4346.0
+     "close": 4353.0
     }
    ],
    "move": {
-    "ratio": 1.17,
-    "rank": 96,
+    "ratio": 1.29,
+    "rank": 85,
     "days": 242
    },
    "year": [
@@ -16788,7 +17766,7 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 4346.0
+     "close": 4353.0
     }
    ],
    "intraday": [
@@ -16918,11 +17896,143 @@
     },
     {
      "date": "12:35",
-     "close": 4345.0
+     "close": 4346.0
     },
     {
-     "date": "12:36",
+     "date": "12:40",
+     "close": 4348.0
+    },
+    {
+     "date": "12:45",
+     "close": 4343.0
+    },
+    {
+     "date": "12:50",
      "close": 4346.0
+    },
+    {
+     "date": "12:55",
+     "close": 4348.0
+    },
+    {
+     "date": "13:00",
+     "close": 4349.0
+    },
+    {
+     "date": "13:05",
+     "close": 4351.0
+    },
+    {
+     "date": "13:10",
+     "close": 4350.0
+    },
+    {
+     "date": "13:15",
+     "close": 4353.0
+    },
+    {
+     "date": "13:20",
+     "close": 4352.0
+    },
+    {
+     "date": "13:25",
+     "close": 4352.0
+    },
+    {
+     "date": "13:30",
+     "close": 4351.0
+    },
+    {
+     "date": "13:35",
+     "close": 4354.0
+    },
+    {
+     "date": "13:40",
+     "close": 4351.0
+    },
+    {
+     "date": "13:45",
+     "close": 4354.0
+    },
+    {
+     "date": "13:50",
+     "close": 4354.0
+    },
+    {
+     "date": "13:55",
+     "close": 4353.0
+    },
+    {
+     "date": "14:00",
+     "close": 4356.0
+    },
+    {
+     "date": "14:05",
+     "close": 4349.0
+    },
+    {
+     "date": "14:10",
+     "close": 4358.0
+    },
+    {
+     "date": "14:15",
+     "close": 4350.0
+    },
+    {
+     "date": "14:20",
+     "close": 4351.0
+    },
+    {
+     "date": "14:25",
+     "close": 4357.0
+    },
+    {
+     "date": "14:30",
+     "close": 4352.0
+    },
+    {
+     "date": "14:35",
+     "close": 4353.0
+    },
+    {
+     "date": "14:40",
+     "close": 4353.0
+    },
+    {
+     "date": "14:45",
+     "close": 4350.0
+    },
+    {
+     "date": "14:50",
+     "close": 4353.0
+    },
+    {
+     "date": "14:55",
+     "close": 4351.0
+    },
+    {
+     "date": "15:00",
+     "close": 4346.0
+    },
+    {
+     "date": "15:05",
+     "close": 4346.0
+    },
+    {
+     "date": "15:10",
+     "close": 4346.0
+    },
+    {
+     "date": "15:15",
+     "close": 4347.0
+    },
+    {
+     "date": "15:20",
+     "close": 4355.0
+    },
+    {
+     "date": "15:30",
+     "close": 4353.0
     }
    ],
    "news": [
@@ -17056,17 +18166,17 @@
      "name": "銀",
      "code": "SI=F",
      "symbol": "SI=F",
-     "price": 50.44,
-     "change": 0.4679998779296852,
-     "changePercent": 0.9365242071289266
+     "price": 49.98,
+     "change": 0.007999877929684374,
+     "changePercent": 0.01600872070387913
     },
     {
      "name": "ドル指数",
      "code": "DX-Y.NYB",
      "symbol": "DX-Y.NYB",
-     "price": 103.159,
-     "change": -0.010998168945306475,
-     "changePercent": -0.01066023954686565
+     "price": 103.104,
+     "change": -0.0659981689453133,
+     "changePercent": -0.06397031125001908
     },
     {
      "name": "米10年金利",
@@ -17080,25 +18190,20 @@
      "name": "純金上場信託",
      "code": "1540",
      "symbol": "1540.T",
-     "price": 18805.0,
-     "change": -275.0,
-     "changePercent": -1.441299790356394
+     "price": 18735.0,
+     "change": -345.0,
+     "changePercent": -1.8081761006289307
     }
    ],
    "regions": [
     "mideast",
     "us"
    ],
-   "price": 3923.5,
-   "change": 38.199951171875,
-   "changePercent": 0.9831917919285739,
+   "price": 3901.7,
+   "change": 16.399951171874818,
+   "changePercent": 0.42210256520140144,
    "currency": "USD",
    "history": [
-    {
-     "date": "10/13",
-     "day": "2026-10-13",
-     "close": 4177.2998046875
-    },
     {
      "date": "10/14",
      "day": "2026-10-14",
@@ -17212,20 +18317,15 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 3923.5
+     "close": 3901.699951171875
     }
    ],
    "move": {
-    "ratio": 1.02,
-    "rank": 122,
-    "days": 252
+    "ratio": 0.44,
+    "rank": 189,
+    "days": 251
    },
    "year": [
-    {
-     "date": "11/12",
-     "day": "2025-11-12",
-     "close": 4213.60009765625
-    },
     {
      "date": "11/13",
      "day": "2025-11-13",
@@ -18484,1073 +19584,129 @@
     {
      "date": "11/13",
      "day": "2026-11-13",
-     "close": 3923.5
+     "close": 3901.699951171875
     }
    ],
    "intraday": [
     {
      "date": "14:00",
-     "close": 3982.800048828125
+     "close": 3918.300048828125
     },
     {
      "date": "14:05",
-     "close": 3984.699951171875
+     "close": 3919.60009765625
     },
     {
      "date": "14:10",
-     "close": 3979.800048828125
-    },
-    {
-     "date": "14:15",
-     "close": 3976.60009765625
-    },
-    {
-     "date": "14:20",
-     "close": 3976.39990234375
-    },
-    {
-     "date": "14:25",
-     "close": 3977.0
-    },
-    {
-     "date": "14:30",
-     "close": 3980.89990234375
-    },
-    {
-     "date": "14:35",
-     "close": 3982.39990234375
-    },
-    {
-     "date": "14:40",
-     "close": 3977.10009765625
-    },
-    {
-     "date": "14:45",
-     "close": 3981.60009765625
-    },
-    {
-     "date": "14:50",
-     "close": 3986.699951171875
-    },
-    {
-     "date": "15:00",
-     "close": 3985.60009765625
-    },
-    {
-     "date": "15:05",
-     "close": 3984.300048828125
-    },
-    {
-     "date": "15:10",
-     "close": 3984.800048828125
-    },
-    {
-     "date": "15:15",
-     "close": 3984.60009765625
-    },
-    {
-     "date": "15:20",
-     "close": 3985.10009765625
-    },
-    {
-     "date": "15:25",
-     "close": 3983.300048828125
-    },
-    {
-     "date": "15:30",
-     "close": 3978.699951171875
-    },
-    {
-     "date": "15:35",
-     "close": 3980.800048828125
-    },
-    {
-     "date": "15:40",
-     "close": 3976.89990234375
-    },
-    {
-     "date": "15:45",
-     "close": 3975.699951171875
-    },
-    {
-     "date": "15:50",
-     "close": 3971.300048828125
-    },
-    {
-     "date": "15:55",
-     "close": 3971.10009765625
-    },
-    {
-     "date": "16:00",
-     "close": 3977.300048828125
-    },
-    {
-     "date": "16:05",
-     "close": 3969.699951171875
-    },
-    {
-     "date": "16:10",
-     "close": 3966.60009765625
-    },
-    {
-     "date": "16:15",
-     "close": 3970.10009765625
-    },
-    {
-     "date": "16:20",
-     "close": 3966.5
-    },
-    {
-     "date": "16:25",
-     "close": 3966.0
-    },
-    {
-     "date": "16:30",
-     "close": 3964.10009765625
-    },
-    {
-     "date": "16:35",
-     "close": 3966.300048828125
-    },
-    {
-     "date": "16:40",
-     "close": 3962.60009765625
-    },
-    {
-     "date": "16:45",
-     "close": 3966.10009765625
-    },
-    {
-     "date": "16:50",
-     "close": 3970.10009765625
-    },
-    {
-     "date": "16:55",
-     "close": 3970.5
-    },
-    {
-     "date": "17:00",
-     "close": 3968.39990234375
-    },
-    {
-     "date": "17:05",
-     "close": 3965.5
-    },
-    {
-     "date": "17:10",
-     "close": 3962.800048828125
-    },
-    {
-     "date": "17:15",
-     "close": 3962.10009765625
-    },
-    {
-     "date": "17:20",
-     "close": 3956.5
-    },
-    {
-     "date": "17:25",
-     "close": 3951.699951171875
-    },
-    {
-     "date": "17:30",
-     "close": 3958.10009765625
-    },
-    {
-     "date": "17:35",
-     "close": 3950.5
-    },
-    {
-     "date": "17:40",
-     "close": 3947.0
-    },
-    {
-     "date": "17:45",
-     "close": 3943.0
-    },
-    {
-     "date": "17:50",
-     "close": 3940.0
-    },
-    {
-     "date": "17:55",
-     "close": 3933.800048828125
-    },
-    {
-     "date": "18:00",
-     "close": 3937.800048828125
-    },
-    {
-     "date": "18:05",
-     "close": 3936.10009765625
-    },
-    {
-     "date": "18:10",
-     "close": 3933.89990234375
-    },
-    {
-     "date": "18:15",
-     "close": 3934.5
-    },
-    {
-     "date": "18:20",
-     "close": 3939.60009765625
-    },
-    {
-     "date": "18:25",
-     "close": 3943.10009765625
-    },
-    {
-     "date": "18:30",
-     "close": 3943.300048828125
-    },
-    {
-     "date": "18:35",
-     "close": 3944.5
-    },
-    {
-     "date": "18:40",
-     "close": 3946.39990234375
-    },
-    {
-     "date": "18:45",
-     "close": 3947.39990234375
-    },
-    {
-     "date": "18:50",
-     "close": 3946.0
-    },
-    {
-     "date": "18:55",
-     "close": 3948.89990234375
-    },
-    {
-     "date": "19:00",
-     "close": 3950.699951171875
-    },
-    {
-     "date": "19:05",
-     "close": 3950.0
-    },
-    {
-     "date": "19:10",
-     "close": 3951.5
-    },
-    {
-     "date": "19:15",
-     "close": 3954.0
-    },
-    {
-     "date": "19:20",
-     "close": 3954.10009765625
-    },
-    {
-     "date": "19:25",
-     "close": 3950.89990234375
-    },
-    {
-     "date": "19:30",
-     "close": 3955.199951171875
-    },
-    {
-     "date": "19:35",
-     "close": 3956.0
-    },
-    {
-     "date": "19:40",
-     "close": 3958.10009765625
-    },
-    {
-     "date": "19:45",
-     "close": 3958.0
-    },
-    {
-     "date": "19:50",
-     "close": 3959.5
-    },
-    {
-     "date": "19:55",
-     "close": 3959.199951171875
-    },
-    {
-     "date": "20:00",
-     "close": 3959.800048828125
-    },
-    {
-     "date": "20:05",
-     "close": 3957.39990234375
-    },
-    {
-     "date": "20:10",
-     "close": 3954.60009765625
-    },
-    {
-     "date": "20:15",
-     "close": 3954.300048828125
-    },
-    {
-     "date": "20:20",
-     "close": 3953.5
-    },
-    {
-     "date": "20:25",
-     "close": 3953.89990234375
-    },
-    {
-     "date": "20:30",
-     "close": 3951.300048828125
-    },
-    {
-     "date": "20:35",
-     "close": 3952.0
-    },
-    {
-     "date": "20:40",
-     "close": 3950.60009765625
-    },
-    {
-     "date": "20:45",
-     "close": 3953.10009765625
-    },
-    {
-     "date": "20:50",
-     "close": 3949.199951171875
-    },
-    {
-     "date": "20:55",
-     "close": 3949.5
-    },
-    {
-     "date": "21:00",
-     "close": 3952.39990234375
-    },
-    {
-     "date": "21:05",
-     "close": 3950.5
-    },
-    {
-     "date": "21:10",
-     "close": 3949.10009765625
-    },
-    {
-     "date": "21:15",
-     "close": 3953.60009765625
-    },
-    {
-     "date": "21:20",
-     "close": 3949.10009765625
-    },
-    {
-     "date": "21:25",
-     "close": 3945.699951171875
-    },
-    {
-     "date": "21:30",
-     "close": 3942.199951171875
-    },
-    {
-     "date": "21:35",
-     "close": 3940.800048828125
-    },
-    {
-     "date": "21:40",
-     "close": 3941.5
-    },
-    {
-     "date": "21:45",
-     "close": 3942.5
-    },
-    {
-     "date": "21:50",
-     "close": 3943.10009765625
-    },
-    {
-     "date": "21:55",
-     "close": 3942.10009765625
-    },
-    {
-     "date": "22:00",
-     "close": 3941.89990234375
-    },
-    {
-     "date": "22:05",
-     "close": 3935.199951171875
-    },
-    {
-     "date": "22:10",
-     "close": 3928.199951171875
-    },
-    {
-     "date": "22:15",
-     "close": 3930.5
-    },
-    {
-     "date": "22:20",
      "close": 3918.800048828125
     },
     {
-     "date": "22:25",
-     "close": 3915.800048828125
+     "date": "14:15",
+     "close": 3922.199951171875
     },
     {
-     "date": "22:30",
-     "close": 3908.39990234375
+     "date": "14:20",
+     "close": 3920.39990234375
     },
     {
-     "date": "22:35",
-     "close": 3910.39990234375
+     "date": "14:25",
+     "close": 3922.199951171875
     },
     {
-     "date": "22:40",
-     "close": 3907.800048828125
+     "date": "14:30",
+     "close": 3916.39990234375
     },
     {
-     "date": "22:45",
+     "date": "14:35",
+     "close": 3917.60009765625
+    },
+    {
+     "date": "14:40",
+     "close": 3910.89990234375
+    },
+    {
+     "date": "14:45",
+     "close": 3899.89990234375
+    },
+    {
+     "date": "14:50",
+     "close": 3900.5
+    },
+    {
+     "date": "14:55",
+     "close": 3908.5
+    },
+    {
+     "date": "15:00",
+     "close": 3904.199951171875
+    },
+    {
+     "date": "15:05",
+     "close": 3903.300048828125
+    },
+    {
+     "date": "15:10",
+     "close": 3902.199951171875
+    },
+    {
+     "date": "15:15",
+     "close": 3904.39990234375
+    },
+    {
+     "date": "15:20",
+     "close": 3900.800048828125
+    },
+    {
+     "date": "15:25",
+     "close": 3900.60009765625
+    },
+    {
+     "date": "15:30",
+     "close": 3899.60009765625
+    },
+    {
+     "date": "15:35",
+     "close": 3898.5
+    },
+    {
+     "date": "15:40",
+     "close": 3894.800048828125
+    },
+    {
+     "date": "15:45",
+     "close": 3894.699951171875
+    },
+    {
+     "date": "15:50",
      "close": 3901.0
     },
     {
-     "date": "22:50",
-     "close": 3891.5
+     "date": "15:55",
+     "close": 3905.0
     },
     {
-     "date": "22:55",
-     "close": 3894.89990234375
-    },
-    {
-     "date": "23:00",
-     "close": 3895.5
-    },
-    {
-     "date": "23:05",
-     "close": 3889.0
-    },
-    {
-     "date": "23:10",
-     "close": 3895.699951171875
-    },
-    {
-     "date": "23:15",
-     "close": 3908.300048828125
-    },
-    {
-     "date": "23:20",
-     "close": 3908.0
-    },
-    {
-     "date": "23:25",
-     "close": 3907.89990234375
-    },
-    {
-     "date": "23:30",
-     "close": 3901.39990234375
-    },
-    {
-     "date": "23:35",
-     "close": 3900.199951171875
-    },
-    {
-     "date": "23:40",
-     "close": 3891.39990234375
-    },
-    {
-     "date": "23:45",
-     "close": 3887.800048828125
-    },
-    {
-     "date": "23:50",
-     "close": 3886.10009765625
-    },
-    {
-     "date": "23:55",
-     "close": 3874.300048828125
-    },
-    {
-     "date": "00:00",
-     "close": 3875.199951171875
-    },
-    {
-     "date": "00:05",
-     "close": 3863.699951171875
-    },
-    {
-     "date": "00:10",
-     "close": 3859.39990234375
-    },
-    {
-     "date": "00:15",
-     "close": 3865.89990234375
-    },
-    {
-     "date": "00:20",
-     "close": 3858.800048828125
-    },
-    {
-     "date": "00:25",
-     "close": 3864.5
-    },
-    {
-     "date": "00:30",
-     "close": 3869.0
-    },
-    {
-     "date": "00:35",
-     "close": 3868.39990234375
-    },
-    {
-     "date": "00:40",
-     "close": 3872.800048828125
-    },
-    {
-     "date": "00:45",
-     "close": 3869.300048828125
-    },
-    {
-     "date": "00:50",
-     "close": 3875.199951171875
-    },
-    {
-     "date": "00:55",
-     "close": 3874.60009765625
-    },
-    {
-     "date": "01:00",
-     "close": 3875.199951171875
-    },
-    {
-     "date": "01:05",
-     "close": 3877.39990234375
-    },
-    {
-     "date": "01:10",
-     "close": 3881.39990234375
-    },
-    {
-     "date": "01:15",
-     "close": 3879.10009765625
-    },
-    {
-     "date": "01:20",
-     "close": 3879.300048828125
-    },
-    {
-     "date": "01:25",
-     "close": 3879.10009765625
-    },
-    {
-     "date": "01:30",
-     "close": 3872.60009765625
-    },
-    {
-     "date": "01:35",
-     "close": 3871.699951171875
-    },
-    {
-     "date": "01:40",
-     "close": 3876.10009765625
-    },
-    {
-     "date": "01:45",
-     "close": 3881.60009765625
-    },
-    {
-     "date": "01:50",
-     "close": 3887.699951171875
-    },
-    {
-     "date": "01:55",
-     "close": 3883.5
-    },
-    {
-     "date": "02:00",
-     "close": 3880.800048828125
-    },
-    {
-     "date": "02:05",
-     "close": 3878.699951171875
-    },
-    {
-     "date": "02:10",
-     "close": 3878.89990234375
-    },
-    {
-     "date": "02:15",
-     "close": 3880.0
-    },
-    {
-     "date": "02:20",
-     "close": 3874.89990234375
-    },
-    {
-     "date": "02:25",
-     "close": 3877.5
-    },
-    {
-     "date": "02:30",
-     "close": 3877.300048828125
-    },
-    {
-     "date": "02:35",
-     "close": 3877.60009765625
-    },
-    {
-     "date": "02:40",
-     "close": 3878.5
-    },
-    {
-     "date": "02:45",
-     "close": 3879.60009765625
-    },
-    {
-     "date": "02:50",
-     "close": 3879.300048828125
-    },
-    {
-     "date": "02:55",
-     "close": 3878.5
-    },
-    {
-     "date": "03:00",
-     "close": 3882.0
-    },
-    {
-     "date": "03:05",
-     "close": 3884.199951171875
-    },
-    {
-     "date": "03:10",
-     "close": 3885.39990234375
-    },
-    {
-     "date": "03:15",
-     "close": 3885.300048828125
-    },
-    {
-     "date": "03:20",
-     "close": 3884.10009765625
-    },
-    {
-     "date": "03:25",
-     "close": 3886.199951171875
-    },
-    {
-     "date": "03:30",
-     "close": 3886.10009765625
-    },
-    {
-     "date": "03:35",
-     "close": 3890.60009765625
-    },
-    {
-     "date": "03:40",
-     "close": 3888.300048828125
-    },
-    {
-     "date": "03:45",
-     "close": 3885.699951171875
-    },
-    {
-     "date": "03:50",
-     "close": 3885.10009765625
-    },
-    {
-     "date": "03:55",
-     "close": 3887.300048828125
-    },
-    {
-     "date": "04:00",
-     "close": 3881.300048828125
-    },
-    {
-     "date": "04:05",
-     "close": 3884.39990234375
-    },
-    {
-     "date": "04:10",
-     "close": 3885.199951171875
-    },
-    {
-     "date": "04:15",
-     "close": 3886.300048828125
-    },
-    {
-     "date": "04:20",
-     "close": 3883.699951171875
-    },
-    {
-     "date": "04:25",
-     "close": 3884.10009765625
-    },
-    {
-     "date": "04:30",
-     "close": 3886.199951171875
-    },
-    {
-     "date": "04:35",
-     "close": 3887.199951171875
-    },
-    {
-     "date": "04:40",
-     "close": 3887.5
-    },
-    {
-     "date": "04:45",
-     "close": 3886.199951171875
-    },
-    {
-     "date": "04:50",
-     "close": 3887.300048828125
-    },
-    {
-     "date": "04:55",
-     "close": 3888.800048828125
-    },
-    {
-     "date": "05:00",
-     "close": 3889.800048828125
-    },
-    {
-     "date": "05:05",
-     "close": 3888.60009765625
-    },
-    {
-     "date": "05:10",
-     "close": 3890.199951171875
-    },
-    {
-     "date": "05:15",
-     "close": 3890.0
-    },
-    {
-     "date": "05:20",
-     "close": 3889.699951171875
-    },
-    {
-     "date": "05:25",
-     "close": 3888.699951171875
-    },
-    {
-     "date": "05:30",
-     "close": 3885.89990234375
-    },
-    {
-     "date": "05:35",
-     "close": 3885.699951171875
-    },
-    {
-     "date": "05:40",
-     "close": 3884.39990234375
-    },
-    {
-     "date": "05:45",
-     "close": 3884.0
-    },
-    {
-     "date": "05:50",
-     "close": 3880.800048828125
-    },
-    {
-     "date": "05:55",
-     "close": 3879.5
-    },
-    {
-     "date": "06:00",
-     "close": 3879.199951171875
-    },
-    {
-     "date": "06:05",
-     "close": 3878.10009765625
-    },
-    {
-     "date": "06:10",
-     "close": 3877.300048828125
-    },
-    {
-     "date": "06:15",
-     "close": 3877.5
-    },
-    {
-     "date": "06:20",
-     "close": 3877.699951171875
-    },
-    {
-     "date": "06:25",
-     "close": 3878.89990234375
-    },
-    {
-     "date": "06:30",
-     "close": 3878.60009765625
-    },
-    {
-     "date": "06:35",
-     "close": 3878.39990234375
-    },
-    {
-     "date": "06:40",
-     "close": 3881.199951171875
-    },
-    {
-     "date": "06:45",
-     "close": 3881.5
-    },
-    {
-     "date": "06:50",
-     "close": 3881.10009765625
-    },
-    {
-     "date": "06:55",
-     "close": 3881.699951171875
-    },
-    {
-     "date": "08:00",
-     "close": 3883.199951171875
-    },
-    {
-     "date": "08:05",
-     "close": 3881.5
-    },
-    {
-     "date": "08:10",
-     "close": 3880.89990234375
-    },
-    {
-     "date": "08:15",
-     "close": 3881.10009765625
-    },
-    {
-     "date": "08:20",
-     "close": 3880.10009765625
-    },
-    {
-     "date": "08:25",
-     "close": 3881.60009765625
-    },
-    {
-     "date": "08:30",
-     "close": 3881.5
-    },
-    {
-     "date": "08:35",
-     "close": 3881.199951171875
-    },
-    {
-     "date": "08:40",
-     "close": 3883.0
-    },
-    {
-     "date": "08:45",
-     "close": 3885.0
-    },
-    {
-     "date": "08:50",
-     "close": 3886.5
-    },
-    {
-     "date": "08:55",
-     "close": 3884.699951171875
-    },
-    {
-     "date": "09:00",
-     "close": 3891.60009765625
-    },
-    {
-     "date": "09:05",
-     "close": 3893.10009765625
-    },
-    {
-     "date": "09:10",
-     "close": 3890.699951171875
-    },
-    {
-     "date": "09:15",
-     "close": 3889.300048828125
-    },
-    {
-     "date": "09:20",
-     "close": 3888.60009765625
-    },
-    {
-     "date": "09:25",
-     "close": 3886.89990234375
-    },
-    {
-     "date": "09:30",
-     "close": 3885.199951171875
-    },
-    {
-     "date": "09:35",
-     "close": 3889.300048828125
-    },
-    {
-     "date": "09:40",
-     "close": 3890.699951171875
-    },
-    {
-     "date": "09:45",
-     "close": 3894.5
-    },
-    {
-     "date": "09:50",
-     "close": 3887.89990234375
-    },
-    {
-     "date": "09:55",
-     "close": 3889.39990234375
-    },
-    {
-     "date": "10:00",
-     "close": 3894.199951171875
-    },
-    {
-     "date": "10:05",
-     "close": 3895.10009765625
-    },
-    {
-     "date": "10:10",
-     "close": 3891.89990234375
-    },
-    {
-     "date": "10:15",
-     "close": 3904.300048828125
-    },
-    {
-     "date": "10:20",
-     "close": 3914.10009765625
-    },
-    {
-     "date": "10:25",
-     "close": 3914.0
-    },
-    {
-     "date": "10:30",
-     "close": 3912.89990234375
-    },
-    {
-     "date": "10:35",
-     "close": 3914.300048828125
-    },
-    {
-     "date": "10:40",
-     "close": 3912.60009765625
-    },
-    {
-     "date": "10:45",
-     "close": 3912.300048828125
-    },
-    {
-     "date": "10:50",
-     "close": 3914.199951171875
-    },
-    {
-     "date": "10:55",
-     "close": 3911.699951171875
-    },
-    {
-     "date": "11:00",
-     "close": 3915.39990234375
-    },
-    {
-     "date": "11:05",
-     "close": 3915.10009765625
-    },
-    {
-     "date": "11:10",
-     "close": 3911.60009765625
-    },
-    {
-     "date": "11:15",
-     "close": 3913.0
-    },
-    {
-     "date": "11:20",
-     "close": 3910.60009765625
-    },
-    {
-     "date": "11:25",
-     "close": 3910.10009765625
-    },
-    {
-     "date": "11:30",
-     "close": 3916.5
-    },
-    {
-     "date": "11:35",
-     "close": 3918.699951171875
-    },
-    {
-     "date": "11:40",
-     "close": 3912.39990234375
-    },
-    {
-     "date": "11:45",
-     "close": 3915.0
-    },
-    {
-     "date": "11:50",
-     "close": 3913.800048828125
-    },
-    {
-     "date": "11:55",
-     "close": 3919.800048828125
-    },
-    {
-     "date": "12:00",
-     "close": 3921.60009765625
-    },
-    {
-     "date": "12:05",
-     "close": 3922.39990234375
-    },
-    {
-     "date": "12:10",
-     "close": 3921.60009765625
-    },
-    {
-     "date": "12:15",
-     "close": 3919.199951171875
-    },
-    {
-     "date": "12:20",
-     "close": 3918.699951171875
-    },
-    {
-     "date": "12:25",
-     "close": 3920.699951171875
-    },
-    {
-     "date": "12:30",
-     "close": 3919.800048828125
-    },
-    {
-     "date": "12:35",
-     "close": 3926.39990234375
-    },
-    {
-     "date": "12:40",
-     "close": 3923.199951171875
-    },
-    {
-     "date": "12:41",
-     "close": 3923.5
+     "date": "15:58",
+     "close": 3901.699951171875
     }
    ],
    "news": [
     {
-     "title": "SJCの金地金価格は引き続き急落している。",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1yQnFnVkFUbTZKRnNTNVEtQUlzSFZtYXhMUlctSk1vM3JycXJMUWRscElmRkhDUUdWdS1ibEFjZjZVZlRVRDZpdGZFY3dnakl5cnh0TzlVNFhKVkF3NFhuSk9SMURGMFVJY3c?oc=5",
+     "title": "金価格の最新情報（本日11月13日）：3,800ドルに向かって「急落」しており、売り崩しと清算の波により下落圧力が強まっています。",
+     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRE5WYUNSbEg3dDkxRWc2LU9aVDdKUGRzUzRBWXpSdDFsNEE2dVVFTXZFTl81R1drRF9QMU9UWHF3UTM5Tks1OWQwRlZYeUdPT3JFOEtpZ01CNGdMalZENFNOcFNFQnFvSlJhSS16WlY5NWgyNDZiQV9yWndFVTdqenpqVm9QbWxSZnFwUlFWbE1mbHZTblkybU96X3BYVUVveUVuTlZnZmxlM3NGZG4xY1lRMWQtdHhfMlY4RW91cGd3dDFtcXR3X3NndFY0dVBfYnhoNk56UzMtZjgxcDZ6SmpxSjA?oc=5",
      "source": "Vietnam.vn",
-     "published": "2026-11-13T12:06:15+09:00"
+     "published": "2026-11-13T14:36:47+09:00"
     },
     {
-     "title": "金価格が3日連続で6%急落後、下げ止まり アジア市場で3,900ドル台に回復",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA4WTlHR01pdDlGTGhOajdZM1A2NXE0anRpZmVCc01WSGQwVzVwS3p2WWVyeGNZckpqeGhnb2xJcjh4R2htbkVxZ1kybEJfZzBaUWxDSV9pTkhqNWdKWGpOZ3BJcDRKVkVUbDV6bTlrMUdjYWIw?oc=5",
+     "title": "国際金価格が3,900ドル割れ、ソシエテ・ジェネラルが1月の指数リバランスで33億ドルの純買い需要と試算",
+     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1VV0pXckhjeVNyMS1tVGpVQUFzck40RzhPUXpxLWtJV3NwNG1Ca1pDZ2x2NU40ZzBFUmgwRExUQ3JYWURPdGJrdDVCYUE4QzRCcDBmNEFyeFBJV0dxRTZWWGNHUEhqSnF3OG5CYzFtUFI0S2g1?oc=5",
      "source": "BigGo ファイナンス",
-     "published": "2026-11-13T12:06:00+09:00"
+     "published": "2026-11-13T13:35:00+09:00"
     },
     {
-     "title": "本日（11月13日）の金価格：急落、3,900ドルを下回る。",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWUxhQTlKVjJkeGxyVlNqc294S0JCc3pGNGJZNjJ4Z0dMSmVuVkVWY09TZTJTVWp2RmNNVF9pV1ktLVpNTGE3ZGVjNnZrdkN0MmkyR00wOEFtelZLRjg0SG1mTC1YXzZjMzNGWVNBcmgwVUJtcWtPNExYeTQ3NnVhX2NmVk8?oc=5",
-     "source": "Vietnam.vn",
-     "published": "2026-11-13T11:05:07+09:00"
+     "title": "純金上場信託(現物国内保管型)【1540】：株価・株式情報（夜間PTS含む）",
+     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wT0pLZFYweEZKZEI1MWVnSDNHYXJfemt1T1FNNDFfai1kRkFoVGp2Y0pLemJYVGRIUDc2VGNXVUlUSUFFdTNscnZBME81Ml9Oenc?oc=5",
+     "source": "Yahoo! JAPAN",
+     "published": "2026-11-13T13:25:59+09:00"
     }
    ],
    "marks": [
@@ -19640,37 +19796,37 @@
     },
     {
      "day": "2026-11-11",
-     "count": 20
+     "count": 21
     },
     {
      "day": "2026-11-12",
-     "count": 14
+     "count": 12
     },
     {
      "day": "2026-11-13",
-     "count": 18
+     "count": 19
     }
    ]
   }
  ],
  "videos": [
   {
-   "id": "UvMht0To9d4",
-   "title": "米商務長官の進退協議と報道　エヌビディア フアンCEOの辞任受け(2026年11月13日)",
-   "channel": "ANNnewsCH",
-   "published": "2026-11-13T12:31+09:00"
-  },
-  {
-   "id": "zwMw37Ou1UM",
-   "title": "【エヌビディア】CEOが突然の辞任…余波はAI業界にとどまらずトランプ政権にも",
+   "id": "j7jijCIKK3Q",
+   "title": "【エヌビディア】“中国のスパイ”らとの不倫問題受け  フアン氏  CEOを辞任  ラトニック商務長官の“更迭議論”報道も",
    "channel": "日テレNEWS",
-   "published": "2026-11-13T12:09+09:00"
+   "published": "2026-11-13T15:25+09:00"
   },
   {
-   "id": "A0YVhVD_VMg",
-   "title": "2027年 10大予測 「脳に電極」実用化への挑戦【NIKKEI NEWS NEXT】",
-   "channel": "テレ東BIZ ダイジェスト",
-   "published": "2026-11-13T11:52+09:00"
+   "id": "AHkgSUh3bP0",
+   "title": "1ドル＝160円　片山大臣「米国と緊密に連携」　日米協調介入で米側は794億円の円買い(2026年11月13日)",
+   "channel": "ANNnewsCH",
+   "published": "2026-11-13T15:09+09:00"
+  },
+  {
+   "id": "tRjTOjkn2oY",
+   "title": "ホワイトハウス高官 ラトニック商務長官の更迭を協議か エヌビディア問題 中国工作員への情報漏洩疑惑めぐり輸出規制先送りへの批判高まる｜TBS NEWS DIG",
+   "channel": "TBS NEWS DIG Powered by JNN",
+   "published": "2026-11-13T14:09+09:00"
   }
  ],
  "lives": [
@@ -19707,9 +19863,9 @@
   {
    "name": "日経平均",
    "unit": "円",
-   "price": 61371.31,
-   "change": 551.9506249999977,
-   "changePercent": 0.9075245623630801
+   "price": 61142.35,
+   "change": 322.99062499999854,
+   "changePercent": 0.5310654836209355
   },
   {
    "name": "NYダウ",
@@ -19735,16 +19891,16 @@
   {
    "name": "原油 WTI",
    "unit": "ドル",
-   "price": 88.24,
-   "change": -0.49999786376953637,
-   "changePercent": -0.5634413745841139
+   "price": 88.94,
+   "change": 0.20000213623046648,
+   "changePercent": 0.22537992004180865
   },
   {
    "name": "金",
    "unit": "ドル",
-   "price": 3923.3,
-   "change": 37.99995117187518,
-   "changePercent": 0.9780441843439257
+   "price": 3902.7,
+   "change": 17.399951171874818,
+   "changePercent": 0.44784060312466606
   },
   {
    "name": "米10年金利",
@@ -19756,9 +19912,9 @@
   {
    "name": "ビットコイン",
    "unit": "ドル",
-   "price": 68743.57,
-   "change": -5220.898749999993,
-   "changePercent": -7.058657809936602
+   "price": 69134.91,
+   "change": -4829.5587499999965,
+   "changePercent": -6.529565927558963
   }
  ],
  "fear": {
@@ -19908,10 +20064,10 @@
      "published": "2026-11-12T18:12:00+09:00"
     },
     {
-     "title": "米軍、イスラエルにイランに対する作戦再開を指示したという噂を否定",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbzN1NnNqSUY1YXFjLTRRbUFwM2hvTlB5WHlWV3NwamRlS3lXWFVPMWtXX1BUOWREOEdodU9rNWQ1eWlqRDdwZ3NBV1dMcy1SUnVzMFAwdktqcVhCcVBLRWxURnoyLUFmaDZna0k2Zm1mSlF2eEEwcE93a2tqOVdzM01fNUhIbV83djBhbURvZ0M5M054d09pT2l5VF81cGdGVnowUHBWMXV4Y1plX3ZWZmJacXhxQ19y?oc=5",
-     "source": "Laodong.vn",
-     "published": "2026-11-13T12:34:39+09:00"
+     "title": "イスラエルメディア「米中央軍、イランへの再攻撃の可能性に備えるよう米軍に指示」",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ENWVNVTZweC1MUzFVRE5tMl9pV05YT0hzS0hrajNXRVdOaF9oUHFPLVVodU5tSmRaOXNZdG5MX3dhUXcwWUlXNkxXeGotSVcwbjc1eDJfWFRUbFk?oc=5",
+     "source": "TRT 日本語",
+     "published": "2026-11-13T15:57:30+09:00"
     }
    ]
   },
@@ -19933,23 +20089,23 @@
      "published": "2026-11-13T00:21:00+09:00"
     },
     {
-     "title": "ブラジル大統領選挙でルラ氏が逆転 「軍政の記憶」よみがえり若者ら呼びかけ、民主主義の後退にノー",
-     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAzTl9hN3RGMVlseG9mZFRSV1UxWDZEaDdqdnRRc3p0WnF1b253MmdWZDVfY3lyU29DMWxVNVkyS1pDaVpycXExbjRoakhaRnBVaEZsTEkzZlNMTVpycFIxcmlGU0RfX3NGd0cwaw?oc=5",
+     "title": "SNS「1000万人網」の逆転劇 現地記者が語るブラジル大統領選",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9OdV9hMVEwdEV2SUdid0t4akdxZEFGQ25YUVVRUHRkdzVUclVtM1hWYUZFSklMeU9qU1U4UmdMRXdkOEZlR0YtZlZmRGR5aV94cWotbkE4REMwLUxTUmxqT3NzVXhCaVdSZ1o4VA?oc=5",
      "source": "日本経済新聞",
      "published": "2026-11-12T05:00:00+09:00"
     },
     {
-     "title": "静かな熱狂を生むメキシコシティ発の新世代音楽コレクティブ、LATIN MAFIA（ラテン・マフィア）が約2年ぶりの新曲「Departamento」をリリース、ミュージック・ビデオも公開に",
-     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9KeVdnRmYwOEV6elIwSS15Y0dYZk1SRHc2aGJib2FfVGZNNzFWMHQ4dVdDR29QTGRrWkduZ0ZuMGtfZFVIWEVqag?oc=5",
-     "source": "エンタメラッシュ",
-     "published": "2026-11-13T11:40:31+09:00"
+     "title": "【アルゼンチン共和国杯】平地重賞史上２位の３連単１２００万馬券はどうやって生まれたのか",
+     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6LVdndG1NNlhyQzJyQXhRWXhUNE42UWg1eUJHYU9OX0J2WEdYRHJfTGRqcm5YUHM4YURKaGtYYjhuOXJ6REFlNEhVTmUxOXVZaWJNZS1iZkVMZ3c?oc=5",
+     "source": "日刊ゲンダイ競馬",
+     "published": "2026-11-13T15:51:28+09:00"
     }
    ]
   },
   {
    "key": "europe",
    "label": "ヨーロッパ",
-   "count": 6,
+   "count": 4,
    "news": [
     {
      "title": "男性が山で女性を置き去りに…欧州で注目されるモラハラ",
@@ -19980,7 +20136,7 @@
   {
    "key": "russia",
    "label": "ロシア・ウクライナ",
-   "count": 15,
+   "count": 13,
    "news": [
     {
      "title": "車爆発でロシア軍大佐死亡 遠隔操作で起動か 北西部サンクト、夏に続き",
@@ -20011,8 +20167,20 @@
   {
    "key": "mideast",
    "label": "中東",
-   "count": 7,
+   "count": 9,
    "news": [
+    {
+     "title": "イラン革命防衛隊、バーレーンの米レーダー攻撃 通信塔空爆に報復（ロイター）",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0M1hoRGg2cWJHd3NaMWtLZE5FSS1GbXlCOTd5SV9CNDFHWHhJZFAwT0VKcFZEeE5ra2lHOFBLMnpMWXhyRFIyNWpSVDRGSEloTXhwWThrTWJ6X3BMRTEza0NLX3pEU0tzWjIwTENUZUZmMTdjYjhyejZ5aDBPRzg?oc=5",
+     "source": "Yahoo!ニュース",
+     "published": "2026-11-13T11:46:34+09:00"
+    },
+    {
+     "title": "米民主党下院トップ、中東の「抜本的な変化」訴え ２国家解決を支持",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBEX28zcW1leUl6dktVbkowNUtpbXI3RjVuRmwzeGFYYU9hUVN1ajVtVFR4bFFNbkJxQnRvQV9QSnBiNU5vVWIwS2tFcG1pSFVldmE4bGFEdXFWWVdfS3gwMzhVb0ktdGNEMlluMmVCWUJ5aVhkR3YxRk1QajVIY1E?oc=5",
+     "source": "Reuters",
+     "published": "2026-11-13T11:23:00+09:00"
+    },
     {
      "title": "トランプ氏、イランとの合意「必要ない」 強硬派との対話模索するバンス氏の動き牽制か",
      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdHhQTjVpMlU1MTRIWVZZSmZBS3oydGNhR0V1TnUwZkhad2p2aHo3WDd6Qy1MaXI0Q3pYMEdRa2lvWl94T1VnVlNoT3piLV8wVEREUjk4bWJDc2Y4cTFMS2EteWlXem1ScHZ1Q1NWQnFSeU4wVklab3dHa1E1YVBlSzlrbHdaQXNoVWtQNw?oc=5",
@@ -20020,22 +20188,10 @@
      "published": "2026-11-13T07:39:41+09:00"
     },
     {
-     "title": "イスラエル軍がガザ地区の病院空爆 医師や患者など6人死亡か",
-     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0zNU8yYlgzOTVscjZFWHB4cE0wamRMMF9kVFN3bzI3RkQ0TS03WnB1OS1kSUsyTExNdXAybnhTNDNrLXhtUmFmbngwZVA5ZFZBc3VwRE1XVUR4VlVHZzhr?oc=5",
-     "source": "NHKニュース",
-     "published": "2026-11-12T19:58:00+09:00"
-    },
-    {
-     "title": "タンカー2隻、ホルムズ海峡で機雷に触れ爆発＝イラン革命防衛隊",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1yMTlocmx6T29CcE00WmpXU1dLbnJoSEtDQThIQTJ4TjNZRVZrMFZrdkRPMWMxVHk3U296QTVjRkFNb2tFaVBsd1Y5b0U2cUM3dHJSTWJBR0x6SllBb3AzLWM5THBOMXdXTUJmc3V3?oc=5",
-     "source": "Infoseek",
-     "published": "2026-11-12T18:55:13+09:00"
-    },
-    {
-     "title": "緊迫する中東情勢,トランプ政権：米援助打ち切りは「青天のへきれき」？ ネタニヤフ氏の真の思惑",
-     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE91UW9uNnRiOUhsYjFhMXdRc19aTnNyTWpNOGVySllYMVRKU1F2MHdqbXhEUnF5SFdGQ09NRkN2ajVKNEd3bVZTRWdJRlhKeWwwR3Z2TXN5Rzg3Vlh3eEY3a0R4Q1EzQlg1?oc=5",
-     "source": "毎日新聞",
-     "published": "2026-11-12T05:01:00+09:00"
+     "title": "延期された「砂漠のダボス会議」、来年１０月に開催…サウジの調査機関「未来投資イニシアチブ」",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAxQ1A4bjdER0M1dFdScjk0aFFmVmc2UTNXX0ZaS25DNlhDTm1XSXhFWndWeXhyaDlCX0VNQmY0YTNiMXZZZkw3cGZFRkZ1ZWJNX2JFbnpGc3VudUI1dTNCWDN3?oc=5",
+     "source": "読売新聞",
+     "published": "2026-11-12T23:57:00+09:00"
     }
    ]
   },
@@ -20051,22 +20207,22 @@
      "published": "2026-11-13T03:25:00+09:00"
     },
     {
-     "title": "世界の珍しい昆虫を展示",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOd3dDeXpkYlcwNzNNZW5VeDJIWWd1MmFYNEtGRlhNS0FGWlR4OEpXcW1KUnR4SXNTSGZEZUpuUmFOWXU0RjFqaFBUQjRNUE1QeGJzOGUtZ25rNVo1dXNnRU9VdFh2UWd3R01qZUVaVl9Ud003V2EtODhmSHJCakNZbDc3Qkg5UEtNRWNWWWozVTJ0MXRVS2twbE5Wa0RIYkJHclAzUXdBZTNMQjlhc24tWUdheFBRTkR4emdlUHZlNGE?oc=5",
-     "source": "滋賀夕刊",
-     "published": "2026-11-13T11:31:32+09:00"
+     "title": "豊田通商、エジプト風力発電を900MW上積み",
+     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1LbXlleXJFNlMteGN3blhtV3ctSV83dFZKY1J6V3ZWeWEwSGx3MlVtMWQzU0k3cjBMODB3dGkwME5wUjF5eHRiWDVB?oc=5",
+     "source": "LOGISTICS TODAY",
+     "published": "2026-11-13T14:44:20+09:00"
     },
     {
-     "title": "【識者コラム】太古の森と対話する 人間中心主義を超えて 山極寿一",
-     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1QZEpsNnBpLWl4NDlKdHNqMXJqVHR4WGp1SDVCWlpzcnJXa1lMV0dpOWw1MTQxT0Y2MzVGQlZMeXQzSU5BdVpLNHFKTEg0QQ?oc=5",
-     "source": "静岡新聞DIGITAL",
-     "published": "2026-11-13T10:37:00+09:00"
+     "title": "ヴィンロン省は、交通の要所に3つの動物検疫所を建設することを提案",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNHlpWGt2OWY1UEdJTWE4Rk1ORDh5cWFVSTctWS1CeVNtME9Yc3F0RjRDQTJRQjBTdjhYczVDbHRmMTN3WTluZGs5RW90dEtiUlFUT1ppdE9hS25fTk5wVjQzZ2s1OEJWTXRQaXhkUlZUYlZrdWdQZGFFYlNEeS16d0pGTTVoVndRakdGZUNXamh3ekREZ1VlZ00xWVRwLVhna1FZRzA1TmtBaEdXczRjX2NqNmpzR09mc0lxag?oc=5",
+     "source": "Laodong.vn",
+     "published": "2026-11-13T13:36:45+09:00"
     },
     {
-     "title": "アフリカまつり",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNFZkM29VZlVqS0Rld2tzSTBzX3hpLVJkSHZCajQ4UXdPWXhzZlRkZGwxQzFUVk1USGhSVWg0VWd4YWw4dHJqV1VHT0VGQTV6cWNRNU1Xd21SS3FxcHVWNkh3MGdLMzVkM1BvZUZId0l0VVRDbDZBd3c2RFJwbUlGRjlRQzV1d9IBhgFBVV95cUxNNFZkM29VZlVqS0Rld2tzSTBzX3hpLVJkSHZCajQ4UXdPWXhzZlRkZGwxQzFUVk1USGhSVWg0VWd4YWw4dHJqV1VHT0VGQTV6cWNRNU1Xd21SS3FxcHVWNkh3MGdLMzVkM1BvZUZId0l0VVRDbDZBd3c2RFJwbUlGRjlRQzV1dw?oc=5",
+     "title": "「羅生門」を紐解く　解説や朗読を実施〈横浜市鶴見区〉",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcjB5MC0tUC1kSklZRjBwYTdCRU5QX0xOUklqamV6aHZPYU4yZWlPYWJOdy1uQ2YzWGdRV2o1MWNYSUpRZTBYaWNwWkVYa1p4cU42TERLSEFOVVlmZFJkWGh4MnB4bm12bVpRT3RGTDJ5b0N3R3U1TDBxbjlreFVyedIBgAFBVV95cUxNcjB5MC0tUC1kSklZRjBwYTdCRU5QX0xOUklqamV6aHZPYU4yZWlPYWJOdy1uQ2YzWGdRV2o1MWNYSUpRZTBYaWNwWkVYa1p4cU42TERLSEFOVVlmZFJkWGh4MnB4bm12bVpRT3RGTDJ5b0N3R3U1TDBxbjlreFVyeQ?oc=5",
      "source": "ｄメニューニュース",
-     "published": "2026-11-13T10:00:00+09:00"
+     "published": "2026-11-13T13:00:00+09:00"
     }
    ]
   },
@@ -20076,10 +20232,16 @@
    "count": 13,
    "news": [
     {
+     "title": "【速報】首相のフィリピン、中国訪問を発表",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1RSl9HRF84UWhqSUJPRWtwZk1Wa3lmS2YzRVZERG1POVNvY25rdVpGX20wODNLLTF3c1B1aDNCTW01amQxMG9PTnIxSQ?oc=5",
+     "source": "47NEWS",
+     "published": "2026-11-13T10:06:44+09:00"
+    },
+    {
      "title": "「柵を越えてはいけない」と注意したが…済州島の名勝で中国人が迷惑行為か (2026年11月13日掲載)",
      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13c016VHFTOXYzVjJhSnplWEloWERWdDRKOUp2elA1RjJZVHktSjNUX01ZREYxbWZSbjVKVnVKVkF6MGlTXzZsUnprRWRuekQxemVKaWpOSFR3TlRqTkE?oc=5",
      "source": "ライブドアニュース",
-     "published": "2026-11-13T11:02:30+09:00"
+     "published": "2026-11-13T09:22:17+09:00"
     },
     {
      "title": "岩礁を「島」と主張→支配強化、船舶航行を常態化 中国、南シナ海でフィリピンと対立激化",
@@ -20092,20 +20254,20 @@
      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9XVlZSYWVidUNOSW1JbzdGLWhCVGJJZGd4Vm1teHJqY1BScU9zQ2FtS3E5WTBweVpnSDZBRkI5emJNbVlBbjhLVG5hX3NNOEZOUlp2NjlXVnRTRjNrZXJfc2dR?oc=5",
      "source": "読売新聞",
      "published": "2026-11-13T05:00:00+09:00"
-    },
-    {
-     "title": "台湾観光申請の中国本土住民に「互いに隷属せず」署名要求、中国側が反発―台湾メディア",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRE5wSmNjMXEtN2NiU3Zzb05XRTdXTGVmX251aEhzT21rMDRHbTFoX1FuQm5hejI1ZUVBOHZUZDVGczRrTldhU2p1eUh5Vk0xb09HNTdYUnBMTGtkenc1QmZ4WU1TNl9UMTN0RS16NjZVemhxemV1NWZUazlRVWM2NUFQX25xUdIBiwFBVV95cUxOU0xkbEl5c3VZQ1Y1ekFyWjZaVkFOaTFabF8tSlB0blBFbjFIb2dDYVhsTHBVRGNTMDZqOEE3dVJLSjZ4a1FLUWxOY09JMnBuaG9maXVlUVl3RWNZOEpxTy1zenFCMkdpOTlMMWl1MkZOTFBpYTA1MkhaT1JobXhjTnc4ME5FbllzcU93?oc=5",
-     "source": "ｄメニューニュース",
-     "published": "2026-11-12T16:00:00+09:00"
     }
    ]
   },
   {
    "key": "asia",
    "label": "インド・東南アジア",
-   "count": 2,
+   "count": 4,
    "news": [
+    {
+     "title": "【速報】首相のフィリピン、中国訪問を発表",
+     "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1RSl9HRF84UWhqSUJPRWtwZk1Wa3lmS2YzRVZERG1POVNvY25rdVpGX20wODNLLTF3c1B1aDNCTW01amQxMG9PTnIxSQ?oc=5",
+     "source": "47NEWS",
+     "published": "2026-11-13T10:06:44+09:00"
+    },
     {
      "title": "岩礁を「島」と主張→支配強化、船舶航行を常態化 中国、南シナ海でフィリピンと対立激化",
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8yWFM2RFlWcVZYejFNNlU5SzAxNXpyVTB1Z2F5UzdlV2lrWmZya1JDTXJBclA0ek92LU13NTBudFh6MEtXNDh2VWdBTlR3d2I3UGd4aHFCZU9pWUNVVXAtemZaQXliUzlnb1NrLUM0cENETFhOZFE?oc=5",
@@ -20119,16 +20281,10 @@
      "published": "2026-11-12T15:56:02+09:00"
     },
     {
-     "title": "オプティマインド、適正原価で荷主向けセミナー",
-     "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBrek4ycG5SNGY5VFFPaHlrNXBhMF96M0QtTDV4N1FSQ1VUdHBWVW5OdF9RVlVIRE1JNnpRT0ZjUy10Q2ZSemFtME9B?oc=5",
-     "source": "LOGISTICS TODAY",
-     "published": "2026-11-13T12:15:52+09:00"
-    },
-    {
-     "title": "首相、１６日から比・中訪問 ＡＳＥＡＮとＡＰＥＣ出席",
-     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBmY2piM3NFNHFPSndNTERSVlZGVTJMa2dRREYtYUhwVkN1Y2pEeUIxQ0lzek1SWWFyTWhZYVdiOHlQZUt5SEM2ZUVCNzlaQQ?oc=5",
-     "source": "静岡新聞DIGITAL",
-     "published": "2026-11-13T10:59:00+09:00"
+     "title": "フィリピン外相 南シナ海の紛争防止ルールで論点の8割議論",
+     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBGMG9RLXBtTGpIcVJaYlcyRjlrc0RkYVhmRlg2WWNEZGNMYWE2X0h6N2FRWGNrRVB2eFJ2Z21hS1paOTZPN0UtQjFoQzhlLWszeGxJMnZKM0JxelA1VU9R?oc=5",
+     "source": "NHKニュース",
+     "published": "2026-11-12T04:29:36+09:00"
     }
    ]
   }
@@ -20371,7 +20527,7 @@
    },
    {
     "day": "2026-11-13",
-    "count": 3
+    "count": 4
    }
   ]
  },
